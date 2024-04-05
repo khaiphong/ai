@@ -1,9 +1,15 @@
 use std::collections::HashMap;
 
 enum Priorities {
+  Budh(String),  // we can define the structure of Budh instead of just String
   Care(String),    // we can define the structure of Care instead of just String
   Honesty(String), // we can define the structure of Honesty instead of just String
 } 
+impl Priorities {
+  fn b_evaluation(&self) -> i32 { // b depends on your age, priorities, available wealth
+    return 3; // LLM from mass data
+  }
+}
 impl Priorities {
   fn c_evaluation(&self) -> i32 { // c depends on your age, priorities, available wealth
     return 3; // LLM from mass data
@@ -30,6 +36,7 @@ struct InnerSpace {
   y_dimension: i32,
   f_dimension: i32,
   
+  budh: i32,       // taxonomy of budh
   care: i32,       // taxonomy of care
   honesty: i32,    // taxonomy of honesty
   /*
@@ -94,6 +101,7 @@ fn main() {
   let mut _y: i32 = 0;    // to be evaluated in blockchain of user self-evaluation and expert
   let mut _x: i32 = 0;    // opinions from fact-base tracked records in engaged living.
   
+  let mut _b: i32 = 0;
   let mut _c: i32 = 0;
   let mut _h: i32 = 0;
 
@@ -153,7 +161,10 @@ fn main() {
   x.insert(5, "Knowing the source of one's Thought".to_string());          // breakout
   x.insert(6, "Using cosmic energy for self-protection".to_string());   // deeper innovation
   x.insert(7, "Directing cosmic energy to help others".to_string());    // deeper innovation
-  
+
+  let mut b = HashMap::new(); // Taxonomy of b_dimension
+  b.insert(0, "Thien".to_string()); // sub b as the key
+
   let mut c = HashMap::new(); // Taxonomy of c_dimension
   c.insert(0, "Human".to_string()); // sub c as the key
 
@@ -176,6 +187,7 @@ fn main() {
   /*
     To identify personal Priorities which can be both, we can encode it in struct
  */
+  let budh = Priorities::Budh(String::from("BudhCases")); // recorded proof
   let care = Priorities::Care(String::from("CareCases")); // recorded proof
   let honesty = Priorities::Honesty(String::from("HonestyCases"));  // recorded proof
   
@@ -197,6 +209,8 @@ fn main() {
   _f = f_initiation(f); 
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
+  
+  _b = b_evaluation(b); // budh based on the outcomes in engaged living 
   _c = c_evaluation(c); // care based on the outcomes in engaged living 
   _h = h_evaluation(h); // honesty based on the outcomes of engaged living
   
@@ -206,6 +220,7 @@ fn main() {
     y_dimension: _y,
     x_dimension: _x,
 
+    budh: _b,
     care: _c,
     honesty: _h,
     
@@ -250,6 +265,16 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
         println!("{key}: {value}");
     }    
    // evaluate the transient value of x in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+
+fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Human");
+   for (key, value) in &b {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of b in circular processes of 8 hashtag and record it
    // somewhere for tracking record in different cased of claimed #   
     return 0;
 }
