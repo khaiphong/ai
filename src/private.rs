@@ -1,22 +1,35 @@
 use std::collections::HashMap;
-
-enum Priorities {
-  Budh(String),  // we can define the structure of Budh instead of just String
-  Care(String),    // we can define the structure of Care instead of just String
-  Honesty(String), // we can define the structure of Honesty instead of just String
+/*
+ Instead of String, we can define the structure of "Honesty / TRUTH / Chân", "Budh /
+ Morality / Thiện" and "Patience / Nhẩn" to use both data-driven hard evidences plus
+ International accepted normative assessments for scientifically measurements and
+ cultivations. "Care" having digital records stands for an Accountable creator and a part of
+ the Responsible Creation.
+*/
+enum Qualities {
+  Patience(String), // "Patience / Nhẩn"
+  Budh(String),    // "Budh / Morality / Thiện"
+  Care(String), 
+  Honesty(String), // "Honesty / TRUTH / Chân"
 } 
-impl Priorities {
-  fn b_evaluation(&self) -> i32 { // b depends on your age, priorities, available wealth
+
+impl Qualities {
+  fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
   }
 }
-impl Priorities {
-  fn c_evaluation(&self) -> i32 { // c depends on your age, priorities, available wealth
+impl Qualities {
+  fn b_evaluation(&self) -> i32 { // budh or morality at the bottom line of Right or Wrong
     return 3; // LLM from mass data
   }
 }
-impl Priorities {
-  fn h_evaluation(&self) -> i32 { // h depends on your age, priorities, available wealth
+impl Qualities {
+  fn c_evaluation(&self) -> i32 { // c indicates one's seriousness and commitments
+    return 3; // LLM from mass data
+  }
+}
+impl Qualities {
+  fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
     return 1; // LLM from mass data
   }
 }
@@ -36,6 +49,7 @@ struct InnerSpace {
   y_dimension: i32,
   f_dimension: i32,
   
+  patience: i32,   // taxonomy of patience
   budh: i32,       // taxonomy of budh
   care: i32,       // taxonomy of care
   honesty: i32,    // taxonomy of honesty
@@ -101,9 +115,10 @@ fn main() {
   let mut _y: i32 = 0;    // to be evaluated in blockchain of user self-evaluation and expert
   let mut _x: i32 = 0;    // opinions from fact-base tracked records in engaged living.
   
-  let mut _b: i32 = 0;
-  let mut _c: i32 = 0;
-  let mut _h: i32 = 0;
+  let mut _p: i32 = 0;    // Patience / Nhẩn
+  let mut _b: i32 = 0;    // Budh / Morality / Thiện / Right & Wrong 
+  let mut _c: i32 = 0;    // Care
+  let mut _h: i32 = 0;    // Honesty / TRUTH / Chân
 
   let mut f = HashMap::new(); // Taxonomy of f_dimension
   f.insert(0, "Person".to_string()); // sub f as the key
@@ -162,6 +177,9 @@ fn main() {
   x.insert(6, "Using cosmic energy for self-protection".to_string());   // deeper innovation
   x.insert(7, "Directing cosmic energy to help others".to_string());    // deeper innovation
 
+  let mut p = HashMap::new(); // Taxonomy of p_dimension
+  p.insert(0, "Nhan".to_string()); // sub p as the key
+
   let mut b = HashMap::new(); // Taxonomy of b_dimension
   b.insert(0, "Thien".to_string()); // sub b as the key
 
@@ -173,7 +191,7 @@ fn main() {
   
   /*
    Given the following hashtag # and user description, we evaluate the experience in
-   determination the _y, _x and _f round circle from Self to Selfless.
+   determination the _y, _x and _f round cycle from Self to Selfless.
   */
   struct Intuition; let _intuition = Intuition;
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
@@ -186,10 +204,11 @@ fn main() {
 
   /*
     To identify personal Priorities which can be both, we can encode it in struct
- */
-  let budh = Priorities::Budh(String::from("BudhCases")); // recorded proof
-  let care = Priorities::Care(String::from("CareCases")); // recorded proof
-  let honesty = Priorities::Honesty(String::from("HonestyCases"));  // recorded proof
+  */
+  let patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
+  let budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
+  let care = Qualities::Care(String::from("CareCases")); // recorded proof
+  let honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
   
  /*
   let mut rated_level = RatedMaturity::Maturity; 
@@ -198,9 +217,9 @@ fn main() {
   */
 
   /*
-    Establish accademia forum for scientifically studying and rating visible data.
+    Establish accademia forum for scientifically measuring and rating visible data.
     Each Fibonacci index is a complex Fibonacci function which can be modeled via LLM of
-    identified properties associated to the ontologies of named key and ranges of
+    identified qualities associated to the ontologies of named key and ranges of
     associated behaviors in all Activities, Relationships, and Places observable from
     collected data of the subject versus demonstrated behaviours of advanced students. Using
     AGI and specialized agents custom made for the subject, we can help the subject know
@@ -209,7 +228,8 @@ fn main() {
   _f = f_initiation(f); 
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
-  
+
+  _p = p_evaluation(p); // patience based on the outcomes in engaged living   
   _b = b_evaluation(b); // budh based on the outcomes in engaged living 
   _c = c_evaluation(c); // care based on the outcomes in engaged living 
   _h = h_evaluation(h); // honesty based on the outcomes of engaged living
@@ -220,6 +240,7 @@ fn main() {
     y_dimension: _y,
     x_dimension: _x,
 
+    patience: _p,
     budh: _b,
     care: _c,
     honesty: _h,
@@ -235,7 +256,6 @@ fn main() {
     "The me f_evaluation is {} pixels.",
     me.f_evaluation()
   );
-  
 
     
 } // end of main
@@ -269,8 +289,18 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0;
 }
 
+fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Patience");
+   for (key, value) in &p {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of b in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+
 fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Human");
+   println!("Attributes of Budh sensing the Right from Wrong");
    for (key, value) in &b {
         println!("{key}: {value}");
     }    
@@ -280,7 +310,7 @@ fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to t
 }
 
 fn c_evaluation(c: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Human");
+   println!("Attributes of Care for one and the environment");
    for (key, value) in &c {
         println!("{key}: {value}");
     }    
@@ -289,7 +319,7 @@ fn c_evaluation(c: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0;
 }
 fn h_evaluation(h: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Honesty");
+   println!("Attributes of Honesty / Truth in one's Continuity of the consciousness");
    for (key, value) in &h {
         println!("{key}: {value}");
     }    
