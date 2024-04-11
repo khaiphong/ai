@@ -1,18 +1,48 @@
-use std::collections::HashMap;
 /*
- Instead of String, we can define the structure of "Honesty / TRUTH / Chân", "Budh /
- Morality / Thiện" and "Patience / Nhẩn" to use both data-driven hard evidences plus
- International accepted normative assessments for scientifically measurements and
- cultivations. "Care" having digital records stands for an Accountable creator and a part of
- the Responsible Creation.
+    Establish accademia forum for scientifically measuring and rating visible data.
+    Each Fibonacci index is a complex Fibonacci function which can be modeled via LLM of
+    identified qualities associated to the ontologies of named key and ranges of
+    associated behaviors in all Activities, Relationships, and Places observable from
+    collected data of the subject versus demonstrated behaviours of advanced students. Using
+    AGI and specialized agents custom made for the subject, we can help the subject know
+    more about oneself and How to rightly evolve in one's Continuity of the consciousness.
 */
+#[derive(Debug)]
+pub struct InnerSpace {
+  /*
+  x_dimension: i32,
+  y_dimension: i32,
+  f_dimension: i32,
+  
+  patience: i32,   // taxonomy of patience via graph
+  budh: i32,       // taxonomy of budh via graph
+  care: i32,       // taxonomy of care via graph
+  honesty: i32,    // taxonomy of honesty via graph
+ 
+  Maturity: i32, // for organization
+  Steps: HashMap<String, String>, // for foreign affairs
+  Visions: HashMap<String, String>, // for country
+  */
+}
+
+#[derive(Debug)]
 enum Qualities {
   Patience(String), // "Patience / Nhẩn"
   Budh(String),    // "Budh / Morality / Thiện"
   Care(String), 
   Honesty(String), // "Honesty / TRUTH / Chân"
-} 
+}
 
+#[derive(Debug)]
+pub struct Xdimension {}
+
+#[derive(Debug)]
+pub struct Ydimension {}
+
+#[derive(Debug)]
+pub struct Fdimension {}
+
+/*
 impl Qualities {
   fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
@@ -33,7 +63,7 @@ impl Qualities {
     return 1; // LLM from mass data
   }
 }
-/*
+
 enum RatedMaturity{ // for organization
   Maturity,
 }
@@ -42,31 +72,13 @@ enum StepOutcomes{ // for foreign affairs
 }
 enum VisionOutcomes{ // for country
   Visions,
-*/
 
-struct InnerSpace {
-  x_dimension: i32,
-  y_dimension: i32,
-  f_dimension: i32,
-  
-  patience: i32,   // taxonomy of patience
-  budh: i32,       // taxonomy of budh
-  care: i32,       // taxonomy of care
-  honesty: i32,    // taxonomy of honesty
-  /*
-  Maturity: i32, // for organization
-  Steps: HashMap<String, String>, // for foreign affairs
-  Visions: HashMap<String, String>, // for country
-  */
-}
-
-/*
  The implementation from self to selfless via _x Detachment, _y InnerPeace / RightOrWrong,
  and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
  and contributions by those connected to #WuNien. Evaluation of y_dimension is trained via 
  empirical observations and contributions by those connected to #Samadhi. The observable point 
  on X-Y plane is connected to stable f_evaluation for custom trainings and treatments.
-*/
+
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for person
     self.x_dimension * self.y_dimension * self.f_dimension
@@ -79,7 +91,7 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
   }
 }
 
-/*
+
 impl InnerSpace { // organizaton
   fn maturity_level(&self) -> String { // f(_x,_y) for organization
     return "self sustainable".to_string()
@@ -95,21 +107,8 @@ impl InnerSpace { // country
     return "in_operation".to_string()
   }
 }
-*/
 
-fn main() {
-
-  /* 
-    Starting at a naturally qualified person, Hashmaps of f = 0. But _x and _y are in wide
-    ranges for negative to positive based on the self-evaluated plus expert opinions of
-    y_evaluation and x_evaluation . We use mutable variable instead of self-evaluated defined
-    const as starting points of Fibonacci Nunber for Prajna >< AGI, then modeling which is
-    applicable to any kind of persona (person, Inter-Realm, organization, foreign affairs,
-    a nation, a lasting project, etc).
-
-    For elites currently a person, the evaluation are intended to help that person moving from
-    evolution then degeneration to the right positive evaluation with oservable attributes:
- */
+fn fyx() {
  
   let mut _f: i32 = 0;    // qualified person
   let mut _y: i32 = 0;    // to be evaluated in blockchain of user self-evaluation and expert
@@ -189,42 +188,18 @@ fn main() {
   let mut h = HashMap::new(); // Taxonomy of h_dimension
   h.insert(0, "Chan".to_string()); // sub c as the key
   
-  /*
-   Given the following hashtag # and user description, we evaluate the experience in
-   determination the _y, _x and _f round cycle from Self to Selfless.
-  */
-  struct Intuition; let _intuition = Intuition;
-  struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
-  struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
-  struct Samadhi; let _transcendental_inner_peace = Samadhi;
-  struct WuNien; let _transcendental_awareness = WuNien;
-  struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
-  struct Prajna; let _wisdom = Prajna; 
-  struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
-
-  /*
-    To identify personal Priorities which can be both, we can encode it in struct
-  */
+  
   let patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
   let budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
   let care = Qualities::Care(String::from("CareCases")); // recorded proof
   let honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
   
- /*
+ 
   let mut rated_level = RatedMaturity::Maturity; 
   let mut steps = StepOutcomes::Steps;
   let mut visions = VisionOutcomes::Visions;
-  */
-
-  /*
-    Establish accademia forum for scientifically measuring and rating visible data.
-    Each Fibonacci index is a complex Fibonacci function which can be modeled via LLM of
-    identified qualities associated to the ontologies of named key and ranges of
-    associated behaviors in all Activities, Relationships, and Places observable from
-    collected data of the subject versus demonstrated behaviours of advanced students. Using
-    AGI and specialized agents custom made for the subject, we can help the subject know
-    more about oneself and How to rightly evolve in one's Continuity of the consciousness.
-  */
+  
+  
   _f = f_initiation(f); 
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
@@ -245,11 +220,11 @@ fn main() {
     care: _c,
     honesty: _h,
     
-    /*
+    
       maturity: 0, // for organization
       steps: HashMap::new(), // for foreign affairs
       visions: HashMap::new(), // for country
-    */
+    
   };
   
   println!(
@@ -258,7 +233,7 @@ fn main() {
   );
 
     
-} // end of main
+} // end of fyx
 
 fn f_initiation(f: HashMap<i32, String>) -> i32 {
 
@@ -328,5 +303,4 @@ fn h_evaluation(h: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0;
 }
 
-
-
+*/
