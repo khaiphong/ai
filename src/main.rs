@@ -33,11 +33,21 @@ use crate::back::hub::hub_agent1;
 use crate::back::hub::hub_agent2;
 use crate::back::plan::plan_agent1;
 use crate::back::plan::plan_agent2;
+// personal agent services
+use crate::network::family::family_agent1;
+use crate::network::family::family_agent2;
+use crate::network::profession::profession_agent1;
+use crate::network::profession::profession_agent2;
+use crate::network::this_life::this_life_agent1;
+use crate::network::this_life::this_life_agent2;
+use crate::network::next_realm::next_realm_agent1;
+use crate::network::next_realm::next_realm_agent2;
 
 pub mod persona;
 pub mod agi;
 pub mod front;
 pub mod back;
+pub mod network;
  
 fn main() {
   /* 
@@ -166,4 +176,31 @@ fn main() {
   
   let _plan_agent2 = plan_agent2();
   println!("I'm augmenting {:?}!", _plan_agent2); 
+  
+      // network AGI
+  
+  let _family_agent1 = family_agent1();
+  println!("I'm augmenting {:?}!", _family_agent1);
+  
+  let _family_agent2 = family_agent2();
+  println!("I'm augmenting {:?}!", _family_agent2);  
+
+  let _profession_agent1 = profession_agent1();
+  println!("I'm augmenting {:?}!", _profession_agent1);
+  
+  let _profession_agent2 = profession_agent2();
+  println!("I'm augmenting {:?}!", _profession_agent2);  
+
+  let _this_life_agent1 = this_life_agent1();
+  println!("I'm augmenting {:?}!", _this_life_agent1);
+  
+  let _this_life_agent2 = this_life_agent2();
+  println!("I'm augmenting {:?}!", _this_life_agent2);  
+
+  let _next_realm_agent1 = next_realm_agent1();
+  println!("I'm augmenting {:?}!", _next_realm_agent1);
+  
+  let _next_realm_agent2 = next_realm_agent2();
+  println!("I'm augmenting {:?}!", _next_realm_agent2); 
+  
 }
