@@ -3,10 +3,10 @@ use crate::persona::private::Xdimension;
 use crate::persona::private::Ydimension;
 use crate::persona::private::Fdimension;
 // LLM augmented with self-rating Qualities
-use crate::persona::qualities::Honesty;
-use crate::persona::qualities::Care;
-use crate::persona::qualities::Budh;
-use crate::persona::qualities::Patience;
+use crate::persona::private::Honesty;
+use crate::persona::private::Care;
+use crate::persona::private::Budh;
+use crate::persona::private::Patience;
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
 use crate::agi::public::Llama;
 use crate::agi::public::Grok;
@@ -99,8 +99,8 @@ fn main() {
   println!("I'm evaluating the persona {:?}!", _p); 
   
   // evaluation of InnerSpace
-  let _me = crate::persona::private::InnerSpace {};
-  println!("I'm evaluating the persona {:?}!", _me);
+ // let _me = crate::persona::private::InnerSpace {};
+//  println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod
   

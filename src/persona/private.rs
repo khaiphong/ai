@@ -9,7 +9,7 @@
 */
 #[derive(Debug)]
 pub struct InnerSpace {
-  /*
+
   x_dimension: i32,
   y_dimension: i32,
   f_dimension: i32,
@@ -18,7 +18,8 @@ pub struct InnerSpace {
   budh: i32,       // taxonomy of budh via graph
   care: i32,       // taxonomy of care via graph
   honesty: i32,    // taxonomy of honesty via graph
- 
+  
+ /*
   Maturity: i32, // for organization
   Steps: HashMap<String, String>, // for foreign affairs
   Visions: HashMap<String, String>, // for country
@@ -42,7 +43,19 @@ pub struct Ydimension {}
 #[derive(Debug)]
 pub struct Fdimension {}
 
-/*
+#[derive(Debug)]
+pub struct Honesty {}
+
+#[derive(Debug)]
+pub struct Care {}
+
+#[derive(Debug)]
+pub struct Budh {}
+
+#[derive(Debug)]
+pub struct Patience {}
+
+
 impl Qualities {
   fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
@@ -64,6 +77,7 @@ impl Qualities {
   }
 }
 
+/*
 enum RatedMaturity{ // for organization
   Maturity,
 }
@@ -72,12 +86,15 @@ enum StepOutcomes{ // for foreign affairs
 }
 enum VisionOutcomes{ // for country
   Visions,
+*/
 
+/*
  The implementation from self to selfless via _x Detachment, _y InnerPeace / RightOrWrong,
  and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
  and contributions by those connected to #WuNien. Evaluation of y_dimension is trained via 
  empirical observations and contributions by those connected to #Samadhi. The observable point 
  on X-Y plane is connected to stable f_evaluation for custom trainings and treatments.
+*/
 
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for person
@@ -108,7 +125,10 @@ impl InnerSpace { // country
   }
 }
 
-fn fyx() {
+
+use std::collections::HashMap;
+
+fn initiation() {
  
   let mut _f: i32 = 0;    // qualified person
   let mut _y: i32 = 0;    // to be evaluated in blockchain of user self-evaluation and expert
@@ -189,15 +209,15 @@ fn fyx() {
   h.insert(0, "Chan".to_string()); // sub c as the key
   
   
-  let patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
-  let budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
-  let care = Qualities::Care(String::from("CareCases")); // recorded proof
-  let honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
+//  let patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
+//  let budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
+//  let care = Qualities::Care(String::from("CareCases")); // recorded proof
+//  let honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
   
  
-  let mut rated_level = RatedMaturity::Maturity; 
-  let mut steps = StepOutcomes::Steps;
-  let mut visions = VisionOutcomes::Visions;
+//  let mut rated_level = RatedMaturity::Maturity; 
+//  let mut steps = StepOutcomes::Steps;
+//  let mut visions = VisionOutcomes::Visions;
   
   
   _f = f_initiation(f); 
@@ -221,9 +241,9 @@ fn fyx() {
     honesty: _h,
     
     
-      maturity: 0, // for organization
-      steps: HashMap::new(), // for foreign affairs
-      visions: HashMap::new(), // for country
+//      maturity: 0, // for organization
+//      steps: HashMap::new(), // for foreign affairs
+//      visions: HashMap::new(), // for country
     
   };
   
@@ -303,4 +323,3 @@ fn h_evaluation(h: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0;
 }
 
-*/
