@@ -1,3 +1,4 @@
+// use db::Persona; // the Persona is defined in db crate while ai cultivating InnerSpace
 /*
     Establish accademia forum for scientifically measuring and rating visible data.
     Each Fibonacci index is a complex Fibonacci function which can be modeled via LLM of
@@ -14,10 +15,10 @@ pub struct InnerSpace {
   y_dimension: i32,
   f_dimension: i32,
   
-  patience: i32,   // taxonomy of patience via graph
-  budh: i32,       // taxonomy of budh via graph
-  care: i32,       // taxonomy of care via graph
-  honesty: i32,    // taxonomy of honesty via graph
+  _patience: i32,   // taxonomy of patience via graph
+  _budh: i32,       // taxonomy of budh via graph
+  _care: i32,       // taxonomy of care via graph
+  _honesty: i32,    // taxonomy of honesty via graph
   
  /*
   Maturity: i32, // for organization
@@ -60,18 +61,15 @@ impl Qualities {
   fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
   }
-}
-impl Qualities {
+
   fn b_evaluation(&self) -> i32 { // budh or morality at the bottom line of Right or Wrong
     return 3; // LLM from mass data
   }
-}
-impl Qualities {
+
   fn c_evaluation(&self) -> i32 { // c indicates one's seriousness and commitments
     return 3; // LLM from mass data
   }
-}
-impl Qualities {
+
   fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
     return 1; // LLM from mass data
   }
@@ -101,43 +99,42 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
     self.x_dimension * self.y_dimension * self.f_dimension
   
   }
-}
-impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
+
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
-}
-
-
-impl InnerSpace { // organizaton
+  
   fn maturity_level(&self) -> String { // f(_x,_y) for organization
     return "self sustainable".to_string()
   }
-}
-impl InnerSpace { // foreign affairs
+  
   fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
     return "decisive_battle".to_string()
   }
-}
-impl InnerSpace { // country
+  
   fn nation_happiness(&self) -> String { // f(_x,_y) for a nation
     return "in_operation".to_string()
   }
 }
 
-
+/*
+  Starting from naturally qualified persona, the build_InnerSpace initially and periodically
+  rate the persona for user custom services. The ranges for evaluation of f, y, x, p, b, c, h
+  are updated according to acamedia researches. Same thing is applicable to their rating
+  function outcomes: _f, _y, _x, _p, _b, _c, _h. The return is a new "me".
+*/
 use std::collections::HashMap;
 
-fn initiation() {
+fn build_InnerSpace(_x: i32, _y: i32, _f: i32, _patience: i32, _budh: i32, _care: i32, _honesty: i32) -> InnerSpace  {
  
-  let mut _f: i32 = 0;    // qualified person
-  let mut _y: i32 = 0;    // to be evaluated in blockchain of user self-evaluation and expert
-  let mut _x: i32 = 0;    // opinions from fact-base tracked records in engaged living.
+  let mut _f = 0;    // qualified person
+  let mut _y = 0;    // to be evaluated in blockchain of user self-evaluation and expert
+  let mut _x = 0;    // opinions from fact-base tracked records in engaged living.
   
-  let mut _p: i32 = 0;    // Patience / Nhẩn
-  let mut _b: i32 = 0;    // Budh / Morality / Thiện / Right & Wrong 
-  let mut _c: i32 = 0;    // Care
-  let mut _h: i32 = 0;    // Honesty / TRUTH / Chân
+  let mut _p = 0;    // Patience / Nhẩn
+  let mut _b = 0;    // Budh / Morality / Thiện / Right & Wrong 
+  let mut _c = 0;    // Care
+  let mut _h = 0;    // Honesty / TRUTH / Chân
 
   let mut f = HashMap::new(); // Taxonomy of f_dimension
   f.insert(0, "Person".to_string()); // sub f as the key
@@ -235,10 +232,10 @@ fn initiation() {
     y_dimension: _y,
     x_dimension: _x,
 
-    patience: _p,
-    budh: _b,
-    care: _c,
-    honesty: _h,
+    _patience: _p,
+    _budh: _b,
+    _care: _c,
+    _honesty: _h,
     
     
 //      maturity: 0, // for organization
@@ -252,7 +249,8 @@ fn initiation() {
     me.f_evaluation()
   );
 
-    
+  return me;
+  
 } // end of fyx
 
 fn f_initiation(f: HashMap<i32, String>) -> i32 {
