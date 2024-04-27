@@ -1,4 +1,3 @@
-// use db::Persona; // the Persona is defined in db crate while ai cultivating InnerSpace
 /*
     Establish accademia forum for scientifically measuring and rating visible data.
     Each Fibonacci index is a complex Fibonacci function which can be modeled via LLM of
@@ -14,17 +13,12 @@ pub struct InnerSpace {
   x_dimension: i32,
   y_dimension: i32,
   f_dimension: i32,
-  
-  _patience: i32,   // taxonomy of patience via graph
-  _budh: i32,       // taxonomy of budh via graph
-  _care: i32,       // taxonomy of care via graph
-  _honesty: i32,    // taxonomy of honesty via graph
-  
- /*
-  Maturity: i32, // for organization
-  Steps: HashMap<String, String>, // for foreign affairs
-  Visions: HashMap<String, String>, // for country
-  */
+
+ /* 
+  use variants of identified attributes to further classify _y, _x. _f via knowledge graph:  
+  _patience, _budh, _care, _honesty,  Maturity for organization, Steps for foreign affairs,
+  Visions for country
+ */
 }
 
 #[derive(Debug)]
@@ -56,7 +50,7 @@ pub struct Budh {}
 #[derive(Debug)]
 pub struct Patience {}
 
-
+/*
 impl Qualities {
   fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
@@ -75,7 +69,6 @@ impl Qualities {
   }
 }
 
-/*
 enum RatedMaturity{ // for organization
   Maturity,
 }
@@ -84,15 +77,12 @@ enum StepOutcomes{ // for foreign affairs
 }
 enum VisionOutcomes{ // for country
   Visions,
-*/
 
-/*
  The implementation from self to selfless via _x Detachment, _y InnerPeace / RightOrWrong,
  and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
  and contributions by those connected to #WuNien. Evaluation of y_dimension is trained via 
  empirical observations and contributions by those connected to #Samadhi. The observable point 
  on X-Y plane is connected to stable f_evaluation for custom trainings and treatments.
-*/
 
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for person
@@ -116,16 +106,17 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
     return "in_operation".to_string()
   }
 }
+*/
 
 /*
   Starting from naturally qualified persona, the build_InnerSpace initially and periodically
-  rate the persona for user custom services. The ranges for evaluation of f, y, x, p, b, c, h
+  rate the persona for user custom services. The ranges for evaluation of y, x, f
   are updated according to acamedia researches. Same thing is applicable to their rating
-  function outcomes: _f, _y, _x, _p, _b, _c, _h. The return is a new "me".
+  function outcomes: _f, _y, _x. The return is a new "me".
 */
 use std::collections::HashMap;
 
-fn build_InnerSpace(_x: i32, _y: i32, _f: i32, _patience: i32, _budh: i32, _care: i32, _honesty: i32) -> InnerSpace  {
+fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
  
   let mut _f = 0;    // qualified person
   let mut _y = 0;    // to be evaluated in blockchain of user self-evaluation and expert
@@ -206,16 +197,10 @@ fn build_InnerSpace(_x: i32, _y: i32, _f: i32, _patience: i32, _budh: i32, _care
   h.insert(0, "Chan".to_string()); // sub c as the key
   
   
-//  let patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
-//  let budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
-//  let care = Qualities::Care(String::from("CareCases")); // recorded proof
-//  let honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
-  
- 
-//  let mut rated_level = RatedMaturity::Maturity; 
-//  let mut steps = StepOutcomes::Steps;
-//  let mut visions = VisionOutcomes::Visions;
-  
+  let _patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
+  let _budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
+  let _care = Qualities::Care(String::from("CareCases")); // recorded proof
+  let _honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
   
   _f = f_initiation(f); 
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
@@ -231,23 +216,8 @@ fn build_InnerSpace(_x: i32, _y: i32, _f: i32, _patience: i32, _budh: i32, _care
     f_dimension: _f, 
     y_dimension: _y,
     x_dimension: _x,
-
-    _patience: _p,
-    _budh: _b,
-    _care: _c,
-    _honesty: _h,
-    
-    
-//      maturity: 0, // for organization
-//      steps: HashMap::new(), // for foreign affairs
-//      visions: HashMap::new(), // for country
     
   };
-  
-  println!(
-    "The me f_evaluation is {} pixels.",
-    me.f_evaluation()
-  );
 
   return me;
   
