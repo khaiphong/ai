@@ -10,9 +10,9 @@
 #[derive(Debug)]
 pub struct InnerSpace {
 
-  x_dimension: i32,
-  y_dimension: i32,
-  f_dimension: i32,
+  pub x_dimension: i32,
+  pub y_dimension: i32,
+  pub f_dimension: i32,
 
  /* 
   use variants of identified attributes to further classify _y, _x. _f via knowledge graph:  
@@ -29,7 +29,7 @@ pub mod Fdimension;
 
 
 #[derive(Debug)]
-enum Qualities {
+pub enum Qualities {
   Patience(String), // "Patience / Nhẩn"
   Budh(String),    // "Budh / Morality / Thiện"
   Care(String), 
@@ -114,7 +114,7 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
 
 use std::collections::HashMap;
 
-fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
+pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
  
   let mut _f = 0;    // qualified person
   let mut _y = 0;    // to be evaluated in blockchain of user self-evaluation and expert

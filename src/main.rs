@@ -1,64 +1,39 @@
 // scientific cultivatons of the persona's InnerSpace
-use crate::persona::Ydimension::TranscendentalMeditation;
-use crate::persona::Ydimension::Vipassana;
-use crate::persona::Ydimension::KpY;
-//use crate::persona::Xdimension::WuNien;
-//use crate::persona::Xdimension::AwarenessPrajna;
-use crate::persona::Xdimension::KpX;
-use crate::persona::Fdimension::HuiNeng;
-use crate::persona::Fdimension::Gotama;
-use crate::persona::Fdimension::KpF;
+use crate::persona::Ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
+use crate::persona::Xdimension::{WuNien, AwarenessPrajna, KpX};
+use crate::persona::Fdimension::{HuiNeng, Gotama, KpF};
+
 // LLM augmented with self-rating Qualities
-use crate::persona::Honesty::honesty_agent1;
-use crate::persona::Honesty::honesty_agent2;
-use crate::persona::Care::care_agent1;
-use crate::persona::Care::care_agent2;
-use crate::persona::Budh::budh_agent1;
-use crate::persona::Budh::budh_agent2;
-use crate::persona::Patience::patience_agent1;
-use crate::persona::Patience::patience_agent2;
-use crate::persona::Trust::trust_agent1;
-use crate::persona::Trust::trust_agent2;
-use crate::persona::QiGong::qigong_agent1;
-use crate::persona::QiGong::qigong_agent2;
-use crate::persona::Art::art_agent1;
-use crate::persona::Art::art_agent2;
+use crate::persona::Honesty::{honesty_agent1, honesty_agent2};
+use crate::persona::Care::{care_agent1, care_agent2};
+use crate::persona::Budh::{budh_agent1, budh_agent2};
+use crate::persona::Patience::{patience_agent1, patience_agent2};
+use crate::persona::Trust::{trust_agent1, trust_agent2};
+use crate::persona::QiGong::{qigong_agent1, qigong_agent2};
+use crate::persona::Art::{art_agent1, art_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
-use crate::agi::public::Llama;
-use crate::agi::public::Grok;
-use crate::agi::public::Kp;
+use crate::agi::public::{Llama, Grok, Kp};
+
 // front-end persona facing services
-use crate::front::mu::platform_message;
-use crate::front::mu::service_message;
-use crate::front::chat::prompt;
-use crate::front::chat::response;
-use crate::front::video::in_stream;
-use crate::front::video::out_stream;
+use crate::front::mu::{platform_message, service_message};
+use crate::front::chat::{prompt, response};
+use crate::front::video::{in_stream, out_stream};
+
 // back-end persona agent services
-use crate::back::mu::mu_agent1;
-use crate::back::mu::mu_agent2;
-use crate::back::chat::chat_agent1;
-use crate::back::chat::chat_agent2;
-use crate::back::video::video_agent1;
-use crate::back::video::video_agent2;
-use crate::back::graph::graph_agent1;
-use crate::back::graph::graph_agent2;
-use crate::back::db::db_agent1;
-use crate::back::db::db_agent2;
-use crate::back::hub::hub_agent1;
-use crate::back::hub::hub_agent2;
-use crate::back::plan::plan_agent1;
-use crate::back::plan::plan_agent2;
+use crate::back::mu::{mu_agent1, mu_agent2};
+use crate::back::chat::{chat_agent1, chat_agent2};
+use crate::back::video::{video_agent1, video_agent2};
+use crate::back::graph::{graph_agent1, graph_agent2};
+use crate::back::db::{db_agent1, db_agent2};
+use crate::back::hub::{hub_agent1, hub_agent2};
+use crate::back::plan::{plan_agent1, plan_agent2};
+
 // personal agent services
-use crate::network::family::family_agent1;
-use crate::network::family::family_agent2;
-use crate::network::profession::profession_agent1;
-use crate::network::profession::profession_agent2;
-use crate::network::this_life::this_life_agent1;
-use crate::network::this_life::this_life_agent2;
-use crate::network::next_realm::next_realm_agent1;
-use crate::network::next_realm::next_realm_agent2;
+use crate::network::family::{family_agent1, family_agent2};
+use crate::network::profession::{profession_agent1, profession_agent2};
+use crate::network::this_life::{this_life_agent1, this_life_agent2};
+use crate::network::next_realm::{next_realm_agent1, next_realm_agent2};
 
 pub mod persona;
 pub mod agi;
@@ -89,7 +64,9 @@ fn main() {
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
   struct Samadhi; let _transcendental_inner_peace = Samadhi;
+  #[derive(Debug)]
   struct WuNien; let _transcendental_awareness = WuNien;
+  #[derive(Debug)]
   struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
   struct Prajna; let _wisdom = Prajna; 
   struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
@@ -101,10 +78,10 @@ fn main() {
   let _kpy = KpY {};
   println!("I'm using {:?}!", _kpy);
   
-//  let _transcendental_awareness = WuNien {};
-//  println!("I'm evaluating my {:?}!", _transcendental_awareness);
-//  let _awareness_prajna = AwarenessPrajna {};
-//  println!("I'm evaluating my {:?}!", _awareness_prajna);
+  let _transcendental_awareness = WuNien {};
+  println!("I'm evaluating my {:?}!", _transcendental_awareness);
+  let _awareness_prajna = AwarenessPrajna {};
+  println!("I'm evaluating my {:?}!", _awareness_prajna);
   let _kpx = KpX {};
   println!("I'm evaluating my {:?}!", _kpx);
   
@@ -151,8 +128,8 @@ fn main() {
   println!("I'm augmenting {:?}!", _art_agent2);  
 
   // evaluation of InnerSpace
- // let _me = crate::persona::private::InnerSpace {};
-//  println!("I'm evaluating the persona {:?}!", _me);
+  let _me = crate::persona::build_InnerSpace(0, 0, 0);
+  println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod
   

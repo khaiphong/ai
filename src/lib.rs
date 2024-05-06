@@ -1,3 +1,5 @@
+// modules specific to kp_platorm
+
 pub mod front {
     pub mod mu {
 	pub fn platform_message() {}
