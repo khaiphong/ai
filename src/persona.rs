@@ -47,7 +47,6 @@ pub mod Trust;
 pub mod QiGong;
 pub mod Art;
 
-/*
 impl Qualities {
   fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
     return 3; // LLM from mass data
@@ -64,6 +63,18 @@ impl Qualities {
   fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
     return 1; // LLM from mass data
   }
+  
+  fn t_evaluation(&self) -> i32 { // t indicates one's trust or faith
+    return 3; // LLM from mass data
+  }
+    
+  fn q_evaluation(&self) -> i32 { // q indicates one's wusu qi level 
+    return 3; // LLM from mass data
+  }
+  
+  fn a_evaluation(&self) -> i32 { // a indicates one's level of transcending art
+    return 3; // LLM from mass data
+  }  
 }
 
 enum RatedMaturity{ // for organization
@@ -74,13 +85,15 @@ enum StepOutcomes{ // for foreign affairs
 }
 enum VisionOutcomes{ // for country
   Visions,
+}
 
+/*
  The implementation from self to selfless via _x Detachment, _y InnerPeace / RightOrWrong,
  and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
  and contributions by those connected to #WuNien. Evaluation of y_dimension is trained via 
  empirical observations and contributions by those connected to #Samadhi. The observable point 
  on X-Y plane is connected to stable f_evaluation for custom trainings and treatments.
-
+*/
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for person
     self.x_dimension * self.y_dimension * self.f_dimension
@@ -103,7 +116,6 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
     return "in_operation".to_string()
   }
 }
-*/
 
 /*
   Starting from naturally qualified persona, the build_InnerSpace initially and periodically
@@ -131,6 +143,7 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut f = HashMap::new(); // Taxonomy of f_dimension
   f.insert(0, "Person".to_string()); // sub f as the key
   
+  // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
   f.insert(-1, "Empathy Awareness".to_string());   
   f.insert(-2, "Kindness Awareness".to_string());
   f.insert(-3, "Animal Energy".to_string());   
@@ -152,6 +165,7 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut y = HashMap::new(); // Taxonomy of y_dimension
   y.insert(0, "Peace".to_string()); //sub f as the key
   
+  // y(-1) = 1 = y(1) Empathy to Tranquility enforced in y(2) = 1 of Equanimity
   y.insert(-1, "Empathy".to_string());      
   y.insert(-2, "Kindness".to_string());
   y.insert(-3, "Conscience 4".to_string()); 
@@ -169,6 +183,7 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut x = HashMap::new(); // Taxonomy of x_dimension
   x.insert(0, "Awareness".to_string()); // sub f as the key
   
+  // x(-1) = 1 = x(1) Culture & HonNhien enforced @ x(2)=1 of proper management in Equanimity
   x.insert(-1, "Cultural Influence".to_string());
   x.insert(-2, "Regional Influence".to_string());
   x.insert(-3, "National Influence".to_string()); 

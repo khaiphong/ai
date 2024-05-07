@@ -54,11 +54,10 @@ fn main() {
     evolution then degeneration to the right positive evaluation with oservable attributes:
  */
  
-  // persona mod
   /*
-   Given the following hashtag # and user description, we evaluate the experience in
-   determination the _y, _x and _f round cycle from Self to Selfless then Self at deeper
-   Detachmnet.
+   persona mod: Given the following hashtag # and user description, we evaluate the
+   experience in determination the _y, _x and _f round cycle from Self to Selfless then Self
+   at deeper Detachmnet.
   */
   struct Intuition; let _intuition = Intuition;
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
@@ -132,7 +131,6 @@ fn main() {
   println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod
-  
   let _l = Llama {};
   println!("I'm using {:?}!", _l);
   
@@ -143,7 +141,6 @@ fn main() {
   println!("I'm using {:?}!", _k);
   
   // front-end AGI
-  
   let _pmessage = platform_message();
   println!("I'm augmenting {:?}!", _pmessage);
   
@@ -162,8 +159,7 @@ fn main() {
   let _out_stream = out_stream();
   println!("I'm augmenting {:?}!", _out_stream); 
   
-    // back-end AGI
-  
+  // back-end AGI
   let _mu_agent1 = mu_agent1();
   println!("I'm augmenting {:?}!", _mu_agent1);
   let _mu_agent2 = mu_agent2();
@@ -199,8 +195,7 @@ fn main() {
   let _plan_agent2 = plan_agent2();
   println!("I'm augmenting {:?}!", _plan_agent2); 
   
-      // network AGI
-  
+  // network AGI
   let _family_agent1 = family_agent1();
   println!("I'm augmenting {:?}!", _family_agent1);
   let _family_agent2 = family_agent2();
