@@ -57,13 +57,14 @@ fn main() {
       Self at deeper Detachment.
       
       proven qualities of [ Honesty, Care, Budh, Patience, Trust, Qi, Art ] capable to enable
-      wider vision of an important are from [ -5 to +5 ] where 0 is the base of qualified
+      wider angle of a focused event are from [ -5 to +5 ] where 0 is the base of a qualified
       humanitas.
       
     The Description is not the Described! We use LLM to enable this possibility the persona
-    may take and personal rating of the outcomes for lessons learned. The outcome is its
-    vector of thesr rated qualities for self cultivations and their effects on the persona
-    botom line of Ignorance or Prajna, measurable at the bottom line of the outcome.
+    may take and personal rating of the outcomes for lessons learned based on its private
+    ratings of the suggested positive intelligence and its normative intelligence. The outcome
+    is its vector of these rated qualities for self cultivations and their effects on the
+    persona Ignorance or Prajna, measurable at the bottom line of important focused events.
   */
   struct Intuition; let _intuition = Intuition;
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
