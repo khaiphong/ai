@@ -1,16 +1,16 @@
 // scientific cultivatons of the persona's InnerSpace
-use crate::persona::Ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
-use crate::persona::Xdimension::{WuNien, AwarenessPrajna, KpX};
-use crate::persona::Fdimension::{HuiNeng, Gotama, KpF};
+use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
+use crate::persona::xdimension::{WuNien, AwarenessPrajna, KpX};
+use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 
 // LLM augmented with self-rating Qualities
-use crate::persona::Honesty::{honesty_agent1, honesty_agent2};
-use crate::persona::Care::{care_agent1, care_agent2};
-use crate::persona::Budh::{budh_agent1, budh_agent2};
-use crate::persona::Patience::{patience_agent1, patience_agent2};
-use crate::persona::Trust::{trust_agent1, trust_agent2};
-use crate::persona::QiGong::{qigong_agent1, qigong_agent2};
-use crate::persona::Art::{art_agent1, art_agent2};
+use crate::persona::honesty::{honesty_agent1, honesty_agent2};
+use crate::persona::care::{care_agent1, care_agent2};
+use crate::persona::budh::{budh_agent1, budh_agent2};
+use crate::persona::patience::{patience_agent1, patience_agent2};
+use crate::persona::trust::{trust_agent1, trust_agent2};
+use crate::persona::qi::{qi_agent1, qi_agent2};
+use crate::persona::art::{art_agent1, art_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
 use crate::agi::public::{Llama, Grok, Kp};
@@ -48,16 +48,22 @@ fn main() {
     y_evaluation and x_evaluation . We use mutable variable instead of self-evaluated defined
     const as starting points of Fibonacci Nunber for Prajna >< AGI, then modeling which is
     applicable to any kind of persona (person, Inter-Realm, organization, foreign affairs,
-    a nation, a lasting project, etc).
+    a nation, a lasting project, etc). For elites currently a person, the evaluation are
+    intended to help that person moving from evolution then degeneration to the right
+    positive evaluation with oservable attributes of:
 
-    For elites currently a person, the evaluation are intended to help that person moving from
-    evolution then degeneration to the right positive evaluation with oservable attributes:
- */
- 
-  /*
-   persona mod: Given the following hashtag # and user description, we evaluate the
-   experience in determination the _y, _x and _f round cycle from Self to Selfless then Self
-   at deeper Detachmnet.
+      persona mod: Given the following hashtag # and user description, we evaluate the
+      experience in determination the _y, _x and _f round cycle from Self to Selfless then
+      Self at deeper Detachment.
+      
+      proven qualities of [ Honesty, Care, Budh, Patience, Trust, Qi, Art ] capable to enable
+      wider vision of an important are from [ -5 to +5 ] where 0 is the base of qualified
+      humanitas.
+      
+    The Description is not the Described! We use LLM to enable this possibility the persona
+    may take and personal rating of the outcomes for lessons learned. The outcome is its
+    vector of thesr rated qualities for self cultivations and their effects on the persona
+    botom line of Ignorance or Prajna, measurable at the bottom line of the outcome.
   */
   struct Intuition; let _intuition = Intuition;
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
@@ -69,6 +75,7 @@ fn main() {
   struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
   struct Prajna; let _wisdom = Prajna; 
   struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
+  
   
   let _tm = TranscendentalMeditation {};
   println!("I'm using {:?}!", _tm);
@@ -116,9 +123,9 @@ fn main() {
   let _trust_agent2 = trust_agent2();
   println!("I'm augmenting {:?}!", _trust_agent2);  
 
-  let _qigong_agent1 = qigong_agent1();
+  let _qigong_agent1 = qi_agent1();
   println!("I'm augmenting {:?}!", _qigong_agent1);
-  let _qigong_agent2 = qigong_agent2();
+  let _qigong_agent2 = qi_agent2();
   println!("I'm augmenting {:?}!", _qigong_agent2);  
 
   let _art_agent1 = art_agent1();

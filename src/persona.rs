@@ -7,13 +7,34 @@
     AGI and specialized agents custom made for the subject, we can help the subject know
     more about oneself and How to rightly evolve in one's Continuity of the consciousness.
 */
+
+#[derive(Debug)]
+pub enum Qualities {
+  Honesty(String), // "Honesty / TRUTH / Chân"
+  Care(String), 
+  Budh(String),    // "Budh / Morality / Thiện"
+  Patience(String), // "Patience / Nhẩn"
+  Trust(String),
+  Qi(String),
+  Art(String),
+}
+ 
+pub mod honesty;  // Knowledge graph to study the Described focused event and best possible
+pub mod care;     // outcomes honestly evaluated by the persona of personal lessons learned
+pub mod budh;     // relevant to the norm of the mass
+pub mod patience;
+pub mod trust;
+pub mod qi;
+pub mod art;
+
 #[derive(Debug)]
 pub struct InnerSpace {
 
   pub x_dimension: i32,
   pub y_dimension: i32,
   pub f_dimension: i32,
-
+  
+  pub qualities: Vec<i32>, // rated proven qualities and their effects at the bottom line
  /* 
   use variants of identified attributes to further classify _y, _x. _f via knowledge graph:  
   _patience, _budh, _care, _honesty,  Maturity for organization, Steps for foreign affairs,
@@ -21,57 +42,33 @@ pub struct InnerSpace {
  */
 }
 
-pub mod Ydimension;
+pub mod ydimension;
 
-pub mod Xdimension;
+pub mod xdimension;
 
-pub mod Fdimension;
+pub mod fdimension;
 
-
-#[derive(Debug)]
-pub enum Qualities {
-  Patience(String), // "Patience / Nhẩn"
-  Budh(String),    // "Budh / Morality / Thiện"
-  Care(String), 
-  Honesty(String), // "Honesty / TRUTH / Chân"
-  Trust(String),
-  QiGong(String),
-  Art(String),
-}
-
-pub mod Patience;
-pub mod Budh;
-pub mod Care;
-pub mod Honesty;
-pub mod Trust;
-pub mod QiGong;
-pub mod Art;
 
 impl Qualities {
-  fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
-    return 3; // LLM from mass data
-  }
-
-  fn b_evaluation(&self) -> i32 { // budh or morality at the bottom line of Right or Wrong
-    return 3; // LLM from mass data
-  }
-
-  fn c_evaluation(&self) -> i32 { // c indicates one's seriousness and commitments
-    return 3; // LLM from mass data
-  }
 
   fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
     return 1; // LLM from mass data
   }
-  
-  fn t_evaluation(&self) -> i32 { // t indicates one's trust or faith
+  fn c_evaluation(&self) -> i32 { // c indicates one's seriousness and commitments
     return 3; // LLM from mass data
   }
-    
+  fn b_evaluation(&self) -> i32 { // budh or morality at the bottom line of Right or Wrong
+    return 3; // LLM from mass data
+  }
+  fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
+    return 3; // LLM from mass data
+  }
+  fn t_evaluation(&self) -> i32 { // t indicates one's trust or faith
+    return 3; // LLM from mass data
+  }    
   fn q_evaluation(&self) -> i32 { // q indicates one's wusu qi level 
     return 3; // LLM from mass data
   }
-  
   fn a_evaluation(&self) -> i32 { // a indicates one's level of transcending art
     return 3; // LLM from mass data
   }  
@@ -99,19 +96,15 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
     self.x_dimension * self.y_dimension * self.f_dimension
   
   }
-
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
-  
   fn maturity_level(&self) -> String { // f(_x,_y) for organization
     return "self sustainable".to_string()
   }
-  
   fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
     return "decisive_battle".to_string()
   }
-  
   fn nation_happiness(&self) -> String { // f(_x,_y) for a nation
     return "in_operation".to_string()
   }
@@ -132,10 +125,10 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut _y = 0;    // to be evaluated in blockchain of user self-evaluation and expert
   let mut _x = 0;    // opinions from fact-base tracked records in engaged living.
   
-  let mut _p = 0;    // Patience / Nhẩn
-  let mut _b = 0;    // Budh / Morality / Thiện / Right & Wrong 
-  let mut _c = 0;    // Care
   let mut _h = 0;    // Honesty / TRUTH / Chân
+  let mut _c = 0;    // Care
+  let mut _b = 0;    // Budh / Morality / Thiện / Right & Wrong 
+  let mut _p = 0;    // Patience / Nhẩn
   let mut _t = 0;    // Trust / Faith to perfection 
   let mut _q = 0;    // QiGong to perfection
   let mut _a = 0;    // arts to perfection
@@ -200,53 +193,58 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   x.insert(6, "Using cosmic energy for self-protection".to_string());   // deeper innovation
   x.insert(7, "Directing cosmic energy to help others".to_string());    // deeper innovation
 
-  let mut p = HashMap::new(); // Taxonomy of p_dimension
-  p.insert(0, "Nhan".to_string()); // sub p as the key
-
-  let mut b = HashMap::new(); // Taxonomy of b_dimension
-  b.insert(0, "Thien".to_string()); // sub b as the key
-
-  let mut c = HashMap::new(); // Taxonomy of c_dimension
-  c.insert(0, "Human".to_string()); // sub c as the key
-
   let mut h = HashMap::new(); // Taxonomy of h_dimension
   h.insert(0, "Chan".to_string()); // sub c as the key
-  
-  
-  let _patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
-  let _budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
-  let _care = Qualities::Care(String::from("CareCases")); // recorded proof
+  let mut c = HashMap::new(); // Taxonomy of c_dimension
+  c.insert(0, "Human".to_string()); // sub c as the key
+  let mut b = HashMap::new(); // Taxonomy of b_dimension
+  b.insert(0, "Thien".to_string()); // sub b as the key
+  let mut p = HashMap::new(); // Taxonomy of p_dimension
+  p.insert(0, "Nhan".to_string()); // sub p as the key
+  let mut t = HashMap::new(); // Taxonomy of t_dimension
+  t.insert(0, "Trust".to_string()); // sub t as the key
+  let mut q = HashMap::new(); // Taxonomy of q_dimension
+  q.insert(0, "Qi".to_string()); // sub q as the key
+  let mut a = HashMap::new(); // Taxonomy of a_dimension
+  a.insert(0, "Art".to_string()); // sub a as the key
+
   let _honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
+  let _care = Qualities::Care(String::from("CareCases")); // recorded proof
+  let _budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
+  let _patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
+  let _trust = Qualities::Trust(String::from("TrustCases"));  // recorded proof
+  let _qi = Qualities::Qi(String::from("QiCases"));  // recorded proof
+  let _art = Qualities::Art(String::from("ArtCases"));  // recorded proof  
   
-  _f = f_initiation(f); 
+  let mut v: Vec<i32> = Vec::new();
+  
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
+  _f = f_evaluation(f); 
+  v = v_evaluation(v); // vector of qualities based on the outcomes of engaged living  
 
-  _p = p_evaluation(p); // patience based on the outcomes in engaged living   
-  _b = b_evaluation(b); // budh based on the outcomes in engaged living 
-  _c = c_evaluation(c); // care based on the outcomes in engaged living 
   _h = h_evaluation(h); // honesty based on the outcomes of engaged living
+  _c = c_evaluation(c); // care based on the outcomes in engaged living
+  _b = b_evaluation(b); // budh based on the outcomes in engaged living 
+  _p = p_evaluation(p); // patience based on the outcomes in engaged living
+  _t = t_evaluation(t); // trust based on the outcomes of engaged living
+  _q = q_evaluation(q); // qi based on the outcomes of engaged living
+  _a = a_evaluation(a); // art based on the outcomes of engaged living
   
+
   // evaluation of InnerSpace
   let me = InnerSpace {
     f_dimension: _f, 
     y_dimension: _y,
     x_dimension: _x,
     
+    qualities: v,
   };
 
   return me;
   
-} // end of fyx
+} // end of fyxv
 
-fn f_initiation(f: HashMap<i32, String>) -> i32 {
-
-    println!("Suggested Inner Space for cultivation");
-       for (key, value) in &f {
-        println!("{key}: {value}");
-    }
-    return 0;
-}
 fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
    println!("Attributes of Transcendental Inner Peace");
@@ -267,36 +265,16 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
    // somewhere for tracking record in different cased of claimed #   
     return 0;
 }
+fn f_evaluation(f: HashMap<i32, String>) -> i32 {
 
-fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Patience");
-   for (key, value) in &p {
+    println!("Suggested Inner Space for cultivation");
+       for (key, value) in &f {
         println!("{key}: {value}");
-    }    
-   // evaluate the transient value of b in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
+    }
     return 0;
 }
 
-fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Budh sensing the Right from Wrong");
-   for (key, value) in &b {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of b in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-
-fn c_evaluation(c: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Care for one and the environment");
-   for (key, value) in &c {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of c in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
+// Qualities are evaluated @ -5. -4. -3. -2. -1, 0, 1, 2, 3, 4, 5
 fn h_evaluation(h: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
    println!("Attributes of Honesty / Truth in one's Continuity of the consciousness");
    for (key, value) in &h {
@@ -306,5 +284,69 @@ fn h_evaluation(h: HashMap<i32, String>) -> i32 { // return evaluated value to t
    // somewhere for tracking record in different cased of claimed #   
     return 0;
 }
+fn c_evaluation(c: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Care for one and the environment");
+   for (key, value) in &c {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of c in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Budh sensing the Right from Wrong");
+   for (key, value) in &b {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of b in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Patience");
+   for (key, value) in &p {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of p in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Trust / Faith in one's Continuity of the consciousness");
+   for (key, value) in &t {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of t in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+fn q_evaluation(q: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Qi in one's Continuity of the consciousness");
+   for (key, value) in &q {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of q in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
+fn a_evaluation(a: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Attributes of Trust / Faith in one's Continuity of the consciousness");
+   for (key, value) in &a {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of a in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0;
+}
 
+fn v_evaluation(v: Vec<i32>) -> Vec<i32> { // return evaluated value to the blockchain
+   let v = vec![1, 2, 3, 4, 5, 6, 7]; // copu from past evaluation then evaluated
+   println!("Rated measurable Attributes in one's Continuity of the consciousness");
+   for i in &v {
+        println!("{i}");
+    }    
+   // evaluate the transient value of v in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return v;
+}
 
