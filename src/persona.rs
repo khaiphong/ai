@@ -340,8 +340,19 @@ fn a_evaluation(a: HashMap<i32, String>) -> i32 { // return evaluated value to t
 }
 
 fn v_evaluation(v: Vec<i32>) -> Vec<i32> { // return evaluated value to the blockchain
-   let v = vec![1, 2, 3, 4, 5, 6, 7]; // copu from past evaluation then evaluated
+   let mut v = vec![-5, -2, -1, 0, 1, 2, 3]; // copu from past evaluation then evaluated
    println!("Rated measurable Attributes in one's Continuity of the consciousness");
+   // evaluation one's honesty (i=0)
+   let honesty: &i32 = &v[0];
+   println!("The first element is {honesty}");
+   
+   v[0] = -3;
+   // evaluation one's care (i=1)
+   // evaluation one's budh (i=2)
+   // evaluation one's patience (i=3)
+   // evaluation one's trust (i=4)
+   // evaluation one's qi (i=5)
+   // evaluation one's art (i=6)
    for i in &v {
         println!("{i}");
     }    
