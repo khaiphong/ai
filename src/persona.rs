@@ -49,7 +49,7 @@ pub mod xdimension;
 pub mod fdimension;
 
 
-impl Qualities {
+impl Qualities { // rated qualities from -5 to +5
 
   fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
     return 1; // LLM from mass data
@@ -77,10 +77,10 @@ impl Qualities {
 enum RatedMaturity{ // for organization
   Maturity,
 }
-enum StepOutcomes{ // for foreign affairs
+enum StepOutcomes{ // for foreign affairs: 0 is ready on the pipelie rated at +1 to +5
   Steps,
 }
-enum VisionOutcomes{ // for country
+enum VisionOutcomes{ // for country: 0 is ready on the pipelie rated at +1 to +5
   Visions,
 }
 
@@ -134,79 +134,79 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut _a = 0;    // arts to perfection
 
   let mut f = HashMap::new(); // Taxonomy of f_dimension
-  f.insert(0, String::from("Person")); // sub f as the key
+  f.insert(0, String::from("F 0")); //  Person sub f as the key
   
   // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
-  f.insert(-1, String::from("Empathy Awareness"));   
-  f.insert(-2, String::from("Kindness Awareness"));
-  f.insert(-3, String::from("Animal Energy"));   
-  f.insert(-4, String::from("Extreme Desire")); 
-  f.insert(-5, String::from("Smelly 1"));   // only observable in spirits
-  f.insert(-6, String::from("Smelly 2"));
-  f.insert(-7, String::from("Smelly 3"));  
-  f.insert(-8, String::from("Smelly 4"));
+  f.insert(-1, String::from("F-1"));   // Empathy Awareness
+  f.insert(-2, String::from("F-2"));   // Kindness Awareness
+  f.insert(-3, String::from("F-3"));   // Animal Energy
+  f.insert(-4, String::from("F-4"));   // Extreme Desire
+  f.insert(-5, String::from("F-5"));   // Smelly 1 only observable in spirits
+  f.insert(-6, String::from("F-6"));   // Smelly 2
+  f.insert(-7, String::from("F-7"));   // Smelly 3
+  f.insert(-8, String::from("F-8"));   // Smelly 4
   
-  f.insert(1, String::from("Empathy Awareness")); 
-  f.insert(2, String::from("Purity Awareness"));   // targeted community
-  f.insert(3, String::from("Samadhi Signed Posts")); 
-  f.insert(4, String::from("Selfless Awareness")); 
-  f.insert(5, String::from("Visible Awareness-Prajna"));           // practical demonstration
-  f.insert(6, String::from("Awareness-Prajna in engaged Living")); // practical innovations
-  f.insert(7, String::from("Awareness-Prajna in Forecasting and Simulation"));// quantum eff
-  f.insert(8, String::from("Samadhi-Prajna"));     // a new Era of consciousness technologies
+  f.insert(1, String::from("F+1"));  // Empathy Awareness
+  f.insert(2, String::from("F+2"));  // Purity Awareness targeted community
+  f.insert(3, String::from("F+3"));  // Samadhi Signed Posts
+  f.insert(4, String::from("F+4"));  // Selfless Awareness
+  f.insert(5, String::from("F+5"));  // Visible Awareness-Prajna practical demonstration
+  f.insert(6, String::from("F+6"));  // Awareness-Prajna in engaged Living innovations
+  f.insert(7, String::from("F+7"));  // Awareness-Prajna in Forecasting and Simulation quantum
+  f.insert(8, String::from("F+8"));  // Samadhi-Prajna a new Era of consciousness technologies
   
   let mut y = HashMap::new(); // Taxonomy of y_dimension
-  y.insert(0, String::from("Peace")); //sub f as the key
+  y.insert(0, String::from("Y 0")); // Peace sub f as the key
   
   // y(-1) = 1 = y(1) Empathy to Tranquility enforced in y(2) = 1 of Equanimity
-  y.insert(-1, String::from("Empathy"));      
-  y.insert(-2, String::from("Kindness"));
-  y.insert(-3, String::from("Conscience 4")); 
-  y.insert(-4, String::from("Conscience 3")); 
-  y.insert(-5, String::from("Conscience 2")); 
-  y.insert(-6, String::from("Conscience 1"));
+  y.insert(-1, String::from("Y-1"));   // Empathy
+  y.insert(-2, String::from("Y-2"));   // Kindness
+  y.insert(-3, String::from("Y-3"));   // Conscience
+  y.insert(-4, String::from("Y-4"));   // Conscience-1
+  y.insert(-5, String::from("Y-5"));   // Conscience-2
+  y.insert(-6, String::from("Y-6"));   // Conscience-3
   
-  y.insert(1, String::from("Tranquillity"));  
-  y.insert(2, String::from("Equanimity"));     // target community
-  y.insert(3, String::from("Purity")); 
-  y.insert(4, String::from("Not-Self")); 
-  y.insert(5, String::from("Nothingness"));   // Gotama's impass
-  y.insert(6, String::from("Unmoving"));      // Gotama's impass
+  y.insert(1, String::from("Y+1"));    // Tranquillity
+  y.insert(2, String::from("Y+2"));    // Equanimity target community
+  y.insert(3, String::from("Y+3"));    // Purity
+  y.insert(4, String::from("Y+4"));    // Not-Self
+  y.insert(5, String::from("Y+5"));    // Nothingness Gotama's impass
+  y.insert(6, String::from("Y+6"));    // Unmoving Gotama's impass
   
   let mut x = HashMap::new(); // Taxonomy of x_dimension
-  x.insert(0, String::from("Awareness")); // sub f as the key
+  x.insert(0, String::from("X 0")); // Awareness sub f as the key
   
   // x(-1) = 1 = x(1) Culture & HonNhien enforced @ x(2)=1 of proper management in Equanimity
-  x.insert(-1, String::from("Cultural Influence"));
-  x.insert(-2, String::from("Regional Influence"));
-  x.insert(-3, String::from("National Influence")); 
-  x.insert(-4, String::from("Veiled Right and Wrong")); 
-  x.insert(-5, String::from("Binding Word")); 
-  x.insert(-6, String::from("Binding Image"));
-  x.insert(-7, String::from("Clinging Thought")); 
+  x.insert(-1, String::from("X-1"));  // Cultural Influence
+  x.insert(-2, String::from("X-2"));  // Regional Influence
+  x.insert(-3, String::from("X-3"));  // National Influence
+  x.insert(-4, String::from("X-4"));  // Veiled Right and Wrong
+  x.insert(-5, String::from("X-5"));  // Binding Word
+  x.insert(-6, String::from("X-6"));  // Binding Image
+  x.insert(-7, String::from("X-7"));  // Clinging Thought
   
-  x.insert(1, String::from("HonNhien")); 
-  x.insert(2, String::from("Proper Management of that Freshness"));  // target community
-  x.insert(3, String::from("Knowing conditions to make up that Freshness")); 
-  x.insert(4, String::from("Discovering process to produce the Freshness")); 
-  x.insert(5, String::from("Knowing the source of one's Thought"));      // breakout
-  x.insert(6, String::from("Using cosmic energy for self-protection"));  // deeper innovation
-  x.insert(7, String::from("Directing cosmic energy to help others"));   // deeper innovation
+  x.insert(1, String::from("X+1"));   // HonNhien
+  x.insert(2, String::from("X+2"));   // Proper Management of that Freshness target community
+  x.insert(3, String::from("X+3"));   // Knowing conditions to make up that Freshness
+  x.insert(4, String::from("X+4"));   // Discovering process to produce the Freshness
+  x.insert(5, String::from("X+5"));   // Knowing the source of one's Thought breakout
+  x.insert(6, String::from("X+6"));   // Using cosmic energy for self-protection innovation
+  x.insert(7, String::from("X+7"));   // Directing cosmic energy to help others innovation
 
-  let mut h = HashMap::new(); // Taxonomy of h_dimension
-  h.insert(0, String::from("Chan")); // sub c as the key
-  let mut c = HashMap::new(); // Taxonomy of c_dimension
-  c.insert(0, String::from("Human")); // sub c as the key
+  let mut h = HashMap::new(); // Taxonomy of h_dimension from -5 to +5
+  h.insert(0, String::from("H 0")); // Honesty / Chan
+  let mut c = HashMap::new(); // Taxonomy of c_dimension from -5 to +5
+  c.insert(0, String::from("C 0")); // Care from humanity upward
   let mut b = HashMap::new(); // Taxonomy of b_dimension
-  b.insert(0, String::from("Thien")); // sub b as the key
+  b.insert(0, String::from("B 0")); // Budh Thien
   let mut p = HashMap::new(); // Taxonomy of p_dimension
-  p.insert(0, String::from("Nhan")); // sub p as the key
+  p.insert(0, String::from("P 0")); // Patience Nhan
   let mut t = HashMap::new(); // Taxonomy of t_dimension
-  t.insert(0, String::from("Trust")); // sub t as the key
+  t.insert(0, String::from("T 0")); // Trust Faith sub t as the key
   let mut q = HashMap::new(); // Taxonomy of q_dimension
-  q.insert(0, String::from("Qi")); // sub q as the key
+  q.insert(0, String::from("Q 0")); // Qi Khi
   let mut a = HashMap::new(); // Taxonomy of a_dimension
-  a.insert(0, String::from("Art")); // sub a as the key
+  a.insert(0, String::from("A 0")); // Art
 
   let _honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
   let _care = Qualities::Care(String::from("CareCases")); // recorded proof

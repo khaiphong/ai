@@ -13,7 +13,7 @@ use crate::persona::qi::{qi_agent1, qi_agent2};
 use crate::persona::art::{art_agent1, art_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
-use crate::agi::public::{Llama, Grok, Kp};
+use crate::agi::public::{Granite, Llama, Grok, Kp};
 
 // front-end persona facing services
 use crate::front::mu::{platform_message, service_message};
@@ -124,10 +124,10 @@ fn main() {
   let _trust_agent2 = trust_agent2();
   println!("I'm augmenting {:?}!", _trust_agent2);  
 
-  let _qigong_agent1 = qi_agent1();
-  println!("I'm augmenting {:?}!", _qigong_agent1);
-  let _qigong_agent2 = qi_agent2();
-  println!("I'm augmenting {:?}!", _qigong_agent2);  
+  let _qi_agent1 = qi_agent1();
+  println!("I'm augmenting {:?}!", _qi_agent1);
+  let _qi_agent2 = qi_agent2();
+  println!("I'm augmenting {:?}!", _qi_agent2);  
 
   let _art_agent1 = art_agent1();
   println!("I'm augmenting {:?}!", _art_agent1);
@@ -139,9 +139,12 @@ fn main() {
   println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod
+  let _i = Granite {};
+  println!("I'm using {:?}!", _i);
+
   let _l = Llama {};
   println!("I'm using {:?}!", _l);
-  
+
   let _g = Grok {};
   println!("I'm using {:?}!", _g);
   
