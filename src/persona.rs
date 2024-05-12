@@ -218,6 +218,8 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   
   let mut v: Vec<i32> = Vec::new();
   
+  // dynamic between one's avaluation and the community's prediction
+  
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
   _f = f_evaluation(f); 
@@ -234,11 +236,11 @@ pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 
   // evaluation of InnerSpace
   let me = InnerSpace {
-    f_dimension: _f, 
     y_dimension: _y,
     x_dimension: _x,
     
     qualities: v,
+    f_dimension: _f, 
   };
 
   return me;
