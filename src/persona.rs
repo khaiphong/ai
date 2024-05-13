@@ -90,6 +90,9 @@ enum VisionOutcomes{ // for country: 0 is ready on the pipelie rated at +1 to +5
  and contributions by those connected to #WuNien. Evaluation of y_dimension is trained via 
  empirical observations and contributions by those connected to #Samadhi. The observable point 
  on X-Y plane is connected to stable f_evaluation for custom trainings and treatments.
+ 
+ Create custom types Y from [-6 to +6], X from [-7 to +7], and F from [-8 to +8] to enforce
+ their validity and behaviours in using Rust compiler, LLM models, and KP custom gdb.
 */
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for person

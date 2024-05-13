@@ -82,21 +82,21 @@ fn main() {
   println!("I'm using {:?}!", _tm);
   let _vp = Vipassana {};
   println!("I'm using {:?}!", _vp);
-  let _kpy = KpY {};
+  let _kpy = KpY::new(0);
   println!("I'm using {:?}!", _kpy);
   
   let _transcendental_awareness = WuNien {};
   println!("I'm evaluating my {:?}!", _transcendental_awareness);
   let _awareness_prajna = AwarenessPrajna {};
   println!("I'm evaluating my {:?}!", _awareness_prajna);
-  let _kpx = KpX {};
+  let _kpx = KpX::new(0);
   println!("I'm evaluating my {:?}!", _kpx);
   
   let _hn = HuiNeng {};
   println!("I'm evaluating {:?}!", _hn);
   let _go = Gotama {};
   println!("I'm evaluating {:?}!", _go);
-  let _kpf = KpF {};
+  let _kpf = KpF::new(0);
   println!("I'm evaluating my {:?}!", _kpf);
   
   let _honesty_agent1 = honesty_agent1();
