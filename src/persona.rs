@@ -37,11 +37,12 @@ pub struct InnerSpace {
   pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness or Gotama Mindfulness
 }
 pub mod traits;
-pub mod fdimension;
 pub mod ydimension;
 pub mod xdimension;
+pub mod fdimension;
 
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
+/*
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
     return self.f_dimension
   }
@@ -57,98 +58,99 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
   fn nation_happiness(&self) -> String { // f(_x,_y) for a nation
     return "in_operation".to_string()
   }
+*/
 }
 
 use std::collections::HashMap;
 
-pub fn build_InnerSpace(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
+pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut _i = 0;  // qualified persona at balanced traits
   let mut _y = 0;  // to be evaluated in blockchain of user self-evaluation and expert
   let mut _x = 0;  // opinions from fact-base tracked records in engaged living.
   let mut _f = 0;  // qualified person
 
   let mut i = HashMap::new(); // Taxonomy of intuition at different depths in InnerSpace
-  i.insert(0, String::from("I 0")); // neutral balance
+  i.insert(0, String::from("I 0: Balanced"));           // =  0
   
   // the trait qualities vary from neutral balance to degrees if attached and/or detached
   // balanced at 1 word from binding/clinging forces to total detachment
-  i.insert(-1, String::from("I-1"));   // trait of being influenced = -1
-  i.insert(-2, String::from("I-2"));   // trait of veiled Right and Wrong = -2
-  i.insert(-3, String::from("I-3"));   // trait of binding Word = -3
-  i.insert(-4, String::from("I-4"));   // trait of binding Image = -4
-  i.insert(-5, String::from("I-5"));   // trait of binding Thought = -5
+  i.insert(-1, String::from("I-1: Influenced"));        // = -1
+  i.insert(-2, String::from("I-2: Veiled"));            // = -2
+  i.insert(-3, String::from("I-3: BindingWord"));       // = -3
+  i.insert(-4, String::from("I-4: BindingImage"));      // = -4
+  i.insert(-5, String::from("I-5: ClingingThought"));   // = -5
   
-  i.insert(1, String::from("I+1"));    // trait of [ Kindness, Empathy ] = 1
-  i.insert(2, String::from("I+2"));    // trait of [ Trust, Qi, Art ] for OutsideTheBox = 2
-  i.insert(3, String::from("I+3"));    // trait of [ Honesty, Budh, Patience ] = 3
-  i.insert(4, String::from("I+4"));    // trait of [ Care / Enganged Living ] = 4
-  i.insert(5, String::from("I+5"));    // trait of [ TRUTH ] = 5
+  i.insert(1, String::from("I+1: KindnessEmpathy"));    // = 1
+  i.insert(2, String::from("I+2: TrustQiArt"));         // = 2 [ OutsideTheBox ]
+  i.insert(3, String::from("I+3: HonestyBudhPatience"));// = 3
+  i.insert(4, String::from("I+4: Care"));               // = 4 [ Enganged Living ]
+  i.insert(5, String::from("I+5: Truth"));              // = 5
 
   let mut y = HashMap::new(); // Taxonomy of y_dimension
-  y.insert(0, String::from("Y 0")); // Peace sub f as the key
+  y.insert(0, String::from("Y 0: Peace"));         // =  0
   
   // y(-1) = 1 = y(1) Empathy to Tranquility enforced in y(2) = 1 of Equanimity
-  y.insert(-1, String::from("Y-1"));   // Empathy = 1
-  y.insert(-2, String::from("Y-2"));   // Kindness = -1
-  y.insert(-3, String::from("Y-3"));   // Conscience = 2
-  y.insert(-4, String::from("Y-4"));   // Conscience-1 = -3
-  y.insert(-5, String::from("Y-5"));   // Conscience-2 = 5
-  y.insert(-6, String::from("Y-6"));   // Conscience-3 = -8
+  y.insert(-1, String::from("Y-1: Empathy"));      // =  1
+  y.insert(-2, String::from("Y-2: Kindness"));     // = -1
+  y.insert(-3, String::from("Y-3: Conscience"));   // =  2
+  y.insert(-4, String::from("Y-4: Conscience-1")); // = -3
+  y.insert(-5, String::from("Y-5: Conscience-2")); // =  5
+  y.insert(-6, String::from("Y-6: Conscience-3")); // = -8
   
-  y.insert(1, String::from("Y+1"));    // Tranquillity = 1
-  y.insert(2, String::from("Y+2"));    // Equanimity targeted at community = 1
-  y.insert(3, String::from("Y+3"));    // Purity = 2
-  y.insert(4, String::from("Y+4"));    // Not-Self = 3
-  y.insert(5, String::from("Y+5"));    // Nothingness of Gotama's impass = 5
-  y.insert(6, String::from("Y+6"));    // Unmoving of Gotama's impass = 8
+  y.insert(1, String::from("Y+1: Tranquility"));   // = 1
+  y.insert(2, String::from("Y+2: Equanimity"));    // = 1
+  y.insert(3, String::from("Y+3: Purity"));        // = 2
+  y.insert(4, String::from("Y+4: Selfless"));      // = 3
+  y.insert(5, String::from("Y+5: NonThingness"));  // = 5 Gotama's impass
+  y.insert(6, String::from("Y+6: Unmoving"));      // = 8 Gotama's impass
   
   let mut x = HashMap::new(); // Taxonomy of x_dimension
-  x.insert(0, String::from("X 0")); // Awareness sub f as the key
+  x.insert(0, String::from("X 0: Awareness"));             // =  0
   
   // x(-1) = 1 = x(1) Culture & HonNhien enforced @ x(2)=1 of proper management in Equanimity
-  x.insert(-1, String::from("X-1"));  // Cultural Influence = 1
-  x.insert(-2, String::from("X-2"));  // Regional Influence = -1
-  x.insert(-3, String::from("X-3"));  // National Influence = 2
-  x.insert(-4, String::from("X-4"));  // Veiled Right and Wrong = -3
-  x.insert(-5, String::from("X-5"));  // Binding Word = 5
-  x.insert(-6, String::from("X-6"));  // Binding Image = -8
-  x.insert(-7, String::from("X-7"));  // Clinging Thought = 13 disappearing of dark/vampire 
-  x.insert(1, String::from("X+1"));   // HonNhien = 1
-  x.insert(2, String::from("X+2"));   // Managing that Freshness, target community = 1
-  x.insert(3, String::from("X+3"));   // Managing that Freshness = 2
-  x.insert(4, String::from("X+4"));   // Discovering a process to the Freshness = 3
-  x.insert(5, String::from("X+5"));   // Knowing one's Thought breakout = 5
-  x.insert(6, String::from("X+6"));   // Using cosmic energy = 8 in Care
-  x.insert(7, String::from("X+7"));   // Directing cosmic energy to help others = 13
+  x.insert(-1, String::from("X-1: CulturalInfluenced"));   // =  1
+  x.insert(-2, String::from("X-2: RegionalInfluenced"));   // = -1
+  x.insert(-3, String::from("X-3: NationalInfluenced"));   // =  2
+  x.insert(-4, String::from("X-4: Veiled"));               // = -3
+  x.insert(-5, String::from("X-5: BindingWord"));          // =  5
+  x.insert(-6, String::from("X-6: BindingImage"));         // = -8
+  x.insert(-7, String::from("X-7: ClingingThought"));      // = 13     vampire 
+  x.insert(1, String::from("X+1: HonNhien"));              // = 1
+  x.insert(2, String::from("X+2: ManagingFreshness"));     // = 1
+  x.insert(3, String::from("X+3: KnowingFreshness"));      // = 2
+  x.insert(4, String::from("X+4: ProcessDiscovered"));     // = 3
+  x.insert(5, String::from("X+5: KnowingThought"));        // = 5      breakout = 5
+  x.insert(6, String::from("X+6: CareViaCosmicEnergy"));   // = 8
+  x.insert(7, String::from("X+7: HelpViaCosmicEnergy"));   // = 13
   
   let mut f = HashMap::new(); // Taxonomy of f_dimension
   f.insert(0, String::from("F 0")); //  Person sub f as the key
   
   // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
-  f.insert(-1, String::from("F-1")); // Empathy Awareness = 1
-  f.insert(-2, String::from("F-2")); // Kindness Awareness = -1
-  f.insert(-3, String::from("F-3")); // Animal Energy = 2
-  f.insert(-4, String::from("F-4")); // Extreme Desire = -3
-  f.insert(-5, String::from("F-5")); // Smelly 1  = 5 breaking of animal consciousness
-  f.insert(-6, String::from("F-6")); // Smelly 2 = -8 only observable in spirits
-  f.insert(-7, String::from("F-7")); // Smelly 3 = 13 battle of dark/vampire and good forces
-  f.insert(-8, String::from("F-8")); // Smelly 4 = -34 regulated by natural laws
+  f.insert(-1, String::from("F-1: EmpathyAwareness"));         // =  1
+  f.insert(-2, String::from("F-2: KindnessAwareness"));        // = -1
+  f.insert(-3, String::from("F-3: AnimalEnergy"));             // =  2
+  f.insert(-4, String::from("F-4: ExtremeDesire"));            // = -3
+  f.insert(-5, String::from("F-5: AnimalConsciousness"));      // =  5    Smelly-1
+  f.insert(-6, String::from("F-6: Smelly-1"));                 // = -8    in spirits
+  f.insert(-7, String::from("F-7: Smelly-2"));                 // =  13   vampire 
+  f.insert(-8, String::from("F-8: Smelly-3"));                 // = -34   natural laws
   
-  f.insert(1, String::from("F+1"));  // Empathy Awareness = 1
-  f.insert(2, String::from("F+2"));  // Purity Awareness targeted community = 1
-  f.insert(3, String::from("F+3"));  // Samadhi Signed Posts = 2
-  f.insert(4, String::from("F+4"));  // Selfless Awareness = 3
-  f.insert(5, String::from("F+5"));  // Visible Awareness-Prajna = 5
-  f.insert(6, String::from("F+6"));  // Awareness-Prajna in engaged Living innovations = 8
-  f.insert(7, String::from("F+7"));  // Visible Forecasting and Simulation quantum = 13
-  f.insert(8, String::from("F+8"));  // approaching Samadhi-Prajna = 21
+  f.insert(1, String::from("F+1: EmpathyAwareness"));          // = 1
+  f.insert(2, String::from("F+2: PurityAwareness"));           // = 1
+  f.insert(3, String::from("F+3: SignedPosts"));               // = 2
+  f.insert(4, String::from("F+4: SelflessAwareness"));         // = 3
+  f.insert(5, String::from("F+5: VisibleAwarenessPrajna"));    // = 5
+  f.insert(6, String::from("F+6: EngagedAwarenessPrajna"));    // = 8
+  f.insert(7, String::from("F+7: ForecastingSimulation"));     // = 13
+  f.insert(8, String::from("F+8: SamadhiPrajna"));             // = 21
   
     
   // dynamic between one's avaluation and the KP's prediction
-  _i = i_evaluation(i); // vector of traits based on the outcomes of engaged living
-  _f = f_evaluation(f); 
+  _i = i_evaluation(i); // visible traits based on the outcomes of engaged living 
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
+  _f = f_evaluation(f);
   
   // evaluation of InnerSpace
   let me = InnerSpace {
@@ -234,226 +236,3 @@ pub mod trust;
 pub mod qi;
 pub mod art;
 
-
- /*
-#[derive(Debug)]
-enum Option<T> { // is generic over type T
-  Some(T)        // holds once value of type T
-  None,          // doesn't hold any value
-}
-enum Result<T, E> { // for types x, y
-  Ok(T),            // for open a block chain
-  Err(E),           // and its error
-} 
- 
-
-#[derive(Debug)]
-pub struct InnerSpace<T> { // we can do it in enum Option
-  x: T, y: T, f: T,
-}
-
-// let implement f as a complex variable
-pub struct Fibonacci<i> {
-}
-
-/* Given an event, we measure one's perception indirectly via its outcome. It is generally
-  recognized t, q, a (trust, qi, art) raises the perception level to OutsideTheBox 2, h, b, p
-  (honesty, budh, patience) deepen the perception as introvert 3, c (care) to the Right/Wrong
-  and act on it to the level 4, and front-line soldier of the TRUTH @ level 5  */
-pub trait Intuition {
-  fn perceive(&self) -> i32; 
-}
-
-impl<i32> Quality<i32> { // rated qualities from -5 to +5
-  fn x(&self> -> &i32 {
-    &self.x
-  }
-
-  fn h_evaluation(&self) -> i32 { // h measures the invisible part of one's Qualities
-    return 1; // LLM from mass data
-  }
-  fn c_evaluation(&self) -> i32 { // c indicates one's seriousness and commitments
-    return 3; // LLM from mass data
-  }
-  fn b_evaluation(&self) -> i32 { // budh or morality at the bottom line of Right or Wrong
-    return 3; // LLM from mass data
-  }
-  fn p_evaluation(&self) -> i32 { // patience qualified and verifiable in Khương Tử Nha
-    return 3; // LLM from mass data
-  }
-  fn t_evaluation(&self) -> i32 { // t indicates one's trust or faith
-    return 3; // LLM from mass data
-  }    
-  fn q_evaluation(&self) -> i32 { // q indicates one's wusu qi level 
-    return 3; // LLM from mass data
-  }
-  fn a_evaluation(&self) -> i32 { // a indicates one's level of transcending art
-    return 3; // LLM from mass data
-  }
-}
-
-enum RatedMaturity{ // for organization
-  Maturity,
-}
-enum StepOutcomes{ // for foreign affairs: 0 is ready on the pipelie rated at +1 to +5
-  Steps,
-}
-enum VisionOutcomes{ // for country: 0 is ready on the pipelie rated at +1 to +5
-  Visions,
-}
-
-
-impl<T> InnerSpace<T> { // X, Y, F is type T for LLM evaluation and from custom AGI
-  fn x(&self) -> &T {
-    &self.x
-  }
-}
-
-  
-  let mut _h = 0;    // Honesty / TRUTH / Chân
-  let mut _c = 0;    // Care
-  let mut _b = 0;    // Budh / Morality / Thiện / Right & Wrong 
-  let mut _p = 0;    // Patience / Nhẩn
-  let mut _t = 0;    // Trust / Faith to perfection 
-  let mut _q = 0;    // Qi to perfection
-  let mut _a = 0;    // arts to perfection
-
-
-  let mut y = HashMap::new(); // Taxonomy of y_dimension
-  y.insert(0, String::from("Y 0")); // Innate Peace sub f as the key
-  
-
-  let mut h = HashMap::new(); // Taxonomy of h_dimension from -5 to +5
-  h.insert(0, String::from("H 0")); // Honesty / Chan
-  let mut c = HashMap::new(); // Taxonomy of c_dimension from -5 to +5
-  c.insert(0, String::from("C 0")); // Care from humanity upward
-  let mut b = HashMap::new(); // Taxonomy of b_dimension
-  b.insert(0, String::from("B 0")); // Budh Thien
-  let mut p = HashMap::new(); // Taxonomy of p_dimension
-  p.insert(0, String::from("P 0")); // Patience Nhan
-  let mut t = HashMap::new(); // Taxonomy of t_dimension
-  t.insert(0, String::from("T 0")); // Trust Faith sub t as the key
-  let mut q = HashMap::new(); // Taxonomy of q_dimension
-  q.insert(0, String::from("Q 0")); // Qi Khi
-  let mut a = HashMap::new(); // Taxonomy of a_dimension
-  a.insert(0, String::from("A 0")); // Art
-
-  let _honesty = Qualities::Honesty(String::from("HonestyCases"));  // recorded proof
-  let _care = Qualities::Care(String::from("CareCases")); // recorded proof
-  let _budh = Qualities::Budh(String::from("BudhCases")); // recorded proof
-  let _patience = Qualities::Patience(String::from("PatienceCases")); // recorded proof
-  let _trust = Qualities::Trust(String::from("TrustCases"));  // recorded proof
-  let _qi = Qualities::Qi(String::from("QiCases"));  // recorded proof
-  let _art = Qualities::Art(String::from("ArtCases"));  // recorded proof  
-  
-  let mut v: Vec<i32> = Vec::new();
-  
-  _h = h_evaluation(h); // honesty based on the outcomes of engaged living
-  _c = c_evaluation(c); // care based on the outcomes in engaged living
-  _b = b_evaluation(b); // budh based on the outcomes in engaged living 
-  _p = p_evaluation(p); // patience based on the outcomes in engaged living
-  _t = t_evaluation(t); // trust based on the outcomes of engaged living
-  _q = q_evaluation(q); // qi based on the outcomes of engaged living
-  _a = a_evaluation(a); // art based on the outcomes of engaged living
-   
-
-Use generics for rating these evaluations applicable of _x, _y, qualities, then f_dimension
-fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-
-   println!("Attributes of Transcendental Inner Peace");
-   for (key, value) in &y {
-        println!("{key}: {value}");
-    }
-    // evaluate the transient value of y in circular processes of 8 hashtag and record it
-    // somewhere for tracking records in different cased of claimed #
-    
-    return 0;
-}
-fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Transcendental Awareness");
-   for (key, value) in &x {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of x in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn f_evaluation(f: HashMap<i32, String>) -> i32 {
-
-    println!("Suggested Inner Space for cultivation");
-       for (key, value) in &f {
-        println!("{key}: {value}");
-    }
-    return 0;
-}
-
-/*
- Qualities are evaluated @ -5. -4. -3. -2. -1, 0, 1, 2, 3, 4, 5. Evaluation is based on
- personal subjective rating and community reported cases of the evaluations. They have a
- HashMap of psychological descriptions of the required properties. We introduce each as trait
-*/
-fn evaluation<T>((HashMap<i32, String>): &[T] -> &T) { // return evaluated value
-   println!("Attributes of Honesty / Truth in one's Continuity of the consciousness");
-   for (key, value) in &h {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of h in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return T;
-}
-fn c_evaluation(c: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Care for one and the environment");
-   for (key, value) in &c {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of c in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn b_evaluation(b: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Budh sensing the Right from Wrong");
-   for (key, value) in &b {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of b in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Patience");
-   for (key, value) in &p {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of p in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Trust / Faith in one's Continuity of the consciousness");
-   for (key, value) in &t {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of t in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn q_evaluation(q: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Qi in one's Continuity of the consciousness");
-   for (key, value) in &q {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of q in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-fn a_evaluation(a: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Attributes of Trust / Faith in one's Continuity of the consciousness");
-   for (key, value) in &a {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of a in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0;
-}
-
-*/

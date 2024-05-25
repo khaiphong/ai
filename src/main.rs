@@ -28,7 +28,7 @@
   line of important focused events.
 */
 
-//use crate::persona::traits::{Granite, Llama, Grok, KpI};
+use crate::persona::traits::{KpI};
 use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
 use crate::persona::xdimension::{WuNien, AwarenessPrajna, KpX};
 use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
@@ -81,12 +81,11 @@ fn main() {
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
   struct Samadhi; let _transcendental_inner_peace = Samadhi;
-  #[derive(Debug)]
-  struct WuNien; let _transcendental_awareness = WuNien;
-  #[derive(Debug)]
-  struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
   struct Prajna; let _wisdom = Prajna; 
   struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
+  
+  let _kpi = KpI::new(0);
+  println!("I'm using {:?}!", _kpi);
   
   let _tm = TranscendentalMeditation {};
   println!("I'm using {:?}!", _tm);
@@ -146,7 +145,7 @@ fn main() {
   println!("I'm augmenting {:?}!", _art_agent2);  
 
   // evaluation of InnerSpace
-  let _me = crate::persona::build_InnerSpace(0, 0, 0);
+  let _me = crate::persona::build_inner_space(0, 0, 0);
   println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod
