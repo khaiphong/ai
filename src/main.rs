@@ -1,13 +1,47 @@
-// scientific cultivatons of the persona's InnerSpace
+/*
+  Starting at a naturally qualified person modeled at balanced myIntuition "I 0", there is a 
+  wide range of myAwareness _x and _y are in wide ranges for negative to positive based on the 
+  self-evaluated plus LLM opinions of y_evaluation and x_evaluation . We use mutable variable 
+  instead of self-evaluated defined const as starting points of complex Fibonacci Nunber for 
+  Prajna >< AGI (Agentic Retrieval Augmented Generation / 
+  https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd), then modeling 
+  which is applicable to any kind of persona (person, Inter-Realm, organization, foreign 
+  affairs, a nation, a family, project, etc). For elites currently a person, the evaluation 
+  are intended to help that person moving from evolution then degeneration to the right  
+  positive evaluation with oservable attributes of persona mod: Given the following hashtag # 
+  and user description, we evaluate the experience in [ observable traits from attached 
+  totally detached in TRUTH ] to the outcome of _y, _x and then _f round cycle from Self to 
+  Selfless at deeper Detachment.
+      
+  Proven qualities of [ Clinging Thought I-5 ], [ Binding Image I-4 ], [ Binding Word I-3 ],
+  [ Veiled Right and Wrong I-2 ], [ Influenced I-1 ], [ neutral balance I 0 ], 
+  [ Kindness, Empathy I+1 ], [ Trust, Qi, Art I+2 ], 
+  [ Honesty, Budh, Patience / Chân, Thiện, Nhẩn I+3 ], [ Care I+4 ], [ TRUTH I+5 ] from 
+  heavily attached to totally detached, capable to enable wider angle of a focused event 
+  are from [ -5 to +5 ] where 0 is the base of a qualified humanitas.
+      
+  The Description is not the Described! We use LLM to enable this possibility the persona may 
+  take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
+  learned based on its private ratings of the suggested positive intelligence and its 
+  normative intelligence. The outcome is its vector of these rated qualities for self 
+  cultivations and their effects on the persona Ignorance or Prajna, measurable at the bottom 
+  line of important focused events.
+*/
+
+//use crate::persona::traits::{Granite, Llama, Grok, KpI};
 use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
 use crate::persona::xdimension::{WuNien, AwarenessPrajna, KpX};
 use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 
 // LLM augmented with self-rating Qualities
-use crate::persona::honesty::{honesty_agent1, honesty_agent2};
+use crate::persona::truth::{truth_agent1, truth_agent2};
+
 use crate::persona::care::{care_agent1, care_agent2};
+
+use crate::persona::honesty::{honesty_agent1, honesty_agent2};
 use crate::persona::budh::{budh_agent1, budh_agent2};
 use crate::persona::patience::{patience_agent1, patience_agent2};
+
 use crate::persona::trust::{trust_agent1, trust_agent2};
 use crate::persona::qi::{qi_agent1, qi_agent2};
 use crate::persona::art::{art_agent1, art_agent2};
@@ -42,30 +76,7 @@ pub mod back;
 pub mod network;
  
 fn main() {
-  /* 
-    Starting at a naturally qualified person, Hashmaps of f = 0. But _x and _y are in wide
-    ranges for negative to positive based on the self-evaluated plus LLM opinions of
-    y_evaluation and x_evaluation . We use mutable variable instead of self-evaluated defined
-    const as starting points of Fibonacci Nunber for Prajna >< AGI, then modeling which is
-    applicable to any kind of persona (person, Inter-Realm, organization, foreign affairs,
-    a nation, a lasting project, etc). For elites currently a person, the evaluation are
-    intended to help that person moving from evolution then degeneration to the right
-    positive evaluation with oservable attributes of:
-
-      persona mod: Given the following hashtag # and user description, we evaluate the
-      experience in determination the _y, _x and _f round cycle from Self to Selfless then
-      Self at deeper Detachment.
-      
-      proven qualities of [ Honesty, Care, Budh, Patience, Trust, Qi, Art ] capable to enable
-      wider angle of a focused event are from [ -5 to +5 ] where 0 is the base of a qualified
-      humanitas.
-      
-    The Description is not the Described! We use LLM to enable this possibility the persona
-    may take and personal rating of the outcomes for lessons learned based on its private
-    ratings of the suggested positive intelligence and its normative intelligence. The outcome
-    is its vector of these rated qualities for self cultivations and their effects on the
-    persona Ignorance or Prajna, measurable at the bottom line of important focused events.
-  */
+  // public Hashtag # for users connected interest in learning and sharing  
   struct Intuition; let _intuition = Intuition;
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
@@ -76,7 +87,6 @@ fn main() {
   struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
   struct Prajna; let _wisdom = Prajna; 
   struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
-  
   
   let _tm = TranscendentalMeditation {};
   println!("I'm using {:?}!", _tm);
@@ -99,21 +109,24 @@ fn main() {
   let _kpf = KpF::new(0);
   println!("I'm evaluating my {:?}!", _kpf);
   
-  let _honesty_agent1 = honesty_agent1();
-  println!("I'm augmenting {:?}!", _honesty_agent1);
-  let _honesty_agent2 = honesty_agent2();
-  println!("I'm augmenting {:?}!", _honesty_agent2);  
-
+  let _truth_agent1 = truth_agent1();
+  println!("I'm augmenting {:?}!", _truth_agent1);
+  let _truth_agent2 = truth_agent2();
+  println!("I'm augmenting {:?}!", _truth_agent2);    
+  
   let _care_agent1 = care_agent1();
   println!("I'm augmenting {:?}!", _care_agent1);
   let _care_agent2 = care_agent2();
   println!("I'm augmenting {:?}!", _care_agent2);  
-
+    
+  let _honesty_agent1 = honesty_agent1();
+  println!("I'm augmenting {:?}!", _honesty_agent1);
+  let _honesty_agent2 = honesty_agent2();
+  println!("I'm augmenting {:?}!", _honesty_agent2);  
   let _budh_agent1 = budh_agent1();
   println!("I'm augmenting {:?}!", _budh_agent1);
   let _budh_agent2 = budh_agent2();
   println!("I'm augmenting {:?}!", _budh_agent2);  
-
   let _patience_agent1 = patience_agent1();
   println!("I'm augmenting {:?}!", _patience_agent1);
   let _patience_agent2 = patience_agent2();
@@ -123,12 +136,10 @@ fn main() {
   println!("I'm augmenting {:?}!", _trust_agent1);
   let _trust_agent2 = trust_agent2();
   println!("I'm augmenting {:?}!", _trust_agent2);  
-
   let _qi_agent1 = qi_agent1();
   println!("I'm augmenting {:?}!", _qi_agent1);
   let _qi_agent2 = qi_agent2();
   println!("I'm augmenting {:?}!", _qi_agent2);  
-
   let _art_agent1 = art_agent1();
   println!("I'm augmenting {:?}!", _art_agent1);
   let _art_agent2 = art_agent2();
