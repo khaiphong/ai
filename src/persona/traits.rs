@@ -1,12 +1,3 @@
-#[derive(Debug)] // IBM
-pub struct Granite {}
-
-#[derive(Debug)] // meta
-pub struct LLama {}
-
-#[derive(Debug)] // xAI
-pub struct Grok {}
-
 // this is custom type KpI from traits [-5 to +5] in observable enforcements of its validity
 // and behaviours in using Rust compiler, LLM models, and KP custom gdb
 #[derive(Debug)]

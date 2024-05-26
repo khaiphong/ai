@@ -30,7 +30,7 @@
 
 use crate::persona::traits::{KpI};
 use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
-use crate::persona::xdimension::{WuNien, AwarenessPrajna, KpX};
+use crate::persona::xdimension::{WuNien, KpX};
 use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 
 // LLM augmented with self-rating Qualities
@@ -76,14 +76,33 @@ pub mod back;
 pub mod network;
  
 fn main() {
-  // public Hashtag # for users connected interest in learning and sharing  
+  // public Hashtag # for users connected interest in learning and sharing
+  #[derive(Debug)] 
   struct Intuition; let _intuition = Intuition;
+  #[derive(Debug)]
   struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
+  #[derive(Debug)]
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
+  #[derive(Debug)]
   struct Samadhi; let _transcendental_inner_peace = Samadhi;
-  struct Prajna; let _wisdom = Prajna; 
-  struct AwarenessSamadhi; let _state_stock_prajna = AwarenessSamadhi;
-  
+  #[derive(Debug)]
+  struct Awareness; let _transcendental_awareness = Awareness;
+  #[derive(Debug)]
+  struct Prajna; let _wisdom = Prajna;
+  #[derive(Debug)]
+  struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
+  #[derive(Debug)]
+  struct SamadhiPrajna; let _samadhi_prajna = SamadhiPrajna;
+
+  println!("I'm connecting to node {:?}!", _intuition);
+  println!("I'm connecting to node {:?}!", _meditation);
+  println!("I'm connecting to node {:?}!", _empty_the_content);
+  println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
+  println!("I'm connecting to node {:?}!", _transcendental_awareness);
+  println!("I'm connecting to node {:?}!", _wisdom);
+  println!("I'm connecting to node {:?}!", _awareness_prajna);
+  println!("I'm connecting to node {:?}!", _samadhi_prajna);
+
   let _kpi = KpI::new(0);
   println!("I'm using {:?}!", _kpi);
   
@@ -96,8 +115,6 @@ fn main() {
   
   let _transcendental_awareness = WuNien {};
   println!("I'm evaluating my {:?}!", _transcendental_awareness);
-  let _awareness_prajna = AwarenessPrajna {};
-  println!("I'm evaluating my {:?}!", _awareness_prajna);
   let _kpx = KpX::new(0);
   println!("I'm evaluating my {:?}!", _kpx);
   

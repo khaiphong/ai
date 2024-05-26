@@ -1,9 +1,6 @@
 #[derive(Debug)]
 pub struct WuNien {}
 
-#[derive(Debug)]
-pub struct AwarenessPrajna {}
-
 // this is custom type KpX from [-7 to +7] to enforce its validity and behaviours in using
 // Rust compiler, LLM models, and KP custom gdb
 #[derive(Debug)]
