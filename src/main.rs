@@ -76,7 +76,7 @@ pub mod back;
 pub mod network;
  
 fn main() {
-  // public Hashtag # for users connected interest in learning and sharing
+  // 9 public Hashtag # to be connected in learning and sharing
   #[derive(Debug)] 
   struct Intuition; let _intuition = Intuition;
   #[derive(Debug)]
@@ -93,6 +93,8 @@ fn main() {
   struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
   #[derive(Debug)]
   struct SamadhiPrajna; let _samadhi_prajna = SamadhiPrajna;
+  #[derive(Debug)] 
+  struct PrajnaTIP; let _prajna_tip = PrajnaTIP;
 
   println!("I'm connecting to node {:?}!", _intuition);
   println!("I'm connecting to node {:?}!", _meditation);
@@ -102,6 +104,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _wisdom);
   println!("I'm connecting to node {:?}!", _awareness_prajna);
   println!("I'm connecting to node {:?}!", _samadhi_prajna);
+  println!("I'm connecting to node {:?}!", _prajna_tip);
 
   let _kpi = KpI::new(0);
   println!("I'm using {:?}!", _kpi);
