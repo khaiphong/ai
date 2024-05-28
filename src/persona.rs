@@ -1,9 +1,9 @@
 /*
- F-dimention forms with Y-dimension for the persona's Activities and Realtionships and
- X-dimension for Places. Prajna/Ignorance is evaluated at the event's outcome in 
- ChangeManagement to expose the trait of one's Intuition. The function build_InnerSpace
- initially and periodically rate the persona for user custom services. The 
- ranges for evaluation of y, x, i (Intuition) are updated according to academia researches for
+ F-dimention forms with Y-dimension for the persona's Activities and Realationships and
+ X-dimension for Places (Figure 11.1). Prajna/Ignorance is evaluated at the event's outcome
+ in ChangeManagement to expose the trait of one's Intuition. The function build_inner_space
+ initially and periodically rate the persona for user custom services. The ranges for
+ evaluation of i (Intuition), y, x are updated according to academia researches for
  predicted outcome of Prajna or Ignorance in ChangeManagement. Same thing is applicable to
  their rating the function outcomes: _y, _x, _f. The return is a new "me".
 */
@@ -205,34 +205,46 @@ fn f_evaluation(f: HashMap<i32, String>) -> i32 {
     return 0; // rated complex Fibinacci level
 }
 
+// list of traits ranging from Detachments to practical outcomes truth
 pub enum Traits {
   Truth(String), 
-
   Care(String), 
-  
   Honesty(String), // "Honesty / TRUTH / Chân"
   Budh(String),    // "Budh / Morality / Thiện"
   Patience(String), // "Patience / Nhẩn"
-  
   Trust(String),
   Qi(String),
   Art(String),
-  
   Empathy(String), 
   Kindness(String), 
+  
+  Balanced(String),
+  
+  Influenced(String),
+  Veiled(String),
+  BindingWord(String),
+  BindingImage(String),
+  ClingingThought(String)
 }
 
 // Knowledge graph to study the Described focused event and best possible outcomes honestly 
 // evaluated by the persona of personal lessons learned relevant to the norm of the mass
 pub mod truth;  
-
 pub mod care;  
-
 pub mod honesty;  
 pub mod budh; 
 pub mod patience;
-
 pub mod trust;
 pub mod qi;
 pub mod art;
+pub mod empathy;
+pub mod kindness;
+
+pub mod balanced;
+
+pub mod influenced;
+pub mod veiled;  
+pub mod binding_word;  
+pub mod binding_image;  
+pub mod clinging_thought; 
 

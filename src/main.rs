@@ -35,16 +35,21 @@ use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 
 // LLM augmented with self-rating Qualities
 use crate::persona::truth::{truth_agent1, truth_agent2};
-
 use crate::persona::care::{care_agent1, care_agent2};
-
 use crate::persona::honesty::{honesty_agent1, honesty_agent2};
 use crate::persona::budh::{budh_agent1, budh_agent2};
 use crate::persona::patience::{patience_agent1, patience_agent2};
-
 use crate::persona::trust::{trust_agent1, trust_agent2};
 use crate::persona::qi::{qi_agent1, qi_agent2};
 use crate::persona::art::{art_agent1, art_agent2};
+use crate::persona::empathy::{empathy_agent1, empathy_agent2};
+use crate::persona::kindness::{kindness_agent1, kindness_agent2};
+use crate::persona::balanced::{balanced_agent1, balanced_agent2};
+use crate::persona::influenced::{influenced_agent1, influenced_agent2};
+use crate::persona::veiled::{veiled_agent1, veiled_agent2};
+use crate::persona::binding_word::{binding_word_agent1, binding_word_agent2};
+use crate::persona::binding_image::{binding_image_agent1, binding_image_agent2};
+use crate::persona::clinging_thought::{clinging_thought_agent1, clinging_thought_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
 use crate::agi::public::{Granite, Llama, Grok, Kp};
@@ -163,6 +168,42 @@ fn main() {
   println!("I'm augmenting {:?}!", _art_agent1);
   let _art_agent2 = art_agent2();
   println!("I'm augmenting {:?}!", _art_agent2);  
+
+  let _empathy_agent1 = empathy_agent1();
+  println!("I'm augmenting {:?}!", _empathy_agent1);
+  let _empathy_agent2 = empathy_agent2();
+  println!("I'm augmenting {:?}!", _empathy_agent2);  
+  let _kindness_agent1 = kindness_agent1();
+  println!("I'm augmenting {:?}!", _kindness_agent1);
+  let _kindness_agent2 = kindness_agent2();
+  println!("I'm augmenting {:?}!", _kindness_agent2);  
+  
+  let _balanced_agent1 = balanced_agent1();
+  println!("I'm augmenting {:?}!", _balanced_agent1);
+  let _balanced_agent2 = balanced_agent2();
+  println!("I'm augmenting {:?}!", _balanced_agent2);  
+
+  let _influenced_agent1 = influenced_agent1();
+  println!("I'm augmenting {:?}!", _influenced_agent1);
+  let _influenced_agent2 = influenced_agent2();
+  println!("I'm augmenting {:?}!", _influenced_agent2);  
+  let _veiled_agent1 = veiled_agent1();
+  println!("I'm augmenting {:?}!", _veiled_agent1);
+  let _veiled_agent2 = veiled_agent2();
+  println!("I'm augmenting {:?}!", _veiled_agent2);  
+  let _binding_word_agent1 = binding_word_agent1();
+  println!("I'm augmenting {:?}!", _binding_word_agent1);
+  let _binding_word_agent2 = binding_word_agent2();
+  println!("I'm augmenting {:?}!", _binding_word_agent2);  
+  let _binding_image_agent1 = binding_image_agent1();
+  println!("I'm augmenting {:?}!", _binding_image_agent1);
+  let _binding_image_agent2 = binding_image_agent2();
+  println!("I'm augmenting {:?}!", _binding_image_agent2);  
+  let _clinging_thought_agent1 = clinging_thought_agent1();
+  println!("I'm augmenting {:?}!", _clinging_thought_agent1);
+  let _clinging_thought_agent2 = clinging_thought_agent2();
+  println!("I'm augmenting {:?}!", _clinging_thought_agent2);  
+
 
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(0, 0, 0);
