@@ -1,18 +1,29 @@
 /*
- F-dimention forms with Y-dimension for the persona's Activities and Realationships and
- X-dimension for Places (Figure 11.1). Prajna/Ignorance is evaluated at the event's outcome
- in ChangeManagement to expose the trait of one's Intuition. The function build_inner_space
- initially and periodically rate the persona for user custom services. The ranges for
- evaluation of i (Intuition), y, x are updated according to academia researches for
- predicted outcome of Prajna or Ignorance in ChangeManagement. Same thing is applicable to
- their rating the function outcomes: _y, _x, _f. The return is a new "me".
+ F-dimention of one's scientifically cultivable InnerSpace - expressed in the form of complex
+ Fibonacci sequences - forms with Y-dimension of Transcendental Inner Peace known by Gotama
+ for the persona's Activities and Relationships in the direction of Right or Wrong toward
+ What Count, and X-dimension of one's perceptions of outside events in Places (Figure 11.1).
+ One can evaluate at the bottom line of the event outcome to normatively and honestly rate
+ oneself as Prajna/Ignorance for possible ChangeManagement of the traits called Intuition,
+ contributing and causing one's final decision. The dynamic feed back and feed forward effects
+ of InnerSpace and changing outer event can be statistically modeled via different agents 
+ responsible and custom made for the each trait for eventually overall simple rating to
+ understand the underlying natural laws leading to expected outcomes.
  
- The implementation from self to selfless via _x Detachment, _y InnerPeace / RightWrong,
- and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
- and contributions by those connected to [ WuNien / #Awareness ]. Evaluation of y_dimension 
- is trained via empirical observations and contributions by those connected to #Samadhi. The 
- observable point on X-Y plane is connected to stable f_evaluation for custom trainings and 
- treatments.
+ The function build_inner_space initially and periodically rate the persona for user custom 
+ services. The ranges for evaluation of i (Intuition), y, x are updated according to academia 
+ researches for predicted outcome of Prajna or Ignorance in ChangeManagement. Same thing is 
+ applicable to the modeling and rating the function outcomes: _y, _x, _f making up a new "me".
+ 
+ The implementation from self to selfless is via _x Detachment, _y InnerPeace / RightWrong,
+ and _f positive InnerSpace observable in the manifestations of complex Fibonacci sequence. 
+ Evaluation of x_dimension is trained via empirical observations and contributions by those 
+ connected to [ WuNien / #Awareness ]. Evaluation of y_dimension is trained via empirical 
+ observations and contributions by those connected to #Samadhi of Transcendental Inner Peace
+ known by Gotama and verifiable by practitioners in different claimed meditations and 
+ reflections to weed out garbages blah blah blah by past claimed masters and religious 
+ leaders. The observable point on X-Y plane is connected to stable f_evaluation for custom
+ trainings and treatments.
 */
 #[derive(Debug)]
 pub struct InnerSpace {
@@ -22,7 +33,7 @@ pub struct InnerSpace {
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
   pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness or Gotama Mindfulness
 }
-pub mod traits;
+pub mod traits;     // implementations to make the description as closed to the described
 pub mod ydimension;
 pub mod xdimension;
 pub mod fdimension;
@@ -155,7 +166,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   detachment to be explored in one's transcendental #Awareness and #Samadhi which are tags
   for people connected to learn and share in the hashtag community. We can use the generic
   evaluation type to be implemented for identified trait which can question from LLM models
-  then fine-tuned for KP platform data and the custom data of the client.
+  then fine-tuned for KP platform community data and the custom data of the client.
   
 */
 fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
@@ -170,7 +181,29 @@ fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0; // rated level of Intuition
 }
 
-// list of traits ranging from Detachments to practical outcomes truth
+/* 
+  List of traits ranging from Detachments to practical outcomes Truth. This part exposes the
+  cheated Descriptions such as Faith from all religions, [ Honesty, Budh, Patience / Chân, 
+  Thiện, Nhẩn ] from Falun Dafa and all forms of Buddhist meditations or reflection (quán
+  chiếu) for testing and discovering the underlying natural laws of their practices to be
+  statistically evalutated by the world. For example, we will prove that "Faith" does not need
+  to be on the conflicting plan of duality due to binding word/image and clinging thought 
+  leading to many religious crusades, and can be used as a mean to ride on one's past binding 
+  forces as a form of Aspiration in transcending the "Known" to reach the Y-dimension recorded 
+  by Gotama as Right Meditation. The proof is at both theoretical level using math and at 
+  empirical levels as SHARED by different faith practitioners How to use "Faith" Aspiration in 
+  transcending the Known for detoxifications of the tainted senses, realizing Kingdom of gods
+  within. The "Hoax of Jesus Redeemer" will be naturally exposed to scientifically point out
+  the Right way of evolution versus the Wrong way of degeneration as evidenced in the total
+  collapse of the past esoteric feudal systems ruled by the degenerated King og Gods.
+  
+  Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
+  with claimed "Transcendental Meditation", Chinese ""Qi", KhaiPhong's discovered
+  underlying natural laws of Verifiable Processes from PrajnaTIP in Sound 
+  (https://blog.khaiphong.io/2023/09/nature-of-things.html#Section_2.1), and other 
+  transcendental technologies via Arts (singing, dancing, playing music, bonsai, merging with 
+  nature, etc) to wipe out cheaters "cooking sand and sell as rice".
+*/
 pub enum Traits {
   Truth(String), 
   Care(String), 
@@ -193,7 +226,7 @@ pub enum Traits {
 }
 
 // Knowledge graph to study the Described focused event and best possible outcomes honestly 
-// evaluated by the persona of personal lessons learned relevant to the norm of the mass
+// evaluated by the persona of personal learned lessons relevant to the norm of the mass
 pub mod truth;  
 pub mod care;  
 pub mod honesty;  
@@ -215,17 +248,17 @@ pub mod clinging_thought;
 
 /*
  Trait definitions are a way to group method signatures together to define a set of behaviors
- necessary to accomplish some purpose. By defining Intuition, Samadhi, Awareness and
- ChangeManagement, we enable each type implementing the trait must provide its own custom
- behavior for the body of the method.
+ necessary to accomplish some purpose. By defining Intuition, Meditation, Awareness and
+ ChangeManagement, we force each type (claimed method) implementing the trait to provide its
+ own custom behavior in the method's body to be verified by the community at.
 */
 pub trait Intuition { 
   fn perceive(&self) -> i32; // ranging from -5 to 5
 }
-pub trait Sanadhi {       // ability to be on x-y plan, ranging from -6 to +6
+pub trait Meditation {       // ability to be on x-y plan, ranging from -6 to +6
   fn meditate(&self) -> i32;
 }
-pub trait Awareness {     // ability to be on x-y plan, ranging from -7 to +7 
+pub trait Awareness {        // ability to be on x-y plan, ranging from -7 to +7 
   fn aware(&self) -> i32;
 }
 pub trait ChangeManagement { //self avaluated and lesson learned of a formal project to
@@ -239,20 +272,26 @@ impl Intuition for InnerSpace {
   }
 }
 
-impl Awareness for InnerSpace {
+impl Meditation for InnerSpace {
+  fn meditate(&self) -> i32 {
+    // concrete model of InnerSpace Meditation according to different traditions
+    return 0;
+  }
+}
+
+impl Awareness for InnerSpace { // for ferifications of HuiNeng's WuNien
   fn aware(&self) -> i32 {
     // concrete model of InnerSpace Intuition level
     return 0;
   }
 }
 
-impl ChangeManagement for InnerSpace {
+impl ChangeManagement for InnerSpace { // a feed back and feed forward stream to LLM ML
  fn evaluate(&self) -> String {
     // concrete model of InnerSpace ChangeManagement
     return String::from("(Prompt...)");
  }
 }
-
 
 /*
   y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
@@ -267,8 +306,9 @@ fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to t
    for (key, value) in &y {
         println!("{key}: {value}");
     }
-    // evaluate the transient value of y in circular processes of 8 hashtag and record it
-    // somewhere for tracking records in different cased of claimed #
+    
+    // model y Inner Peace based on one's observable traits in circular processes of 9 
+    //hashtags and record it somewhere for tracking records in different cased of claimed #
     
     return 0; // rated level of SignedPost
 }
@@ -276,10 +316,13 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
    println!("Valid WuNien / Awareness / TranscendentalAwareness");
    for (key, value) in &x {
         println!("{key}: {value}");
-    }    
-   // evaluate the transient value of x in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
+    }   
+    
+    // model x Perception based on one's observable traits in circular processes of 9 
+    //hashtags and record it somewhere for tracking records in different cased of claimed #
+    
     return 0; // rated level of WuNien
+    
 }
 fn f_evaluation(f: HashMap<i32, String>) -> i32 {
 
@@ -287,6 +330,9 @@ fn f_evaluation(f: HashMap<i32, String>) -> i32 {
        for (key, value) in &f {
         println!("{key}: {value}");
     }
+    
+    // evaluations based on hard evidences in community social networks and proven experts
+    
     return 0; // rated complex Fibinacci level
 }
 
