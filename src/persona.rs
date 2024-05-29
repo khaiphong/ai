@@ -6,24 +6,10 @@
  evaluation of i (Intuition), y, x are updated according to academia researches for
  predicted outcome of Prajna or Ignorance in ChangeManagement. Same thing is applicable to
  their rating the function outcomes: _y, _x, _f. The return is a new "me".
-*/
-pub trait Intuition { 
-  fn perceive(&self) -> i32; // ranging from -5 to 5
-}
-pub trait Sanadhi {       // ability to be on x-y plan, ranging from -6 to +6
-  fn meditate(&self) -> i32;
-}
-pub trait Awareness {     // ability to be on x-y plan, ranging from -7 to +7 
-  fn aware(&self) -> i32;
-}
-pub trait ChangeManagement { //self avaluated and lesson learned of a formal project to
- fn evaluate(&self) -> String; // eip as a prompt to LLM
-}
-
-/*
+ 
  The implementation from self to selfless via _x Detachment, _y InnerPeace / RightWrong,
  and _f positive InnerSpace. Evaluation of x_dimension is trained via empirical observations 
- and contributions by those connected to [ #WuNien / #Awareness ]. Evaluation of y_dimension 
+ and contributions by those connected to [ WuNien / #Awareness ]. Evaluation of y_dimension 
  is trained via empirical observations and contributions by those connected to #Samadhi. The 
  observable point on X-Y plane is connected to stable f_evaluation for custom trainings and 
  treatments.
@@ -164,6 +150,14 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 
 } // end of build_InnerSpace from Intuition traits i, SignedPosts y, Awareness x, InnerSpace f
 
+/*
+  i_evaluation return evaluated value of one's trait type ranging from attachment to
+  detachment to be explored in one's transcendental #Awareness and #Samadhi which are tags
+  for people connected to learn and share in the hashtag community. We can use the generic
+  evaluation type to be implemented for identified trait which can question from LLM models
+  then fine-tuned for KP platform data and the custom data of the client.
+  
+*/
 fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
    println!("Valid Intuition / Traits");
@@ -174,35 +168,6 @@ fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // somewhere for tracking records in different cased of claimed #
     
     return 0; // rated level of Intuition
-}
-
-fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-
-   println!("Valid SignedPost / TranscendentalInnerPeace");
-   for (key, value) in &y {
-        println!("{key}: {value}");
-    }
-    // evaluate the transient value of y in circular processes of 8 hashtag and record it
-    // somewhere for tracking records in different cased of claimed #
-    
-    return 0; // rated level of SignedPost
-}
-fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Valid WuNien / Awareness / TranscendentalAwareness");
-   for (key, value) in &x {
-        println!("{key}: {value}");
-    }    
-   // evaluate the transient value of x in circular processes of 8 hashtag and record it
-   // somewhere for tracking record in different cased of claimed #   
-    return 0; // rated level of WuNien
-}
-fn f_evaluation(f: HashMap<i32, String>) -> i32 {
-
-    println!("Suggested Inner Space for cultivation");
-       for (key, value) in &f {
-        println!("{key}: {value}");
-    }
-    return 0; // rated complex Fibinacci level
 }
 
 // list of traits ranging from Detachments to practical outcomes truth
@@ -247,4 +212,81 @@ pub mod veiled;
 pub mod binding_word;  
 pub mod binding_image;  
 pub mod clinging_thought; 
+
+/*
+ Trait definitions are a way to group method signatures together to define a set of behaviors
+ necessary to accomplish some purpose. By defining Intuition, Samadhi, Awareness and
+ ChangeManagement, we enable each type implementing the trait must provide its own custom
+ behavior for the body of the method.
+*/
+pub trait Intuition { 
+  fn perceive(&self) -> i32; // ranging from -5 to 5
+}
+pub trait Sanadhi {       // ability to be on x-y plan, ranging from -6 to +6
+  fn meditate(&self) -> i32;
+}
+pub trait Awareness {     // ability to be on x-y plan, ranging from -7 to +7 
+  fn aware(&self) -> i32;
+}
+pub trait ChangeManagement { //self avaluated and lesson learned of a formal project to
+ fn evaluate(&self) -> String; // eip as a prompt to LLM
+}
+
+impl Intuition for InnerSpace {
+  fn perceive(&self) -> i32 {
+    // concrete model of InnerSpace Intuition level
+    return 0;
+  }
+}
+
+impl Awareness for InnerSpace {
+  fn aware(&self) -> i32 {
+    // concrete model of InnerSpace Intuition level
+    return 0;
+  }
+}
+
+impl ChangeManagement for InnerSpace {
+ fn evaluate(&self) -> String {
+    // concrete model of InnerSpace ChangeManagement
+    return String::from("(Prompt...)");
+ }
+}
+
+
+/*
+  y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
+  explored in these two dimensions that are inputs into the f_evaluation. We can make the
+  function fn evaluation<T>(HashMap<i32, String>) -> &[T] {} over type T. The evaluation will
+  return a reference to a value of the same type T which is the rated Fibonacci value of the
+  T dimension.
+*/
+fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+
+   println!("Valid SignedPost / TranscendentalInnerPeace");
+   for (key, value) in &y {
+        println!("{key}: {value}");
+    }
+    // evaluate the transient value of y in circular processes of 8 hashtag and record it
+    // somewhere for tracking records in different cased of claimed #
+    
+    return 0; // rated level of SignedPost
+}
+fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+   println!("Valid WuNien / Awareness / TranscendentalAwareness");
+   for (key, value) in &x {
+        println!("{key}: {value}");
+    }    
+   // evaluate the transient value of x in circular processes of 8 hashtag and record it
+   // somewhere for tracking record in different cased of claimed #   
+    return 0; // rated level of WuNien
+}
+fn f_evaluation(f: HashMap<i32, String>) -> i32 {
+
+    println!("Suggested Inner Space for cultivation");
+       for (key, value) in &f {
+        println!("{key}: {value}");
+    }
+    return 0; // rated complex Fibinacci level
+}
 
