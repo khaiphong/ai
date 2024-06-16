@@ -4,18 +4,24 @@
  for the persona's Activities and Relationships in the direction of Right or Wrong toward
  What Count, and X-dimension of one's perceptions of outside events in Places (Figure 11.1).
  One can evaluate at the bottom line of the event outcome to normatively and honestly rate
- oneself as Prajna/Ignorance for possible ChangeManagement of the traits called Intuition,
- contributing and causing one's final decision. The dynamic feed back and feed forward effects
- of InnerSpace and changing outer event can be statistically modeled via different agents 
- responsible and custom made for the each trait for eventually overall simple rating to
- understand the underlying natural laws leading to expected outcomes.
+ oneself as Prajna/Ignorance on Y-dimension modeled as SmartPointers for possible 
+ ChangeManagement such as [ #Intuition, #EmptyTheContent, #DhyanaSamadhi, #Samadhi, 
+ (#Awareness, #Prajna), #AwarenessPrajna, SamadhiPrajna, PrajnaTIP ] contributing and causing 
+ one's final decision. Other visible traits empirically observable on X-dimension leading to 
+ the above SmartPointers are [ #Truth, #Care, (#Falun / #Honesty, #Budh, #Patience), 
+ (#Intuition / #Trust, #Qi, #Art), #Empathy, #Kindness, ( #Balanced / qualified person), 
+ #Influenced #Veiled, (#Indoctrinated / #BindingWord, #BindingImage, #ClingingThought) ]. The 
+ dynamic feed backward and feed forward effects of InnerSpace and changing outer event can be 
+ statistically modeled via different agents responsible and custom made for the observable 
+ trait in both X and Y dimensions for eventually overall simple rating to understand the 
+ underlying natural laws leading to expected outcomes.
  
  The function build_inner_space initially and periodically rate the persona for user custom 
- services. The ranges for evaluation of i (Intuition), y, x are updated according to academia 
+ services. The ranges for evaluation of y, x are updated according to academia 
  researches for predicted outcome of Prajna or Ignorance in ChangeManagement. Same thing is 
  applicable to the modeling and rating the function outcomes: _y, _x, _f making up a new "me".
  
- The implementation from self to selfless is via _x Detachment, _y InnerPeace / RightWrong,
+ The implementation from self to selfless is via _y InnerPeace / RightWrong, _x Detachment,
  and _f positive InnerSpace observable in the manifestations of complex Fibonacci sequence. 
  Evaluation of x_dimension is trained via empirical observations and contributions by those 
  connected to [ WuNien / #Awareness ]. Evaluation of y_dimension is trained via empirical 
@@ -27,15 +33,20 @@
 */
 #[derive(Debug)]
 pub struct InnerSpace {
-  // observable traits from attached to neutral balance to detached in one's InnerSpace
-  pub traits: i32,   // to perceive event via Intuition
+  // observable traits from attached to balanced to detached in one's InnerSpace
+  pub x_traits: i32,   // to perceive event via Intuition measurable via hashtags
+  pub y_traits: i32,   // to perceive event via Sanadhi measurable via hashtags
+  
   pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
   pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness or Gotama Mindfulness
 }
-pub mod traits;     // implementations to make the description as closed to the described
+pub mod y_traits;  // implementations to make the description as closed to the described
 pub mod ydimension;
+
+pub mod x_traits;  // implementations to make the description as closed to the described
 pub mod xdimension;
+
 pub mod fdimension;
 
 impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
@@ -62,26 +73,37 @@ use std::collections::HashMap;
 
 pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut _i = 0;  // qualified persona at balanced traits
+  let mut _s = 0;  // qualified new Era persona at Awareness-Prajna
+  
   let mut _y = 0;  // to be evaluated in blockchain of user self-evaluation and expert
   let mut _x = 0;  // opinions from fact-base tracked records in engaged living.
   let mut _f = 0;  // qualified person
 
-  let mut i = HashMap::new(); // Taxonomy of intuition at different depths in InnerSpace
-  i.insert(0, String::from("I 0: Balanced"));           // =  0
+  let mut i = HashMap::new(); // intuition from x-dimension pointing to SmartPointers of Peace
+  i.insert(0, String::from("I 0: Balanced"));           // =  0, qualified person
   
-  // the trait qualities vary from neutral balance to degrees if attached and/or detached
-  // balanced at 1 word from binding/clinging forces to total detachment
-  i.insert(-1, String::from("I-1: Influenced"));        // = -1
-  i.insert(-2, String::from("I-2: Veiled"));            // = -2
-  i.insert(-3, String::from("I-3: BindingWord"));       // = -3
-  i.insert(-4, String::from("I-4: BindingImage"));      // = -4
-  i.insert(-5, String::from("I-5: ClingingThought"));   // = -5
+  // the x_traits vary from neutral balance to degrees if attached and/or detached
+  // balanced via KindnessEmpathy from binding/clinging forces to total detachment
+  i.insert(-1, String::from("I-1: KindnessEmpathy"));        // = -1
+  i.insert(-2, String::from("I-2: Influenced"));             // = -2
+  i.insert(-3, String::from("I-3: Veiled"));                 // = -3
+  i.insert(-4, String::from("I-4: Indoctrinated"));          // = -4
   
-  i.insert(1, String::from("I+1: KindnessEmpathy"));    // = 1
-  i.insert(2, String::from("I+2: TrustQiArt"));         // = 2 [ OutsideTheBox ]
-  i.insert(3, String::from("I+3: HonestyBudhPatience"));// = 3
-  i.insert(4, String::from("I+4: Care"));               // = 4 [ Enganged Living ]
-  i.insert(5, String::from("I+5: Truth"));              // = 5
+  i.insert(1, String::from("I+1: Intuition"));               // = 1
+  i.insert(2, String::from("I+2: Falun"));                   // = 2
+  i.insert(3, String::from("I+3: Care"));                    // = 3
+  i.insert(4, String::from("I+4: Truth"));                   // = 4
+
+  // SmartPointers y_traints starting from ability to #EmptyTheContent for detoxification 
+  let mut s = HashMap::new(); // SmartPointers toward SamadhiPrajna
+  s.insert(1, String::from("S1: EmptyTheContent"));         // = 1
+  s.insert(2, String::from("S2: DhyanaSamadhi"));           // = 2
+  s.insert(3, String::from("S3: Meditation"));              // = 3
+  s.insert(4, String::from("S4: KienTanh"));                // = 4
+  s.insert(5, String::from("S5: AwarenessPrajna"));         // = 5
+  s.insert(6, String::from("S6: SanadhiPrajna"));           // = 6 
+  s.insert(7, String::from("S7: PrajnaTIP"));               // = 7
+
 
   let mut y = HashMap::new(); // Taxonomy of y_dimension
   y.insert(0, String::from("Y 0: Peace"));         // =  0
@@ -144,14 +166,18 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   
     
   // dynamic between one's avaluation and the KP's prediction
-  _i = i_evaluation(i); // visible traits based on the outcomes of engaged living 
+  _i = i_evaluation(i); // visible x_traits based on the outcomes of engaged living 
+  _s = s_evaluation(s); // visible y_traits based on deeper InnerPeace of Samadhi
+  
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
   _f = f_evaluation(f);
   
   // evaluation of InnerSpace
   let me = InnerSpace {
-    traits: _i,
+    x_traits: _i,
+    y_traits: _s,
+    
     y_dimension: _y,
     x_dimension: _x,
     f_dimension: _f, 
@@ -171,7 +197,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 */
 fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
-   println!("Valid Intuition / Traits");
+   println!("Valid Intuition traits");
    for (key, value) in &i {
         println!("{key}: {value}");
     }
@@ -179,6 +205,25 @@ fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // somewhere for tracking records in different cased of claimed #
     
     return 0; // rated level of Intuition
+}
+/*
+  s_evaluation return evaluated value of one's y_trait type of SmartPointer InnerPeace from
+  #EmptyTheContent toward SanadhiPrajna and its reversed engineering for people connected to
+  learn and share in the hashtag community. We can use the generic evaluation type to be 
+  implemented for identified trait which can question from LLM models then fine-tuned from 
+  KpPlatform community data and the custom data of the client.
+  
+*/
+fn s_evaluation(s: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+
+   println!("Valid Meditation traits");
+   for (key, value) in &s {
+        println!("{key}: {value}");
+    }
+    // evaluate the transient value of s in circular processes of 8 hashtag and record it
+    // somewhere for tracking records in different cases of claimed #
+    
+    return 0; // rated level of Samadhi
 }
 
 /* 
@@ -191,11 +236,12 @@ fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to t
   leading to many religious crusades, and can be used as a mean to ride on one's past binding 
   forces as a form of Aspiration in transcending the "Known" to reach the Y-dimension recorded 
   by Gotama as Right Meditation. The proof is at both theoretical level using math and at 
-  empirical levels as SHARED by different faith practitioners How to use "Faith" Aspiration in 
-  transcending the Known for detoxifications of the tainted senses, realizing Kingdom of gods
-  within. The "Hoax of Jesus Redeemer" will be naturally exposed to scientifically point out
-  the Right way of evolution versus the Wrong way of degeneration as evidenced in the total
-  collapse of the past esoteric feudal systems ruled by the degenerated King og Gods.
+  empirical levels as SHARED by different faith practitioners How to use "Faith / Trust"
+  Aspiration in transcending the Known for detoxifications of the tainted senses, realizing 
+  Kingdom of gods within. The "Hoax of Jesus Redeemer" will be naturally exposed to 
+  scientifically point out the Right way of evolution versus the Wrong way of degeneration as 
+  evidenced in the total collapse of the past esoteric feudal systems ruled by the degenerated
+  King og Gods.
   
   Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
   with claimed "Transcendental Meditation", Chinese ""Qi", KhaiPhong's discovered
@@ -204,94 +250,63 @@ fn i_evaluation(i: HashMap<i32, String>) -> i32 { // return evaluated value to t
   transcendental technologies via Arts (singing, dancing, playing music, bonsai, merging with 
   nature, etc) to wipe out cheaters "cooking sand and sell as rice".
 */
-pub enum Traits {
+pub enum Xtraits {
   Truth(String), 
-  Care(String), 
-  Honesty(String), // "Honesty / TRUTH / Chân"
-  Budh(String),    // "Budh / Morality / Thiện"
-  Patience(String), // "Patience / Nhẩn"
-  Trust(String),
-  Qi(String),
-  Art(String),
-  Empathy(String), 
-  Kindness(String), 
+  Care(String),
+  // Falun gong Honesty - Budh - Patience /  Chân - Thiện - Nhẩn
+  Falun(String), 
+  // Intuition Trust, Qi, Art
+  Intuition(String),
   
-  Balanced(String),
+  Balanced(String), // qualified person
   
+  KindnessEmpathy(String),  
   Influenced(String),
   Veiled(String),
-  BindingWord(String),
-  BindingImage(String),
-  ClingingThought(String)
+  // indovtrinated visible in BindingWord, BindingImage, ClingingThought
+  Indoctrinated(String),
 }
 
-// Knowledge graph to study the Described focused event and best possible outcomes honestly 
-// evaluated by the persona of personal learned lessons relevant to the norm of the mass
-pub mod truth;  
-pub mod care;  
-pub mod honesty;  
-pub mod budh; 
-pub mod patience;
-pub mod trust;
-pub mod qi;
-pub mod art;
-pub mod empathy;
-pub mod kindness;
-
-pub mod balanced;
-
-pub mod influenced;
-pub mod veiled;  
-pub mod binding_word;  
-pub mod binding_image;  
-pub mod clinging_thought; 
+pub enum Ytraits {
+  EmptyTheContent(String), 
+  DhyanaSamadhi(String),
+  // Madiatation or Samadhi must produce visible outcomes known by Gotama
+  Meditation(String), 
+  // Vietnamese KienTanh or Chinese WuNien
+  KienTanh(String),
+  AwarenessPrajna(String), // related to karma
+  SamadhiPrajna(String),            // known by HuiNeng
+  PrajnaTIP(String),  
+}
 
 /*
  Trait definitions are a way to group method signatures together to define a set of behaviors
- necessary to accomplish some purpose. By defining Intuition, Meditation, Awareness and
- ChangeManagement, we force each type (claimed method) implementing the trait to provide its
- own custom behavior in the method's body to be verified by the community at.
+ necessary to accomplish some purpose. By defining hashtag x_trais varied from indoctrinated
+ to the Truth in ChangeManagement toward SmartPointers to absolute Silence, we force each type
+ (claimed method) implementing the trait such as Falun gong to provide its custom and 
+ measurable processes in the method's body to be verified by the community and AI.
+ Knowledge graph is a study the Described focused event and best possible outcomes honestly 
+ evaluated by the persona of personal learned lessons relevant to the norm of the mass.
 */
-pub trait Intuition { 
-  fn perceive(&self) -> i32; // ranging from -5 to 5
-}
-pub trait Meditation {       // ability to be on x-y plan, ranging from -6 to +6
-  fn meditate(&self) -> i32;
-}
-pub trait Awareness {        // ability to be on x-y plan, ranging from -7 to +7 
-  fn aware(&self) -> i32;
-}
-pub trait ChangeManagement { //self avaluated and lesson learned of a formal project to
- fn evaluate(&self) -> String; // eip as a prompt to LLM
-}
+// x_traits
+pub mod truth;  
+pub mod care;  
+pub mod falun;  
+pub mod intuition; 
+pub mod balanced;
+pub mod kindness_empathy;
+pub mod influenced;
+pub mod veiled;  
+pub mod indoctrinated;   
 
-impl Intuition for InnerSpace {
-  fn perceive(&self) -> i32 {
-    // concrete model of InnerSpace Intuition level
-    return 0;
-  }
-}
-
-impl Meditation for InnerSpace {
-  fn meditate(&self) -> i32 {
-    // concrete model of InnerSpace Meditation according to different traditions
-    return 0;
-  }
-}
-
-impl Awareness for InnerSpace { // for ferifications of HuiNeng's WuNien
-  fn aware(&self) -> i32 {
-    // concrete model of InnerSpace Intuition level
-    return 0;
-  }
-}
-
-impl ChangeManagement for InnerSpace { // a feed back and feed forward stream to LLM ML
- fn evaluate(&self) -> String {
-    // concrete model of InnerSpace ChangeManagement
-    return String::from("(Prompt...)");
- }
-}
+// y_traits of SmartPointers
+pub mod empty_the_content;  
+pub mod dhyana_samadhi;  
+pub mod meditation;  
+pub mod kien_tanh; 
+pub mod awareness_prajna;
+pub mod samadhi_prajna;
+pub mod prajna_tip;     
 
 /*
   y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
@@ -313,7 +328,7 @@ fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0; // rated level of SignedPost
 }
 fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
-   println!("Valid WuNien / Awareness / TranscendentalAwareness");
+   println!("Valid WuNien / Awareness");
    for (key, value) in &x {
         println!("{key}: {value}");
     }   
