@@ -34,8 +34,8 @@
 #[derive(Debug)]
 pub struct InnerSpace {
   // observable traits from attached to balanced to detached in one's InnerSpace
-  pub x_traits: i32,   // to perceive event via Intuition measurable via hashtags
-  pub y_traits: i32,   // to perceive event via Sanadhi measurable via hashtags
+  pub x_traits: i32, // HashMap<i32, String>,  perceive event via measurable Intuition
+  pub y_traits: i32, // HashMap<i32, String>,  perceive event via measurable Sanadhi
   
   pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
