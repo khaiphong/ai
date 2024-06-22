@@ -5,6 +5,9 @@ pub struct Granite {}
 pub struct Llama {}
 
 #[derive(Debug)]
+pub struct Phi {}
+
+#[derive(Debug)]
 pub struct Grok {}
 
 #[derive(Debug)]

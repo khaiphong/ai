@@ -60,7 +60,7 @@ use crate::persona::kien_tanh::{kien_tanh_agent1, kien_tanh_agent2};
 //use crate::persona::prajna_tip::{prajna_tip_agent1, prajna_tip_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
-use crate::agi::public::{Granite, Llama, Grok, Kp};
+use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
 
 // front-end persona facing services
 use crate::front::mu::{platform_message, service_message};
@@ -182,7 +182,7 @@ fn main() {
   let _indoctrinated_agent2 = indoctrinated_agent2();
   println!("I'm augmenting {:?}!", _indoctrinated_agent2); 
 
-  // y_traits of meditation from low from high where Kien_tanh is the target for average
+  // y_pointers of meditation from low from high where Kien_tanh is the target for average
   let _empty_the_content_agent1 = empty_the_content_agent1();
   println!("I'm augmenting {:?}!", _empty_the_content_agent1);
   let _empty_the_content_agent2 = empty_the_content_agent2();
@@ -222,6 +222,9 @@ fn main() {
 
   let _l = Llama {};
   println!("I'm using {:?}!", _l);
+  
+  let _p = Phi {};
+  println!("I'm using {:?}!", _p);
 
   let _g = Grok {};
   println!("I'm using {:?}!", _g);
