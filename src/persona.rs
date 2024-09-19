@@ -76,7 +76,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   x.insert(-1, String::from("X-1: CulturalInfluenced"));   // =  1
   x.insert(-2, String::from("X-2: RegionalInfluenced"));   // = -1
   x.insert(-3, String::from("X-3: NationalInfluenced"));   // =  2
-  x.insert(-4, String::from("X-4: Veiled"));               // = -3
+  x.insert(-4, String::from("X-4: VeiledType"));               // = -3
   x.insert(-5, String::from("X-5: BindingWord"));          // =  5
   x.insert(-6, String::from("X-6: BindingImage"));         // = -8
   x.insert(-7, String::from("X-7: ClingingThought"));      // = 13
@@ -111,11 +111,12 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut s = HashMap::new(); // SmartPointers (s) toward SamadhiPrajna
   s.insert(1, String::from("S1: EmptyTheContent"));         // = 1
   s.insert(2, String::from("S2: DhyanaSamadhi"));           // = 2
-  s.insert(3, String::from("S3: Meditation"));              // = 3 #Smadhi
-  s.insert(4, String::from("S4: KienTanh"));                // = 4 #Awareness #prajna
-  s.insert(5, String::from("S5: AwarenessPrajna"));         // = 5 #AwarenessPrajna
-  s.insert(6, String::from("S6: SanadhiPrajna"));           // = 6 #SamadhiPrajna
-  s.insert(7, String::from("S7: PrajnaTIP"));               // = 7 #PrajnaTIP
+  s.insert(3, String::from("S3: Samadhi"));                 // = 3 #Meditation
+  s.insert(4, String::from("S4: Awareness"));               // = 4 Transcendental #Awareness
+  s.insert(5, String::from("S4: Prajna"));                  // = 5
+  s.insert(6, String::from("S5: AwarenessPrajna"));         // = 6 #AwarenessPrajna
+  s.insert(7, String::from("S6: SanadhiPrajna"));           // = 7 #SamadhiPrajna
+  s.insert(8, String::from("S8: PrajnaTIP"));               // = 8 #PrajnaTIP
 
   // x_traints driven by Intuition (i) 
   let mut i = HashMap::new(); // intuition from x-dimension pointing to SmartPointers of Peace
@@ -145,9 +146,9 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   f.insert(-4, String::from("F-4: ExtremeDesire"));            // = -3
   f.insert(-5, String::from("F-5: AnimalConsciousness"));      // =  5 
   // ---------
-  f.insert(-6, String::from("F-6: Smelly-1"));                 // = -8    in spirits
-  f.insert(-7, String::from("F-7: Smelly-2"));                 // =  13   vampire 
-  f.insert(-8, String::from("F-8: Smelly-3"));                 // = -34   natural laws
+  f.insert(-6, String::from("F-6: Smelly1"));                  // = -8    Degenerated spirits
+  f.insert(-7, String::from("F-7: Smelly2"));                  // =  13   Vampire 
+  f.insert(-8, String::from("F-8: Smelly3"));                  // = -34   X-of-prey
   
   f.insert(1, String::from("F+1: EquanimityAwareness"));       // = 1
   f.insert(2, String::from("F+2: PurityAwareness"));           // = 1
