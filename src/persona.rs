@@ -6,15 +6,15 @@
  investigated leading to Bodhidharma's exchange with Emperor Wu (Lương Vũ Đế) on “What is the 
  highest meaning of noble truth" and HuiNeng's specialized contributions about (1) the 
  Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
- Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("Awareness, 
- Dependent, Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both 
+ Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, 
+ Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both 
  exoteric and esoteric realms from Figure 11.1 that forms with personally observable Inner 
  Peace of Y-dimension from Gotama's recorded Jhanas a No-Conflict plan at any focused event 
- and (3) scientifically cultivable Prajna / Wisdom with discovered underlying natural laws of 
+ and (3) scientifically cultivable #Prajna / Wisdom with discovered underlying natural laws of 
  PrajnaTIP from one's scienrifically cultivable InnerSpace F-dimension for detoxification of 
  tainted senses. Introducing the #Awareness of a persona F-dimension with Right evolution or 
- Wrong potential degeneration of complex Fibonacci sequence - testable with KP 
- KienTanh / HuiNeng WuNien / Gotama's Inner Peace / Bodhidharma's EmptyTheContent - together 
+ Wrong potential degeneration of complex Fibonacci sequence - testable with Vietnamese 
+ KienTanh / HuiNeng WuNien / Gotama's Inner Peace / Bodhidharma's #EmptyTheContent - together 
  with Lucas Numbers applicable to innate Intellligence of Illuminati / Communist elites, we 
  theoretically and empirically prove that the Right evolution must come through (type) 
  EquanimityAwareness f+1 = 1 enhanced and materialized in Equanimity Communities where Nature 
@@ -23,23 +23,29 @@
 */
 #[derive(Debug)]
 pub struct InnerSpace {
-  // observable traits from attached to balanced to detached in one's InnerSpace
-  pub x_traits: i32, // HashMap<i32, String>,  perceive event via measurable Intuition
-  pub y_pointers: i32, // HashMap<i32, String>,  perceive event via measurable Sanadhi
+  // observable traits and pointers from attached to balanced to detached in one's InnerSpace
+  pub x_traits: i32, // HashMap<i32, String> visible traits observable in x_dimension
+  pub y_pointers: i32, // HashMap<i32, String> smart pointers from outcomes of y_dimension
   
   pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
-  pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness or Gotama Mindfulness
+  pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness
 }
-pub mod y_pointers;  // implementations to make the description as closed to the described
-pub mod ydimension;
+pub mod y_pointers; // implementations to make the description closed to the described
+pub mod ydimension; // states of consciousness driving observable Activities and Relationships
 
-pub mod x_traits;  // implementations to make the description as closed to the described
-pub mod xdimension;
+pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
+pub mod xdimension; // states of consciousness varying from attachment to detachment
 
-pub mod fdimension;
+pub mod fdimension; // other relevant factors making up the states and stock of the persona
 
-impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AI
+/*
+  Dynamic interactions between normative and positive AI intelligence to custom modeling the
+  objective function #Prajna = F(X, Y) of "complex-valued data" to foster innovations /
+  breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
+  next qualified realm, an organization, foreign affairs, national development, etc.
+*/
+impl InnerSpace {
 /*
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
     return self.f_dimension
@@ -53,11 +59,12 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
   fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
     return "decisive_battle".to_string()
   }
-  fn nation_happiness(&self) -> String { // f(_x,_y) for a nation
+  fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
     return "in_operation".to_string()
   }
 */
 }
+
 // HashMap will be replaced with db_1 bare bone K-V store with namespace and cgroup
 use std::collections::HashMap; 
 
