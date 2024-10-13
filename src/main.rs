@@ -15,10 +15,10 @@
   totally detached in TRUTH ] to the outcome of _y, _x and then _f round cycle from Self to 
   Selfless at deeper Detachment.
       
-  Proven qualities of [ indoctrinate (binding_clinging forces I-4 ],
-  [ Veiled Right and Wrong I-3 ], [ Influenced I-2 ], [ KindnessEmpathy I-1 ], balanced I 0 ], 
-  [ Intuition (Trust, Qi, Art) I+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn)
-  I+2 ], [ Care I+3 ], [ TRUTH I+4 ] from heavily attached to totally detached, capable to 
+  Proven qualities of [ indoctrinate (binding_clinging forces T-4 ],
+  [ Veiled Right and Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], 
+  [ Intuition (Trust, Qi, Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn)
+  T+2 ], [ Care T+3 ], [ TRUTH T+4 ] from heavily attached to totally detached, capable to 
   enable wider angle of a focused event are from [ -4 to +4 ] where 0 is the base of a
   qualified humanitas.
       
@@ -26,7 +26,7 @@
   take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
   learned based on its private ratings of the suggested positive intelligence and its 
   normative intelligence. The outcome is its vector of these rated qualities for self 
-  cultivations and their effects on the persona Ignorance or Prajna, measurable at the bottom 
+  cultivations and their effects on the persona Ignorance or #Prajna, measurable at the bottom 
   line of important focused events.
 */
 

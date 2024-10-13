@@ -1,4 +1,4 @@
-// this is custom type KpT from x_traits [-5 to +5] in observable enforcements of its validity
+// evaluate each x_traits ranging [-3 to +3] in observable enforcements of its validity
 // and behaviours in using Rust compiler, LLM models, and KP custom gdb
 #[derive(Debug)]
 pub struct KpT {

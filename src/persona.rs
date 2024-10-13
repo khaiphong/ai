@@ -69,10 +69,10 @@ impl InnerSpace {
 use std::collections::HashMap; 
 
 pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
-  let mut _t = 0;  // qualified persona at balanced traits
-  let mut _p = 0;  // qualified new Era persona at Awareness-Prajna
+  let mut _t = 0;  // qualified persona at balanced traits, make it as observable list
+  let mut _p = 0;  // qualified persona at Awareness, make it as observable list
   
-  let mut _y = 0;  // to be evaluated in blockchain of user self-evaluation and expert
+  let mut _y = 0;  // to be evaluated in blockchain of user self-evaluation and AI
   let mut _x = 0;  // opinions from fact-base tracked records in engaged living.
   let mut _f = 0;  // qualified person
 
@@ -115,7 +115,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   y.insert(6, String::from("Y+6: Unmoving"));      // = 8  Gotama's impass - #SamadhiPrajna
   
   // SmartPointers y_traints starting from ability to #EmptyTheContent for detoxification 
-  let mut p = HashMap::new(); // SmartPointers (p) toward SamadhiPrajna
+  let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
   p.insert(1, String::from("P1: EmptyTheContent"));         // = 1 Bodhidharma
   p.insert(2, String::from("P2: DhyanaSamadhi"));           // = 2 HuiNeng
   p.insert(3, String::from("P3: Samadhi"));                 // = 3 Meditation from diff. angles
@@ -126,7 +126,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   p.insert(8, String::from("P8: PrajnaTIP"));               // = 8 #PrajnaTIP
 
   // x_traints driven by #Intuition (t) 
-  let mut t = HashMap::new(); // intuition from x-dimension pointed to by SmartPointers
+  let mut t = HashMap::new(); // observable traits from x-dimension
   t.insert(0, String::from("T-0: Balanced"));                // =  0, qualified person
   
   // the x_traits vary from neutral balance to degrees if attached and/or detached
@@ -140,8 +140,6 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   t.insert(2, String::from("T+2: Care"));                    // = 2
   t.insert(3, String::from("T+3: Honesty"));                 // = 3
   t.insert(4, String::from("T+4: Truth"));                   // = 4
-
-  // => observable X-dimension from attachments to detachments, manifested in cosmic energy
   
   let mut f = HashMap::new(); // Taxonomy (types) of f_dimension
   f.insert(0, String::from("F 0: Persona")); //  Person sub f as the key
@@ -166,18 +164,17 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   f.insert(7, String::from("F+7: ForecastingSimulation"));     // = 13
   f.insert(8, String::from("F+8: SamadhiPrajna"));             // = 21
   
-    
   // dynamic between one's avaluation and the KP's prediction
-  _t = t_evaluation(t); // visible x_traits based on the outcomes in engaged living 
-  _p = p_evaluation(p); // visible y_pointers based on deeper InnerPeace of Samadhi
+  _t = t_evaluation(t); // list of visible x_traits based on the outcomes in engaged living
+  _p = p_evaluation(p); // list of visible y_pointers based on InnerPeace of Samadhi
   
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
-  _f = f_evaluation(f);
+  _f = f_evaluation(f); // system evaluation of the persona states and stock of #Prajna
   
   // evaluation of InnerSpace
   let me = InnerSpace {
-    x_traits: _t,
+    x_traits: _t,  
     y_pointers: _p,
     
     y_dimension: _y,
@@ -187,37 +184,37 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 
   return me;
 
-} // end of build_InnerSpace from Intuition traits t, SignedPosts y, Awareness x, InnerSpace f
+} // end of build_InnerSpace from traits t, SignedPosts y, Awareness x, InnerSpace f
 
 /*
-  p_evaluation return evaluated value of one's y_pointer type of SmartPointer InnerPeace from
-  #EmptyTheContent toward SanadhiPrajna and its reversed engineering for people connected to
-  learn and share in the hashtag community. We can use the generic evaluation type to be 
-  implemented for identified pointer which can question from LLM models then fine-tuned from 
-  KpPlatform community data and the custom data of the client.
+  p_evaluation return evaluated value of one's y_pointer #EmptyTheContent toward SanadhiPrajna
+  and its reversed engineering for people connected to learn and share in the hashtag
+  community. We can use the generic evaluation type to be implemented for identified pointer
+  which can question from LLM models then fine-tuned from KpPlatform community data and the
+  custom data of the client.
 */
 fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
-   println!("Valid Samadhy pointers"); // all claimed meditations must meet DhyanaSamadhi
+   println!("Valid Samadhy pointers"); // all claimed meditations must meet #DhyanaSamadhi
    for (key, value) in &p {
         println!("{key}: {value}");
     }
-    // evaluate the transient value of s in circular processes of 7 or 8 hashtag and record
+    // evaluate the transient value of p in circular processes of 8 hashtag and record
     // it somewhere for tracking records in different cases of claimed #
     
     return 0; // #EmptyTheContent
 }
 
 /*
-  t_evaluation return evaluated value of one's trait (type) ranging from attachment to
-  detachment to be explored in one's transcendental #Awareness and #Samadhi which are tags
-  for people connected to learn and share in the hashtag community. We can use the generic
-  evaluation type to be implemented for identified trait which can question from LLM models
-  then fine-tuned for KpPlatform community data and the custom data of the client.
+  t_evaluation return evaluated value of one's trait ranging from attachment to detachment
+  to be explored which are tags for people connected to learn and share in the hashtag 
+  community. We can use the generic evaluation type to be implemented for identified trait 
+  which can question from LLM models then fine-tuned for KpPlatform community data and the 
+  custom data of the client.
 */
 fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
-   println!("Valid Intuition traits");
+   println!("Valid traits");
    for (key, value) in &t {
         println!("{key}: {value}");
     }
@@ -243,7 +240,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
   Kingdom of gods within. The "Hoax of Jesus Redeemer" will be naturally exposed to 
   scientifically point out the Right way of evolution versus the Wrong way of degeneration as 
   evidenced in the total collapse of the past esoteric feudal systems ruled by the degenerated
-  King og Gods. This can be done with or without the revelation of the real Jesus in his
+  King of Gods. This can be done with or without the revelation of the real Jesus in his
   Continuity of the consciousness and major Lesson Learned amongst Intelligent Beings.
   
   Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
@@ -254,26 +251,23 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
 */
 pub enum Xtraits {
   Truth(String), 
-  // Honesty - Budh - Patience /  Chân - Thiện - Nhẩn
   Honesty(String), 
   Care(String),
-  // Intuition Trust, Qi, Art
-  Intuition(String),
+  Intuition(String), // Intuition Trust, Qi, Art
   
   Balanced(String), // qualified person
   
   KindnessEmpathy(String),  
   Influenced(String),
   Veiled(String),
-  // indovtrinated visible in BindingWord, BindingImage, ClingingThought
-  Indoctrinated(String),
+  Indoctrinated(String), // visible in BindingWord, BindingImage, ClingingThought
 }
 
 pub enum Ypointers {
   EmptyTheContent(String), 
   DhyanaSamadhi(String),
   Samadhi(String),    // Samadhi must produce visible outcomes known by Gotama
-  Awareness(String), // Transcendental Awareness
+  Awareness(String),  // Transcendental Awareness
   Prajna(String), 
   AwarenessPrajna(String),   // related to karma
   SamadhiPrajna(String),     // known by HuiNeng
@@ -281,7 +275,7 @@ pub enum Ypointers {
 }
 
 /*
- Trait definitions are a way to group method signatures together to define a set of behaviors
+ Trait are a way to group method signatures together to define a set of behaviors
  necessary to accomplish some purpose. By defining hashtag x_trais varied from indoctrinated
  to the Truth in ChangeManagement toward SmartPointers to absolute Silence, we force each type
  (claimed method) implementing the trait such as Falun gong to provide its custom and 
