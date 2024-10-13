@@ -1,16 +1,16 @@
-// this is custom type KpI from x_traits [-5 to +5] in observable enforcements of its validity
+// this is custom type KpT from x_traits [-5 to +5] in observable enforcements of its validity
 // and behaviours in using Rust compiler, LLM models, and KP custom gdb
 #[derive(Debug)]
-pub struct KpI {
+pub struct KpT {
   value: i32,
 }
-impl KpI {
-  pub fn new(value: i32) -> KpI {
+impl KpT {
+  pub fn new(value: i32) -> KpT {
     if value < -4 || value > 4 {
-            panic!("KpI value must be between -4 to +4, got {}.", value);
+            panic!("KpT value must be between -4 to +4, got {}.", value);
     }
 
-    KpI { value }
+    KpT { value }
   }
 
   pub fn value(&self) -> i32 {

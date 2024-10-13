@@ -30,8 +30,8 @@
   line of important focused events.
 */
 
-use crate::persona::x_traits::{KpI};
-//use crate::persona::y_traits::{KpS};
+use crate::persona::x_traits::{KpT};
+use crate::persona::y_pointers::{KpP};
 
 use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
 use crate::persona::xdimension::{WuNien, KpX};
@@ -40,24 +40,24 @@ use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 // LLM augmented with self-rating of Intuition traits x-dimension pointing to SmartPointer
 use crate::persona::truth::{truth_agent1, truth_agent2};
 use crate::persona::care::{care_agent1, care_agent2};
-use crate::persona::falun::{falun_agent1, falun_agent2};
+use crate::persona::honesty::{honesty_agent1, honesty_agent2};
 use crate::persona::intuition::{intuition_agent1, intuition_agent2};
 
 use crate::persona::balanced::{balanced_agent1, balanced_agent2};
 
-use crate::persona::kindness_empathy::{kindness_empathy_agent1, kindness_empathy_agent2};
+use crate::persona::kindnessempathy::{kindnessempathy_agent1, kindnessempathy_agent2};
 use crate::persona::influenced::{influenced_agent1, influenced_agent2};
 use crate::persona::veiled::{veiled_agent1, veiled_agent2};
 use crate::persona::indoctrinated::{indoctrinated_agent1, indoctrinated_agent2};
 
 // LLM augmented with self-rating of Meditation Samadhi y-dimension of SmartPointer
 use crate::persona::empty_the_content::{empty_the_content_agent1, empty_the_content_agent2};
-use crate::persona::dhyana_samadhi::{dhyana_samadhi_agent1, dhyana_samadhi_agent2};
-use crate::persona::meditation::{meditation_agent1, meditation_agent2};
-use crate::persona::kien_tanh::{kien_tanh_agent1, kien_tanh_agent2};
-//use crate::persona::awareness_prajna::{awareness_prajna_agent1, awareness_prajna_agent2};
-//use crate::persona::samadhi_prajna::{samadhi_prajna_agent1, samadhi_prajna_agent2};
-//use crate::persona::prajna_tip::{prajna_tip_agent1, prajna_tip_agent2};
+use crate::persona::dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2};
+use crate::persona::samadhi::{samadhi_agent1, samadhi_agent2};
+use crate::persona::awareness::{awareness_agent1, awareness_agent2};
+use crate::persona::awarenessprajna::{awarenessprajna_agent1, awarenessprajna_agent2};
+use crate::persona::samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2};
+use crate::persona::prajnatip::{prajnatip_agent1, prajnatip_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
 use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
@@ -103,11 +103,11 @@ fn main() {
   #[derive(Debug)]
   struct Prajna; let _wisdom = Prajna;
   #[derive(Debug)]
-  struct AwarenessPrajna; let _awareness_prajna = AwarenessPrajna;
+  struct AwarenessPrajna; let _awarenessprajna = AwarenessPrajna;
   #[derive(Debug)]
-  struct SamadhiPrajna; let _samadhi_prajna = SamadhiPrajna;
+  struct SamadhiPrajna; let _samadhiprajna = SamadhiPrajna;
   #[derive(Debug)] 
-  struct PrajnaTIP; let _prajna_tip = PrajnaTIP;
+  struct PrajnaTIP; let _prajnatip = PrajnaTIP;
 
   println!("I'm connecting to node {:?}!", _intuition);
   println!("I'm connecting to node {:?}!", _meditation);
@@ -115,12 +115,15 @@ fn main() {
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
   println!("I'm connecting to node {:?}!", _transcendental_awareness);
   println!("I'm connecting to node {:?}!", _wisdom);
-  println!("I'm connecting to node {:?}!", _awareness_prajna);
-  println!("I'm connecting to node {:?}!", _samadhi_prajna);
-  println!("I'm connecting to node {:?}!", _prajna_tip);
+  println!("I'm connecting to node {:?}!", _awarenessprajna);
+  println!("I'm connecting to node {:?}!", _samadhiprajna);
+  println!("I'm connecting to node {:?}!", _prajnatip);
 
-  let _kpi = KpI::new(0);
-  println!("I'm using {:?}!", _kpi);
+  let _kpt = KpT::new(0);	// traits on X-dimension
+  println!("I'm using {:?}!", _kpt);
+  
+  let _kpp = KpP::new(1);	// pointers on Y-dimension
+  println!("I'm using {:?}!", _kpp);
   
   let _tm = TranscendentalMeditation {};
   println!("I'm using {:?}!", _tm);
@@ -151,10 +154,10 @@ fn main() {
   println!("I'm augmenting {:?}!", _care_agent1);
   let _care_agent2 = care_agent2();
   println!("I'm augmenting {:?}!", _care_agent2);  
-  let _falun_agent1 = falun_agent1();
-  println!("I'm augmenting {:?}!", _falun_agent1);
-  let _falun_agent2 = falun_agent2();
-  println!("I'm augmenting {:?}!", _falun_agent2); 
+  let _honesty_agent1 = honesty_agent1();
+  println!("I'm augmenting {:?}!", _honesty_agent1);
+  let _honesty_agent2 = honesty_agent2();
+  println!("I'm augmenting {:?}!", _honesty_agent2); 
   let _intuition_agent1 = intuition_agent1();
   println!("I'm augmenting {:?}!", _intuition_agent1);
   let _intuition_agent2 = intuition_agent2();
@@ -165,10 +168,10 @@ fn main() {
   let _balanced_agent2 = balanced_agent2();
   println!("I'm augmenting {:?}!", _balanced_agent2);  
 
-  let _kindness_empathy_agent1 = kindness_empathy_agent1();
-  println!("I'm augmenting {:?}!", _kindness_empathy_agent1);
-  let _kindness_empathy_agent2 = kindness_empathy_agent2();
-  println!("I'm augmenting {:?}!", _kindness_empathy_agent2);  
+  let _kindnessempathy_agent1 = kindnessempathy_agent1();
+  println!("I'm augmenting {:?}!", _kindnessempathy_agent1);
+  let _kindnessempathy_agent2 = kindnessempathy_agent2();
+  println!("I'm augmenting {:?}!", _kindnessempathy_agent2);  
   let _influenced_agent1 = influenced_agent1();
   println!("I'm augmenting {:?}!", _influenced_agent1);
   let _influenced_agent2 = influenced_agent2();
@@ -187,30 +190,30 @@ fn main() {
   println!("I'm augmenting {:?}!", _empty_the_content_agent1);
   let _empty_the_content_agent2 = empty_the_content_agent2();
   println!("I'm augmenting {:?}!", _empty_the_content_agent2);    
-  let _dhyana_samadhi_agent1 = dhyana_samadhi_agent1();
-  println!("I'm augmenting {:?}!", _dhyana_samadhi_agent1);
-  let _dhyana_samadhi_agent2 = dhyana_samadhi_agent2();
-  println!("I'm augmenting {:?}!", _dhyana_samadhi_agent2);  
-  let _meditation_agent1 = meditation_agent1();
-  println!("I'm augmenting {:?}!", _meditation_agent1);
-  let _meditation_agent2 = meditation_agent2();
-  println!("I'm augmenting {:?}!", _meditation_agent2);
-  let _kien_tanh_agent1 = kien_tanh_agent1();
-  println!("I'm augmenting {:?}!", _kien_tanh_agent1);
-  let _kien_tanh_agent2 = kien_tanh_agent2();
-  println!("I'm augmenting {:?}!", _kien_tanh_agent2); 
-//  let _awareness_prajna_agent1 = awareness_prajna_agent1();
-//  println!("I'm augmenting {:?}!", _awareness_prajna_agent1);
-//  let _awareness_prajna_agent2 = awareness_prajna_agent2();
-//  println!("I'm augmenting {:?}!", _awareness_prajna_agent2); 
-//  let _samadhi_prajna_agent1 = samadhi_prajna_agent1();
-//  println!("I'm augmenting {:?}!", _samadhi_prajna_agent1);
-//  let _samadhi_prajna_agent2 = samadhi_prajna_agent2();
-//  println!("I'm augmenting {:?}!", _samadhi_prajna_agent2); 
-//  let _prajna_tip_agent1 = prajna_tip_agent1();
-//  println!("I'm augmenting {:?}!", _prajna_tip_agent1);
-//  let _prajna_tip_agent2 = prajna_tip_agent2();
-//  println!("I'm augmenting {:?}!", _prajna_tip_agent2); 
+  let _dhyanasamadhi_agent1 = dhyanasamadhi_agent1();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent1);
+  let _dhyanasamadhi_agent2 = dhyanasamadhi_agent2();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent2);  
+  let _samadhi_agent1 = samadhi_agent1();
+  println!("I'm augmenting {:?}!", _samadhi_agent1);
+  let _samadhi_agent2 = samadhi_agent2();
+  println!("I'm augmenting {:?}!", _samadhi_agent2);
+  let _awareness_agent1 = awareness_agent1();
+  println!("I'm augmenting {:?}!", _awareness_agent1);
+  let _awareness_agent2 = awareness_agent2();
+  println!("I'm augmenting {:?}!", _awareness_agent2); 
+  let _awarenessprajna_agent1 = awarenessprajna_agent1();
+  println!("I'm augmenting {:?}!", _awarenessprajna_agent1);
+  let _awarenessprajna_agent2 = awarenessprajna_agent2();
+  println!("I'm augmenting {:?}!", _awarenessprajna_agent2); 
+  let _samadhiprajna_agent1 = samadhiprajna_agent1();
+  println!("I'm augmenting {:?}!", _samadhiprajna_agent1);
+  let _samadhiprajna_agent2 = samadhiprajna_agent2();
+  println!("I'm augmenting {:?}!", _samadhiprajna_agent2); 
+  let _prajnatip_agent1 = prajnatip_agent1();
+  println!("I'm augmenting {:?}!", _prajnatip_agent1);
+  let _prajnatip_agent2 = prajnatip_agent2();
+  println!("I'm augmenting {:?}!", _prajnatip_agent2); 
 
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(0, 0, 0);
