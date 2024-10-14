@@ -161,6 +161,50 @@ fn main() {
   println!("I'm connecting to node {:?}!", _veiled);
   println!("I'm connecting to node {:?}!", _indoctrinated);
 
+  // macroscopic levels of [ Oneness >< Diversities ]
+  #[derive(Debug)] 
+  struct Oneness; let _oneness = Oneness;
+  println!("I'm connecting to node {:?}!", _oneness);
+  #[derive(Debug)] 
+  struct Diversities; let _diversities = Diversities;
+  println!("I'm connecting to node {:?}!", _diversities);
+  
+  // Dversities via I-Ching and LaoTzu
+  #[derive(Debug)] 
+  struct Heaven; let _heaven = Heaven;
+  println!("I'm connecting to node {:?}!", _heaven);
+  #[derive(Debug)] 
+  struct Earth; let _earth = Earth;
+  println!("I'm connecting to node {:?}!", _earth);
+  #[derive(Debug)] 
+  struct People; let _people = People;
+  println!("I'm connecting to node {:?}!", _people);
+  
+  // Dversities via KungTzu
+  #[derive(Debug)] 
+  struct Nhan; let _nhan = Nhan;
+  println!("I'm connecting to node {:?}!", _nhan);
+  #[derive(Debug)] 
+  struct Nghia; let _nghia = Nghia;
+  println!("I'm connecting to node {:?}!", _nghia);
+  #[derive(Debug)] 
+  struct Le; let _le = Le;
+  println!("I'm connecting to node {:?}!", _le);
+  #[derive(Debug)] 
+  struct Tri; let _tri = Tri;
+  println!("I'm connecting to node {:?}!", _tri);
+  #[derive(Debug)] 
+  struct Tin; let _tin = Tin;
+  println!("I'm connecting to node {:?}!", _tin);
+
+  // Dversities via Falun Gong: Honesty (identified trait), Morality, Patience
+  #[derive(Debug)] 
+  struct Morality; let _morality = Morality;
+  println!("I'm connecting to node {:?}!", _morality);
+  #[derive(Debug)] 
+  struct Patience; let _patience = Patience;
+  println!("I'm connecting to node {:?}!", _patience);
+
 
   let _kpt = KpT::new(0);	// traits on X-dimension
   println!("I'm using {:?}!", _kpt);
@@ -168,16 +212,16 @@ fn main() {
   let _kpp = KpP::new(1);	// pointers on Y-dimension
   println!("I'm using {:?}!", _kpp);
   
-  let _tm = TranscendentalMeditation {};
+  let _tm = TranscendentalMeditation {}; // TM contribution
   println!("I'm using {:?}!", _tm);
-  let _vp = Vipassana {};
+  let _vp = Vipassana {};                // Vipassana contribution
   println!("I'm using {:?}!", _vp);
-  let _kpy = KpY::new(0);
+  let _kpy = KpY::new(0);                // Signed Posts
   println!("I'm using {:?}!", _kpy);
   
-  let _transcendental_awareness = WuNien {};
-  println!("I'm evaluating my {:?}!", _transcendental_awareness);
-  let _kpx = KpX::new(0);
+  let _transcendental_awareness = WuNien {};                      // HuiNeng zen
+  println!("I'm evaluating my {:?}!", _transcendental_awareness); 
+  let _kpx = KpX::new(0);                                         // KP Awareness  
   println!("I'm evaluating my {:?}!", _kpx);
   
   let _hn = HuiNeng {};
@@ -188,7 +232,7 @@ fn main() {
   println!("I'm evaluating my {:?}!", _kpf);
   
   
-  // y_pointers of meditation from low from high where Kien_tanh is the target for average
+  // y_pointers of meditation where Kien_tanh is the target for average
   let _empty_the_content_agent1 = empty_the_content_agent1();
   println!("I'm augmenting {:?}!", _empty_the_content_agent1);
   let _empty_the_content_agent2 = empty_the_content_agent2();
