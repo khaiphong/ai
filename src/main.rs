@@ -89,35 +89,66 @@ pub mod back;
 pub mod network;
  
 fn main() {
-  // 9 public Hashtag # to be connected in learning and sharing
-  #[derive(Debug)] 
-  struct Intuition; let _intuition = Intuition;
-  #[derive(Debug)]
-  struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;
+  // 8 smart pointer # to be connected in learning and sharing
   #[derive(Debug)]
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
+  #[derive(Debug)]
+  struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;  
   #[derive(Debug)]
   struct Samadhi; let _transcendental_inner_peace = Samadhi;
   #[derive(Debug)]
   struct Awareness; let _transcendental_awareness = Awareness;
   #[derive(Debug)]
-  struct Prajna; let _wisdom = Prajna;
+  struct Prajna; let _wisdom = Prajna;  
   #[derive(Debug)]
   struct AwarenessPrajna; let _awarenessprajna = AwarenessPrajna;
   #[derive(Debug)]
   struct SamadhiPrajna; let _samadhiprajna = SamadhiPrajna;
   #[derive(Debug)] 
-  struct PrajnaTIP; let _prajnatip = PrajnaTIP;
-
-  println!("I'm connecting to node {:?}!", _intuition);
-  println!("I'm connecting to node {:?}!", _meditation);
+  struct PrajnaTIP1; let _prajnatip1 = PrajnaTIP1;
+  #[derive(Debug)] 
+  struct PrajnaTIP2; let _prajnatip2 = PrajnaTIP2;
+  
   println!("I'm connecting to node {:?}!", _empty_the_content);
+  println!("I'm connecting to node {:?}!", _meditation);
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
   println!("I'm connecting to node {:?}!", _transcendental_awareness);
   println!("I'm connecting to node {:?}!", _wisdom);
   println!("I'm connecting to node {:?}!", _awarenessprajna);
   println!("I'm connecting to node {:?}!", _samadhiprajna);
-  println!("I'm connecting to node {:?}!", _prajnatip);
+  println!("I'm connecting to node {:?}!", _prajnatip1);
+  println!("I'm connecting to node {:?}!", _prajnatip2);
+  
+  // 9 trait # to be connected in learning and sharing
+  #[derive(Debug)] 
+  struct Truth; let _truth = Truth;
+  #[derive(Debug)] 
+  struct Honesty; let _honesty = Honesty;  
+  #[derive(Debug)] 
+  struct Care; let _care = Care;
+  #[derive(Debug)] 
+  struct Intuition; let _intuition = Intuition;
+  #[derive(Debug)] 
+  struct Balanced; let _balanced = Balanced;
+  #[derive(Debug)] 
+  struct KindnessEmpathy; let _kindnessempathy = KindnessEmpathy;
+  #[derive(Debug)] 
+  struct Influenced; let _influenced = Influenced;
+  #[derive(Debug)] 
+  struct Veiled; let _veiled = Veiled;
+  #[derive(Debug)] 
+  struct Indoctrinated; let _indoctrinated = Indoctrinated;
+
+  println!("I'm connecting to node {:?}!", _truth);
+  println!("I'm connecting to node {:?}!", _honesty);
+  println!("I'm connecting to node {:?}!", _care);
+  println!("I'm connecting to node {:?}!", _intuition);
+  println!("I'm connecting to node {:?}!", _balanced);
+  println!("I'm connecting to node {:?}!", _kindnessempathy);
+  println!("I'm connecting to node {:?}!", _influenced);
+  println!("I'm connecting to node {:?}!", _veiled);
+  println!("I'm connecting to node {:?}!", _indoctrinated);
+
 
   let _kpt = KpT::new(0);	// traits on X-dimension
   println!("I'm using {:?}!", _kpt);

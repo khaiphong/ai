@@ -173,7 +173,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   _f = f_evaluation(f); // system evaluation of the persona states and stock of #Prajna
   
   // evaluation of InnerSpace
-  let me = InnerSpace {
+  let me = InnerSpace { // _t and _p as lists of traits and pointer evaluated from -3 to +3
     x_traits: _t,  
     y_pointers: _p,
     
