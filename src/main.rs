@@ -1,6 +1,6 @@
 /*
   Starting at a naturally qualified person of this cycle modeled at balanced intuition
-  "I 0", there is a wide range of awareness _x and inner_peace from meditation (samadhy) _y
+  "I 0", there is a wide range of awareness _x and inner_peace from meditation (samadhi) _y
   from negative of binding-clinging forces to positive in detachment based on self-evaluated 
   plus LLM opinions of x_evaluation and y_evaluation. We use mutable variable instead of
   self-evaluated defined const as visible x_traits and y_traints leading to higher 
@@ -37,7 +37,7 @@ use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY};
 use crate::persona::xdimension::{WuNien, KpX};
 use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
 
-// LLM augmented with self-rating of Intuition traits x-dimension pointing to SmartPointer
+// LLM augmented with self-rating of traits x-dimension pointing to by SmartPointers
 use crate::persona::truth::{truth_agent1, truth_agent2};
 use crate::persona::care::{care_agent1, care_agent2};
 use crate::persona::honesty::{honesty_agent1, honesty_agent2};
@@ -55,9 +55,13 @@ use crate::persona::empty_the_content::{empty_the_content_agent1, empty_the_cont
 use crate::persona::dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2};
 use crate::persona::samadhi::{samadhi_agent1, samadhi_agent2};
 use crate::persona::awareness::{awareness_agent1, awareness_agent2};
+
+use crate::persona::prajna::{prajna_agent1, prajna_agent2};
+
 use crate::persona::awarenessprajna::{awarenessprajna_agent1, awarenessprajna_agent2};
 use crate::persona::samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2};
-use crate::persona::prajnatip::{prajnatip_agent1, prajnatip_agent2};
+use crate::persona::prajnatip1::{prajnatip1_agent1, prajnatip1_agent2};
+use crate::persona::prajnatip2::{prajnatip2_agent1, prajnatip2_agent2};
 
 // open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
 use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
@@ -89,7 +93,7 @@ pub mod back;
 pub mod network;
  
 fn main() {
-  // 8 smart pointer # to be connected in learning and sharing
+  // 9 smart pointer # to be connected in learning and sharing
   #[derive(Debug)]
   struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
   #[derive(Debug)]
@@ -98,8 +102,10 @@ fn main() {
   struct Samadhi; let _transcendental_inner_peace = Samadhi;
   #[derive(Debug)]
   struct Awareness; let _transcendental_awareness = Awareness;
+  
   #[derive(Debug)]
-  struct Prajna; let _wisdom = Prajna;  
+  struct Prajna; let _wisdom = Prajna; 
+  
   #[derive(Debug)]
   struct AwarenessPrajna; let _awarenessprajna = AwarenessPrajna;
   #[derive(Debug)]
@@ -113,7 +119,9 @@ fn main() {
   println!("I'm connecting to node {:?}!", _meditation);
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
   println!("I'm connecting to node {:?}!", _transcendental_awareness);
+  
   println!("I'm connecting to node {:?}!", _wisdom);
+  
   println!("I'm connecting to node {:?}!", _awarenessprajna);
   println!("I'm connecting to node {:?}!", _samadhiprajna);
   println!("I'm connecting to node {:?}!", _prajnatip1);
@@ -128,8 +136,10 @@ fn main() {
   struct Care; let _care = Care;
   #[derive(Debug)] 
   struct Intuition; let _intuition = Intuition;
+  
   #[derive(Debug)] 
   struct Balanced; let _balanced = Balanced;
+  
   #[derive(Debug)] 
   struct KindnessEmpathy; let _kindnessempathy = KindnessEmpathy;
   #[derive(Debug)] 
@@ -143,7 +153,9 @@ fn main() {
   println!("I'm connecting to node {:?}!", _honesty);
   println!("I'm connecting to node {:?}!", _care);
   println!("I'm connecting to node {:?}!", _intuition);
+  
   println!("I'm connecting to node {:?}!", _balanced);
+  
   println!("I'm connecting to node {:?}!", _kindnessempathy);
   println!("I'm connecting to node {:?}!", _influenced);
   println!("I'm connecting to node {:?}!", _veiled);
@@ -174,6 +186,46 @@ fn main() {
   println!("I'm evaluating {:?}!", _go);
   let _kpf = KpF::new(0);
   println!("I'm evaluating my {:?}!", _kpf);
+  
+  
+  // y_pointers of meditation from low from high where Kien_tanh is the target for average
+  let _empty_the_content_agent1 = empty_the_content_agent1();
+  println!("I'm augmenting {:?}!", _empty_the_content_agent1);
+  let _empty_the_content_agent2 = empty_the_content_agent2();
+  println!("I'm augmenting {:?}!", _empty_the_content_agent2);    
+  let _dhyanasamadhi_agent1 = dhyanasamadhi_agent1();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent1);
+  let _dhyanasamadhi_agent2 = dhyanasamadhi_agent2();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent2);  
+  let _samadhi_agent1 = samadhi_agent1();
+  println!("I'm augmenting {:?}!", _samadhi_agent1);
+  let _samadhi_agent2 = samadhi_agent2();
+  println!("I'm augmenting {:?}!", _samadhi_agent2);
+  let _awareness_agent1 = awareness_agent1();
+  println!("I'm augmenting {:?}!", _awareness_agent1);
+  let _awareness_agent2 = awareness_agent2();
+  
+  let _prajna_agent1 = prajna_agent1();
+  println!("I'm augmenting {:?}!", _prajna_agent1);
+  let _prajna_agent2 = prajna_agent2();
+  
+  println!("I'm augmenting {:?}!", _awareness_agent2); 
+  let _awarenessprajna_agent1 = awarenessprajna_agent1();
+  println!("I'm augmenting {:?}!", _awarenessprajna_agent1);
+  let _awarenessprajna_agent2 = awarenessprajna_agent2();
+  println!("I'm augmenting {:?}!", _awarenessprajna_agent2); 
+  let _samadhiprajna_agent1 = samadhiprajna_agent1();
+  println!("I'm augmenting {:?}!", _samadhiprajna_agent1);
+  let _samadhiprajna_agent2 = samadhiprajna_agent2();
+  println!("I'm augmenting {:?}!", _samadhiprajna_agent2); 
+  let _prajnatip1_agent1 = prajnatip1_agent1();
+  println!("I'm augmenting {:?}!", _prajnatip1_agent1);
+  let _prajnatip1_agent2 = prajnatip1_agent2();
+  println!("I'm augmenting {:?}!", _prajnatip1_agent2); 
+  let _prajnatip2_agent1 = prajnatip2_agent1();
+  println!("I'm augmenting {:?}!", _prajnatip2_agent1);
+  let _prajnatip2_agent2 = prajnatip2_agent2();
+  println!("I'm augmenting {:?}!", _prajnatip2_agent2); 
   
   
   // x_traits of intuition level from high to low
@@ -216,35 +268,6 @@ fn main() {
   let _indoctrinated_agent2 = indoctrinated_agent2();
   println!("I'm augmenting {:?}!", _indoctrinated_agent2); 
 
-  // y_pointers of meditation from low from high where Kien_tanh is the target for average
-  let _empty_the_content_agent1 = empty_the_content_agent1();
-  println!("I'm augmenting {:?}!", _empty_the_content_agent1);
-  let _empty_the_content_agent2 = empty_the_content_agent2();
-  println!("I'm augmenting {:?}!", _empty_the_content_agent2);    
-  let _dhyanasamadhi_agent1 = dhyanasamadhi_agent1();
-  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent1);
-  let _dhyanasamadhi_agent2 = dhyanasamadhi_agent2();
-  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent2);  
-  let _samadhi_agent1 = samadhi_agent1();
-  println!("I'm augmenting {:?}!", _samadhi_agent1);
-  let _samadhi_agent2 = samadhi_agent2();
-  println!("I'm augmenting {:?}!", _samadhi_agent2);
-  let _awareness_agent1 = awareness_agent1();
-  println!("I'm augmenting {:?}!", _awareness_agent1);
-  let _awareness_agent2 = awareness_agent2();
-  println!("I'm augmenting {:?}!", _awareness_agent2); 
-  let _awarenessprajna_agent1 = awarenessprajna_agent1();
-  println!("I'm augmenting {:?}!", _awarenessprajna_agent1);
-  let _awarenessprajna_agent2 = awarenessprajna_agent2();
-  println!("I'm augmenting {:?}!", _awarenessprajna_agent2); 
-  let _samadhiprajna_agent1 = samadhiprajna_agent1();
-  println!("I'm augmenting {:?}!", _samadhiprajna_agent1);
-  let _samadhiprajna_agent2 = samadhiprajna_agent2();
-  println!("I'm augmenting {:?}!", _samadhiprajna_agent2); 
-  let _prajnatip_agent1 = prajnatip_agent1();
-  println!("I'm augmenting {:?}!", _prajnatip_agent1);
-  let _prajnatip_agent2 = prajnatip_agent2();
-  println!("I'm augmenting {:?}!", _prajnatip_agent2); 
 
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(0, 0, 0);

@@ -45,7 +45,7 @@ pub mod fdimension; // other relevant factors making up the states and stock of 
   breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
   next qualified realm, an organization, foreign affairs, national development, etc.
 */
-impl InnerSpace {
+impl InnerSpace { // different methods for different InnerSpace persona types
 /*
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
     return self.f_dimension
@@ -195,7 +195,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 */
 fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
 
-   println!("Valid Samadhy pointers"); // all claimed meditations must meet #DhyanaSamadhi
+   println!("Valid Samadhi pointers"); // all claimed meditations must meet #DhyanaSamadhi
    for (key, value) in &p {
         println!("{key}: {value}");
     }
@@ -271,7 +271,8 @@ pub enum Ypointers {
   Prajna(String), 
   AwarenessPrajna(String),   // related to karma
   SamadhiPrajna(String),     // known by HuiNeng
-  PrajnaTIP(String),         // from KhaoPhong
+  PrajnaTIP1(String),         // from KP
+  PrajnaTIP2(String),
 }
 
 /*
@@ -302,8 +303,8 @@ pub mod awareness;
 pub mod prajna;
 pub mod awarenessprajna;
 pub mod samadhiprajna;
-pub mod prajnatip;     
-
+pub mod prajnatip1;     
+pub mod prajnatip2;
 /*
   y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
   explored in these two dimensions that are inputs into the f_evaluation. We can make the
