@@ -65,7 +65,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 */
 }
 
-// HashMap will be replaced with db_1 bare bone K-V store with namespace and cgroup
+// HashMap will be replaced with DbHashMap, a bare bone K-V store with namespace and cgroup
 use std::collections::HashMap; 
 
 pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
