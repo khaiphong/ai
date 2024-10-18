@@ -26,7 +26,8 @@ pub struct InnerSpace {
   // observable traits and pointers from attached to balanced to detached in one's InnerSpace
   pub x_traits: i32, // HashMap<i32, String> visible traits observable in x_dimension
   pub y_pointers: i32, // HashMap<i32, String> smart pointers from outcomes of y_dimension
-  
+  // each persona must have lists of traits, pointers, depths of X, Y, and F for both
+  // internal and/or externam acquired ability to handle required tasks
   pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
   pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness
