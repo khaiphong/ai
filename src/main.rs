@@ -205,6 +205,141 @@ fn main() {
   struct Patience; let _patience = Patience;
   println!("I'm connecting to node {:?}!", _patience);
 
+  // Diversities via Y-dimension
+  #[derive(Debug)] 
+  struct Tranquility; let _tranquility = Tranquility;
+  println!("I'm connecting to node {:?}!", _tranquility);
+  #[derive(Debug)] 
+  struct Equanimity; let _equanimity = Equanimity;
+  println!("I'm connecting to node {:?}!", _equanimity);
+  #[derive(Debug)] 
+  struct Purity; let _purity = Purity;
+  println!("I'm connecting to node {:?}!", _purity);
+  #[derive(Debug)] 
+  struct Selfless; let _selfless = Selfless;
+  println!("I'm connecting to node {:?}!", _selfless);  
+  #[derive(Debug)] 
+  struct NonThingness; let _non_thingness = NonThingness;
+  println!("I'm connecting to node {:?}!", _non_thingness);
+  #[derive(Debug)] 
+  struct Unmoving; let _unmoving = Unmoving;
+  println!("I'm connecting to node {:?}!", _unmoving);
+  
+  #[derive(Debug)] 
+  struct Empathy; let _empathy = Empathy;
+  println!("I'm connecting to node {:?}!", _empathy);
+  #[derive(Debug)] 
+  struct Kindness; let _kindness = Kindness;
+  println!("I'm connecting to node {:?}!", _kindness);
+  #[derive(Debug)] 
+  struct Conscience; let _conscience = Conscience;
+  println!("I'm connecting to node {:?}!", _conscience);
+  #[derive(Debug)] 
+  struct Conscience1; let _conscience1 = Conscience1;
+  println!("I'm connecting to node {:?}!", _conscience1);  
+  #[derive(Debug)] 
+  struct Conscience2; let _conscience2 = Conscience2;
+  println!("I'm connecting to node {:?}!", _conscience2);
+  #[derive(Debug)] 
+  struct Conscience3; let _conscience3 = Conscience3;
+  println!("I'm connecting to node {:?}!", _conscience3);
+  
+  // Diversities via X-dimension
+  #[derive(Debug)] 
+  struct HonNhien; let _hon_nhien = HonNhien;
+  println!("I'm connecting to node {:?}!", _hon_nhien);
+  #[derive(Debug)] 
+  struct ManagingFreshness; let _managing_freshness = ManagingFreshness;
+  println!("I'm connecting to node {:?}!", _managing_freshness);
+  #[derive(Debug)] 
+  struct KnowingFreshness; let _knowing_freshness = KnowingFreshness;
+  println!("I'm connecting to node {:?}!", _knowing_freshness);
+  #[derive(Debug)] 
+  struct ProcessDiscovered; let _process_discovered = ProcessDiscovered;
+  println!("I'm connecting to node {:?}!", _process_discovered);  
+  #[derive(Debug)] 
+  struct KnowingThought; let _knowing_thought = KnowingThought;
+  println!("I'm connecting to node {:?}!", _knowing_thought);
+  #[derive(Debug)] 
+  struct CareViaCosmicEnergy; let _care_via_cosmic_energy = CareViaCosmicEnergy;
+  println!("I'm connecting to node {:?}!", _care_via_cosmic_energy);
+  #[derive(Debug)] 
+  struct HelpViaCosmicEnergy; let _help_via_cosmic_energy = HelpViaCosmicEnergy;
+  println!("I'm connecting to node {:?}!", _help_via_cosmic_energy);
+  
+  #[derive(Debug)] 
+  struct CulturalInfluence; let _cultural_influence = CulturalInfluence;
+  println!("I'm connecting to node {:?}!", _cultural_influence);
+  #[derive(Debug)] 
+  struct RegionalInfluence; let _regional_influence = RegionalInfluence;
+  println!("I'm connecting to node {:?}!", _regional_influence);
+  #[derive(Debug)] 
+  struct NationalInfluence; let _national_influence = NationalInfluence;
+  println!("I'm connecting to node {:?}!", _national_influence);
+  #[derive(Debug)] 
+  struct VeiledType; let _veiled_type = VeiledType;
+  println!("I'm connecting to node {:?}!", _veiled_type);  
+  #[derive(Debug)] 
+  struct BindingWord; let _binding_word = BindingWord;
+  println!("I'm connecting to node {:?}!", _binding_word);
+  #[derive(Debug)] 
+  struct BindingImage; let _binding_image = BindingImage;
+  println!("I'm connecting to node {:?}!", _binding_image);
+  #[derive(Debug)] 
+  struct ClingingThought; let _clinging_thought = ClingingThought;
+  println!("I'm connecting to node {:?}!", _clinging_thought);  
+  
+  // Diversities via F-dimension
+  #[derive(Debug)] 
+  struct EquanimityAwareness; let _equanimity_awareness = EquanimityAwareness;
+  println!("I'm connecting to node {:?}!", _equanimity_awareness);
+  #[derive(Debug)] 
+  struct PurityAwareness; let _purity_awareness = PurityAwareness;
+  println!("I'm connecting to node {:?}!", _purity_awareness);
+  #[derive(Debug)] 
+  struct SignedPosts; let _signed_posts = SignedPosts;
+  println!("I'm connecting to node {:?}!", _signed_posts);
+  #[derive(Debug)] 
+  struct SelflessAwareness; let _selfless_awareness = SelflessAwareness;
+  println!("I'm connecting to node {:?}!", _selfless_awareness);  
+  #[derive(Debug)] 
+  struct VisibleAwarenessPrajna; let _visible_awareness_prajna = VisibleAwarenessPrajna;
+  println!("I'm connecting to node {:?}!", _visible_awareness_prajna);
+  #[derive(Debug)] 
+  struct EngagedAwarenessPrajna; let _engaged_awareness_prajna = EngagedAwarenessPrajna;
+  println!("I'm connecting to node {:?}!", _engaged_awareness_prajna);
+  #[derive(Debug)] 
+  struct ForecastingAwarenessPrajna; let _forecasting_awareness_prajna = ForecastingAwarenessPrajna;
+  println!("I'm connecting to node {:?}!", _forecasting_awareness_prajna);
+  #[derive(Debug)] 
+  struct VisibleSamadhiPrajna; let _visible_samadhi_prajna = VisibleSamadhiPrajna;
+  println!("I'm connecting to node {:?}!", _visible_samadhi_prajna);
+  
+  #[derive(Debug)] 
+  struct EmpathyAwareness; let _empathy_awareness = EmpathyAwareness;
+  println!("I'm connecting to node {:?}!", _empathy_awareness);
+  #[derive(Debug)] 
+  struct KindnessAwareness; let _kindness_awareness = KindnessAwareness;
+  println!("I'm connecting to node {:?}!", _kindness_awareness);
+  #[derive(Debug)] 
+  struct AnimalEnergy; let _animal_energy = AnimalEnergy;
+  println!("I'm connecting to node {:?}!", _animal_energy);
+  #[derive(Debug)] 
+  struct ExtremeDesire; let _extreme_desire = ExtremeDesire;
+  println!("I'm connecting to node {:?}!", _extreme_desire);  
+  #[derive(Debug)] 
+  struct AnimalConsciousness; let _animal_consciousness = AnimalConsciousness;
+  println!("I'm connecting to node {:?}!", _animal_consciousness);
+  #[derive(Debug)] 
+  struct Smelly1; let _smelly1 = Smelly1;
+  println!("I'm connecting to node {:?}!", _smelly1);
+  #[derive(Debug)] 
+  struct Smelly2; let _smelly2 = Smelly2;
+  println!("I'm connecting to node {:?}!", _smelly2); 
+  #[derive(Debug)] 
+  struct Smelly3; let _smelly3 = Smelly3;
+  println!("I'm connecting to node {:?}!", _smelly3); 
+
 
   let _kpt = KpT::new(0);	// traits on X-dimension
   println!("I'm using {:?}!", _kpt);
