@@ -228,21 +228,20 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
 
 /* 
   List of traits ranging from Detachments to practical outcomes Truth. This part exposes the
-  cheated Descriptions such as Faith from all religions, [ Honesty, Budh, Patience / Chân, 
-  Thiện, Nhẩn ] from Falun Dafa and all forms of Buddhist meditations or reflection (quán
-  chiếu) for testing and discovering the underlying natural laws of their practices to be
-  statistically evalutated by the world. For example, we will prove that "Faith" does not need
-  to be on the conflicting plan of duality due to binding word/image and clinging thought 
-  leading to many religious crusades, and can be used as a mean to ride on one's past binding 
-  forces as a form of Aspiration in transcending the "Known" to reach the Y-dimension recorded 
-  by Gotama as Right Meditation. The proof is at both theoretical level using math and at 
-  empirical levels as SHARED by different faith practitioners How to use "Faith / Trust"
-  Aspiration in transcending the Known for detoxifications of the tainted senses, realizing 
-  Kingdom of gods within. The "Hoax of Jesus Redeemer" will be naturally exposed to 
-  scientifically point out the Right way of evolution versus the Wrong way of degeneration as 
-  evidenced in the total collapse of the past esoteric feudal systems ruled by the degenerated
-  King of Gods. This can be done with or without the revelation of the real Jesus in his
-  Continuity of the consciousness and major Lesson Learned amongst Intelligent Beings.
+  cheated Descriptions such as Faith from all religions for testing and discovering the 
+  underlying natural laws of their practices to be statistically evalutated by the world. For
+  example, we will prove that "Faith" does not need to be on the conflicting plan of duality
+  due to binding word/image and clinging thought leading to many religious crusades, and can
+  be used as a mean to ride on one's past binding forces as a form of Aspiration in
+  transcending the "Known" to reach the Y-dimension recorded by Gotama as Right Meditation. 
+  The proof is at both theoretical level using math and at empirical levels as SHARED by 
+  different faith practitioners How to use "Faith / Trust" Aspiration in transcending the 
+  Known for detoxifications of the tainted senses, realizing Kingdom of gods within. The "Hoax
+  of Jesus Redeemer" will be naturally exposed to scientifically point out the Right way of 
+  evolution versus the Wrong way of degeneration as evidenced in the total collapse of the 
+  past esoteric feudal systems ruled by the degenerated King of Gods. This can be done with 
+  or without the revelation of the real Jesus in his Continuity of the consciousness and 
+  major Lesson Learned amongst Intelligent Beings.
   
   Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
   with claimed "Transcendental Meditation", Chinese ""Qi", KhaiPhong's discovered
@@ -264,6 +263,7 @@ pub enum Xtraits {
   Indoctrinated(String), // visible in BindingWord, BindingImage, ClingingThought
 }
 
+#[derive(Debug)]
 pub enum Ypointers {
   EmptyTheContent(String), 
   DhyanaSamadhi(String),
@@ -277,7 +277,7 @@ pub enum Ypointers {
 }
 
 /*
- Trait are a way to group method signatures together to define a set of behaviors
+ Traits are a way to group method signatures together to define a set of behaviors
  necessary to accomplish some purpose. By defining hashtag x_trais varied from indoctrinated
  to the Truth in ChangeManagement toward SmartPointers to absolute Silence, we force each type
  (claimed method) implementing the trait such as Falun gong to provide its custom and 
@@ -306,6 +306,7 @@ pub mod awarenessprajna;
 pub mod samadhiprajna;
 pub mod prajnatip1;     
 pub mod prajnatip2;
+
 /*
   y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
   explored in these two dimensions that are inputs into the f_evaluation. We can make the

@@ -30,6 +30,8 @@
   line of important focused events.
 */
 
+use crate::persona::Ypointers;
+
 use crate::persona::x_traits::{KpT};
 use crate::persona::y_pointers::{KpP};
 
@@ -94,26 +96,16 @@ pub mod network;
  
 fn main() {
   // 9 smart pointer # to be connected in learning and sharing
-  #[derive(Debug)]
-  struct EmptyTheContent; let _empty_the_content = EmptyTheContent;
-  #[derive(Debug)]
-  struct DhyanaSamadhi; let _meditation = DhyanaSamadhi;  
-  #[derive(Debug)]
-  struct Samadhi; let _transcendental_inner_peace = Samadhi;
-  #[derive(Debug)]
-  struct Awareness; let _transcendental_awareness = Awareness;
   
-  #[derive(Debug)]
-  struct Prajna; let _wisdom = Prajna; 
-  
-  #[derive(Debug)]
-  struct AwarenessPrajna; let _awarenessprajna = AwarenessPrajna;
-  #[derive(Debug)]
-  struct SamadhiPrajna; let _samadhiprajna = SamadhiPrajna;
-  #[derive(Debug)] 
-  struct PrajnaTIP1; let _prajnatip1 = PrajnaTIP1;
-  #[derive(Debug)] 
-  struct PrajnaTIP2; let _prajnatip2 = PrajnaTIP2;
+  let _empty_the_content =  Ypointers::EmptyTheContent(String::from("#EmptyTheContent"));
+  let _meditation = Ypointers::DhyanaSamadhi(String::from("#DhyanaSamadhi")); 
+  let _transcendental_inner_peace = Ypointers::Samadhi(String::from("#Samadhi"));
+  let _transcendental_awareness = Ypointers::Awareness(String::from("#Awareness"));
+  let _wisdom = Ypointers::Prajna(String::from("#Prajna")); 
+  let _awarenessprajna = Ypointers::AwarenessPrajna(String::from("#AwarenessPrajna")); 
+  let _samadhiprajna = Ypointers::SamadhiPrajna(String::from("#SamadhiPrajna"));
+  let _prajnatip1 = Ypointers::PrajnaTIP1(String::from("#PrajnaTIP1"));
+  let _prajnatip2 = Ypointers::PrajnaTIP2(String::from("#PrajnaTIP2"));
   
   println!("I'm connecting to node {:?}!", _empty_the_content);
   println!("I'm connecting to node {:?}!", _meditation);
