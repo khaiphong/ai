@@ -111,9 +111,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _meditation);
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
   println!("I'm connecting to node {:?}!", _transcendental_awareness);
-  
   println!("I'm connecting to node {:?}!", _wisdom);
-  
   println!("I'm connecting to node {:?}!", _awarenessprajna);
   println!("I'm connecting to node {:?}!", _samadhiprajna);
   println!("I'm connecting to node {:?}!", _prajnatip1);

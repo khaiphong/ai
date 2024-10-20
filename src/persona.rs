@@ -1,25 +1,35 @@
 /*
  The result of KP 50+ years of field researches PLUS exoteric / esoteric observations of
- qualified candidates as the first front-line soldiers while waiting for verifications and/or
+ qualified candidates as first front-line soldiers while waiting for verifications and/or
  modifications / enhancements of later academia contributions. We start from actual
  experiences of a Vietnamese student since 1970 all Gotama's recorded Jhanas, further 
  investigated leading to Bodhidharma's exchange with Emperor Wu (Lương Vũ Đế) on “What is the 
- highest meaning of noble truth" and HuiNeng's specialized contributions about (1) the 
+ highest meaning of noble Truth" and HuiNeng's specialized contributions about (1) the 
  Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
  Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, 
- Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both 
- exoteric and esoteric realms from Figure 11.1 that forms with personally observable Inner 
- Peace of Y-dimension from Gotama's recorded Jhanas a No-Conflict plan at any focused event 
- and (3) scientifically cultivable #Prajna / Wisdom with discovered underlying natural laws of 
- PrajnaTIP from one's scienrifically cultivable InnerSpace F-dimension for detoxification of 
- tainted senses. Introducing the #Awareness of a persona F-dimension with Right evolution or 
- Wrong potential degeneration of complex Fibonacci sequence - testable with Vietnamese 
- KienTanh / HuiNeng WuNien / Gotama's Inner Peace / Bodhidharma's #EmptyTheContent - together 
- with Lucas Numbers applicable to innate Intellligence of Illuminati / Communist elites, we 
- theoretically and empirically prove that the Right evolution must come through (type) 
- EquanimityAwareness f+1 = 1 enhanced and materialized in Equanimity Communities where Nature 
- and Science toward What Count join hand. It is then enforced with (type) PurityAwareness
- f+2 = 1 for the possibility of Transcending the Observed and Observer to see Thing-As-It-Is.
+ Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in 
+ both exoteric and esoteric realms from Figure 11.1 that forms with personally observable 
+ Inner Peace of Y-dimension from Gotama's recorded Jhanas a No-Conflict plan at any focused 
+ event and (3) scientifically cultivable #Prajna / Wisdom with discovered underlying natural 
+ laws of PrajnaTIPs from one's scienrifically cultivable InnerSpace F-dimension for 
+ detoxification of tainted senses. Introducing the #Awareness of a persona F-dimension with 
+ Right evolution or Wrong potential degeneration of complex Fibonacci sequence - testable 
+ with Vietnamese KienTanh / HuiNeng WuNien / Gotama's Inner Peace / Bodhidharma's 
+ #EmptyTheContent - together with Lucas Numbers applicable to innate Intellligence of 
+ Illuminati / Communist elites, we theoretically and empirically prove that the Right 
+ evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and materialized in 
+ Equanimity Communities where Nature and Science toward What Count join hand. It is then 
+ enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending the 
+ Observed and Observer to see Thing-As-It-Is and #Prajna of breakthrough.
+*/
+
+/*
+  We generalize the persona to big corporation HR and important person to (1) clean up 
+  tainted senses and (2) cultivate required traits for its What Count culture. The function 
+  of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
+  sense, the required traits are its core Values (e.g. #Honesty & #Care) in execution. This
+  part must be standardized and open sources for possible value-added solutions
+  x_traits, y_pointers, [f x y]-dimension : vectors instead of i32
 */
 #[derive(Debug)]
 pub struct InnerSpace {
@@ -32,6 +42,7 @@ pub struct InnerSpace {
   pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
   pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness
 }
+// Implementations
 pub mod y_pointers; // implementations to make the description closed to the described
 pub mod ydimension; // states of consciousness driving observable Activities and Relationships
 
@@ -225,29 +236,28 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0; // rated level of Intuition
 }
 
-
 /* 
-  List of traits ranging from Detachments to Truth. This part exposes the cheated Descriptions
-  such as Faith from all religions for testing and discovering the underlying natural laws of
-  their practices to be statistically evalutated by the world. For example, we will prove that
-  "Faith" does not need to be on the conflicting plan of duality due to binding word/image and
-  clinging thought leading to many religious crusades, and can be used as a mean to ride on
-  one's past binding forces as a form of Aspiration in transcending the "Known" to reach the
-  Y-dimension recorded by Gotama as Right Meditation. The proof is at both theoretical level
-  using math and at empirical levels as SHARED by different faith practitioners How to use
-  "Faith / Trust" Aspiration in transcending the Known for detoxifications of the tainted
-  senses, realizing Kingdom of gods within. The "Hoax of Jesus Redeemer" will be naturally
-  exposed to scientifically point out the Right way of evolution versus the Wrong way of
-  degeneration as evidenced in the total collapse of the past esoteric feudal systems ruled
-  by the degenerated King of Gods. This can be done with or without the revelation of the
-  real Jesus in his Continuity of the consciousness and major Lesson Learned amongst
-  Intelligent Beings.
+  List of traits ranging from #Indoctrinatd to #Truth. This part exposes the cheated 
+  Descriptions such as Faith from all religions for testing and discovering the underlying 
+  natural laws of their practices to be statistically evalutated by the world. For example, 
+  we will prove that "Faith" does not need to be on the conflicting plan of duality due to 
+  binding word/image and clinging thought leading to many religious crusades, and can be used 
+  as a mean to ride on one's past binding forces as a form of Aspiration in transcending the 
+  "Known" to reach the Y-dimension recorded by Gotama as Right Meditation. The proof is at 
+  both theoretical level using math and at empirical levels as SHARED by different faith 
+  practitioners of How to use "Faith / Trust" Aspiration in transcending the Known for 
+  detoxifications of the tainted senses, realizing Kingdom of gods within. The "Hoax of Jesus 
+  Redeemer" will be naturally exposed to scientifically point out the Right way of evolution 
+  versus the Wrong way of degeneration as evidenced in the total collapse of the past
+  esoteric feudal systems ruled by the degenerated King of Gods. This can be done with or 
+  without the revelation of the real Jesus in his Continuity of the consciousness and major 
+  Lesson Learned amongst Intelligent Beings.
   
   Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
   with claimed "Transcendental Meditation", Chinese ""Qi", KhaiPhong's discovered
-  underlying natural laws of Verifiable Processes from PrajnaTIP in Sound, and other 
-  transcendental technologies via Arts (singing, dancing, playing music, bonsai, merging with 
-  nature, etc) to wipe out cheaters "cooking sand and selling as rice".
+  underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
+  technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
+  to clean up cheaters "cooking sand and selling as rice".
 */
 #[derive(Debug)]
 pub enum Xtraits {
@@ -275,14 +285,16 @@ pub enum Ypointers {
   PrajnaTIP2(String),
 }
 
+
 /*
  Traits are a way to group method signatures together to define a set of behaviors
- necessary to accomplish some purpose. By defining hashtag x_trais varied from indoctrinated
- to the Truth in ChangeManagement toward SmartPointers to absolute Silence, we force each type
- (claimed method) implementing the trait such as Falun gong to provide its custom and 
- measurable processes in the method's body to be verified by the community and AI.
- Knowledge graph is a study the Described focused event and best possible outcomes honestly 
- evaluated by the persona of personal learned lessons relevant to the norm of the mass.
+ necessary to accomplish some purpose. By defining # x_trais varied from #Indoctrinated
+ to verifiable #Truth in ChangeManagement toward SmartPointers for the manifestation of 
+ #Prajna in required focused event, we force each type (claimed method) implementing the 
+ traits such as Falun to provide its custom and measurable processes in the method's body 
+ to be verified by the community and AI. Knowledge graph is a study the Described focused 
+ event and best possible outcomes honestly evaluated by the persona of personal learned 
+ lessons relevant to the norm of the mass.
 */
 // x_traits
 pub mod truth;    
@@ -295,7 +307,7 @@ pub mod influenced;
 pub mod veiled;  
 pub mod indoctrinated;   
 
-// y_pointers or SmartPointers
+// y_pointers
 pub mod empty_the_content;  
 pub mod dhyanasamadhi;  
 pub mod samadhi;  
@@ -305,6 +317,7 @@ pub mod awarenessprajna;
 pub mod samadhiprajna;
 pub mod prajnatip1;     
 pub mod prajnatip2;
+
 
 /*
   y_evaluation and x_evaluation return evaluated value of one's Y and X types to be further
