@@ -29,7 +29,7 @@
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the bottom 
   line of important focused events.
 */
-
+use crate::persona::Xtraits;
 use crate::persona::Ypointers;
 
 use crate::persona::x_traits::{KpT};
@@ -120,34 +120,21 @@ fn main() {
   println!("I'm connecting to node {:?}!", _prajnatip2);
   
   // 9 trait # to be connected in learning and sharing
-  #[derive(Debug)] 
-  struct Truth; let _truth = Truth;
-  #[derive(Debug)] 
-  struct Honesty; let _honesty = Honesty;  
-  #[derive(Debug)] 
-  struct Care; let _care = Care;
-  #[derive(Debug)] 
-  struct Intuition; let _intuition = Intuition;
-  
-  #[derive(Debug)] 
-  struct Balanced; let _balanced = Balanced;
-  
-  #[derive(Debug)] 
-  struct KindnessEmpathy; let _kindnessempathy = KindnessEmpathy;
-  #[derive(Debug)] 
-  struct Influenced; let _influenced = Influenced;
-  #[derive(Debug)] 
-  struct Veiled; let _veiled = Veiled;
-  #[derive(Debug)] 
-  struct Indoctrinated; let _indoctrinated = Indoctrinated;
+  let _truth = Xtraits::Truth(String::from("#Truth"));
+  let _honesty = Xtraits::Honesty(String::from("#Honesty"));  
+  let _care = Xtraits::Care(String::from("#TCare"));
+  let _intuition = Xtraits::Intuition(String::from("#Intuition"));
+  let _balanced = Xtraits::Balanced(String::from("#Balanced"));
+  let _kindnessempathy = Xtraits::KindnessEmpathy(String::from("#KindnessEmpathy"));  
+  let _influenced = Xtraits::Influenced(String::from("#Influenced"));
+  let _veiled = Xtraits::Veiled(String::from("#Veiled"));
+  let _indoctrinated = Xtraits::Indoctrinated(String::from("#Indoctrinated"));
 
   println!("I'm connecting to node {:?}!", _truth);
   println!("I'm connecting to node {:?}!", _honesty);
   println!("I'm connecting to node {:?}!", _care);
   println!("I'm connecting to node {:?}!", _intuition);
-  
   println!("I'm connecting to node {:?}!", _balanced);
-  
   println!("I'm connecting to node {:?}!", _kindnessempathy);
   println!("I'm connecting to node {:?}!", _influenced);
   println!("I'm connecting to node {:?}!", _veiled);
