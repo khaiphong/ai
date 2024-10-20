@@ -59,6 +59,9 @@ pub mod fdimension; // other relevant factors making up the states and stock of 
 */
 impl InnerSpace { // different methods for different InnerSpace persona types
 /*
+Modeling the InnerSpace is the systematic building internal power for different stages of
+the persona developments
+
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
     return self.f_dimension
   }
@@ -128,14 +131,14 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   
   // SmartPointers y_traints starting from ability to #EmptyTheContent for detoxification 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
-  p.insert(1, String::from("P1: EmptyTheContent"));         // = 1 Bodhidharma
-  p.insert(2, String::from("P2: DhyanaSamadhi"));           // = 2 HuiNeng
-  p.insert(3, String::from("P3: Samadhi"));                 // = 3 Meditation from diff. angles
-  p.insert(4, String::from("P4: Awareness"));               // = 4 Transcendental #Awareness
-  p.insert(5, String::from("P5: Prajna"));                  // = 5 #Prajna
-  p.insert(6, String::from("P6: AwarenessPrajna"));         // = 6 #AwarenessPrajna
-  p.insert(7, String::from("P7: SanadhiPrajna"));           // = 7 #SamadhiPrajna
-  p.insert(8, String::from("P8: PrajnaTIP"));               // = 8 #PrajnaTIP
+  p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
+  p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
+  p.insert(3, String::from("P3: Samadhi"));           // = 3 Meditation from different angles
+  p.insert(4, String::from("P4: Awareness"));         // = 4 Transcendental #Awareness
+  p.insert(5, String::from("P5: Prajna"));            // = 5 #Prajna
+  p.insert(6, String::from("P6: AwarenessPrajna"));   // = 6 #AwarenessPrajna
+  p.insert(7, String::from("P7: SanadhiPrajna"));     // = 7 #SamadhiPrajna
+  p.insert(8, String::from("P8: PrajnaTIP"));         // = 8 #PrajnaTIP
 
   // x_traints driven by #Intuition (t) 
   let mut t = HashMap::new(); // observable traits from x-dimension
@@ -350,6 +353,11 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
     return 0; // rated level of WuNien
     
 }
+/*
+ let _wisdom = Ypointers::Prajna(String::from("#Prajna")); in the scale of rating system from
+ 1 - 5 for modeling the change management of f_evaluation and its preparation steps in
+     Plan >< Execution >< Feedback of collected fact-based decision. 
+*/
 fn f_evaluation(f: HashMap<i32, String>) -> i32 {
 
     println!("Suggested Inner Space for cultivation");
