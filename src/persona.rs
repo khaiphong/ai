@@ -91,7 +91,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   let mut _x = 0;  // opinions from fact-base tracked records in engaged living.
   let mut _f = 0;  // qualified person
 
-  let mut x = HashMap::new(); // Taxonomy of x_dimension
+  let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
   x.insert(0, String::from("X 0: Awareness"));             // =  0
   
   // x(-1) = 1 = x(1) Culture & HonNhien enforced @ x(2)=1 of proper management in Equanimity
@@ -118,9 +118,9 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   y.insert(-1, String::from("Y-1: Empathy"));      // =  1
   y.insert(-2, String::from("Y-2: Kindness"));     // = -1
   y.insert(-3, String::from("Y-3: Conscience"));   // =  2
-  y.insert(-4, String::from("Y-4: Conscience-1")); // = -3
-  y.insert(-5, String::from("Y-5: Conscience-2")); // =  5 capable for hegemony
-  y.insert(-6, String::from("Y-6: Conscience-3")); // = -8
+  y.insert(-4, String::from("Y-4: Conscience1")); // = -3
+  y.insert(-5, String::from("Y-5: Conscience2")); // =  5 capable for hegemony
+  y.insert(-6, String::from("Y-6: Conscience3")); // = -8
   
   y.insert(1, String::from("Y+1: Tranquility"));   // = 1
   y.insert(2, String::from("Y+2: Equanimity"));    // = 1
@@ -129,7 +129,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   y.insert(5, String::from("Y+5: NonThingness"));  // = 5  Gotama's impass - SelfSelfless Act.
   y.insert(6, String::from("Y+6: Unmoving"));      // = 8  Gotama's impass - #SamadhiPrajna
   
-  // SmartPointers y_traints starting from ability to #EmptyTheContent for detoxification 
+  // SmartPointers y_pointers starting from ability to #EmptyTheContent for detoxification 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
   p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
   p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
@@ -261,6 +261,12 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
   underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
   technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
   to clean up cheaters "cooking sand and selling as rice".
+  
+  To have html note and links in sticky note for explanation:
+  pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String,}
+  let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
+  communications between Oneness >< Diversities"),};
+  println!("I'm connecting to node {:?}!", _truth.kind);
 */
 #[derive(Debug)]
 pub enum Xtraits {
@@ -274,6 +280,24 @@ pub enum Xtraits {
   Veiled(String),
   Indoctrinated(String), // visible in BindingWord, BindingImage, ClingingThought
 }
+// for outside contributions
+#[derive(Debug)]
+pub enum Xlevels {
+  HonNhien(String), 
+  ManagingFreshness(String),
+  KnowingFreshness(String),    
+  ProcessDiscovered(String), 
+  KnowingThought(String), 
+  CareViaCosmicEnergy(String),  
+  HelpViaCosmicEnergy(String),  
+  CulturalInfluenced(String),    
+  RegionalInfluenced(String),
+  NationalInfluenced(String),
+  VeiledType(String),
+  BindingWord(String),
+  BindingImage(String),
+  ClingingThought(String),
+}
 
 #[derive(Debug)]
 pub enum Ypointers {
@@ -286,6 +310,43 @@ pub enum Ypointers {
   SamadhiPrajna(String),     // known by HuiNeng
   PrajnaTIP1(String),         // from KP
   PrajnaTIP2(String),
+}
+// for outside contributions
+#[derive(Debug)]
+pub enum Ylevels {
+  Tranquility(String), 
+  Equanimity(String),
+  Purity(String),    
+  Selfless(String), 
+  NonThingness(String), 
+  Unmoving(String),  
+  Empathy(String),  
+  Kindness(String),    
+  Conscience(String),
+  Conscience1(String),
+  Conscience2(String),
+  Conscience3(String),
+}
+
+// for outside contributions
+#[derive(Debug)]
+pub enum Flevels {
+  EquanimityAwareness(String), 
+  PurityAwareness(String),
+  SignedPosts(String),    
+  SelflessAwareness(String), 
+  VisibleAwarenessPrajna(String), 
+  EngagedAwarenessPrajna(String),  
+  ForecastingAwarenessPrajna(String),  
+  VisibleSamadhiPrajna(String),    
+  EmpathyAwareness(String),
+  KindnessAwareness(String),
+  AnimalEnergy(String),
+  ExtremeDesire(String),
+  AminalConsciousness(String),
+  Smelly1(String),
+  Smelly2(String),
+  Smelly3(String),
 }
 
 

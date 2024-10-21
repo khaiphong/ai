@@ -30,7 +30,11 @@
   line of important focused events.
 */
 use crate::persona::Xtraits;
+use crate::persona::Xlevels;
 use crate::persona::Ypointers;
+use crate::persona::Ylevels;
+// use crate::persona::Flevels;
+// use crate::persona::OneToDependent;     // Oneness >< Diversities
 
 use crate::persona::x_traits::{KpT};
 use crate::persona::y_pointers::{KpP};
@@ -174,7 +178,7 @@ fn main() {
   struct Tin; let _tin = Tin;
   println!("I'm connecting to node {:?}!", _tin);
 
-  // Dversities via Falun Gong: Honesty (identified trait), Morality, Patience
+  // Dversities via Falun: Honesty (identified trait), Morality, Patience
   #[derive(Debug)] 
   struct Morality; let _morality = Morality;
   println!("I'm connecting to node {:?}!", _morality);
@@ -183,88 +187,66 @@ fn main() {
   println!("I'm connecting to node {:?}!", _patience);
 
   // Diversities via Y-dimension
-  #[derive(Debug)] 
-  struct Tranquility; let _tranquility = Tranquility;
+  let _tranquility =  Ylevels::Tranquility(String::from("Tranquility"));
   println!("I'm connecting to node {:?}!", _tranquility);
-  #[derive(Debug)] 
-  struct Equanimity; let _equanimity = Equanimity;
+  let _equanimity =  Ylevels::Equanimity(String::from("Equanimity"));
   println!("I'm connecting to node {:?}!", _equanimity);
-  #[derive(Debug)] 
-  struct Purity; let _purity = Purity;
+  let _purity =  Ylevels::Purity(String::from("Purity"));
   println!("I'm connecting to node {:?}!", _purity);
-  #[derive(Debug)] 
-  struct Selfless; let _selfless = Selfless;
+  let _selfless =  Ylevels::Selfless(String::from("Selfless"));
   println!("I'm connecting to node {:?}!", _selfless);  
-  #[derive(Debug)] 
-  struct NonThingness; let _non_thingness = NonThingness;
-  println!("I'm connecting to node {:?}!", _non_thingness);
-  #[derive(Debug)] 
-  struct Unmoving; let _unmoving = Unmoving;
+  let _nonthingness =  Ylevels::NonThingness(String::from("NonThingness"));
+  println!("I'm connecting to node {:?}!", _nonthingness);
+  let _unmoving =  Ylevels::Unmoving(String::from("Unmoving"));  
   println!("I'm connecting to node {:?}!", _unmoving);
-  
-  #[derive(Debug)] 
-  struct Empathy; let _empathy = Empathy;
+ 
+  let _empathy =  Ylevels::Empathy(String::from("Empathy"));
   println!("I'm connecting to node {:?}!", _empathy);
-  #[derive(Debug)] 
-  struct Kindness; let _kindness = Kindness;
+  let _kindness =  Ylevels::Kindness(String::from("Kindness"));
   println!("I'm connecting to node {:?}!", _kindness);
-  #[derive(Debug)] 
-  struct Conscience; let _conscience = Conscience;
+  let _conscience =  Ylevels::Conscience(String::from("Conscience"));
   println!("I'm connecting to node {:?}!", _conscience);
-  #[derive(Debug)] 
-  struct Conscience1; let _conscience1 = Conscience1;
+  let _conscience1 =  Ylevels::Conscience1(String::from("Conscience1"));
   println!("I'm connecting to node {:?}!", _conscience1);  
-  #[derive(Debug)] 
-  struct Conscience2; let _conscience2 = Conscience2;
+  let _conscience2 =  Ylevels::Conscience2(String::from("Conscience2"));
   println!("I'm connecting to node {:?}!", _conscience2);
-  #[derive(Debug)] 
-  struct Conscience3; let _conscience3 = Conscience3;
+  let _conscience3 =  Ylevels::Conscience3(String::from("Conscience3"));
   println!("I'm connecting to node {:?}!", _conscience3);
-  
+
   // Diversities via X-dimension
-  #[derive(Debug)] 
-  struct HonNhien; let _hon_nhien = HonNhien;
-  println!("I'm connecting to node {:?}!", _hon_nhien);
-  #[derive(Debug)] 
-  struct ManagingFreshness; let _managing_freshness = ManagingFreshness;
+  let _honnhien =  Xlevels::HonNhien(String::from("HonNhien"));
+  println!("I'm connecting to node {:?}!", _honnhien);
+  let _managing_freshness =  Xlevels::ManagingFreshness(String::from("ManagingFreshness"));
   println!("I'm connecting to node {:?}!", _managing_freshness);
-  #[derive(Debug)] 
-  struct KnowingFreshness; let _knowing_freshness = KnowingFreshness;
+  
+  let _knowing_freshness =  Xlevels::KnowingFreshness(String::from("KnowingFreshness"));
   println!("I'm connecting to node {:?}!", _knowing_freshness);
-  #[derive(Debug)] 
-  struct ProcessDiscovered; let _process_discovered = ProcessDiscovered;
+  let _process_discovered =  Xlevels::ProcessDiscovered(String::from("ProcessDiscovered"));
   println!("I'm connecting to node {:?}!", _process_discovered);  
-  #[derive(Debug)] 
-  struct KnowingThought; let _knowing_thought = KnowingThought;
+  let _knowing_thought =  Xlevels::KnowingThought(String::from("KnowingThought"));
   println!("I'm connecting to node {:?}!", _knowing_thought);
-  #[derive(Debug)] 
-  struct CareViaCosmicEnergy; let _care_via_cosmic_energy = CareViaCosmicEnergy;
+  let _care_via_cosmic_energy =  	
+      Xlevels::CareViaCosmicEnergy(String::from("CareViaCosmicEnergy"));
   println!("I'm connecting to node {:?}!", _care_via_cosmic_energy);
-  #[derive(Debug)] 
-  struct HelpViaCosmicEnergy; let _help_via_cosmic_energy = HelpViaCosmicEnergy;
+  let _help_via_cosmic_energy =  	
+      Xlevels::HelpViaCosmicEnergy(String::from("HelpViaCosmicEnergy"));
   println!("I'm connecting to node {:?}!", _help_via_cosmic_energy);
   
-  #[derive(Debug)] 
-  struct CulturalInfluence; let _cultural_influence = CulturalInfluence;
-  println!("I'm connecting to node {:?}!", _cultural_influence);
-  #[derive(Debug)] 
-  struct RegionalInfluence; let _regional_influence = RegionalInfluence;
-  println!("I'm connecting to node {:?}!", _regional_influence);
-  #[derive(Debug)] 
-  struct NationalInfluence; let _national_influence = NationalInfluence;
-  println!("I'm connecting to node {:?}!", _national_influence);
-  #[derive(Debug)] 
-  struct VeiledType; let _veiled_type = VeiledType;
+  let _cultural_influenced =  Xlevels::CulturalInfluenced(String::from("CulturalInfluenced"));
+  println!("I'm connecting to node {:?}!", _cultural_influenced);
+  let _regional_influenced =  Xlevels::RegionalInfluenced(String::from("RegionalInfluenced"));
+  println!("I'm connecting to node {:?}!", _regional_influenced);
+  let _national_influenced =  Xlevels::NationalInfluenced(String::from("NationalInfluenced"));
+  println!("I'm connecting to node {:?}!", _national_influenced);
+  let _veiled_type =  Xlevels::VeiledType(String::from("VeiledType"));
   println!("I'm connecting to node {:?}!", _veiled_type);  
-  #[derive(Debug)] 
-  struct BindingWord; let _binding_word = BindingWord;
+  let _binding_word =  Xlevels::BindingWord(String::from("BindingWord"));
   println!("I'm connecting to node {:?}!", _binding_word);
-  #[derive(Debug)] 
-  struct BindingImage; let _binding_image = BindingImage;
+  let _binding_image =  Xlevels::BindingImage(String::from("BindingImage"));
   println!("I'm connecting to node {:?}!", _binding_image);
-  #[derive(Debug)] 
-  struct ClingingThought; let _clinging_thought = ClingingThought;
+  let _clinging_thought =  Xlevels::ClingingThought(String::from("ClingingThought"));
   println!("I'm connecting to node {:?}!", _clinging_thought);  
+    
   
   // Diversities via F-dimension
   #[derive(Debug)] 
