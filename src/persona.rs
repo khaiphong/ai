@@ -25,7 +25,7 @@
 
 /*
   We generalize the persona to big corporation HR and important person to (1) clean up 
-  tainted senses and (2) cultivate required traits for its What Count culture. The function 
+  tainted senses and (2) cultivate required traits for its What-Count culture. The function 
   of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
   sense, the required traits are its core Values (e.g. #Honesty & #Care) in execution. This
   part must be standardized and open sources for possible value-added solutions
@@ -58,6 +58,7 @@ pub mod fdimension; // other relevant factors making up the states and stock of 
   next qualified realm, an organization, foreign affairs, national development, etc.
 */
 impl InnerSpace { // different methods for different InnerSpace persona types
+
 /*
 Modeling the InnerSpace is the systematic building internal power for different stages of
 the persona developments
@@ -202,8 +203,8 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
 } // end of build_InnerSpace from traits t, SignedPosts y, Awareness x, InnerSpace f
 
 /*
-  p_evaluation return evaluated value of one's y_pointer #EmptyTheContent toward SanadhiPrajna
-  and its reversed engineering for people connected to learn and share in the hashtag
+  p_evaluation return evaluated value of y_pointer #EmptyTheContent toward #SanadhiPrajna
+  and its reversed engineering for people connected to learn and share in the # (hashtag)
   community. We can use the generic evaluation type to be implemented for identified pointer
   which can question from LLM models then fine-tuned from KpPlatform community data and the
   custom data of the client.
@@ -222,7 +223,7 @@ fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to t
 
 /*
   t_evaluation return evaluated value of one's trait ranging from attachment to detachment
-  to be explored which are tags for people connected to learn and share in the hashtag 
+  to be explored which are tags for people connected to learn and share in the # (hashtag) 
   community. We can use the generic evaluation type to be implemented for identified trait 
   which can question from LLM models then fine-tuned for KpPlatform community data and the 
   custom data of the client.
@@ -257,12 +258,12 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
   Lesson Learned amongst Intelligent Beings.
   
   Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
-  with claimed "Transcendental Meditation", Chinese ""Qi", KhaiPhong's discovered
+  with claimed "Transcendental Meditation", Chinese "Qi", KhaiPhong's discovered
   underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
   technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
   to clean up cheaters "cooking sand and selling as rice".
   
-  To have html note and links in sticky note for explanation:
+  To have html note and links in sticky note for explanation in future implementations:
   pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String,}
   let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
   communications between Oneness >< Diversities"),};

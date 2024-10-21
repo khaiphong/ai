@@ -1,9 +1,9 @@
 /*
-  Starting at a naturally qualified person of this cycle modeled at balanced intuition
-  "I 0", there is a wide range of awareness _x and inner_peace from meditation (samadhi) _y
-  from negative of binding-clinging forces to positive in detachment based on self-evaluated 
-  plus LLM opinions of x_evaluation and y_evaluation. We use mutable variable instead of
-  self-evaluated defined const as visible x_traits and y_traints leading to higher 
+  Starting at a naturally qualified person of this cycle modeled at balanced intuition "I 0", 
+  there is a wide range of awareness _x and inner_peace from meditation (samadhi) _y in 
+  negative binding-clinging forces to positive detachment based on self-evaluated plus LLM 
+  opinions of x_evaluation and y_evaluation. We use mutable variable instead of self-
+  evaluated defined const as visible x_traits and y_pointers leading to higher 
   conmsciousness at rated points of complex Fibonacci Nunber for Prajna >< AGI (Agentic 
   Retrieval Augmented Generation / 
   https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd), then modeling
@@ -11,25 +11,24 @@
   affairs, a nation, a family, project, etc). For elites currently a person, the evaluation 
   are intended to help that person moving from evolution then degeneration to the right  
   positive evaluation with oservable attributes of persona mod: Given the following hashtag # 
-  and user description, we evaluate the experience in [ observable traits from attached 
-  totally detached in TRUTH ] to the outcome of _y, _x and then _f round cycle from Self to 
-  Selfless at deeper Detachment.
+  and user description, we evaluate the experience in [ observable traits from attached to 
+  totally detached in TRUTH, a trait of interactions between Oneness >< Diversities ] to the 
+  outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
-  Proven qualities of [ indoctrinate (binding_clinging forces T-4 ],
-  [ Veiled Right and Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], 
-  [ Intuition (Trust, Qi, Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn)
-  T+2 ], [ Care T+3 ], [ TRUTH T+4 ] from heavily attached to totally detached, capable to 
-  enable wider angle of a focused event are from [ -4 to +4 ] where 0 is the base of a
-  qualified humanitas.
+  Proven qualities of [ indoctrinate (binding_clinging forces T-4 ], [ Veiled Right and Wrong 
+  T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (Trust, Qi, 
+  Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn) T+2 ], [ Care T+3 ], 
+  [ TRUTH T+4 ] from heavily attached to totally detached, capable to enable wider angle of a 
+  focused event are from [ -4 to +4 ] where 0 is the base of a qualified humanitas.
       
   The Description is not the Described! We use LLM to enable this possibility the persona may 
   take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
   learned based on its private ratings of the suggested positive intelligence and its 
   normative intelligence. The outcome is its vector of these rated qualities for self 
-  cultivations and their effects on the persona Ignorance or #Prajna, measurable at the bottom 
-  line of important focused events.
+  cultivations and their effects on the persona Ignorance or #Prajna, measurable at the 
+  bottom line of important focused events.
 */
-use crate::persona::OneToDependent;     // Oneness >< Diversities
+use crate::persona::OneToDependent;     // Oneness >< Diversities / Hửu Không Vô Ngại
 use crate::persona::Xtraits;
 use crate::persona::Xlevels;
 use crate::persona::Ypointers;
@@ -69,7 +68,7 @@ use crate::persona::samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2};
 use crate::persona::prajnatip1::{prajnatip1_agent1, prajnatip1_agent2};
 use crate::persona::prajnatip2::{prajnatip2_agent1, prajnatip2_agent2};
 
-// open-source LLM continuously trained with fresh data, custom by Kp for AGI agents
+// open-source LLM continuously trained with fresh data, custom by Kp for its AGI agents
 use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
 
 // front-end persona facing services
@@ -121,7 +120,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _prajnatip1);
   println!("I'm connecting to node {:?}!", _prajnatip2);
   
-  // 9 trait # to be connected in learning and sharing
+  // 9 # (traits) to be connected in learning and sharing
   let _truth = Xtraits::Truth(String::from("#Truth"));
   let _honesty = Xtraits::Honesty(String::from("#Honesty"));  
   let _care = Xtraits::Care(String::from("#TCare"));
@@ -207,7 +206,6 @@ fn main() {
   println!("I'm connecting to node {:?}!", _honnhien);
   let _managing_freshness =  Xlevels::ManagingFreshness(String::from("ManagingFreshness"));
   println!("I'm connecting to node {:?}!", _managing_freshness);
-  
   let _knowing_freshness =  Xlevels::KnowingFreshness(String::from("KnowingFreshness"));
   println!("I'm connecting to node {:?}!", _knowing_freshness);
   let _process_discovered =  Xlevels::ProcessDiscovered(String::from("ProcessDiscovered"));
@@ -384,7 +382,6 @@ fn main() {
   let _indoctrinated_agent2 = indoctrinated_agent2();
   println!("I'm augmenting {:?}!", _indoctrinated_agent2); 
 
-
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(0, 0, 0);
   println!("I'm evaluating the persona {:?}!", _me);
@@ -460,7 +457,7 @@ fn main() {
   let _plan_agent2 = plan_agent2();
   println!("I'm augmenting {:?}!", _plan_agent2); 
   
-  // network AGI
+  // network GAI
   let _family_agent1 = family_agent1();
   println!("I'm augmenting {:?}!", _family_agent1);
   let _family_agent2 = family_agent2();
