@@ -29,12 +29,12 @@
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the bottom 
   line of important focused events.
 */
+use crate::persona::OneToDependent;     // Oneness >< Diversities
 use crate::persona::Xtraits;
 use crate::persona::Xlevels;
 use crate::persona::Ypointers;
 use crate::persona::Ylevels;
-// use crate::persona::Flevels;
-// use crate::persona::OneToDependent;     // Oneness >< Diversities
+use crate::persona::Flevels;
 
 use crate::persona::x_traits::{KpT};
 use crate::persona::y_pointers::{KpP};
@@ -143,48 +143,37 @@ fn main() {
   println!("I'm connecting to node {:?}!", _indoctrinated);
 
   // macroscopic levels of [ Oneness >< Diversities ]
-  #[derive(Debug)] 
-  struct Oneness; let _oneness = Oneness;
+  let _oneness = OneToDependent::Oneness(String::from("Oneness"));
   println!("I'm connecting to node {:?}!", _oneness);
-  #[derive(Debug)] 
-  struct Diversities; let _diversities = Diversities;
+  let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
-  
+    
   // Dversities via I-Ching and LaoTzu
-  #[derive(Debug)] 
-  struct Heaven; let _heaven = Heaven;
+  let _heaven = OneToDependent::Heaven(String::from("Heaven"));
   println!("I'm connecting to node {:?}!", _heaven);
-  #[derive(Debug)] 
-  struct Earth; let _earth = Earth;
+  let _earth = OneToDependent::Earth(String::from("Earth"));
   println!("I'm connecting to node {:?}!", _earth);
-  #[derive(Debug)] 
-  struct People; let _people = People;
+  let _people = OneToDependent::People(String::from("People"));
   println!("I'm connecting to node {:?}!", _people);
-  
+    
   // Dversities via KungTzu
-  #[derive(Debug)] 
-  struct Nhan; let _nhan = Nhan;
+  let _nhan = OneToDependent::Nhan(String::from("Nhan"));
   println!("I'm connecting to node {:?}!", _nhan);
-  #[derive(Debug)] 
-  struct Nghia; let _nghia = Nghia;
+  let _nghia = OneToDependent::Nghia(String::from("Nghia"));
   println!("I'm connecting to node {:?}!", _nghia);
-  #[derive(Debug)] 
-  struct Le; let _le = Le;
+  let _le = OneToDependent::Le(String::from("Le"));
   println!("I'm connecting to node {:?}!", _le);
-  #[derive(Debug)] 
-  struct Tri; let _tri = Tri;
+  let _tri = OneToDependent::Tri(String::from("Tri"));
   println!("I'm connecting to node {:?}!", _tri);
-  #[derive(Debug)] 
-  struct Tin; let _tin = Tin;
+  let _tin = OneToDependent::Tin(String::from("Tin"));
   println!("I'm connecting to node {:?}!", _tin);
 
   // Dversities via Falun: Honesty (identified trait), Morality, Patience
-  #[derive(Debug)] 
-  struct Morality; let _morality = Morality;
+  let _morality = OneToDependent::Morality(String::from("Morality"));
   println!("I'm connecting to node {:?}!", _morality);
-  #[derive(Debug)] 
-  struct Patience; let _patience = Patience;
+  let _patience = OneToDependent::Patience(String::from("Patience"));
   println!("I'm connecting to node {:?}!", _patience);
+
 
   // Diversities via Y-dimension
   let _tranquility =  Ylevels::Tranquility(String::from("Tranquility"));
@@ -247,56 +236,45 @@ fn main() {
   let _clinging_thought =  Xlevels::ClingingThought(String::from("ClingingThought"));
   println!("I'm connecting to node {:?}!", _clinging_thought);  
     
-  
   // Diversities via F-dimension
-  #[derive(Debug)] 
-  struct EquanimityAwareness; let _equanimity_awareness = EquanimityAwareness;
+  let _equanimity_awareness =  
+      Flevels::EquanimityAwareness(String::from("EquanimityAwareness"));
   println!("I'm connecting to node {:?}!", _equanimity_awareness);
-  #[derive(Debug)] 
-  struct PurityAwareness; let _purity_awareness = PurityAwareness;
+  let _purity_awareness = Flevels::PurityAwareness(String::from("PurityAwareness"));
   println!("I'm connecting to node {:?}!", _purity_awareness);
-  #[derive(Debug)] 
-  struct SignedPosts; let _signed_posts = SignedPosts;
+  let _signed_posts = Flevels::SignedPosts(String::from("SignedPosts"));
   println!("I'm connecting to node {:?}!", _signed_posts);
-  #[derive(Debug)] 
-  struct SelflessAwareness; let _selfless_awareness = SelflessAwareness;
+  let _selfless_awareness = Flevels::SelflessAwareness(String::from("SelflessAwareness"));
   println!("I'm connecting to node {:?}!", _selfless_awareness);  
-  #[derive(Debug)] 
-  struct VisibleAwarenessPrajna; let _visible_awareness_prajna = VisibleAwarenessPrajna;
+  let _visible_awareness_prajna =  
+      Flevels::VisibleAwarenessPrajna(String::from("VisibleAwarenessPrajna"));
   println!("I'm connecting to node {:?}!", _visible_awareness_prajna);
-  #[derive(Debug)] 
-  struct EngagedAwarenessPrajna; let _engaged_awareness_prajna = EngagedAwarenessPrajna;
+  let _engaged_awareness_prajna =  
+      Flevels::EngagedAwarenessPrajna(String::from("EngagedAwarenessPrajna"));
   println!("I'm connecting to node {:?}!", _engaged_awareness_prajna);
-  #[derive(Debug)] 
-  struct ForecastingAwarenessPrajna; let _forecasting_awareness_prajna = ForecastingAwarenessPrajna;
+  let _forecasting_awareness_prajna =  
+      Flevels::ForecastingAwarenessPrajna(String::from("ForecastingAwarenessPrajna"));
   println!("I'm connecting to node {:?}!", _forecasting_awareness_prajna);
-  #[derive(Debug)] 
-  struct VisibleSamadhiPrajna; let _visible_samadhi_prajna = VisibleSamadhiPrajna;
+  let _visible_samadhi_prajna =  
+      Flevels::VisibleSamadhiPrajna(String::from("VisibleSamadhiPrajna"));
   println!("I'm connecting to node {:?}!", _visible_samadhi_prajna);
-  
-  #[derive(Debug)] 
-  struct EmpathyAwareness; let _empathy_awareness = EmpathyAwareness;
+    
+  let _empathy_awareness = Flevels::EmpathyAwareness(String::from("EmpathyAwareness"));
   println!("I'm connecting to node {:?}!", _empathy_awareness);
-  #[derive(Debug)] 
-  struct KindnessAwareness; let _kindness_awareness = KindnessAwareness;
+  let _kindness_awareness = Flevels::KindnessAwareness(String::from("KindnessAwareness"));
   println!("I'm connecting to node {:?}!", _kindness_awareness);
-  #[derive(Debug)] 
-  struct AnimalEnergy; let _animal_energy = AnimalEnergy;
+  let _animal_energy = Flevels::AnimalEnergy(String::from("AnimalEnergy"));
   println!("I'm connecting to node {:?}!", _animal_energy);
-  #[derive(Debug)] 
-  struct ExtremeDesire; let _extreme_desire = ExtremeDesire;
+  let _extreme_desire = Flevels::ExtremeDesire(String::from("ExtremeDesire"));
   println!("I'm connecting to node {:?}!", _extreme_desire);  
-  #[derive(Debug)] 
-  struct AnimalConsciousness; let _animal_consciousness = AnimalConsciousness;
+  let _animal_consciousness = 
+      Flevels::AnimalConsciousness(String::from("AnimalConsciousness"));
   println!("I'm connecting to node {:?}!", _animal_consciousness);
-  #[derive(Debug)] 
-  struct Smelly1; let _smelly1 = Smelly1;
+  let _smelly1 = Flevels::Smelly1(String::from("Smelly1"));
   println!("I'm connecting to node {:?}!", _smelly1);
-  #[derive(Debug)] 
-  struct Smelly2; let _smelly2 = Smelly2;
+  let _smelly2 = Flevels::Smelly2(String::from("Smelly2"));
   println!("I'm connecting to node {:?}!", _smelly2); 
-  #[derive(Debug)] 
-  struct Smelly3; let _smelly3 = Smelly3;
+  let _smelly3 = Flevels::Smelly3(String::from("Smelly3"));
   println!("I'm connecting to node {:?}!", _smelly3); 
 
 

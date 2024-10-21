@@ -328,6 +328,22 @@ pub enum Ylevels {
   Conscience3(String),
 }
 
+#[derive(Debug)]
+pub enum OneToDependent { 
+  Oneness(String),          // Oneness >< Diversities
+  Diversities(String),
+  Heaven(String),           // I-Ching, LaoTzu
+  Earth(String),  
+  People(String), 
+  Nhan(String),             // KungTzu
+  Nghia(String),  
+  Le(String),     
+  Tri(String),
+  Tin(String),  
+  Morality(String),         // Falun  
+  Patience(String), 
+}
+
 // for outside contributions
 #[derive(Debug)]
 pub enum Flevels {
@@ -343,7 +359,7 @@ pub enum Flevels {
   KindnessAwareness(String),
   AnimalEnergy(String),
   ExtremeDesire(String),
-  AminalConsciousness(String),
+  AnimalConsciousness(String),
   Smelly1(String),
   Smelly2(String),
   Smelly3(String),
