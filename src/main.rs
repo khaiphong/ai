@@ -383,7 +383,7 @@ fn main() {
   println!("I'm augmenting {:?}!", _indoctrinated_agent2); 
 
   // evaluation of InnerSpace
-  let _me = crate::persona::build_inner_space(0, 0, 0);
+  let _me = crate::persona::build_inner_space(Vec::new(), Vec::new(), Vec::new());
   println!("I'm evaluating the persona {:?}!", _me);
   
   // agi mod

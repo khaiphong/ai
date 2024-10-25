@@ -23,6 +23,7 @@
  Observed and Observer to see Thing-As-It-Is and #Prajna of breakthrough.
 */
 
+
 /*
   We generalize the persona to big corporation HR and important person to (1) clean up 
   tainted senses and (2) cultivate required traits for its What-Count culture. The function 
@@ -34,13 +35,19 @@
 #[derive(Debug)]
 pub struct InnerSpace {
   // observable traits and pointers from attached to balanced to detached in one's InnerSpace
-  pub x_traits: i32, // HashMap<i32, String> visible traits observable in x_dimension
-  pub y_pointers: i32, // HashMap<i32, String> smart pointers from outcomes of y_dimension
+  // HashMap<i32, String> visible traits observable in x_dimension
+  pub x_traits: Vec<i32>, // vec![-1, -2, -3, -4, 0, 1, 2, 3, 4]
+  // HashMap<i32, String> smart pointers from outcomes of y_dimension
+  pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   // each persona must have lists of traits, pointers, depths of X, Y, and F for both
   // internal and/or externam acquired ability to handle required tasks
-  pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
-  pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
-  pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness
+  // lumped other factors observable in complex Fibonacci sequences
+  //vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8],
+  pub f_dimension: Vec<i32>, 
+  // KP Signed Posts or Gotama Jhanas or Right Samadhi
+  pub y_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, 0, 1, 2, 3, 4, 5, 6],
+  // HuiNeng #WuNien or KP #Awareness
+  pub x_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, -7, 0, 1, 2, 3, 4, 5, 6, 7],   
 }
 // Implementations
 pub mod y_pointers; // implementations to make the description closed to the described
@@ -84,13 +91,24 @@ the persona developments
 // HashMap will be replaced with DbHashMap, a bare bone K-V store with namespace and cgroup
 use std::collections::HashMap; 
 
-pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
-  let mut _t = 0;  // qualified persona at balanced traits, make it as observable list
-  let mut _p = 0;  // qualified persona at Awareness, make it as observable list
+pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
+  // qualified persona at balanced traits, make it as observable list
+  let x_traits: Vec<i32> = Vec::new(); 
+  // qualified persona at Awareness, make it as observable list
+  let y_pointers: Vec<i32> = Vec::new();
+  // to be evaluated in blockchain of user self-evaluation and AI
+  let y_dimension = _y; // move to y_dimension
+  // opinions from fact-base tracked records in engaged living
+  let x_dimension = _x; // move to x_dimension
+   // qualified person
+  let f_dimension = _f; // move to f_dimension
   
-  let mut _y = 0;  // to be evaluated in blockchain of user self-evaluation and AI
-  let mut _x = 0;  // opinions from fact-base tracked records in engaged living.
-  let mut _f = 0;  // qualified person
+  // new evaluation  of InnerSpace
+  let mut _t = x_traits;
+  let mut _p = y_pointers;
+  let mut _y = y_dimension;
+  let mut _x = x_dimension;
+  let mut _f = f_dimension;
 
   let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
   x.insert(0, String::from("X 0: Awareness"));             // =  0
@@ -132,6 +150,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   
   // SmartPointers y_pointers starting from ability to #EmptyTheContent for detoxification 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
+  p.insert(0, String::from("P0: peace")); 
   p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
   p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
   p.insert(3, String::from("P3: Samadhi"));           // = 3 Meditation from different angles
@@ -139,7 +158,8 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   p.insert(5, String::from("P5: Prajna"));            // = 5 #Prajna
   p.insert(6, String::from("P6: AwarenessPrajna"));   // = 6 #AwarenessPrajna
   p.insert(7, String::from("P7: SanadhiPrajna"));     // = 7 #SamadhiPrajna
-  p.insert(8, String::from("P8: PrajnaTIP"));         // = 8 #PrajnaTIP
+  p.insert(8, String::from("P8: PrajnaTIP1"));        // = 8 #PrajnaTIP1
+  p.insert(9, String::from("P9: PrajnaTIP2"));        // = 9 #PrajnaTIP2
 
   // x_traints driven by #Intuition (t) 
   let mut t = HashMap::new(); // observable traits from x-dimension
@@ -209,7 +229,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   which can question from LLM models then fine-tuned from KpPlatform community data and the
   custom data of the client.
 */
-fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+fn p_evaluation(p: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
    println!("Valid Samadhi pointers"); // all claimed meditations must meet #DhyanaSamadhi
    for (key, value) in &p {
@@ -218,7 +238,7 @@ fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // evaluate the transient value of p in circular processes of 8 hashtag and record
     // it somewhere for tracking records in different cases of claimed #
     
-    return 0; // #EmptyTheContent
+    return vec![0]; // #EmptyTheContent
 }
 
 /*
@@ -228,7 +248,7 @@ fn p_evaluation(p: HashMap<i32, String>) -> i32 { // return evaluated value to t
   which can question from LLM models then fine-tuned for KpPlatform community data and the 
   custom data of the client.
 */
-fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
    println!("Valid traits");
    for (key, value) in &t {
@@ -237,7 +257,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // evaluate the transient value of i in circular processes of 8 hashtag and record it
     // somewhere for tracking records in different cased of claimed #
     
-    return 0; // rated level of Intuition
+    return vec![0]; // rated level of Intuition
 }
 
 /* 
@@ -407,7 +427,7 @@ pub mod prajnatip2;
   return a reference to a value of the same type T which is the rated Fibonacci value of the
   T dimension.
 */
-fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+fn y_evaluation(y: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
    println!("Valid SignedPost / TranscendentalInnerPeace");
    for (key, value) in &y {
@@ -417,9 +437,9 @@ fn y_evaluation(y: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // model y Inner Peace based on one's observable pointers in circular processes of 9 
     //hashtags and record it somewhere for tracking records in different cased of claimed #
     
-    return 0; // rated level of SignedPost
+    return vec![0]; // rated level of SignedPost
 }
-fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to the blockchain
+fn x_evaluation(x: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
    println!("Valid WuNien / Awareness");
    for (key, value) in &x {
         println!("{key}: {value}");
@@ -428,7 +448,7 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
     // model x Perception based on one's observable traits in circular processes of 9 
     //hashtags and record it somewhere for tracking records in different cased of claimed #
     
-    return 0; // rated level of WuNien
+    return vec![0]; // rated level of WuNien
     
 }
 /*
@@ -436,7 +456,7 @@ fn x_evaluation(x: HashMap<i32, String>) -> i32 { // return evaluated value to t
  1 - 5 for modeling the change management of f_evaluation and its preparation steps in
      Plan >< Execution >< Feedback of collected fact-based decision. 
 */
-fn f_evaluation(f: HashMap<i32, String>) -> i32 {
+fn f_evaluation(f: HashMap<i32, String>) -> Vec<i32> {
 
     println!("Suggested Inner Space for cultivation");
        for (key, value) in &f {
@@ -445,6 +465,6 @@ fn f_evaluation(f: HashMap<i32, String>) -> i32 {
     
     // evaluations based on hard evidences in community social networks and proven experts
     
-    return 0; // rated complex Fibinacci level
+    return vec![0]; // rated complex Fibinacci level
 }
 
