@@ -91,6 +91,7 @@ the persona developments
 // HashMap will be replaced with DbHashMap, a bare bone K-V store with namespace and cgroup
 use std::collections::HashMap; 
 
+// given the past [ x-y-f ] dimensions, we re-evaluate pointers and traints for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
   // qualified persona at balanced traits, make it as observable list
   let x_traits: Vec<i32> = Vec::new(); 
@@ -110,6 +111,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   let mut _x = x_dimension;
   let mut _f = f_dimension;
 
+  // rebuild the relevant dimensions according to open standarded proven researches
   let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
   x.insert(0, String::from("X 0: Awareness"));             // =  0
   
@@ -161,12 +163,11 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   p.insert(8, String::from("P8: PrajnaTIP1"));        // = 8 #PrajnaTIP1
   p.insert(9, String::from("P9: PrajnaTIP2"));        // = 9 #PrajnaTIP2
 
-  // x_traints driven by #Intuition (t) 
+  // x_traits driven by #Intuition (t) 
   let mut t = HashMap::new(); // observable traits from x-dimension
   t.insert(0, String::from("T-0: Balanced"));                // =  0, qualified person
   
-  // the x_traits vary from neutral balance to degrees if attached and/or detached
-  // balanced via KindnessEmpathy from binding/clinging forces to total detachment
+  // the x_traits balanced by KindnessEmpathy from binding/clinging forces to total detachment
   t.insert(-1, String::from("T-1: KindnessEmpathy"));        // = -1
   t.insert(-2, String::from("T-2: Influenced"));             // = -2
   t.insert(-3, String::from("T-3: Veiled"));                 // = -3

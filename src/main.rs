@@ -15,11 +15,11 @@
   totally detached in TRUTH, a trait of interactions between Oneness >< Diversities ] to the 
   outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
-  Proven qualities of [ indoctrinate (binding_clinging forces T-4 ], [ Veiled Right and Wrong 
-  T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (Trust, Qi, 
-  Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn) T+2 ], [ Care T+3 ], 
-  [ TRUTH T+4 ] from heavily attached to totally detached, capable to enable wider angle of a 
-  focused event are from [ -4 to +4 ] where 0 is the base of a qualified humanitas.
+  Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
+  Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (
+  Trust, Qi, Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn) T+2 ], [ Care 
+  T+3 ], [ TRUTH T+4 ] from heavily attached to totally detached, capable to enable wider 
+  angle of a focused event are from [ -4 to +4 ] where 0 is the base of a qualified humanitas.
       
   The Description is not the Described! We use LLM to enable this possibility the persona may 
   take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
