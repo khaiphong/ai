@@ -99,7 +99,8 @@ pub mod network;
  
 fn main() {
   // 9 smart pointer # to be connected in learning and sharing
-  
+  let _qualified_humanitas = 
+   Ypointers::QualifiedHumanitas(String::from("#QualifiedHumanitas"));
   let _empty_the_content =  Ypointers::EmptyTheContent(String::from("#EmptyTheContent"));
   let _meditation = Ypointers::DhyanaSamadhi(String::from("#DhyanaSamadhi")); 
   let _transcendental_inner_peace = Ypointers::Samadhi(String::from("#Samadhi"));
@@ -110,6 +111,7 @@ fn main() {
   let _prajnatip1 = Ypointers::PrajnaTIP1(String::from("#PrajnaTIP1"));
   let _prajnatip2 = Ypointers::PrajnaTIP2(String::from("#PrajnaTIP2"));
   
+  println!("I'm connecting to node {:?}!", _qualified_humanitas);
   println!("I'm connecting to node {:?}!", _empty_the_content);
   println!("I'm connecting to node {:?}!", _meditation);
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);

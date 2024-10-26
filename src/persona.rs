@@ -91,7 +91,7 @@ the persona developments
 // HashMap will be replaced with DbHashMap, a bare bone K-V store with namespace and cgroup
 use std::collections::HashMap; 
 
-// given the past [ x-y-f ] dimensions, we re-evaluate pointers and traints for suggestions
+// given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
   // qualified persona at balanced traits, make it as observable list
   let x_traits: Vec<i32> = Vec::new(); 
@@ -152,7 +152,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   
   // SmartPointers y_pointers starting from ability to #EmptyTheContent for detoxification 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
-  p.insert(0, String::from("P0: peace")); 
+  p.insert(0, String::from("P0: Qualified")); 
   p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
   p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
   p.insert(3, String::from("P3: Samadhi"));           // = 3 Meditation from different angles
@@ -239,7 +239,7 @@ fn p_evaluation(p: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
     // evaluate the transient value of p in circular processes of 8 hashtag and record
     // it somewhere for tracking records in different cases of claimed #
     
-    return vec![0]; // #EmptyTheContent
+    return vec![0]; // qualified person starting the cultivation in #EmptyTheContent
 }
 
 /*
@@ -258,7 +258,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
     // evaluate the transient value of i in circular processes of 8 hashtag and record it
     // somewhere for tracking records in different cased of claimed #
     
-    return vec![0]; // rated level of Intuition
+    return vec![4]; // rated level of Intuition #Balanced
 }
 
 /* 
@@ -323,6 +323,7 @@ pub enum Xlevels {
 
 #[derive(Debug)]
 pub enum Ypointers {
+  QualifiedHumanitas(String),        // P0: QualifiedHumanitas has natural Peace
   EmptyTheContent(String), 
   DhyanaSamadhi(String),
   Samadhi(String),    // Samadhi must produce visible outcomes known by Gotama
