@@ -285,7 +285,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   to clean up cheaters "cooking sand and selling as rice".
   
   To have html note and links in sticky note for explanation in future implementations:
-  pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String,}
+  pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
   let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
   communications between Oneness >< Diversities"),};
   println!("I'm connecting to node {:?}!", _truth.kind);
