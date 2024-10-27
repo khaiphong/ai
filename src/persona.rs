@@ -88,7 +88,13 @@ the persona developments
 */
 }
 
-// HashMap will be replaced with DbHashMap, a bare bone K-V store with namespace and cgroup
+/* 
+  HashMap to be replaced with DbMap, a bare bone K-V store with namespace and cgroup rated
+  at 8 security levels for private container-2-Container communications and collaborations
+  at 8 levels of security: (1): KP container, (2): KP container-2-container, (3): certified 
+  source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
+  after 8 years, (8): worthy.
+*/
 use std::collections::HashMap; 
 
 // given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
