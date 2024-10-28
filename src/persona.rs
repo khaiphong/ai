@@ -188,9 +188,15 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   t.insert(3, String::from("T+3: Honesty"));                 // = 3
   t.insert(4, String::from("T+4: Truth"));                   // = 4
   
+  // starting from qualified human realm at F 0: Persona with digital Id and chip Id
+  let mut namespace = HashMap::new(); // the namespace and its cgroups of 8 security levels
+  namespace.insert(String::from("Owner"), vec![String::from("0_123456789"),
+   String::from("chip_0_987654321")]); // each relation is 0_Id and vector of joined data at
+  println!("{namespace:?}"); // 8 security levels. higher security can access lower level.
+  
   let mut f = HashMap::new(); // Taxonomy (types) of f_dimension
   f.insert(0, String::from("F 0: Persona")); //  Person sub f as the key
-  
+
   // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
   f.insert(-1, String::from("F-1: EmpathyAwareness"));         // =  1
   f.insert(-2, String::from("F-2: KindnessAwareness"));        // = -1
