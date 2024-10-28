@@ -93,7 +93,11 @@ the persona developments
   at 8 security levels for private container-2-Container communications and collaborations
   at 8 levels of security: (1): KP container, (2): KP container-2-container, (3): certified 
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
-  after 8 years, (8): worthy.
+  after 8 years, (8): worthy. The name "owner" is connected to other's unique Ids and its
+  rated security level in the present realm; its value is Vec of unique Array of bytes
+  of unique Ids whose last element is the present realm Id: 
+  	if (!vec.empty()) var = vec.back().[array_of_bytes]; my_string: &str = "some string";
+  	my_bytes: &[u8] = my_string.as_bytes();
 */
 use std::collections::HashMap; 
 
