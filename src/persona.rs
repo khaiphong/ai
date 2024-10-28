@@ -371,6 +371,14 @@ pub enum OneToDependent {
   Tin(String),  
   Morality(String),         // Falun  
   Patience(String), 
+  // Vedic system "the hubs to receive, assimilate, and distribute life energies”
+  RootChakra(String),		// Muladhara - 		red
+  SacralChakra(String),		// Svadhishthana - 	orange
+  ThirdChakra(String),		// Mapipura -		yellow
+  HeartChakra(String),		// Anahata -		green
+  ThroatChakra(String),		// Vishuddha - 		blue
+  ThirdEye(String),					// Ajna - 			violet
+  CrownChakra(String),				// Sahasrata - 		white
 }
 
 // for outside contributions

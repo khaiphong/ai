@@ -175,6 +175,21 @@ fn main() {
   let _patience = OneToDependent::Patience(String::from("Patience"));
   println!("I'm connecting to node {:?}!", _patience);
 
+  // Duversities via Vedic system
+  let _root_chakra = OneToDependent::RootChakra(String::from("RootChakra"));
+  println!("I'm connecting to node {:?}!", _root_chakra);
+  let _sacral_chakra = OneToDependent::SacralChakra(String::from("SacralChakra"));
+  println!("I'm connecting to node {:?}!", _sacral_chakra);
+  let _third_chakra = OneToDependent::ThirdChakra(String::from("ThirdChakra"));
+  println!("I'm connecting to node {:?}!", _third_chakra);
+  let _heart_chakra = OneToDependent::HeartChakra(String::from("HeartChakra"));
+  println!("I'm connecting to node {:?}!", _heart_chakra);
+  let _throat_chakra = OneToDependent::ThroatChakra(String::from("ThroatChakra"));
+  println!("I'm connecting to node {:?}!", _throat_chakra);
+  let _third_eye = OneToDependent::ThirdEye(String::from("ThirdEye"));
+  println!("I'm connecting to node {:?}!", _third_eye);
+  let _crown_chakra = OneToDependent::CrownChakra(String::from("CrownChakra"));
+  println!("I'm connecting to node {:?}!", _crown_chakra);
 
   // Diversities via Y-dimension
   let _tranquility =  Ylevels::Tranquility(String::from("Tranquility"));
