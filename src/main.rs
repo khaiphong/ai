@@ -149,7 +149,7 @@ fn main() {
   let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
     
-  // Dversities via I-Ching and LaoTzu
+  // Diversities via I-Ching and LaoTzu
   let _heaven = OneToDependent::Heaven(String::from("Heaven"));
   println!("I'm connecting to node {:?}!", _heaven);
   let _earth = OneToDependent::Earth(String::from("Earth"));
@@ -157,7 +157,7 @@ fn main() {
   let _people = OneToDependent::People(String::from("People"));
   println!("I'm connecting to node {:?}!", _people);
     
-  // Dversities via KungTzu
+  // Diversities via KungTzu
   let _nhan = OneToDependent::Nhan(String::from("Nhan"));
   println!("I'm connecting to node {:?}!", _nhan);
   let _nghia = OneToDependent::Nghia(String::from("Nghia"));
@@ -169,13 +169,13 @@ fn main() {
   let _tin = OneToDependent::Tin(String::from("Tin"));
   println!("I'm connecting to node {:?}!", _tin);
 
-  // Dversities via Falun: Honesty (identified trait), Morality, Patience
+  // Diversities via Falun: Honesty (identified trait), Morality, Patience
   let _morality = OneToDependent::Morality(String::from("Morality"));
   println!("I'm connecting to node {:?}!", _morality);
   let _patience = OneToDependent::Patience(String::from("Patience"));
   println!("I'm connecting to node {:?}!", _patience);
 
-  // Duversities via Vedic system
+  // Diversities via Vedic system
   let _root_chakra = OneToDependent::RootChakra(String::from("RootChakra"));
   println!("I'm connecting to node {:?}!", _root_chakra);
   let _sacral_chakra = OneToDependent::SacralChakra(String::from("SacralChakra"));
