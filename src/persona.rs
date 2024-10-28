@@ -377,8 +377,8 @@ pub enum OneToDependent {
   ThirdChakra(String),		// Mapipura -		yellow
   HeartChakra(String),		// Anahata -		green
   ThroatChakra(String),		// Vishuddha - 		blue
-  ThirdEye(String),					// Ajna - 			violet
-  CrownChakra(String),				// Sahasrata - 		white
+  ThirdEye(String),			// Ajna - 			purple
+  CrownChakra(String),		// Sahasrata - 		white
 }
 
 // for outside contributions
