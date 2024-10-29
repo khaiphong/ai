@@ -68,7 +68,16 @@ use crate::persona::samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2};
 use crate::persona::prajnatip1::{prajnatip1_agent1, prajnatip1_agent2};
 use crate::persona::prajnatip2::{prajnatip2_agent1, prajnatip2_agent2};
 
-// open-source LLM continuously trained with fresh data, custom by Kp for its AGI agents
+/*
+  Open-source LLM continuously trained with fresh data, custom by KpPlatform for its AGI
+  agents. The process of AI for generating optimal conditions via enforcing Activities and
+  Relationships using Freewill from the Owner of an agent assistant in its custom LLM agent
+  and "Complex Variable" modeling for optimal conditions to make happened the required
+  statistically significant types. https://www.youtube.com/watch?v=cyGZPF_RMNE
+  For privacy of evolving Trusted to Verified to Worthy Relationships of "IamX" in one's
+  continuity of the consciousness, we have 8 levels of securities possible ONLY from 2025
+  forward in the new Era of accountable "Inter-Realm Communications and Collaborations".
+*/
 use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
 
 // front-end persona facing services
@@ -91,6 +100,8 @@ use crate::network::profession::{profession_agent1, profession_agent2};
 use crate::network::this_life::{this_life_agent1, this_life_agent2};
 use crate::network::next_realm::{next_realm_agent1, next_realm_agent2};
 
+// Similar to struct InnerSpace of persona.rs, we can custom build these structs and in each 
+//struct, we enum of required types and mods for graph directions.
 pub mod persona;
 pub mod agi;
 pub mod front;
@@ -318,7 +329,8 @@ fn main() {
   let _kpf = KpF::new(0);
   println!("I'm evaluating my {:?}!", _kpf);
   
-  
+  // Reasoning for every AI AGENT https://www.youtube.com/watch?v=cyGZPF_RMNE and reversed
+  // engineering from causal reasoning to custom LLM agent in specialized fields as a Service
   // y_pointers of meditation where Kien_tanh is the target for average
   let _empty_the_content_agent1 = empty_the_content_agent1();
   println!("I'm augmenting {:?}!", _empty_the_content_agent1);

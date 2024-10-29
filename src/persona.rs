@@ -93,9 +93,10 @@ the persona developments
   at 8 security levels for private container-2-Container communications and collaborations
   at 8 levels of security: (1): KP container, (2): KP container-2-container, (3): certified 
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
-  after 8 years, (8): worthy. The name "owner" is connected to other's unique Ids and its
-  rated security level in the present realm; its value is Vec of unique Array of bytes
-  of unique Ids whose last element is the present realm Id: 
+  after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
+  The name "owner" is connected to other's unique Ids and its rated security level in the
+  present realm; its value is Vec of unique Array of bytes of unique Ids whose last element
+  is the present realm Id: 
   	if (!vec.empty()) var = vec.back().[array_of_bytes]; my_string: &str = "some string";
   	my_bytes: &[u8] = my_string.as_bytes();
 */
@@ -189,10 +190,12 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   t.insert(4, String::from("T+4: Truth"));                   // = 4
   
   // starting from qualified human realm at F 0: Persona with digital Id and chip Id
+  // This is minimum container-2-container private communications and collaboration of DbMap
+  // 8 security levels. higher security can access lower levels but Not reversed.
   let mut namespace = HashMap::new(); // the namespace and its cgroups of 8 security levels
   namespace.insert(String::from("Owner"), vec![String::from("0_123456789"),
    String::from("chip_0_987654321")]); // each relation is 0_Id and vector of joined data at
-  println!("{namespace:?}"); // 8 security levels. higher security can access lower level.
+  println!("{namespace:?}"); 
   
   let mut f = HashMap::new(); // Taxonomy (types) of f_dimension
   f.insert(0, String::from("F 0: Persona")); //  Person sub f as the key
