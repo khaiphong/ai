@@ -28,38 +28,32 @@
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the 
   bottom line of important focused events.
 */
-use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, };
-use crate::persona::{x_traits::{KpT}, y_pointers::{KpP}, };
 
-use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
-use crate::persona::xdimension::{WuNien, KpX};
-use crate::persona::fdimension::{HuiNeng, Gotama, KpF};
+use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, 
+x_traits::{KpT}, y_pointers::{KpP},
+ydimension::{TranscendentalMeditation, Vipassana, KpY},
+xdimension::{WuNien, KpX}, fdimension::{HuiNeng, Gotama, KpF},
 
 // LLM augmented with self-rating of traits x-dimension pointing to by SmartPointers
-use crate::persona::truth::{truth_agent1, truth_agent2};
-use crate::persona::care::{care_agent1, care_agent2};
-use crate::persona::honesty::{honesty_agent1, honesty_agent2};
-use crate::persona::intuition::{intuition_agent1, intuition_agent2};
-
-use crate::persona::balanced::{balanced_agent1, balanced_agent2};
-
-use crate::persona::kindnessempathy::{kindnessempathy_agent1, kindnessempathy_agent2};
-use crate::persona::influenced::{influenced_agent1, influenced_agent2};
-use crate::persona::veiled::{veiled_agent1, veiled_agent2};
-use crate::persona::indoctrinated::{indoctrinated_agent1, indoctrinated_agent2};
+truth::{truth_agent1, truth_agent2}, care::{care_agent1, care_agent2},
+honesty::{honesty_agent1, honesty_agent2}, intuition::{intuition_agent1, intuition_agent2},
+balanced::{balanced_agent1, balanced_agent2},
+kindnessempathy::{kindnessempathy_agent1, kindnessempathy_agent2},
+influenced::{influenced_agent1, influenced_agent2},
+veiled::{veiled_agent1, veiled_agent2},
+indoctrinated::{indoctrinated_agent1, indoctrinated_agent2},
 
 // LLM augmented with self-rating of Meditation Samadhi y-dimension of SmartPointer
-use crate::persona::empty_the_content::{empty_the_content_agent1, empty_the_content_agent2};
-use crate::persona::dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2};
-use crate::persona::samadhi::{samadhi_agent1, samadhi_agent2};
-use crate::persona::awareness::{awareness_agent1, awareness_agent2};
-
-use crate::persona::prajna::{prajna_agent1, prajna_agent2};
-
-use crate::persona::awarenessprajna::{awarenessprajna_agent1, awarenessprajna_agent2};
-use crate::persona::samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2};
-use crate::persona::prajnatip1::{prajnatip1_agent1, prajnatip1_agent2};
-use crate::persona::prajnatip2::{prajnatip2_agent1, prajnatip2_agent2};
+empty_the_content::{empty_the_content_agent1, empty_the_content_agent2},
+dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2},
+samadhi::{samadhi_agent1, samadhi_agent2},
+awareness::{awareness_agent1, awareness_agent2},
+prajna::{prajna_agent1, prajna_agent2},
+awarenessprajna::{awarenessprajna_agent1, awarenessprajna_agent2},
+samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2},
+prajnatip1::{prajnatip1_agent1, prajnatip1_agent2},
+prajnatip2::{prajnatip2_agent1, prajnatip2_agent2},
+};
 
 /*
   Open-source LLM continuously trained with fresh data, custom by KpPlatform for its AGI
