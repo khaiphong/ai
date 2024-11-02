@@ -28,15 +28,8 @@
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the 
   bottom line of important focused events.
 */
-use crate::persona::OneToDependent;     // Oneness >< Diversities / Hửu Không Vô Ngại
-use crate::persona::Xtraits;
-use crate::persona::Xlevels;
-use crate::persona::Ypointers;
-use crate::persona::Ylevels;
-use crate::persona::Flevels;
-
-use crate::persona::x_traits::{KpT};
-use crate::persona::y_pointers::{KpP};
+use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, };
+use crate::persona::{x_traits::{KpT}, y_pointers::{KpP}, };
 
 use crate::persona::ydimension::{TranscendentalMeditation, Vipassana, KpY}; 
 use crate::persona::xdimension::{WuNien, KpX};
