@@ -29,6 +29,14 @@
   bottom line of important focused events.
 */
 
+// Similar to struct InnerSpace of persona.rs, we can custom build these structs and in each 
+//struct, we enum of required types and mods for graph directions.
+pub mod persona;
+pub mod agi;
+pub mod front;
+pub mod back;
+pub mod network;
+
 use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, 
 x_traits::{KpT}, y_pointers::{KpP},
 ydimension::{TranscendentalMeditation, Vipassana, KpY},
@@ -65,35 +73,25 @@ prajnatip2::{prajnatip2_agent1, prajnatip2_agent2},
   continuity of the consciousness, we have 8 levels of securities possible ONLY from 2025
   forward in the new Era of accountable "Inter-Realm Communications and Collaborations".
 */
-use crate::agi::public::{Granite, Llama, Phi, Grok, Kp};
+use crate::agi::public::{Granite, Grok, Llama, Phi, Kp};
 
 // front-end persona facing services
-use crate::front::mu::{platform_message, service_message};
-use crate::front::chat::{prompt, response};
-use crate::front::video::{in_stream, out_stream};
+use crate::front::{ mu::{platform_message, service_message}, chat::{prompt, response},
+video::{in_stream, out_stream},
+};
 
 // back-end persona agent services
-use crate::back::mu::{mu_agent1, mu_agent2};
-use crate::back::chat::{chat_agent1, chat_agent2};
-use crate::back::video::{video_agent1, video_agent2};
-use crate::back::graph::{graph_agent1, graph_agent2};
-use crate::back::db::{db_agent1, db_agent2};
-use crate::back::hub::{hub_agent1, hub_agent2};
-use crate::back::plan::{plan_agent1, plan_agent2};
+use crate::back::{ mu::{mu_agent1, mu_agent2}, chat::{chat_agent1, chat_agent2},
+video::{video_agent1, video_agent2}, graph::{graph_agent1, graph_agent2},
+db::{db_agent1, db_agent2}, hub::{hub_agent1, hub_agent2}, plan::{plan_agent1, plan_agent2},
+};
 
 // personal agent services
-use crate::network::family::{family_agent1, family_agent2};
-use crate::network::profession::{profession_agent1, profession_agent2};
-use crate::network::this_life::{this_life_agent1, this_life_agent2};
-use crate::network::next_realm::{next_realm_agent1, next_realm_agent2};
-
-// Similar to struct InnerSpace of persona.rs, we can custom build these structs and in each 
-//struct, we enum of required types and mods for graph directions.
-pub mod persona;
-pub mod agi;
-pub mod front;
-pub mod back;
-pub mod network;
+use crate::network::{ family::{family_agent1, family_agent2}, 
+profession::{profession_agent1, profession_agent2}, 
+this_life::{this_life_agent1, this_life_agent2},
+next_realm::{next_realm_agent1, next_realm_agent2},
+};
  
 fn main() {
   // 9 smart pointer # to be connected in learning and sharing
