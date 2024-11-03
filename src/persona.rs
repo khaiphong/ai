@@ -99,9 +99,12 @@ the persona developments
   v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP
   certified security level. Its relationship key id has &v[0] = the relationship with the
   owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
-  Additional values are two possible related realms the owner may live where the owner
-  distributed records are securely maintained waiting for the owner activation. Only 
-  containers belong to the owner can communicate and collaborate within a certified boundary.
+  Additional values are two possible related realms the owner may be naturally reincarnated 
+  where the owner distributed records are securely maintained, waiting for the legitimate 
+  activation based on our empirically Know-How to avoid past mistakes hard-learned from 
+  60,000+ human-years of esoteric degenerated feudal systems. Security features can be 
+  physically implemented at chip level. Only containers belong to the owner having RoT (Root
+  of Trust) can communicate and collaborate within a certified boundary.
 */
 use std::collections::HashMap; 
 
