@@ -94,13 +94,13 @@ the persona developments
   at 8 levels of security: (1): KP container, (2): KP container-2-container, (3): certified 
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
   after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
-  The name "owner" is connected to other's unique Ids and its rated security level in the
-  present realm; its value is Vec of unique Array of bytes of unique Ids whose first element 
-  is the owner Id and the last element is the owner certified security level: 
-  	if (!vec.empty()) var = vec.back().[array_of_bytes]; my_string: &str = "some string";
-  	my_bytes: &[u8] = my_string.as_bytes();
-  Other key is Id of connected relationships whose last element of its Vec value is its 
-  latest certified security level.
+  
+  The DbMap belong the owner having its relationship KP Ids. The value of key "owner" is Vec
+  v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP
+  certified security level. Its relationship key id has &v[0] = the relationship with the
+  owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
+  Additional values are two possible related realms the owner may live where the owner
+  distributed records are securely maintained waiting for the owner activation.
 */
 use std::collections::HashMap; 
 
