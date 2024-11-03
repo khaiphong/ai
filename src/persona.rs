@@ -95,16 +95,16 @@ the persona developments
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
   after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
   
-  The DbMap belongs the owner having its relationship KP Ids. The value of key "owner" is Vec
-  v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP
-  certified security level. Its relationship key id has &v[0] = the relationship with the
-  owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
-  Additional values are two possible related realms the owner may be naturally reincarnated 
-  where the owner distributed records are securely maintained, waiting for the legitimate 
-  activation based on our empirically Know-How to avoid past mistakes hard-learned from 
-  60,000+ human-years of esoteric degenerated feudal systems. Security features can be 
-  physically implemented at chip level. Only containers belong to the owner having RoT (Root
-  of Trust) can communicate and collaborate within a certified boundary.
+  The DbMap belongs the owner having its relationship KP Ids. The value of key "owner / स्वामी" 
+  is Vec v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, 
+  &v[2] = onwer KP certified security level. Its relationship key id has &v[0] = the 
+  relationship with the owner, &v[1] = the persona hardware id, &v[2] = persona KP certified 
+  security level. Additional values are two possible related realms the "owner / स्वामी" may be 
+  naturally reincarnated where the distributed records are securely maintained, waiting for 
+  its legitimate activation based on our empirically Know-How to avoid past mistakes hard-
+  learned from 60,000+ human-years of esoteric degenerated feudal systems. Security features 
+  can be physically implemented at chip level. Only containers belong to the owner having RoT 
+  (Root of Trust) can communicate and collaborate within a certified boundary.
 */
 use std::collections::HashMap; 
 
