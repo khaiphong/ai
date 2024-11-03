@@ -103,8 +103,9 @@ the persona developments
   naturally reincarnated where the distributed records are securely maintained, waiting for 
   its legitimate activation based on our empirically Know-How to avoid past mistakes hard-
   learned from 60,000+ human-years of esoteric degenerated feudal systems. Security features 
-  can be physically implemented at chip level. Only containers belong to the owner having RoT 
-  (Root of Trust) can communicate and collaborate within a certified boundary.
+  can be physically custom designed and implemented at chip level. Only containers belong to 
+  those having RoT (Root of Trust) can communicate and collaborate within a certified 
+  boundary.
 */
 use std::collections::HashMap; 
 
