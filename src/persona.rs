@@ -95,10 +95,12 @@ the persona developments
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
   after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
   The name "owner" is connected to other's unique Ids and its rated security level in the
-  present realm; its value is Vec of unique Array of bytes of unique Ids whose last element
-  is the present realm Id: 
+  present realm; its value is Vec of unique Array of bytes of unique Ids whose first element 
+  is the owner Id and the last element is the owner certified security level: 
   	if (!vec.empty()) var = vec.back().[array_of_bytes]; my_string: &str = "some string";
   	my_bytes: &[u8] = my_string.as_bytes();
+  Other key is Id of connected relationships whose last element of its Vec value is its 
+  latest certified security level.
 */
 use std::collections::HashMap; 
 
