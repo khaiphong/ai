@@ -95,12 +95,13 @@ the persona developments
   source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
   after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
   
-  The DbMap belong the owner having its relationship KP Ids. The value of key "owner" is Vec
+  The DbMap belongs the owner having its relationship KP Ids. The value of key "owner" is Vec
   v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP
   certified security level. Its relationship key id has &v[0] = the relationship with the
   owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
   Additional values are two possible related realms the owner may live where the owner
-  distributed records are securely maintained waiting for the owner activation.
+  distributed records are securely maintained waiting for the owner activation. Only 
+  containers belong to the owner can communicate and collaborate within a certified boundary.
 */
 use std::collections::HashMap; 
 
