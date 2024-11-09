@@ -65,27 +65,6 @@ pub mod fdimension; // other relevant factors making up the states and stock of 
   next qualified realm, an organization, foreign affairs, national development, etc.
 */
 impl InnerSpace { // different methods for different InnerSpace persona types
-
-/*
-Modeling the InnerSpace is the systematic building internal power for different stages of
-the persona developments
-
-  fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
-    return self.f_dimension
-  }
-  fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
-    return "human".to_string()
-  }
-  fn maturity_level(&self) -> String { // f(_x,_y) for organization
-    return "self sustainable".to_string()
-  }
-  fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
-    return "decisive_battle".to_string()
-  }
-  fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
-    return "in_operation".to_string()
-  }
-*/
 }
 
 /* 
@@ -495,7 +474,27 @@ fn x_evaluation(x: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
  let _wisdom = Ypointers::Prajna(String::from("#Prajna")); in the scale of rating system from
  1 - 5 for modeling the change management of f_evaluation and its preparation steps in
      Plan >< Execution >< Feedback of collected fact-based decision. 
-*/
+     
+Modeling the InnerSpace is the systematic building internal power for different stages of
+the persona developments. Academia research + LLM statistical significance
+
+  fn f_evaluation(&self) -> String { // f(_x,_y) for the persona
+    return "EmpathyAwareness".to_string()
+  }
+  fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "human".to_string()
+  }
+  fn maturity_level(&self) -> String { // f(_x,_y) for organization
+    return "self sustainable".to_string()
+  }
+  fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
+    return "decisive_battle".to_string()
+  }
+  fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
+    return "in_operation".to_string()
+  }
+*/    
+
 fn f_evaluation(f: HashMap<i32, String>) -> Vec<i32> {
 
     println!("Suggested Inner Space for cultivation");
