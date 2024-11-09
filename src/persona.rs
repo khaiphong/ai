@@ -254,7 +254,9 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   and its reversed engineering for people connected to learn and share in the # (hashtag)
   community. We can use the generic evaluation type to be implemented for identified pointer
   which can question from LLM models then fine-tuned from KpPlatform community data and the
-  custom data of the client.
+  custom data of the client. Fact-based evaluation via Activities and Relationships of
+  pointers may be general. But when combined with rated traits revealed in Activities and
+  Relationships, we can statistically evaluate the persona rated Fibonacci level.
 */
 fn p_evaluation(p: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
@@ -273,7 +275,9 @@ fn p_evaluation(p: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   to be explored which are tags for people connected to learn and share in the # (hashtag) 
   community. We can use the generic evaluation type to be implemented for identified trait 
   which can question from LLM models then fine-tuned for KpPlatform community data and the 
-  custom data of the client.
+  custom data of the client. The observable traits are rated from Attachments to Detached
+  which can be used to clean up negative traits and enforce positive traits to be 
+  statistically evaluated at the rated Fibonacci level.
 */
 fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
