@@ -301,7 +301,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   "Known" to reach the Y-dimension recorded by Gotama as Right Meditation. The proof is at 
   both theoretical level using math and at empirical levels as SHARED by different faith 
   practitioners of How to use "Faith / Trust" Aspiration in transcending the Known for 
-  detoxifications of the tainted senses, realizing Kingdom of gods within. The "Hoax of Jesus 
+  detoxifications of the tainted senses, realizing GodKingdom within. The "Hoax of Jesus 
   Redeemer" will be naturally exposed to scientifically point out the Right way of evolution 
   versus the Wrong way of degeneration as evidenced in the total collapse of the past
   esoteric feudal systems ruled by the degenerated King of Gods. This can be done with or 
@@ -335,25 +335,25 @@ pub enum Xtraits {
 // for outside contributions
 #[derive(Debug)]
 pub enum Xlevels {
-  HonNhien(String), 
-  ManagingFreshness(String),
-  KnowingFreshness(String),    
-  ProcessDiscovered(String), 
-  KnowingThought(String), 
-  CareViaCosmicEnergy(String),  
-  HelpViaCosmicEnergy(String),  
-  CulturalInfluenced(String),    
-  RegionalInfluenced(String),
-  NationalInfluenced(String),
-  VeiledType(String),
-  BindingWord(String),
-  BindingImage(String),
-  ClingingThought(String),
+  HonNhien(String),				// #KindnessEmpathy
+  ManagingFreshness(String),	// #Balanced
+  KnowingFreshness(String),		// #Intuition
+  ProcessDiscovered(String),	// #Care
+  KnowingThought(String),		// #Honesty
+  CareViaCosmicEnergy(String),	// #Truth
+  HelpViaCosmicEnergy(String),	// #Truth
+  CulturalInfluenced(String),	// #Influenced
+  RegionalInfluenced(String),	// #Influenced
+  NationalInfluenced(String),	// #Influenced
+  VeiledType(String),			// #Veiled
+  BindingWord(String),			// #Indoctrinated
+  BindingImage(String),			// #Indoctrinated
+  ClingingThought(String),		// #Indoctrinated
 }
 
 #[derive(Debug)]
 pub enum Ypointers {
-  QualifiedHumanitas(String),        // P0: QualifiedHumanitas has natural Peace
+  QualifiedHumanitas(String),	// P0: QualifiedHumanitas has natural Peace
   EmptyTheContent(String), 
   DhyanaSamadhi(String),
   Samadhi(String),    // Samadhi must produce visible outcomes known by Gotama
