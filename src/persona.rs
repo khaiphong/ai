@@ -63,14 +63,14 @@ pub mod fdimension; // other relevant factors making up the states and stock of 
   objective function #Prajna = F(X, Y) of "complex-valued data" to foster innovations /
   breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
   next qualified realm, an organization, foreign affairs, national development, etc.
-*/
-impl InnerSpace { // different methods for different InnerSpace persona types
-/*
-Modeling the InnerSpace is the systematic building internal power for different stages of
-the persona developments. Academia research + LLM statistical significance. These methods
-will be used as a part of f_evaluation depending on the type of persona and required service
+  
+  Modeling the InnerSpace is the systematic building internal power for different stages of
+  the persona developments. Academia research + LLM statistical significance. These methods
+  will be used as a part of f_evaluation depending on the type of persona and required service
 
-  fn f_evaluation(&self) -> String { // f(_x,_y) for the persona
+impl InnerSpace { // different methods for different InnerSpace persona types
+
+  fn f_evaluation<'a>(_x: &'a x_dimension, _y: &'a y_dimension) -> &'a str { // f(_x,_y)
     return "EmpathyAwareness".to_string()
   }
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
@@ -85,8 +85,9 @@ will be used as a part of f_evaluation depending on the type of persona and requ
   fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
     return "in_operation".to_string()
   }
-*/
 }
+*/
+  
 
 /* 
   HashMap will be replaced with DbMap, a bare bone K-V store with namespace and cgroup rated
@@ -495,12 +496,15 @@ fn x_evaluation(x: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
     return vec![0]; // rated level of WuNien
     
 }
+
 /*
  let _wisdom = Ypointers::Prajna(String::from("#Prajna")); in the scale of rating system from
  1 - 5 for modeling the change management of f_evaluation and its preparation steps in
      Plan >< Execution >< Feedback of collected fact-based decision. 
+     
+  fn f_evaluation<'a>(_x: &'a x_dimension, _y: &'a y_dimension) -> &'a str { // f(_x,_y)
+    return "EmpathyAwareness".to_string()     
 */    
-
 fn f_evaluation(f: HashMap<i32, String>) -> Vec<i32> {
 
     println!("Suggested Inner Space for cultivation");
