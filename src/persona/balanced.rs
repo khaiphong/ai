@@ -1,3 +1,4 @@
+// define struct Balanced and its inpl of traits # where people can tweet and tweet-on-tweet
 pub fn balanced_agent1() -> String {
     return "balanced_agent1_platform_message".to_string();
 }    

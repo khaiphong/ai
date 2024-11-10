@@ -1,4 +1,5 @@
-// intuition trait conprises of trust, qi, art
+// define struct Intuition and its inpl of traits # where people can tweet and tweet-on-tweet
+
 pub fn intuition_agent1() -> String {
     return "intuition_agent1_platform_message".to_string();
 }    

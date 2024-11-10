@@ -1,4 +1,4 @@
- // indoctrinated comprises of binding_word, binding_image, clinging_thought
+// define struct Indoctrinated and its inpl of traits # where people can tweet
  
  pub fn indoctrinated_agent1() -> String {
     return "indoctrinated_agent1_platform_message".to_string();
