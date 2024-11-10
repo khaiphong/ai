@@ -312,7 +312,8 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   with claimed "Transcendental Meditation", Chinese "Qi", KhaiPhong's discovered
   underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
   technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
-  to clean up cheaters "cooking sand and selling as rice".
+  to clean up cheaters "cooking sand and selling as rice". Make X, Y, F levels as struts
+  having methods to use trait bound to a generic type of certain behavior.
   
   To have html note and links in sticky note for explanation in future implementations:
   pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
@@ -322,15 +323,15 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
 */
 #[derive(Debug)]
 pub enum Xtraits {
-  Truth(String), 
-  Honesty(String), 
-  Care(String),
-  Intuition(String), // Intuition Trust, Qi, Art
-  Balanced(String), // qualified person
-  KindnessEmpathy(String),  
-  Influenced(String),
-  Veiled(String),
-  Indoctrinated(String), // visible in BindingWord, BindingImage, ClingingThought
+  Truth(String),			// use cosmic energy
+  Honesty(String), 			// KnowingThought
+  Care(String),				// investigation, inquiries
+  Intuition(String),		// Intuition Trust, Qi, Art
+  Balanced(String),			// qualified person
+  KindnessEmpathy(String),	// HonNhien
+  Influenced(String),		// cultural, regional, national
+  Veiled(String),			// hoax, fooled
+  Indoctrinated(String),	// visible in BindingWord, BindingImage, ClingingThought
 }
 // for outside contributions
 #[derive(Debug)]
@@ -354,31 +355,31 @@ pub enum Xlevels {
 #[derive(Debug)]
 pub enum Ypointers {
   QualifiedHumanitas(String),	// P0: QualifiedHumanitas has natural Peace
-  EmptyTheContent(String), 
-  DhyanaSamadhi(String),
-  Samadhi(String),    // Samadhi must produce visible outcomes known by Gotama
-  Awareness(String),  // Transcendental Awareness
-  Prajna(String), 
-  AwarenessPrajna(String),   // related to karma
-  SamadhiPrajna(String),     // known by HuiNeng
-  PrajnaTIP1(String),         // from KP
+  EmptyTheContent(String),		//
+  DhyanaSamadhi(String),		//
+  Samadhi(String),    			// Right Samadhi of visible outcomes known by Gotama
+  Awareness(String), 			// Transcendental Awareness
+  Prajna(String), 				//
+  AwarenessPrajna(String),   	// related to karma
+  SamadhiPrajna(String),		// known by HuiNeng
+  PrajnaTIP1(String),			// from KP
   PrajnaTIP2(String),
 }
 // for outside contributions
 #[derive(Debug)]
 pub enum Ylevels {
-  Tranquility(String), 
-  Equanimity(String),
-  Purity(String),    
-  Selfless(String), 
-  NonThingness(String), 
-  Unmoving(String),  
-  Empathy(String),  
-  Kindness(String),    
-  Conscience(String),
-  Conscience1(String),
-  Conscience2(String),
-  Conscience3(String),
+  Tranquility(String),		// #KindnessEmpathy
+  Equanimity(String),		// #Balanced
+  Purity(String), 			// #Intuition
+  Selfless(String),			// #Care
+  NonThingness(String),		// #Honesty
+  Unmoving(String), 		// #Truth
+  Empathy(String),			// #Influenced
+  Kindness(String),			// #Influenced
+  Conscience(String),		// #Veiled of Right and Wromg
+  Conscience1(String),		// #Indoctrinated
+  Conscience2(String),		// #Indoctrinated
+  Conscience3(String),		// #Indoctrinated
 }
 
 #[derive(Debug)]
@@ -408,22 +409,22 @@ pub enum OneToDependent {
 // for outside contributions
 #[derive(Debug)]
 pub enum Flevels {
-  EquanimityAwareness(String), 
-  PurityAwareness(String),
-  SignedPosts(String),    
-  SelflessAwareness(String), 
-  VisibleAwarenessPrajna(String), 
-  EngagedAwarenessPrajna(String),  
-  ForecastingAwarenessPrajna(String),  
-  VisibleSamadhiPrajna(String),    
-  EmpathyAwareness(String),
-  KindnessAwareness(String),
-  AnimalEnergy(String),
-  ExtremeDesire(String),
-  AnimalConsciousness(String),
-  Smelly1(String),
-  Smelly2(String),
-  Smelly3(String),
+  EquanimityAwareness(String), 			// #KindnessEmpathy
+  PurityAwareness(String),				// #Balanced
+  SignedPosts(String),    				// #Balanced
+  SelflessAwareness(String), 			// #Intuition
+  VisibleAwarenessPrajna(String), 		// #Care
+  EngagedAwarenessPrajna(String),  		// #Honesty
+  ForecastingAwarenessPrajna(String),	// #Truth
+  VisibleSamadhiPrajna(String), 		// #Truth
+  EmpathyAwareness(String),				// #Influenced
+  KindnessAwareness(String),			// #Influenced
+  AnimalEnergy(String),					// #Veiled
+  ExtremeDesire(String),				// #Indoctrinated
+  AnimalConsciousness(String),			// #Indoctrinated
+  Smelly1(String),						// esoteric Degenerated
+  Smelly2(String),						// esoteric Vampire
+  Smelly3(String),						// esoteric X-of-Prey
 }
 
 
