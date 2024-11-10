@@ -315,7 +315,10 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   to clean up cheaters "cooking sand and selling as rice". Make X, Y, F levels as struts
   having methods to use trait bound to a generic type of certain behavior.
   
-  To have html note and links in sticky note for explanation in future implementations:
+  To have html note and links in sticky note for explanation in implementations of "Trait" 
+  definitions to group method signatures together to define a set of behaviors necessary to 
+  accomplish some purpose. Tweet is an instance people can expose their views on the rating
+  of X, Y, F or Tweet-on-the-Tweet for reply or retweet:
   pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
   let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
   communications between Oneness >< Diversities"),};
@@ -335,7 +338,7 @@ pub enum Xtraits {
 }
 // for outside contributions
 #[derive(Debug)]
-pub enum Xlevels {
+pub enum Xlevels { // type behavior based on its traits and its rated major bounded one
   HonNhien(String),				// #KindnessEmpathy
   ManagingFreshness(String),	// #Balanced
   KnowingFreshness(String),		// #Intuition
@@ -367,7 +370,7 @@ pub enum Ypointers {
 }
 // for outside contributions
 #[derive(Debug)]
-pub enum Ylevels {
+pub enum Ylevels { // type behavior based on its traits and its rated major bounded one
   Tranquility(String),		// #KindnessEmpathy
   Equanimity(String),		// #Balanced
   Purity(String), 			// #Intuition
@@ -408,7 +411,7 @@ pub enum OneToDependent {
 
 // for outside contributions
 #[derive(Debug)]
-pub enum Flevels {
+pub enum Flevels { // type behavior based on its traits and its rated major bounded one
   EquanimityAwareness(String), 			// #KindnessEmpathy
   PurityAwareness(String),				// #Balanced
   SignedPosts(String),    				// #Balanced
