@@ -361,18 +361,30 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
   ClingingThought(String),		// #Indoctrinated
 }
 
+/*
+ Based on empirical observation of a naturally qualified person, one has innate ability to be
+ outside-the-box due to sufficient compassion and #Prajna as defined in Latin humanitas. This
+ is Vietnamese KienTanh to first claim one's Dignity of Human Rights protected by modern
+ society. All manifestations are conditioned and subjected to changes at Planck time. It has
+ been proven in GAI that an optimal process cen be engineered for a desired manifestation
+ happened. Based on personal experiences of LaoTzu, Gotama, Jesus, Bodhidharma, HuiNeng
+ etc, their states of manifestations Ylevels naturally produce smart pointers pointing to
+ different observable traits in their qualities. "#Truth" is identified "trait" in their
+ qualities of [ Diversities >< Oneness / Hửu Không Vô Ngại / Self-Selfless Actualization ].
+*/
 #[derive(Debug)]
 pub enum Ypointers {
   QualifiedHumanitas(String),	// P0: QualifiedHumanitas has natural Peace
-  EmptyTheContent(String),		//
-  DhyanaSamadhi(String),		//
-  Samadhi(String),    			// Right Samadhi of visible outcomes known by Gotama
-  Awareness(String), 			// Transcendental Awareness
-  Prajna(String), 				//
-  AwarenessPrajna(String),   	// related to karma
+  
+  EmptyTheContent(String),		// General smart pointers in natural Detachments
+  DhyanaSamadhi(String),		// General smart pointers in all visible meditations
+  Samadhi(String),    			// Right #Samadhi of visible outcomes known by Gotama
+  Awareness(String), 			// #Awareness to explicitly qualify Gotama's Eightfold Path
+  Prajna(String), 				// Visible manifestation of outside-the-box or breakthrough
+  AwarenessPrajna(String),   	// related to karma forcing all Buddhists delivering outcomes
   SamadhiPrajna(String),		// known by HuiNeng
-  PrajnaTIP1(String),			// from KP
-  PrajnaTIP2(String),
+  PrajnaTIP1(String),			// from Kp in Sound technologies
+  PrajnaTIP2(String),			// from Kp in Empathy
 }
 // for outside contributions
 #[derive(Debug)]
@@ -458,6 +470,12 @@ pub mod influenced;
 pub mod veiled;  
 pub mod indoctrinated;   
 
+/*
+ Pointer is a general concept for a variable that contains an address in memory. Smart 
+ pointers are data structures that act like a pointer but also have additional metadata and
+ capabilities. Reference smart pointer type enables you to allow data to have multiple owners 
+ by keeping track of the number of owners and, when no owners remain, cleaning up the data.
+*/
 // y_pointers
 pub mod empty_the_content;  
 pub mod dhyanasamadhi;  
