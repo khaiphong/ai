@@ -293,7 +293,7 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
 }
 
 /* 
-  List of traits ranging from #Indoctrinatd to #Truth. This part exposes the cheated 
+  List of traits ranging from #Indoctrinated to #Truth. This part exposes the cheated 
   Descriptions such as Faith from all religions for testing and discovering the underlying 
   natural laws of their practices to be statistically evalutated by the world. For example, 
   we will prove that "Faith" does not need to be on the conflicting plan of duality due to 
@@ -313,17 +313,22 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   with claimed "Transcendental Meditation", Chinese "Qi", KhaiPhong's discovered
   underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
   technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
-  to clean up cheaters "cooking sand and selling as rice". Make X, Y, F levels as struts
-  having methods to use trait bound to a generic type of certain behavior.
+  to clean up cheaters "cooking sand and selling / hallucinated as rice". Make X, Y, F 
+  levels as struts having methods to use trait bound to a generic type of certain behavior.
   
   To have html note and links in sticky note for explanation in implementations of "Trait" 
   definitions to group method signatures together to define a set of behaviors necessary to 
   accomplish some purpose. Tweet is an instance people can expose their views on the rating
   of X, Y, F or Tweet-on-the-Tweet for reply or retweet:
+  
   pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
   let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
   communications between Oneness >< Diversities"),};
   println!("I'm connecting to node {:?}!", _truth.kind);
+  
+  The "traits" will be academically studied of observable attributes in Activities and 
+  Relationships, then exposed as # for people tweet and tweet-on-tweet to be avaluated and
+  rated at community conscientious level.
 */
 #[derive(Debug)]
 pub enum Xtraits {
