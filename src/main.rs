@@ -144,7 +144,23 @@ fn main() {
   println!("I'm connecting to node {:?}!", _oneness);
   let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
-    
+
+  // Diversities via TamingTheOx
+  let _at_home = OneToDependent::AtHome(String::from("AtHome"));
+  println!("I'm connecting to node {:?}!", _at_home);
+  let _right_effort = OneToDependent::RightEffort(String::from("RightEffort"));
+  println!("I'm connecting to node {:?}!", _right_effort);
+  let _taming_the_ox = OneToDependent::TamingTheOx(String::from("TamingTheOx"));
+  println!("I'm connecting to node {:?}!", _taming_the_ox);
+  let _riding_the_ox = OneToDependent::RidingTheOx(String::from("RidingTheOx"));
+  println!("I'm connecting to node {:?}!", _riding_the_ox);
+  let _non_thingness = OneToDependent::NonThingness(String::from("NonThingness"));
+  println!("I'm connecting to node {:?}!", _non_thingness);
+  let _the_source = OneToDependent::TheSource(String::from("TheSource"));
+  println!("I'm connecting to node {:?}!", _the_source);
+  let _awakening_budh = OneToDependent::AwakeningBudh(String::from("AwakeningBudh"));
+  println!("I'm connecting to node {:?}!", _awakening_budh);
+  
   // Diversities via I-Ching and LaoTzu
   let _heaven = OneToDependent::Heaven(String::from("Heaven"));
   println!("I'm connecting to node {:?}!", _heaven);

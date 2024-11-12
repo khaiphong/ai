@@ -367,7 +367,7 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
  society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
  statistically significant epistemic objectives such as Gotama's Fourfold Truth of Dukkha,
- Jesus's GodKingdom within, Latin humanitas, etc.
+ Jesus's GodKingdom within, Latin humanitas, Taming-The-Ox, etc.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
  proven in Generative AI that an optimal process can be engineered for a desired manifestation
@@ -416,6 +416,13 @@ pub enum Ylevels { // type behavior based on its traits and its rated major boun
 pub enum OneToDependent { 
   Oneness(String),          // Oneness >< Diversities
   Diversities(String),
+  AtHome(String),			// TamingTheOx
+  RightEffort(String),
+  TamingTheOx(String),
+  RidingTheOx(String),
+  NonThingness(String),
+  TheSource(String),
+  AwakeningBudh(String),
   Heaven(String),           // I-Ching, LaoTzu
   Earth(String),  
   People(String), 
