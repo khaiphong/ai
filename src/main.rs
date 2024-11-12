@@ -161,6 +161,12 @@ fn main() {
   let _awakening_budh = OneToDependent::AwakeningBudh(String::from("AwakeningBudh"));
   println!("I'm connecting to node {:?}!", _awakening_budh);
   
+  // Epistemic Objectives
+  let _four_fold_truth = OneToDependent::FourFoldTruth(String::from("FourFoldTruth"));
+  println!("I'm connecting to node {:?}!", _four_fold_truth);
+  let _god_kingdom = OneToDependent::GodKingdom(String::from("GodKingdom"));
+  println!("I'm connecting to node {:?}!", _god_kingdom);  
+  
   // Diversities via I-Ching and LaoTzu
   let _heaven = OneToDependent::Heaven(String::from("Heaven"));
   println!("I'm connecting to node {:?}!", _heaven);

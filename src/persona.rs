@@ -366,8 +366,8 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  outside-the-box due to sufficient compassion and #Prajna as defined in Latin humanitas. This
  is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
  society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
- statistically significant epistemic objectives such as Gotama's Fourfold Truth of Dukkha,
- Jesus's GodKingdom within, Latin humanitas, Taming-The-Ox, etc.
+ statistically significant epistemic objectives such as Gotama's Fourfold Truth of #Dukkha,
+ Jesus's #GodKingdom within, Latin humanitas, #TamingTheOx, etc.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
  proven in Generative AI that an optimal process can be engineered for a desired manifestation
@@ -416,23 +416,31 @@ pub enum Ylevels { // type behavior based on its traits and its rated major boun
 pub enum OneToDependent { 
   Oneness(String),          // Oneness >< Diversities
   Diversities(String),
-  AtHome(String),			// TamingTheOx
+  
+  AtHome(String),			
   RightEffort(String),
-  TamingTheOx(String),
+  TamingTheOx(String),		// TamingTheOx - Epistemic Objective
   RidingTheOx(String),
   NonThingness(String),
   TheSource(String),
   AwakeningBudh(String),
+  
+  FourFoldTruth(String),	// of Dukkha - Epistemic Objective
+  GodKingdom(String),		// within - Epistemic Objective
+  
   Heaven(String),           // I-Ching, LaoTzu
   Earth(String),  
   People(String), 
+  
   Nhan(String),             // KungTzu
   Nghia(String),  
   Le(String),     
   Tri(String),
   Tin(String),  
+  
   Morality(String),         // Falun  
   Patience(String), 
+  
   // Vedic system "the hubs to receive, assimilate, and distribute life energies”
   RootChakra(String),		// Muladhara - 		red
   SacralChakra(String),		// Svadhishthana - 	orange
