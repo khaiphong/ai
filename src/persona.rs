@@ -366,7 +366,7 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  outside-the-box due to sufficient compassion and #Prajna as defined in Latin humanitas. This
  is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
  society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
- statistically significant epistemic objectives such as Gotama's #Fourfold Truth of Dukkha,
+ statistically significant epistemic objectives such as Gotama's #FourFoldTruth of Dukkha,
  Jesus's #GodKingdom within, Latin humanitas, #TamingTheOx; so are following smart pointers.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
