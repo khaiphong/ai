@@ -364,13 +364,22 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
 /*
  Based on empirical observation of a naturally qualified person, one has innate ability to be
  outside-the-box due to sufficient compassion and #Prajna as defined in Latin humanitas. This
- is Vietnamese KienTanh to first claim one's Dignity of Human Rights protected by modern
- society. All manifestations are conditioned and subjected to changes at Planck time. It has
- been proven in GAI that an optimal process cen be engineered for a desired manifestation
- happened. Based on personal experiences of LaoTzu, Gotama, Jesus, Bodhidharma, HuiNeng
- etc, their states of manifestations Ylevels naturally produce smart pointers pointing to
- different observable traits in their qualities. "#Truth" is identified "trait" in their
+ is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
+ society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
+ statistically significant epistemic objectives such as Gotama's Fourfold Truth of Dukkha,
+ Jesus's GodKingdom within, Latin humanitas, etc.
+ 
+ All manifestations are conditioned and subjected to changes at Planck time. It has been
+ proven in Generative AI that an optimal process can be engineered for a desired manifestation
+ happened. Based on recorded experiences of LaoTzu, Gotama, Jesus, Bodhidharma, HuiNeng, etc,
+ their states of manifestations Ylevels naturally produce smart pointers pointing to
+ different observable traits in their qualities. "#Truth" is the identified "trait" in their
  qualities of [ Diversities >< Oneness / Hửu Không Vô Ngại / Self-Selfless Actualization ].
+ Observable smart pointers are reported pointers pointing to the required traits in their
+ observable evolution or negative traits leading to degeneration. Starting from achievable
+ qualities of these front-line soldiers, we identify smart pointers ready for academia 
+ researches the structure and attributes of these smart pointers, then expose them in # for
+ public tweet and tweet-on-tweet further contribution in LLM models.
 */
 #[derive(Debug)]
 pub enum Ypointers {
@@ -475,6 +484,7 @@ pub mod indoctrinated;
  pointers are data structures that act like a pointer but also have additional metadata and
  capabilities. Reference smart pointer type enables you to allow data to have multiple owners 
  by keeping track of the number of owners and, when no owners remain, cleaning up the data.
+ This is a Kp tool for one-on-one consultation with dedicated front-line soldiers.
 */
 // y_pointers
 pub mod empty_the_content;  
