@@ -367,7 +367,7 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
  society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
  statistically significant epistemic objectives such as Gotama's #FourFoldTruth of Dukkha,
- Jesus's #GodKingdom within, Latin humanitas, #TamingTheOx; so are following smart pointers.
+ Jesus's #GodKingdom within, Latin humanitas, #TamingTheOx; so are following Ypointers.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
  proven in Generative AI that an optimal process can be engineered for a desired manifestation
