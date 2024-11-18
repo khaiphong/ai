@@ -90,11 +90,11 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   
 
 /* 
-  HashMap will be replaced with DbMap, a bare bone K-V store with namespace and cgroup rated
-  at 8 security levels for private container-2-container communications and collaborations
-  at 8 levels of security: (1): KP container, (2): KP container-2-container, (3): certified 
-  source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, (7): validated 
-  after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
+  HashMap will be replaced with DbMap, a bare bone K-V store with namespace of unique Id and
+  cgroup rated at 8 security levels for private container-2-container communications and
+  collaborations at 8 levels of security: (1): KP container, (2): KP container-2-container, 
+  (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
+  (7): validated after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
   
   The DbMap belongs the owner having its relationship KP Ids. The value of key "owner / स्वामी" 
   is Vec v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, 
