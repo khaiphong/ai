@@ -200,6 +200,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   // starting from qualified human realm at F 0: Persona with digital Id and chip Id
   // This is minimum container-2-container private communications and collaboration of DbMap
   // 8 security levels. higher security can access lower levels but Not reversed.
+  // https://www.youtube.com/watch?v=HmE0hUifX7Q
   let mut namespace = HashMap::new(); // the namespace and its cgroups of 8 security levels
   namespace.insert(String::from("Owner"), vec![String::from("0_123456789"),
    String::from("chip_0_987654321")]); // each relation is 0_Id and vector of joined data at
