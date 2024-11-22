@@ -1,32 +1,31 @@
 /*
-  Starting at a naturally qualified person of this cycle modeled at balanced intuition "I 0", 
-  there is a wide range of awareness _x and inner_peace from meditation (samadhi) _y in 
-  negative binding-clinging forces to positive detachment based on self-evaluated plus LLM 
-  opinions of x_evaluation and y_evaluation. We use mutable variable instead of self-
-  evaluated defined const as visible x_traits and y_pointers leading to higher 
-  conmsciousness at rated points of complex Fibonacci Nunber for Prajna >< AGI (Agentic 
-  Retrieval Augmented Generation / 
-  https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd), then modeling
+  Starting at a naturally qualified person of #Humanity modeled at #Balanced #Intuition &
+  Rationality, there is a wide range of #Awareness _x and #Samadhi (inner_peace) from
+  #DhyanaSamadi (Thiền Định) _y in negative binding-clinging forces to positive detachment 
+  based on self-evaluated custom agent of x_evaluation and y_evaluation. We use mutable 
+  variable instead of self-evaluated defined const as visible x_traits and y_pointers leading 
+  to higher conmsciousness at rated points of complex Fibonacci Nunber for Prajna >< AGI 
+  https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd, then modeling
   which is applicable to any kind of persona (person, Inter-Realm, organization, foreign 
   affairs, a nation, a family, project, etc). For elites currently a person, the evaluation 
   are intended to help that person moving from evolution then degeneration to the right  
-  positive evaluation with oservable attributes of persona mod: Given the following hashtag # 
+  positive evaluation with oservable attributes of the persona: Given the following hashtag # 
   and user description, we evaluate the experience in [ observable traits from attached to 
   totally detached in TRUTH, a trait of interactions between Oneness >< Diversities ] to the 
   outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
   Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
   Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (
-  Trust, Qi, Art) T+1 ], [ Falun (Honesty, Budh, Patience / Chân, Thiện, Nhẩn) T+2 ], [ Care 
-  T+3 ], [ TRUTH T+4 ] from heavily attached to totally detached, capable to enable wider 
-  angle of a focused event are from [ -4 to +4 ] where 0 is the base of a qualified humanitas.
+  Trust, Qi, Art) T+1 ], [ Care T+2 ], [ Honesty T+3 ], [ TRUTH T+4 ] from heavily attached to 	
+  totally detached, capable to enable wider angle of a focused event are from [ -4 to +4 
+  where 0 is the base of a qualified humanitas.
       
   The Description is not the Described! We use LLM to enable this possibility the persona may 
   take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
   learned based on its private ratings of the suggested positive intelligence and its 
   normative intelligence. The outcome is its vector of these rated qualities for self 
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the 
-  bottom line of important focused events.
+  bottom line of important fact-based focused events.
 */
 
 // Similar to struct InnerSpace of persona.rs, we can custom build these structs and in each 
