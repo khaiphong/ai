@@ -561,7 +561,7 @@ fn f_evaluation(f: HashMap<i32, String>) -> Vec<i32> {
         println!("{key}: {value}");
     }
     
-    // evaluations based on hard evidences in community social networks and proven experts
+    // evaluations based on hard evidences in social relationships and proven experts
     
     return vec![0]; // rated complex Fibinacci level
 }

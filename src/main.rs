@@ -34,7 +34,7 @@ pub mod persona;
 pub mod agi;
 pub mod front;
 pub mod back;
-pub mod network;
+pub mod relationship;
 
 use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, 
 x_traits::{KpT}, y_pointers::{KpP},
@@ -86,7 +86,7 @@ db::{db_agent1, db_agent2}, hub::{hub_agent1, hub_agent2}, plan::{plan_agent1, p
 };
 
 // personal agent services
-use crate::network::{ family::{family_agent1, family_agent2}, 
+use crate::relationship::{ family::{family_agent1, family_agent2}, 
 profession::{profession_agent1, profession_agent2}, 
 this_life::{this_life_agent1, this_life_agent2},
 next_realm::{next_realm_agent1, next_realm_agent2},
@@ -492,7 +492,7 @@ fn main() {
   let _plan_agent2 = plan_agent2();
   println!("I'm augmenting {:?}!", _plan_agent2); 
   
-  // network GAI
+  // relationship AI
   let _family_agent1 = family_agent1();
   println!("I'm augmenting {:?}!", _family_agent1);
   let _family_agent2 = family_agent2();
