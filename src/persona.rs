@@ -1,5 +1,5 @@
 /*
- The result of KP 50+ years of field researches PLUS exoteric / esoteric observations of
+ The result from KP 50+ years of field researches PLUS exoteric / esoteric observations of
  qualified candidates as first front-line soldiers while waiting for verifications and/or
  modifications / enhancements of later academia contributions. We start from actual
  experiences of a Vietnamese student since 1970 all Gotama's recorded Jhanas, further 
@@ -25,7 +25,7 @@
 
 
 /*
-  We generalize the persona to big corporation HR and important person to (1) clean up 
+  We generalize the persona for big corporation HR and important person to (1) clean up 
   tainted senses and (2) cultivate required traits for its What-Count culture. The function 
   of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
   sense, the required traits are its core Values (e.g. #Honesty & #Care) in execution. This
@@ -59,8 +59,8 @@ pub mod xdimension; // states of consciousness varying from attachment to detach
 pub mod fdimension; // other relevant factors making up the states and stock of the persona
 
 /*
-  Dynamic interactions between normative and positive AI intelligence to custom modeling the
-  objective function #Prajna = F(X, Y) of "complex-valued data" to foster innovations /
+  Dynamic interactions between normative and positive AI intelligence of custom modeling the
+  objective function #Prajna = F(X, Y) in "complex-valued data" to foster innovations /
   breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
   next qualified realm, an organization, foreign affairs, national development, etc.
   
@@ -91,8 +91,8 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 
 /* 
   HashMap will be replaced with DbMap, a bare bone K-V store with namespace of unique Id and
-  cgroup rated at 8 security levels for private container-2-container communications and
-  collaborations at 8 levels of security: (1): KP container, (2): KP container-2-container, 
+  cgroup rated at 8 security levels for private container-to-container communications and
+  collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
   (7): validated after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
   
@@ -108,7 +108,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   those having RoT (Root of Trust) can communicate and collaborate within a certified 
   boundary.
 */
-use std::collections::HashMap; 
+use std::collections::HashMap; // to be replaced by DbMap
 
 // given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
