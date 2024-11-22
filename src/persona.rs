@@ -40,8 +40,8 @@ pub struct InnerSpace {
   // HashMap<i32, String> smart pointers from outcomes of y_dimension
   pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   // each persona must have lists of traits, pointers, depths of X, Y, and F for both
-  // internal and/or externam acquired ability to handle required tasks
-  // lumped other factors observable in complex Fibonacci sequences
+  // internal and/or external acquired ability to handle required tasks
+  // lumped other factors observable in complex Fibonacci sequences of f_dimension
   //vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8],
   pub f_dimension: Vec<i32>, 
   // KP Signed Posts or Gotama Jhanas or Right Samadhi
@@ -49,7 +49,7 @@ pub struct InnerSpace {
   // HuiNeng #WuNien or KP #Awareness
   pub x_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, -7, 0, 1, 2, 3, 4, 5, 6, 7],   
 }
-// Implementations
+// Implementations branched to different mod
 pub mod y_pointers; // implementations to make the description closed to the described
 pub mod ydimension; // states of consciousness driving observable Activities and Relationships
 
