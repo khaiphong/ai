@@ -42,15 +42,15 @@ ydimension::{TranscendentalMeditation, Vipassana, KpY},
 xdimension::{WuNien, KpX}, fdimension::{HuiNeng, Gotama, KpF},
 
 // LLM augmented with self-rating of traits x-dimension pointing to by SmartPointers
-truth::{truth_agent1, truth_agent2}, care::{care_agent1, care_agent2},
-honesty::{honesty_agent1, honesty_agent2}, intuition::{intuition_agent1, intuition_agent2},
+truth::{truth_agent1, truth_agent2}, honesty::{honesty_agent1, honesty_agent2}, 
+care::{care_agent1, care_agent2}, intuition::{intuition_agent1, intuition_agent2},
 balanced::{balanced_agent1, balanced_agent2},
 kindnessempathy::{kindnessempathy_agent1, kindnessempathy_agent2},
 influenced::{influenced_agent1, influenced_agent2},
 veiled::{veiled_agent1, veiled_agent2},
 indoctrinated::{indoctrinated_agent1, indoctrinated_agent2},
 
-// LLM augmented with self-rating of Meditation Samadhi y-dimension of SmartPointer
+// LLM augmented with self-rating of Meditation / Samadhi y-dimension of SmartPointer
 empty_the_content::{empty_the_content_agent1, empty_the_content_agent2},
 dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2},
 samadhi::{samadhi_agent1, samadhi_agent2},

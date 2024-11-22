@@ -1,4 +1,4 @@
-// modules specific to the platorm
+// modules specific to KpPlatform
 
 pub mod front {
     pub mod mu {
