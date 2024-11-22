@@ -90,6 +90,7 @@ use crate::relationship::{ family::{family_agent1, family_agent2},
 profession::{profession_agent1, profession_agent2}, 
 this_life::{this_life_agent1, this_life_agent2},
 next_realm::{next_realm_agent1, next_realm_agent2},
+worthy::{worthy_agent1, worthy_agent2},
 };
  
 fn main() {
@@ -513,4 +514,8 @@ fn main() {
   let _next_realm_agent2 = next_realm_agent2();
   println!("I'm augmenting {:?}!", _next_realm_agent2); 
   
+  let _worthy_agent1 = worthy_agent1();
+  println!("I'm augmenting {:?}!", _worthy_agent1);
+  let _worthy_agent2 = worthy_agent2();
+  println!("I'm augmenting {:?}!", _worthy_agent2);  
 }

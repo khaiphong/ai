@@ -9,3 +9,5 @@ pub mod this_life;
 
 pub mod next_realm;
 
+pub mod worthy;
+
