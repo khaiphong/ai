@@ -94,7 +94,10 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   cgroup rated at 8 security levels for private container-to-container communications and
   collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
-  (7): validated after 8 years, (8): worthy. https://www.youtube.com/watch?v=cyGZPF_RMNE
+  (7): validated after minimum of 8 years, (8): worthy capable of reasoning
+  https://www.youtube.com/watch?v=cyGZPF_RMNE for "subjective experience"
+  https://www.youtube.com/watch?v=Es6yuMlyfPw PLUS scientifically cultivable #Prajna for
+  a breakthrough in any conflicting issue on the duality plane of conflicting consciousness.
   
   The DbMap belongs the owner having its relationship KP Ids. The value of key "owner / स्वामी" 
   is Vec v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, 
