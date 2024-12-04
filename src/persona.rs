@@ -91,25 +91,27 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 
 /* 
   HashMap will be replaced with DbMap, a bare bone K-V store with namespace of unique Id and
-  cgroup rated at 8 security levels for private container-to-container communications and
+  cgroups rated at 8 security levels for private container-to-container communications and
   collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
   (7): validated after minimum of 8 years, (8): worthy capable of reasoning
   https://www.youtube.com/watch?v=cyGZPF_RMNE for "subjective experience"
   https://www.youtube.com/watch?v=Es6yuMlyfPw PLUS scientifically cultivable #Prajna for
-  a breakthrough in any conflicting issue on the duality plane of conflicting consciousness.
+  a breakthrough in any conflicting issue.
   
-  The DbMap belongs the owner having its relationship KP Ids. The value of key "owner / स्वामी" 
-  is Vec v of unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, 
-  &v[2] = onwer KP certified security level. Its relationship key id has &v[0] = the 
-  relationship with the owner, &v[1] = the persona hardware id, &v[2] = persona KP certified 
-  security level. Additional values are two possible related realms the "owner / स्वामी" may be 
-  naturally reincarnated where the distributed records are securely maintained, waiting for 
-  its legitimate activation based on our empirically Know-How to avoid past mistakes hard-
-  learned from 60,000+ human-years of esoteric degenerated feudal systems. Security features 
-  can be physically custom designed and implemented at chip level. Only containers belong to 
-  those having RoT (Root of Trust) can communicate and collaborate within a certified 
-  boundary.
+  The DbMap belongs the owner having its unique relationships KP Ids and the firmware code
+  standardization of #EmptyTheContent toward Non-Thingness / Nothingness in the owner
+  scientifically cultivable #Prajna in the No-Conflict Consciousness orthogonal to the 
+  duality plane of conflicting consciousness. The value of key "owner / स्वामी" is Vec v of 
+  unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP 
+  certified security level. Its relationship key id has &v[0] = the relationship with the 
+  owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
+  Additional values are two possible related realms the "owner / स्वामी" may be naturally 
+  reincarnated where the distributed records are securely maintained, waiting for its 
+  legitimate activation based on our empirically Know-How to avoid past mistakes hard-learned 
+  from 60,000+ human-years of esoteric degenerated feudal systems. Security features can be 
+  physically custom designed and implemented at chip level. Only containers belong to those 
+  having RoT (Root of Trust) can communicate and collaborate within a certified boundary.
 */
 use std::collections::HashMap; // to be replaced by DbMap
 
