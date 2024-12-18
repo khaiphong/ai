@@ -334,7 +334,10 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   
   The "traits" will be academically studied of observable attributes in Activities and 
   Relationships, then exposed as # for people tweet and tweet-on-tweet to be avaluated and
-  rated at community conscientious level.
+  rated at community conscientious level. The trait function to be redefined to Rust trait
+  with fn explore which is an implementation of iterator plus additional function to verify
+  if the recorded activities, relationships at all places have identified traits at
+  identified "being" level.
 */
 #[derive(Debug)]
 pub enum Xtraits {
