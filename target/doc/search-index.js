@@ -1,0 +1,5 @@
+var searchIndex = new Map(JSON.parse('[\
+["ai",{"t":"CCCCCCCCCHHHHHHHHHHHHHHCCCHHHHHH","n":["back","front","chat","db","graph","hub","mu","plan","vdeo","chat_agent1","chat_agent2","db_agent1","db_agent2","graph_agent1","graph_agent2","hub_agent1","hub_agent2","mu_agent1","mu_agent2","plan_agent1","plan_agent2","video_agent1","video_agent2","chat","mu","vdeo","prompt","response","platform_message","service_mesaage","in_stream","out_stream"],"q":[[0,"ai"],[2,"ai::back"],[9,"ai::back::chat"],[11,"ai::back::db"],[13,"ai::back::graph"],[15,"ai::back::hub"],[17,"ai::back::mu"],[19,"ai::back::plan"],[21,"ai::back::vdeo"],[23,"ai::front"],[26,"ai::front::chat"],[28,"ai::front::mu"],[30,"ai::front::vdeo"]],"i":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"f":"`````````{{}b}0000000000000```000000","D":"`","p":[[1,"unit"]],"r":[],"b":[],"c":"OjAAAAAAAAA=","e":"OzAAAAEAACAAAQAAACAA"}]\
+]'));
+if (typeof exports !== 'undefined') exports.searchIndex = searchIndex;
+else if (window.initSearch) window.initSearch(searchIndex);

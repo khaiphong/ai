@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["platform_message","service_mesaage"]};

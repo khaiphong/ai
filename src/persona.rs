@@ -327,18 +327,69 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   accomplish some purpose. Tweet is an instance people can expose their views on the rating
   of X, Y, F or Tweet-on-the-Tweet for reply or retweet:
   
-  pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
-  let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
-  communications between Oneness >< Diversities"),};
-  println!("I'm connecting to node {:?}!", _truth.kind);
-  
   The "traits" will be academically studied of observable attributes in Activities and 
   Relationships, then exposed as # for people tweet and tweet-on-tweet to be avaluated and
   rated at community conscientious level. The trait function to be redefined to Rust trait
   with fn explore which is an implementation of iterator plus additional function to verify
   if the recorded activities, relationships at all places have identified traits at
   identified "being" level.
+  
+  pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
+  let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
+  communications between Oneness >< Diversities"),};
+  println!("I'm connecting to node {:?}!", _truth.kind);
+  
 */
+
+/// Explore trait - extension of iterator - in activities and relationships.
+///
+/// pub trait Truth 
+///	{
+///		fn truth<T, E>(self) -> std::result::Result<Vec<T>, E>
+/// 	where
+/// 		Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized;
+/// }
+///
+/// 	impl<It> Truth for It
+/// 	where
+///		    It: Iterator + Sized,
+/// 	{
+///		    fn truth<T, E>(mut self) -> std::result::Result<Vec<T>, E>
+///		    where
+///		        Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized,
+///		    {
+///		        let mut xs = Vec::new();
+///		        loop {
+///		            match self.next() {
+///		                Some(Ok(x)) => xs.extend(x),
+///		                Some(e) => {
+///		                    return e; // propagate error
+///		                }
+///		                None => {
+///		                    break;
+///		                }
+///		            }
+///		        }
+///		        Ok(xs {
+///					explore rated value of the trait and add to the node
+/// 			})
+///		    }
+///		}
+///
+///     type Item;
+/// 	answer i32; // rated value of the trait
+///     fn explore(&mut self) -> answer, Option<self::Item>
+
+/// assert_eq!(0, answer);
+/// ```
+
+/*
+pub enum Xtraits {
+  Truth, Honesty, Care, Intuition, Balanced,
+  KindnessEmpathy, Influenced, Veiled, Indoctrinated,
+}
+*/
+
 #[derive(Debug)]
 pub enum Xtraits {
   Truth(String),			// use cosmic energy
