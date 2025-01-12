@@ -405,13 +405,13 @@ pub enum Xtraits {
 // for outside contributions
 #[derive(Debug)]
 pub enum Xlevels { // type behavior based on its traits and its rated major bounded one
-  HonNhien(String),				// #KindnessEmpathy
-  ManagingFreshness(String),	// #Balanced
-  KnowingFreshness(String),		// #Intuition
-  ProcessDiscovered(String),	// #Care
-  KnowingThought(String),		// #Honesty
-  CareViaCosmicEnergy(String),	// #Truth
-  HelpViaCosmicEnergy(String),	// #Truth
+  HonNhien(String),				// #KindnessEmpathy f<sub>1</sub> = 1
+  ManagingFreshness(String),	// #Balanced f<sub>2</sub> = 1
+  KnowingFreshness(String),		// #Intuition f<sub>3</sub> = 2
+  ProcessDiscovered(String),	// #Care f<sub>4</sub> = 3
+  KnowingThought(String),		// #Honesty f<sub>5</sub> = 5
+  CareViaCosmicEnergy(String),	// #Truth f<sub>6</sub> = 8
+  HelpViaCosmicEnergy(String),	// #Truth f<sub>7</sub> = 13
   CulturalInfluenced(String),	// #Influenced
   RegionalInfluenced(String),	// #Influenced
   NationalInfluenced(String),	// #Influenced
@@ -423,11 +423,12 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
 
 /*
  Based on empirical observation of a naturally qualified person, one has innate ability to be
- outside-the-box due to sufficient compassion and #Prajna as defined in Latin humanitas. This
- is Vietnamese KienTanh to (1) claim one's Dignity of Human Rights protected by modern
- society, then (2) DISCOVER and SHARE underlying natural laws to personally verify 
- statistically significant epistemic objectives such as Gotama's #FourFoldTruth of Dukkha,
- Jesus's #GodKingdom within, Latin humanitas, #TamingTheOx; so are following Ypointers.
+ outside-the-box due to sufficient compassion and #Prajna in visible trait #Balanced above
+ the visible trait of #KindnessEmpathy defined in Latin humanitas. This is Vietnamese KienTanh
+ to (1) claim one's Dignity of Human Rights protected by modern society, then (2) DISCOVER
+ and SHARE underlying natural laws to personally verify statistically significant epistemic
+ objectives such as Gotama's #FourFoldTruth of Dukkha, Jesus's #GodKingdom within, Latin
+ humanitas, #TamingTheOx; so are following Ypointers.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
  proven in Generative AI that an optimal process can be engineered for a desired manifestation
@@ -441,6 +442,37 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  researches the structure and attributes of these smart pointers, then expose them in # for
  public tweet and tweet-on-tweet further contribution in LLM models.
 */
+
+//! Enforce QualifiedHumanitas for natural detachment of dhyana, then Samadhi for
+//! DhyanaSamadhi in activities and relationships, pointing to traits for suggested
+//! attributes visibly appeared in engaged living.
+//!
+/// pub pointer EmptyTheContent {
+///     type Item;
+/// 	answer i32; // rated value of the trait
+///     fn explore(&mut self) -> answer, Option<self::Item>
+///		fn truth<T, E>(self) -> std::result::Result<Vec<T>, E>
+/// 	where
+/// 		Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized;
+/// }
+///
+/// 
+
+/// assert_eq!(0, answer);
+/// ```
+
+/*
+struct EmptyTheContent {
+	type item;
+}
+
+pub enum Ypointers { QualifiedHumanitas, 
+	EmptyTheContent, DhyanaSamadhi, Samadhi, Awareness,
+	Prajna, AwarenessPrajna, SamadhiPrajna, PrajnaTIP1, PrajnaTIP2,
+}
+*/
+
+
 #[derive(Debug)]
 pub enum Ypointers {
   QualifiedHumanitas(String),	// P0: QualifiedHumanitas has natural Peace
