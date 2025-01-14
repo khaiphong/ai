@@ -441,7 +441,7 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  qualities of these front-line soldiers, we identify smart pointers ready for academia 
  researches the structure and attributes of these smart pointers, then expose them in # for
  public tweet and tweet-on-tweet further contribution in LLM models.
-*/
+
 
 //! Enforce QualifiedHumanitas for natural detachment of dhyana, then Samadhi for
 //! DhyanaSamadhi in activities and relationships, pointing to traits for suggested
@@ -461,7 +461,7 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
 /// assert_eq!(0, answer);
 /// ```
 
-/*
+
 struct EmptyTheContent {
 	type item;
 }
