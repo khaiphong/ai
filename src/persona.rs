@@ -442,6 +442,8 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  qualities of these front-line soldiers, we identify smart pointers ready for academia 
  researches the structure and attributes of these smart pointers, then expose them in # for
  public tweet and tweet-on-tweet further contribution in LLM models.
+ 
+ A node type of activities, realationships, and places for locations
 
 use std::ops::Deref;
 
@@ -452,7 +454,6 @@ impl<T> Deref for Prajna<T> {
         &self.0
     }
 }
-// Drop in the context of smart pointers
 
 // data structure of prajna to iterate its evaluation through items with fn explore
 struct Prajna<T>(T) { 
@@ -485,6 +486,26 @@ pub enum Ypointers { QualifiedHumanitas,
 	EmptyTheContent, DhyanaSamadhi, Samadhi, Awareness,
 	Prajna, AwarenessPrajna, SamadhiPrajna, PrajnaTIP1, PrajnaTIP2,
 }
+
+// data structure of a type User
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username: username,
+        email: email,
+        sign_in_count: 1,
+    }
+}
+
+// In graph data structures, multiple edges (friends) might point to the same node, and that node is conceptually owned by all of the edges that point to it. The Rc<T> type keeps track of the number of references to a value to determine whether or not the value is still in use.
+
+
 */
 
 
