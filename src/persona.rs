@@ -339,7 +339,9 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   communications between Oneness >< Diversities"),};
   println!("I'm connecting to node {:?}!", _truth.kind);
   
-*/
+Given the list of Activities and Relationships for evaluation, we pass the list either freash
+or by suggestion to the recorded list of available smart points. Each smart pointer recursively pass the evaluation to the traits for classifications at the level of being f.
+Let psychology acamedia to propose and test the system!
 
 /// Explore trait - extension of iterator - in activities and relationships.
 ///
@@ -383,7 +385,6 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
 /// assert_eq!(0, answer);
 /// ```
 
-/*
 pub enum Xtraits {
   Truth, Honesty, Care, Intuition, Balanced,
   KindnessEmpathy, Influenced, Veiled, Indoctrinated,
@@ -442,28 +443,42 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  researches the structure and attributes of these smart pointers, then expose them in # for
  public tweet and tweet-on-tweet further contribution in LLM models.
 
+use std::ops::Deref;
 
-//! Enforce QualifiedHumanitas for natural detachment of dhyana, then Samadhi for
-//! DhyanaSamadhi in activities and relationships, pointing to traits for suggested
-//! attributes visibly appeared in engaged living.
-//!
-/// pub pointer EmptyTheContent {
-///     type Item;
-/// 	answer i32; // rated value of the trait
-///     fn explore(&mut self) -> answer, Option<self::Item>
-///		fn truth<T, E>(self) -> std::result::Result<Vec<T>, E>
-/// 	where
-/// 		Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized;
-/// }
-///
-/// 
+impl<T> Deref for Prajna<T> {
+    type Target = T;
 
-/// assert_eq!(0, answer);
-/// ```
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+// Drop in the context of smart pointers
 
-
-struct EmptyTheContent {
+// data structure of prajna to iterate its evaluation through items with fn explore
+struct Prajna<T>(T) { 
 	type item;
+	data String;
+ 	answer i32; // rated value of the pointer
+	fn explore(&mut self) -> answer, Option<self::Item>
+}
+impl<T> Prajna<T> {
+    fn new(x: T) -> Prajna<T> {
+        Prajna(x)
+    }
+}
+// drop function is where you would place logic to run when the type goes out of scope
+impl Drop for Prajna {
+    fn drop(&mut self) {
+        println!("Dropping Prajna pointer with data `{}`!", self.data);
+    }
+}
+
+
+// Explore pointer - extension of iterator - in activities to verify if it has prajna
+pub prajna Prajna {
+	fn prajna<T, E>(self) -> std::result::Result<Vec<T>, E>
+		where
+	 		Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized;
 }
 
 pub enum Ypointers { QualifiedHumanitas, 
