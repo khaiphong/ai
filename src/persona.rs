@@ -4,17 +4,17 @@
  modifications / enhancements of later academia contributions. We start from actual
  experiences of a Vietnamese student since 1970 all Gotama's recorded Jhanas, further 
  investigated leading to Bodhidharma's exchange with Emperor Wu (Lương Vũ Đế) on “What is the 
- highest meaning of noble #Truth" which is fact-based epistemic objective and HuiNeng's specialized contributions about (1) the Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both exoteric and esoteric realms from Figure 11.1 that forms with personally observable Inner Peace of Y-dimension from Gotama's recorded Jhanas on a No-Conflict plan at any focused event and (3) scientifically cultivable Prajna / Wisdom with discovered underlying natural laws of #PrajnaTIP from one's scientifically cultivable InnerSpace F-dimension for detoxification of tainted senses. Introducing the #Awareness of a persona F-dimension with Right evolution or Wrong potential degeneration of complex Fibonacci sequence - testable with KP KienTanh / HuiNeng WuNien / Gotama's InnerPeace / Bodhidharma's #EmptyTheContent - together with Lucas Numbers applicable to innate Intellligence of Illuminati / Communist elites, we theoretically and empirically prove that the Right evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and materialized in Equanimity Communities where Nature and Science toward What Count join hand. It is then enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending the Observed and Observer to see Thing-As-It-Is. We ride on human open-source Rust standardization of #SmartPointer and #Trait to value add required functionalities of proven fact-based tracked records of #Truths such as #FourFoldTruth, #GodKingdom, #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the core distinction beteen "implementtion" which is KP custom suggestion and the persona final rating at the bottom line of its outcome and the "has" which is its innate quality, stable for the higher realm evolution according to underlying natural laws to be DSSCOVER & SHARED.
+ highest meaning of noble #Truth" which is fact-based epistemic objective and HuiNeng's specialized contributions about (1) the Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both exoteric and esoteric realms from Figure 11.1 that forms with personally observable Inner Peace of Y-dimension from Gotama's recorded Jhanas on a No-Conflict plan at any focused event and (3) scientifically cultivable Prajna / Wisdom with discovered underlying natural laws of #PrajnaTIP from one's scientifically cultivable InnerSpace F-dimension for detoxification of tainted senses. Introducing the #Awareness of a persona F-dimension with Right evolution or Wrong potential degeneration of complex Fibonacci sequence - testable with KP KienTanh / HuiNeng WuNien / Gotama's InnerPeace / Bodhidharma's #EmptyTheContent - together with Lucas Numbers applicable to innate Intellligence of Illuminati / Communist elites, we theoretically and empirically prove that the Right evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and materialized in Equanimity Communities where Nature and Science toward What Count join hand. It is then enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending the Observed and Observer to see Thing-As-It-Is. We ride on human open-source Rust standardization of #SmartPointer and #Trait to value add required functionalities of proven fact-based tracked records of #Truths such as #FourFoldTruth, #GodKingdom, #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the distinction beteen "implementtion" which is KP custom suggestion and the persona final rating at the bottom line of its outcome and the "has" which is its innate quality, stable at diferent layers for the higher realm evolution according to underlying natural laws to be DSSCOVER & SHARED.
 */
 #[derive(Debug)]
 pub struct InnerSpace {
   // observable traits from attached to balanced to detached in one's InnerSpace
-  pub x_traits: i32, // HashMap<i32, String>,  perceive event via measurable Intuition
-  pub y_pointers: i32, // HashMap<i32, String>,  perceive event via measurable Sanadhi
+  pub x_traits: i32, // HashMap<i32, String>,  perceive event via measurable #Intuition
+  pub y_pointers: i32, // HashMap<i32, String>,  perceive event via measurable #Sanadhi
   
   pub f_dimension: i32,   // lumped other factors observable in complex Fibonacci sequences 
-  pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas or Right Samadhi  
-  pub x_dimension: i32,   // HuiNeng #WuNien or KP #Awareness or Gotama Mindfulness
+  pub y_dimension: i32,   // KP Signed Posts or Gotama Jhanas of Right Samadhi  
+  pub x_dimension: i32    // HuiNeng #WuNien or KP #Awareness at Transcendental Mindfulness
 }
 pub mod y_pointers;  // implementations to make the description as closed to the described
 pub mod ydimension;
@@ -24,7 +24,7 @@ pub mod xdimension;
 
 pub mod fdimension;
 
-impl InnerSpace { // we enable evaluation from LLM of the mass and from custom AGI
+impl InnerSpace { // we enable evaluation from LLM of the mass and from custom agentic AGI
 /*
   fn f_evaluation(&self) -> i32 { // f(_x,_y) for the persona
     return self.f_dimension
@@ -44,9 +44,9 @@ impl InnerSpace { // we enable evaluation from LLM of the mass and from custom A
 */
 }
 
-use std::collections::HashMap;
+use std::collections::HashMap; // usr db HashMap to incorporate both K-V db and containre
 
-pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
+pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  { // Binet complex function
   let mut _i = 0;  // qualified persona at balanced traits
   let mut _s = 0;  // qualified new Era persona at Awareness-Prajna
   
@@ -75,7 +75,7 @@ pub fn build_inner_space(_x: i32, _y: i32, _f: i32) -> InnerSpace  {
   x.insert(7, String::from("X+7: HelpViaCosmicEnergy"));   // = 13
 
   let mut y = HashMap::new(); // Taxonomy of y_dimension
-  y.insert(0, String::from("Y 0: Peace"));         // =  0
+  y.insert(0, String::from("Y 0: Peace"));         // =  0 GateWayToOneness
   
   // y(-1) = 1 = y(1) Empathy to Tranquility enforced in y(2) = 1 of Equanimity
   y.insert(-1, String::from("Y-1: Empathy"));      // =  1
