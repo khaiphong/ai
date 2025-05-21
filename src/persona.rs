@@ -10,7 +10,7 @@
  (1) Three-Haves ("#Awareness, Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via 
  (2) observable X-dimension in both exoteric and esoteric realms from Figure 11.1 that forms
  with personally observable Inner Peace of Y-dimension from Gotama's recorded Jhanas on a 
- No-Conflict plan at any focused event and (3) scientifically cultivable Prajna / Wisdom with
+ No-Conflict plan at any focused event and (3) scientifically cultivable #Prajna / Wisdom with
  discovered underlying natural laws of #PrajnaTIPs from one's scientifically cultivable
  InnerSpace F-dimension for detoxification of tainted senses. Introducing the #Awareness of a
  persona F-dimension with Right evolution or Wrong potential degeneration observable in
@@ -24,16 +24,16 @@
  standardization of #SmartPointer and #Trait to value add required functionalities of proven 
  fact-based tracked records of #Truths such as the #FourFoldTruth, #GodKingdom,
  #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the core distinction 
- beteen "implementtion" which is KP custom suggestion and the persona final rating at the 
+ beteen "implementation" which is KP custom suggestion and the persona final rating at the 
  bottom line of its outcome, and the "has" which is its innate quality, stable for the higher 
- realm evolution according to underlying natural laws to be DISSCOVERED & SHARED.
+ realm evolution according to underlying natural laws to be DISCOVERED & SHARED.
 
   We generalize the persona for big corporation HR and important person to (1) clean up 
   tainted senses and (2) cultivate required traits for its What-Count culture. The function 
   of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
   sense, the required traits are its core Values (e.g. #Honesty >< #Care >< #Truth) in
   execution. This part must be standardized and open sources for possible value-added
-  solutions x_traits, y_pointers, [f x y]-dimension : vectors instead of i32
+  solutions in x_traits, y_pointers, [f x y]-dimension : vectors instead of i32.
 */
 #[derive(Debug)]
 pub struct InnerSpace {
