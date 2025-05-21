@@ -1,26 +1,10 @@
 /*
- The result from KP 50+ years of field researches PLUS exoteric / esoteric observations of
- qualified candidates as first front-line soldiers while waiting for verifications and/or
+ The result of KP 50+ years of field researches PLUS exoteric / esoteric observations of
+ qualified candidates as the first front-line soldiers while waiting for verifications and/or
  modifications / enhancements of later academia contributions. We start from actual
  experiences of a Vietnamese student since 1970 all Gotama's recorded Jhanas, further 
  investigated leading to Bodhidharma's exchange with Emperor Wu (Lương Vũ Đế) on “What is the 
- highest meaning of noble Truth" and HuiNeng's specialized contributions about (1) the 
- Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
- Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, 
- Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in 
- both exoteric and esoteric realms from Figure 11.1 that forms with personally observable 
- Inner Peace of Y-dimension from Gotama's recorded Jhanas a No-Conflict plan at any focused 
- event and (3) scientifically cultivable #Prajna / Wisdom with discovered underlying natural 
- laws of PrajnaTIPs from one's scienrifically cultivable InnerSpace F-dimension for 
- detoxification of tainted senses. Introducing the #Awareness of a persona F-dimension with 
- Right evolution or Wrong potential degeneration of complex Fibonacci sequence - testable 
- with Vietnamese KienTanh / HuiNeng WuNien / Gotama's Inner Peace / Bodhidharma's 
- #EmptyTheContent - together with Lucas Numbers applicable to innate Intellligence of 
- Illuminati / Communist elites, we theoretically and empirically prove that the Right 
- evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and materialized in 
- Equanimity Communities where Nature and Science toward What Count join hand. It is then 
- enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending the 
- Observed and Observer to see Thing-As-It-Is and #Prajna of breakthrough.
+ highest meaning of the noble #Truth" which is a fact-based epistemic objective and HuiNeng's specialized contributions about (1) the Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KP (1) Three-Haves ("#Awareness, Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via (2) observable X-dimension in both exoteric and esoteric realms from Figure 11.1 that forms with personally observable Inner Peace of Y-dimension from Gotama's recorded Jhanas on a No-Conflict plan at any focused event and (3) scientifically cultivable Prajna / Wisdom with discovered underlying natural laws of #PrajnaTIPs from one's scientifically cultivable InnerSpace F-dimension for detoxification of tainted senses. Introducing the #Awareness of a persona F-dimension with Right evolution or Wrong potential degeneration observable in complex Fibonacci sequence - testable with KP KienTanh / HuiNeng WuNien / Gotama's InnerPeace / Bodhidharma's #EmptyTheContent - together with Lucas Numbers applicable to innate Intellligence of Illuminati / Communist elites, we theoretically and empirically prove that the Right evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and materialized in Equanimity Communities where Nature and Science toward What Count join hand. It is then enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending the Observed and the Observer to see Thing-As-It-Is. We ride on human open-source Rust standardization of #SmartPointer and #Trait to value add required functionalities of proven fact-based tracked records of #Truths such as the #FourFoldTruth, #GodKingdom, #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the core distinction beteen "implementtion" which is KP custom suggestion and the persona final rating at the bottom line of its outcome, and the "has" which is its innate quality, stable for the higher realm evolution according to underlying natural laws to be DISSCOVERED & SHARED.
 */
 
 
