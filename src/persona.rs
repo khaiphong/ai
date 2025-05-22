@@ -93,7 +93,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   
 
 /* 
-  HashMap will be replaced with DbMap, a bare bone K-V store with namespace of unique Id and
+  HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and
   cgroups rated at 8 security levels for private container-to-container communications and
   collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
@@ -102,7 +102,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   https://www.youtube.com/watch?v=Es6yuMlyfPw PLUS scientifically cultivable #Prajna for
   a breakthrough in any conflicting issue.
   
-  The DbMap belongs the owner having its unique relationships KP Ids and the firmware code
+  The db Map belongs the owner having its unique relationships KP Ids and the firmware code
   standardization of #EmptyTheContent toward Non-Thingness / Nothingness in the owner
   scientifically cultivable #Prajna in the No-Conflict Consciousness orthogonal to the 
   duality plane of conflicting consciousness. The value of key "owner / स्वामी" is Vec v of 
@@ -116,7 +116,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   physically custom designed and implemented at chip level. Only containers belong to those 
   having RoT (Root of Trust) can communicate and collaborate within a certified boundary.
 */
-use std::collections::HashMap; // to be replaced by DbMap
+use std::collections::HashMap; // to be replaced by db Map
 
 // given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
@@ -166,9 +166,9 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   y.insert(-1, String::from("Y-1: Empathy"));      // =  1
   y.insert(-2, String::from("Y-2: Kindness"));     // = -1
   y.insert(-3, String::from("Y-3: Conscience"));   // =  2
-  y.insert(-4, String::from("Y-4: Conscience1")); // = -3
-  y.insert(-5, String::from("Y-5: Conscience2")); // =  5 capable for hegemony
-  y.insert(-6, String::from("Y-6: Conscience3")); // = -8
+  y.insert(-4, String::from("Y-4: Conscience1"));  // = -3
+  y.insert(-5, String::from("Y-5: Conscience2"));  // =  5 capable for hegemony
+  y.insert(-6, String::from("Y-6: Conscience3"));  // = -8
   
   y.insert(1, String::from("Y+1: Tranquility"));   // = 1
   y.insert(2, String::from("Y+2: Equanimity"));    // = 1
