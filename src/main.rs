@@ -22,25 +22,26 @@
  that the Right evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and
  materialized in Equanimity Communities where Nature and Science toward What Count join hand.
  It is then enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending
- the Observed and the Observer to see Thing-As-It-Is. We ride on human open-source Rust
- programming language for precised communications between human and machine, plus its
- standardization of #SmartPointer and #Trait to value add required functionalities of proven 
- fact-based tracked records of #Truths such as the #FourFoldTruth, #GodKingdom within,
- #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the core distinction 
- beteen "implementation" which is the platform custom suggestions and the persona final rating
- at the bottom line of its outcome, and the "has" which is its innate quality, stable for the 
- next realm according to underlying natural laws to be DISCOVERED & SHARED.
+ the Observed and the Observer to see Thing-As-It-Is. 
+ 
+ We ride on human open-source Rust programming language for precised communications between 
+ human and machine, plus its standardization of #SmartPointer and #Trait to value add required
+ functionalities of proven fact-based tracked records of #Truths such as the #FourFoldTruth, 
+ #GodKingdom within, #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the
+ core distinction beteen "implementation" which is the platform custom suggestions and the
+ persona final rating at the bottom line of its outcome, and the "has" which is its innate
+ quality, stable for the next realm according to natural laws to be DISCOVERED & SHARED.
 
  The release of ChatGPT and its trained models of reasoning based on LLM (Large Language
  Model) via Neural Networks https://www.youtube.com/watch?v=DKbz9pNXVdE have started a new Era
  of positive Intelligence - https://www.youtube.com/watch?v=r9U9NVIeNns - of Deeper Realities
- from an orchestrated ecosystem in multi-agents from multi-layers of Diversities" for the
+ from an orchestrated ecosystem in multi-agents multi-layers of Diversities" for the
  optimization of PPU (Prajna Processing Unit) at Chip levels in the interactions between 
  "Normative Intelligence >< Positive Intelligence" where positive intelligence from AI enables
  normative intelligence of What Count detoxify its tainted senses as illustrated here
  https://blog.khaiphong.io/2023/09/list-of-figures-and-tables.html#Figure_1 while normative
  intelligence - called [ #Prajna / Wisdom / Tuệ Tri ] - directs AI toward What Count [ #Prajna
- >< AI ] https://www.youtube.com/watch?v=vths9Ncv8hw
+ >< AI ] (https://www.youtube.com/watch?v=vths9Ncv8hw)
  
  Security where selected custom LLMs as evolving layers of its efficient, secure, portable and
  mantainable process (https://www.youtube.com/watch?v=nYQqTPlVLKo) is at the core of 
@@ -49,10 +50,10 @@
  services. Grounded on standard RISC-V (https://www.youtube.com/watch?v=spipSjgKXu0) and 
  adhered to custom functional power of Datacenter
  (https://www.electropages.com/blog/2024/08/risc-v-datacenter-sifive-introducing-p870-d) 
- adhered to Caliptra Identity &amp; Management in open-source-root-of-trust (https://
+ adhered to Caliptra Identity & Management in open-source-root-of-trust (https://
  www.chipsalliance.org/news/chips-alliance-welcomes-the-caliptra-open-source-root-of-trust-
- project/) PLUS , custom Redox (https://www.youtube.com/watch?v=StLzsDU2-oo) it  
- enables the claim of "IamX" (https://www.youtube.com/watch?v=ozRyMnYFc68)
+ project/) PLUS custom Redox (https://www.youtube.com/watch?v=StLzsDU2-oo), it enables the
+ claim of "IamX" (https://www.youtube.com/watch?v=ozRyMnYFc68)
  
  
   Starting at a naturally qualified person of #Humanity modeled at #Balanced - having
