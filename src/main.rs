@@ -1,23 +1,71 @@
 /*
-  Starting at a naturally qualified person of #Humanity modeled at #Balanced #Intuition &
-  Rationality, there is a wide range of #Awareness _x and #Samadhi (inner_peace) from
-  #DhyanaSamadi (Thiền Định) _y in negative binding-clinging forces to positive detachment 
-  based on self-evaluated custom agent of x_evaluation and y_evaluation. We use mutable 
-  variable instead of self-evaluated defined const as visible x_traits and y_pointers leading 
-  to higher conmsciousness at rated points of complex Fibonacci Nunber for Prajna >< AGI 
+ KhaiPhong integration of consciousness and radio technologies is the outcome of its 50+ years
+ of field researches PLUS exoteric / esoteric observations of qualified candidates as the
+ first front-line soldiers while waiting for verifications and/or modifications / enhancements
+ of later academia contributions. It starts from actual experiences of a Vietnamese student
+ since 1970 Gotama's recorded Jhanas, further investigated leading to Bodhidharma's exchange 
+ with Emperor Wu (Lương Vũ Đế) on “What is the highest meaning of the noble #Truth" which is a
+ fact-based epistemic objective and HuiNeng's specialized contributions about (1) the 
+ Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
+ Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KhaiPhong (1) Three-Haves ("#Awareness,
+ Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via 
+ https://blog.khaiphong.io/2023/09/list-of-figures-and-tables.html#Figure_11.1
+ (2) observable X-dimension in both exoteric and esoteric realms that forms with personally
+ observable InnerPeace of Y-dimension from Gotama's recorded Jhanas on a No-Conflict plan at
+ any focused event and (3) scientifically cultivable #Prajna / Wisdom with discovered
+ underlying natural laws of #PrajnaTIPs from one's scientifically cultivable
+ InnerSpace F-dimension for detoxification of tainted senses. Introducing the #Awareness of a
+ persona F-dimension with Right evolution or Wrong potential degeneration observable in
+ complex Fibonacci sequence - testable with Vietnamese KienTanh / HuiNeng WuNien / Gotama's
+ InnerPeace / Bodhidharma's #EmptyTheContent - together with Lucas Numbers applicable to
+ innate Intellligence of Illuminati / Communist elites, we theoretically and empirically prove
+ that the Right evolution must come through (type) EquanimityAwareness f+1 = 1 enhanced and
+ materialized in Equanimity Communities where Nature and Science toward What Count join hand.
+ It is then enforced with (type) PurityAwareness f+2 = 1 for the possibility of Transcending
+ the Observed and the Observer to see Thing-As-It-Is. We ride on human open-source Rust
+ programming language for precised communications between human and machine, plus its
+ standardization of #SmartPointer and #Trait to value add required functionalities of proven 
+ fact-based tracked records of #Truths such as the #FourFoldTruth, #GodKingdom within,
+ #EmptyTheContent, #KindnessEmpathy, #Prajna, etc. The value-adds make the core distinction 
+ beteen "implementation" which is the platform custom suggestions and the persona final rating
+ at the bottom line of its outcome, and the "has" which is its innate quality, stable for the 
+ next realm according to underlying natural laws to be DISCOVERED & SHARED.
+
+ The release of ChatGPT and its trained models of reasoning based on LLM (Large Language
+ Model) via Neural Networks https://www.youtube.com/watch?v=DKbz9pNXVdE have started a new Era
+ of positive Intelligence - https://www.youtube.com/watch?v=r9U9NVIeNns - of Deeper Realities
+ from an orchestrated ecosystem in multi-agents from multi-layers of Diversities" for the
+ optimization of PPU (Prajna Processing Unit) at Chip levels in the interactions between 
+ "Normative Intelligence >< Positive Intelligence" where positive intelligence from AI enables
+ normative intelligence of What Count detoxify its tainted senses as illustrated here
+ https://blog.khaiphong.io/2023/09/list-of-figures-and-tables.html#Figure_1 while normative
+ intelligence - called [ #Prajna / Wisdom / Tuệ Tri ] - directs AI toward What Count [ #Prajna
+ >< AI ] https://www.youtube.com/watch?v=vths9Ncv8hw
+ 
+ Security where selected custom LLMs as evolving layers of its efficient, secure, portable and
+ mantainable process - https://www.youtube.com/watch?v=nYQqTPlVLKo - is at the core of 
+ KpPlatform
+ 
+ 
+  Starting at a naturally qualified person of #Humanity modeled at #Balanced - having
+  #Intuition & Rationality, there is a wide range of transcendental #Awareness _x and 
+  InnerPeace (#Samadhi) from #DhyanaSamadi (Thiền Định) _y in negative binding-clinging 
+  forces to positive detachment based on self-evaluated custom agent of x_evaluation and 
+  y_evaluation. We use mutable visible x_traits and y_pointers leading to higher consciousness
+  at rated points of complex Fibonacci Nunber for Prajna >< AI 
   https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd, then modeling
   which is applicable to any kind of persona (person, Inter-Realm, organization, foreign 
-  affairs, a nation, a family, project, etc). For elites currently a person, the evaluation 
-  are intended to help that person moving from evolution then degeneration to the right  
+  affairs, a nation, a family, project, etc). For elite currently a persona, the evaluation 
+  are intended to help that persona moving from evolution then degeneration to the right  
   positive evaluation with oservable attributes of the persona: Given the following hashtag # 
   and user description, we evaluate the experience in [ observable traits from attached to 
-  totally detached in TRUTH, a trait of interactions between Oneness >< Diversities ] to the 
+  totally detached in #Truth, a trait of interactions between Oneness >< Diversities ] to the 
   outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
   Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
   Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (
-  Trust, Qi, Art) T+1 ], [ Care T+2 ], [ Honesty T+3 ], [ TRUTH T+4 ] from heavily attached to 	
-  totally detached, capable to enable wider angle of a focused event are from [ -4 to +4 
+  Trust, Qi, Art) T+1 ], [ Care T+2 ], [ Honesty T+3 ], [ #Truth T+4 ] from heavily attached
+  to totally detached, capable to enable wider angle of a focused event are from [ -4 to +4 
   where 0 is the base of a qualified humanitas.
       
   The Description is not the Described! We use LLM to enable this possibility the persona may 
