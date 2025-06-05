@@ -1,5 +1,5 @@
 /*
- KhaiPhong integration of consciousness and radio technologies is the outcome of its 50+ years
+ KhaiPhong integration of consciousness and radio technologies is the outcome from 50+ years
  of field researches PLUS exoteric / esoteric observations of qualified candidates as the
  first front-line soldiers while waiting for verifications and/or modifications / enhancements
  of later academia contributions. It starts from actual experiences of a Vietnamese student
