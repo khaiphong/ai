@@ -43,8 +43,16 @@
  >< AI ] https://www.youtube.com/watch?v=vths9Ncv8hw
  
  Security where selected custom LLMs as evolving layers of its efficient, secure, portable and
- mantainable process - https://www.youtube.com/watch?v=nYQqTPlVLKo - is at the core of 
- KpPlatform
+ mantainable process (https://www.youtube.com/watch?v=nYQqTPlVLKo) is at the core of 
+ KpPlatform "tamper-proof software / hardware containers having embedded db" 
+ (https://github.com/khaiphong/db/) built from cloud-native standards of value-added 
+ services. Grounded on standard RISC-V (https://www.youtube.com/watch?v=spipSjgKXu0) and 
+ adhered to custom functional power of Datacenter
+ (https://www.electropages.com/blog/2024/08/risc-v-datacenter-sifive-introducing-p870-d) 
+ adhered to Caliptra Identity &amp; Management in open-source-root-of-trust (https://
+ www.chipsalliance.org/news/chips-alliance-welcomes-the-caliptra-open-source-root-of-trust-
+ project/) PLUS , custom Redox (https://www.youtube.com/watch?v=StLzsDU2-oo) it  
+ enables the claim of "IamX" (https://www.youtube.com/watch?v=ozRyMnYFc68)
  
  
   Starting at a naturally qualified person of #Humanity modeled at #Balanced - having
