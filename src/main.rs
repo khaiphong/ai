@@ -59,10 +59,10 @@
   Starting at a naturally qualified person of #Humanity modeled at #Balanced - having
   #Intuition & Rationality, there is a wide range of transcendental #Awareness _x and 
   InnerPeace (#Samadhi) from #DhyanaSamadi (Thiền Định) _y in negative binding-clinging 
-  forces to positive detachment based on self-evaluated custom agent of x_evaluation and 
-  y_evaluation. We use mutable visible x_traits and y_pointers to enable flexible ranges of 
-  qualities of the #Traits and required innate depths of #SmartPointers leading to higher
-  consciousness at complex Fibonacci Nunber for Prajna >< AI 
+  forces to positive detachment based on self-evaluated custom agent of the "persona / IamX"
+  x_ and y_ evaluation. We use mutable visible x_traits and y_pointers to enable flexible
+  ranges of qualities of the #Traits and required innate depths of #SmartPointers leading to
+  higher consciousness at complex Fibonacci Nunber for Prajna >< AI of specialized services
   https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd, then modeling
   which is applicable to any kind of persona (person, Inter-Realm, organization, foreign 
   affairs, a nation, a family, project, etc). For elite currently a persona, the evaluation 
@@ -73,23 +73,23 @@
   the outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
   Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
-  Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (
+  Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced [ 0 ], [ Intuition (
   Trust, Qi, Art) T+1 ], [ Care T+2 ], [ Honesty T+3 ], [ #Truth T+4 ] from heavily attached
   to totally detached, capable to enable wider angle of a focused event are from [ -4 to +4 
-  where 0 is the base of a qualified humanitas.
+  where 0 is the base of a qualified humanitas to be correlated with one's Fibonacci levels.
       
-  The Description is not the Described! We use LLM to enable this possibility the persona may 
-  take in ChangeManagement and/or personal rating of the hard-evidenced outcomes for lessons 
-  learned based on its private ratings of the suggested positive intelligence and its 
+  Description is not the Described! We use LLM to enable this possibility. The persona may 
+  engage in ChangeManagement and/or personal rating of the hard-evidenced outcomes for
+  lessons learned based on private ratings of the suggested positive intelligence and its 
   normative intelligence. The outcome is its vector of these rated qualities for self 
   cultivations and their effects on the persona Ignorance or #Prajna, measurable at the 
   bottom line of important fact-based focused events.
 */
 
 /*
- Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of KpEducation,
- KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in its explored 	
- fields.
+  Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of 
+  KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in its
+  explored fields for specialized LLM custom servvices.
 */
 pub mod persona;
 pub mod agi;
