@@ -86,10 +86,9 @@
   bottom line of important fact-based focused events.
 */
 
-/*
-  Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of 
-  KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in its
-  explored fields for specialized LLM custom servvices.
+// Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
+// KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in
+// its explored fields for specialized LLM custom servvices.
 */
 pub mod persona;
 pub mod agi;
