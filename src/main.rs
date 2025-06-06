@@ -68,9 +68,9 @@
   affairs, a nation, a family, project, etc). For elite currently a persona, the evaluation 
   are intended to help that persona moving from evolution then degeneration to the right  
   positive evaluation with oservable attributes of the persona: Given the following hashtag # 
-  and user description, we evaluate the experience in [ observable traits from attached to 
-  totally detached in #Truth, a trait of interactions between Oneness >< Diversities ] to the 
-  outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
+  and user description, we evaluate the experience in [ observable #Traits from attached to 
+  totally detached in #Truth, a #Trait of interactions between Oneness >< Diversities ] to 
+  the outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
   Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
   Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced I 0 ], [ Intuition (
@@ -86,8 +86,11 @@
   bottom line of important fact-based focused events.
 */
 
-// Similar to struct InnerSpace of persona.rs, we can custom build these structs and in each 
-//struct, we enum of required types and mods for graph directions.
+/*
+ Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of KpEducation,
+ KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in its explored 	
+ fields.
+*/
 pub mod persona;
 pub mod agi;
 pub mod front;

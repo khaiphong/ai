@@ -1,15 +1,35 @@
 /*
- 
+  Persona innerSpace is modeled as InnerCloud versus its interactions with OuterCloud via 
+  [ Activities, Relationships, and Places ]. We first use Fobonacci real numbers to be later 
+  replaced with a complex variable according to Binet formula. The InnerSpace is cultivable 
+  via reversed engineering observable #Traits [ #Truth, #Honesty, #Care, #Intuition - 
+  #Balanced in qualified persona - #KindnessEmpathy, #Influenced, #Veiled, #Indoctrinated ] 
+  and cultivable suggested functions for creating desired #SmartPointers [ #EmptyTheContent, 
+  #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, #SamadhiPrajna, 
+  #PrajnaTIP1, PrajnaTIP2 ].
+  
   We generalize the persona for big corporation HR and important person to (1) clean up 
   tainted senses and (2) cultivate required traits for its What-Count culture. The function 
   of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
-  sense, the required traits are its core Values (e.g. #Honesty >< #Care >< #Truth) in
+  sense, the required #Traits are its core Values (e.g. #Honesty >< #Care >< #Truth) in
   execution. This part must be standardized and open sources for possible value-added
   solutions in x_traits, y_pointers, [f x y]-dimension : vectors instead of i32.
 */
 #[derive(Debug)]
 pub struct InnerSpace {
-  // observable traits and pointers from attached to balanced to detached in one's InnerSpace
+  /* 
+   x and f dimensions require deeper Fibonacci levels empirically observed in Vietnamese
+   saying "Tu Nhà, Tu Chợ, Tu Chùa"
+  */
+  // KP Signed Posts or Gotama Jhanas or Right #Samadhi
+  pub y_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, 0, 1, 2, 3, 4, 5, 6],
+  // HuiNeng #WuNien or KP #Awareness
+  pub x_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, -7, 0, 1, 2, 3, 4, 5, 6, 7],
+  // KP KP processes of #EmptyTheContent from HuiNeng three Nots through KP three Haves
+  pub f_dimension: Vec<i32>,//vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8] 
+  
+  // There exists observable #Traits and #SmartPointers from attached to balanced to detached
+  // in one's InnerSpace
   // HashMap<i32, String> visible traits observable in x_dimension
   pub x_traits: Vec<i32>, // vec![-1, -2, -3, -4, 0, 1, 2, 3, 4]
   // HashMap<i32, String> smart pointers from outcomes of y_dimension
@@ -17,21 +37,17 @@ pub struct InnerSpace {
   // each persona must have lists of traits, pointers, depths of X, Y, and F for both
   // internal and/or external acquired ability to handle required tasks
   // lumped other factors observable in complex Fibonacci sequences of f_dimension
-  //vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8],
-  pub f_dimension: Vec<i32>, 
-  // KP Signed Posts or Gotama Jhanas or Right Samadhi
-  pub y_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, 0, 1, 2, 3, 4, 5, 6],
-  // HuiNeng #WuNien or KP #Awareness
-  pub x_dimension: Vec<i32>, // = vec![-1, -2, -3, -4, -5, -6, -7, 0, 1, 2, 3, 4, 5, 6, 7],   
+  //vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8], 
 }
 // Implementations branched to different mod
-pub mod y_pointers; // implementations to make the description closed to the described
 pub mod ydimension; // states of consciousness driving observable Activities and Relationships
 
-pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
 pub mod xdimension; // states of consciousness varying from attachment to detachment
 
 pub mod fdimension; // other relevant factors making up the states and stock of the persona
+
+pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
+pub mod y_pointers; // implementations to make the description closed to the described
 
 /*
   Dynamic interactions between normative and positive AI intelligence of custom modeling the
