@@ -60,8 +60,9 @@
   #Intuition & Rationality, there is a wide range of transcendental #Awareness _x and 
   InnerPeace (#Samadhi) from #DhyanaSamadi (Thiền Định) _y in negative binding-clinging 
   forces to positive detachment based on self-evaluated custom agent of x_evaluation and 
-  y_evaluation. We use mutable visible x_traits and y_pointers leading to higher consciousness
-  at rated points of complex Fibonacci Nunber for Prajna >< AI 
+  y_evaluation. We use mutable visible x_traits and y_pointers to enable flexible ranges of 
+  qualities of the #Traits and required innate depths of #SmartPointers leading to higher
+  consciousness at complex Fibonacci Nunber for Prajna >< AI 
   https://dev.to/shuttle_dev/building-agentic-rag-with-rust-openai-qdrant-3bjd, then modeling
   which is applicable to any kind of persona (person, Inter-Realm, organization, foreign 
   affairs, a nation, a family, project, etc). For elite currently a persona, the evaluation 
