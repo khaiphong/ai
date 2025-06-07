@@ -88,18 +88,21 @@
 
 // Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
 // KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in
-// its explored fields for specialized LLM custom servvices.
+// its explored fields for specialized LLM custom services. Persona Inner world is represented
+// in agent1; the Outer world is represented by agent2
 
 pub mod persona;
 pub mod agi;
 pub mod front;
 pub mod back;
 pub mod relationship;
+// pub mod activity;
+// pub mod place;
 
-use crate::persona::{OneToDependent, Xtraits, Xlevels, Ypointers, Ylevels, Flevels, 
+use crate::persona::{OneToDependent, Xlevels, Ylevels, Flevels, Xtraits, Ypointers, 
 x_traits::{KpT}, y_pointers::{KpP},
-ydimension::{TranscendentalMeditation, Vipassana, KpY},
-xdimension::{WuNien, KpX}, fdimension::{HuiNeng, Gotama, KpF},
+ydimension::{KpY, TranscendentalMeditation, Vipassana},
+xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
 
 // LLM augmented with self-rating of traits x-dimension pointing to by SmartPointers
 truth::{truth_agent1, truth_agent2}, honesty::{honesty_agent1, honesty_agent2}, 

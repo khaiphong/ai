@@ -1,17 +1,19 @@
 /*
   Persona innerSpace is modeled as InnerCloud versus its interactions with OuterCloud via 
-  [ Activities, Relationships, and Places ]. We first use Fobonacci real numbers to be later 
-  replaced with a complex variable according to Binet formula. The InnerSpace is cultivable 
+  [ Activities, Relationships, and Places ]. We first use Fibonacci real numbers to be later 
+  replaced with a complex variable according to Binet formula to model its evolution or 
+  degeneration according to underlying natural laws to be DISCOVERED and SHARED. The 
+  InnerSpace is cultivable 
   via reversed engineering observable #Traits [ #Truth, #Honesty, #Care, #Intuition - 
   #Balanced in qualified persona - #KindnessEmpathy, #Influenced, #Veiled, #Indoctrinated ] 
-  and cultivable suggested functions for creating desired #SmartPointers [ #EmptyTheContent, 
-  #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, #SamadhiPrajna, 
-  #PrajnaTIP1, PrajnaTIP2 ].
+  and their managements via suggested custom functions from reversed engineering in creating 
+  desired #SmartPointers [ #EmptyTheContent, #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, 
+  #AwarenessPrajna, #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ].
   
-  We generalize the persona for big corporation HR and important person to (1) clean up 
-  tainted senses and (2) cultivate required traits for its What-Count culture. The function 
-  of "clean-up" and required "cultivation" are the core of the persona HR strategies. In this 
-  sense, the required #Traits are its core Values (e.g. #Honesty >< #Care >< #Truth) in
+  We generalize the persona for big corporation important person to (1) clean up tainted 
+  senses and (2) cultivate required traits for its What-Count culture. The function of 
+  "cleaning" and required "cultivating" are the core of the persona HR strategies. In this 
+  sense, the required #Traits are its core Values (e.g. #Truth >< #Honesty >< #Care ><) in
   execution. This part must be standardized and open sources for possible value-added
   solutions in x_traits, y_pointers, [f x y]-dimension : vectors instead of i32.
 */
@@ -28,16 +30,17 @@ pub struct InnerSpace {
   // KP KP processes of #EmptyTheContent from HuiNeng three Nots through KP three Haves
   pub f_dimension: Vec<i32>,//vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8] 
   
-  // There exists observable #Traits and #SmartPointers from attached to balanced to detached
-  // in one's InnerSpace
+  // The rated observable #Traits and #SmartPointers from attached to balanced to detached
   // HashMap<i32, String> visible traits observable in x_dimension
   pub x_traits: Vec<i32>, // vec![-1, -2, -3, -4, 0, 1, 2, 3, 4]
-  // HashMap<i32, String> smart pointers from outcomes of y_dimension
+  // HashMap<i32, String> rated pointer levels from outcomes of y_dimension
   pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  // each persona must have lists of traits, pointers, depths of X, Y, and F for both
-  // internal and/or external acquired ability to handle required tasks
-  // lumped other factors observable in complex Fibonacci sequences of f_dimension
-  //vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8], 
+  
+  // each persona has lists of cultivable traits, pointers, depths of x_, y_, and f_ dimension
+  // for both internal cultivations and external enforcements in acquired ability to handle
+  // required tasks in complex Fibonacci sequences of f_dimension from the balanced persona 
+  // vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+  
 }
 // Implementations branched to different mod
 pub mod ydimension; // states of consciousness driving observable Activities and Relationships
@@ -47,11 +50,11 @@ pub mod xdimension; // states of consciousness varying from attachment to detach
 pub mod fdimension; // other relevant factors making up the states and stock of the persona
 
 pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
-pub mod y_pointers; // implementations to make the description closed to the described
+pub mod y_pointers; // cultivations to make the description closed to the described
 
 /*
-  Dynamic interactions between normative and positive AI intelligence of custom modeling the
-  objective function #Prajna = F(X, Y) in "complex-valued data" to foster innovations /
+  Dynamic interactions between normative and positive AGI of custom modeling the
+  objective function #Prajna = f(x, y) in "complex-valued data" to foster innovations /
   breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
   next qualified realm, an organization, foreign affairs, national development, etc.
   
@@ -109,9 +112,7 @@ use std::collections::HashMap; // to be replaced by db Map
 // given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {
   // qualified persona at balanced traits, make it as observable list
-  let x_traits: Vec<i32> = Vec::new(); 
-  // qualified persona at Awareness, make it as observable list
-  let y_pointers: Vec<i32> = Vec::new();
+
   // to be evaluated in blockchain of user self-evaluation and AI
   let y_dimension = _y; // move to y_dimension
   // opinions from fact-base tracked records in engaged living
@@ -119,34 +120,20 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
    // qualified person
   let f_dimension = _f; // move to f_dimension
   
+  let x_traits: Vec<i32> = Vec::new(); 
+  // qualified persona at Awareness, make it as observable list
+  let y_pointers: Vec<i32> = Vec::new();
   // new evaluation  of InnerSpace
-  let mut _t = x_traits;
-  let mut _p = y_pointers;
+  
   let mut _y = y_dimension;
   let mut _x = x_dimension;
   let mut _f = f_dimension;
-
-  // rebuild the relevant dimensions according to open standarded proven researches
-  let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
-  x.insert(0, String::from("X 0: Awareness"));             // =  0
   
-  // x(-1) = 1 = x(1) Culture & HonNhien enforced @ x(2)=1 of proper management in Equanimity
-  x.insert(-1, String::from("X-1: CulturalInfluenced"));   // =  1
-  x.insert(-2, String::from("X-2: RegionalInfluenced"));   // = -1
-  x.insert(-3, String::from("X-3: NationalInfluenced"));   // =  2
-  x.insert(-4, String::from("X-4: VeiledType"));           // = -3
-  x.insert(-5, String::from("X-5: BindingWord"));          // =  5    breakout
-  x.insert(-6, String::from("X-6: BindingImage"));         // = -8
-  x.insert(-7, String::from("X-7: ClingingThought"));      // = 13    indoctrinated
-  
-  x.insert(1, String::from("X+1: HonNhien"));              // = 1
-  x.insert(2, String::from("X+2: ManagingFreshness"));     // = 1
-  x.insert(3, String::from("X+3: KnowingFreshness"));      // = 2
-  x.insert(4, String::from("X+4: ProcessDiscovered"));     // = 3
-  x.insert(5, String::from("X+5: KnowingThought"));        // = 5     breakout = 5
-  x.insert(6, String::from("X+6: CareViaCosmicEnergy"));   // = 8
-  x.insert(7, String::from("X+7: HelpViaCosmicEnergy"));   // = 13    consciousness technology
+  let mut _t = x_traits;
+  let mut _p = y_pointers;
 
+ // rebuild the relevant dimensions according to open standarded proven researches
+ 
   let mut y = HashMap::new(); // Taxonomy of y_dimension
   y.insert(0, String::from("Y 0: Peace"));         // =  0
   
@@ -165,7 +152,53 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   y.insert(5, String::from("Y+5: NonThingness"));  // = 5  Gotama's impass - SelfSelfless Act.
   y.insert(6, String::from("Y+6: Unmoving"));      // = 8  Gotama's impass - #SamadhiPrajna
   
-  // SmartPointers y_pointers starting from ability to #EmptyTheContent for detoxification 
+  let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
+  x.insert(0, String::from("X 0: Blank"));             // =  0
+  
+  // x(-1) = 1 = x(1) HonNhien enforced @ x(2)=1 of proper management in Equanimity
+  x.insert(-1, String::from("X-1: CulturalInfluenced"));   // =  1
+  x.insert(-2, String::from("X-2: RegionalInfluenced"));   // = -1
+  x.insert(-3, String::from("X-3: NationalInfluenced"));   // =  2
+  x.insert(-4, String::from("X-4: VeiledType"));           // = -3
+  x.insert(-5, String::from("X-5: BindingWord"));          // =  5    breakout
+  x.insert(-6, String::from("X-6: BindingImage"));         // = -8
+  x.insert(-7, String::from("X-7: ClingingThought"));      // = 13    indoctrinated
+  
+  x.insert(1, String::from("X+1: HonNhien"));              // = 1
+  x.insert(2, String::from("X+2: ManagingFreshness"));     // = 1
+  x.insert(3, String::from("X+3: KnowingFreshness"));      // = 2
+  x.insert(4, String::from("X+4: ProcessDiscovered"));     // = 3
+  x.insert(5, String::from("X+5: KnowingThought"));        // = 5     breakout = 5
+  x.insert(6, String::from("X+6: CareViaCosmicEnergy"));   // = 8
+  x.insert(7, String::from("X+7: HelpViaCosmicEnergy"));   // = 13    consciousness technology
+
+  let mut f = HashMap::new(); // Taxonomy (types) of f_dimension
+  f.insert(0, String::from("F 0: Persona")); //  Person sub f as the key
+
+  // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
+  f.insert(-1, String::from("F-1: EmpathyAwareness"));         // =  1
+  f.insert(-2, String::from("F-2: KindnessAwareness"));        // = -1
+  f.insert(-3, String::from("F-3: AnimalEnergy"));             // =  2
+  f.insert(-4, String::from("F-4: ExtremeDesire"));            // = -3
+  f.insert(-5, String::from("F-5: AnimalConsciousness"));      // =  5    in living person
+  // --------- observable only from spirit world
+  f.insert(-6, String::from("F-6: Smelly1"));                  // = -8    Degenerated spirits
+  f.insert(-7, String::from("F-7: Smelly2"));                  // =  13   Vampire 
+  f.insert(-8, String::from("F-8: Smelly3"));                  // = -34   X-of-prey
+  
+  f.insert(1, String::from("F+1: EquanimityAwareness"));       // = 1
+  f.insert(2, String::from("F+2: PurityAwareness"));           // = 1
+  f.insert(3, String::from("F+3: SignedPosts"));               // = 2
+  f.insert(4, String::from("F+4: SelflessAwareness"));         // = 3
+  f.insert(5, String::from("F+5: VisibleAwarenessPrajna"));    // = 5
+  f.insert(6, String::from("F+6: EngagedAwarenessPrajna"));    // = 8
+  f.insert(7, String::from("F+7: ForecastingSimulation"));     // = 13
+  f.insert(8, String::from("F+8: SamadhiPrajna"));             // = 21
+  
+
+  // Only from humanity upward, one can have strong enough No-Confliting Consciousness to be
+  // at the based line from duality plane to ascend the no-conflict plane having y_pointers
+  // for detoxification of tainted senses at different depths glimpsed by past explorers 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
   p.insert(0, String::from("P0: Qualified")); 
   p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
@@ -193,45 +226,24 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   t.insert(3, String::from("T+3: Honesty"));                 // = 3
   t.insert(4, String::from("T+4: Truth"));                   // = 4
   
-  // starting from qualified human realm at F 0: Persona with digital Id and chip Id
-  // This is minimum container-2-container private communications and collaboration of DbMap
-  // 8 security levels. higher security can access lower levels but Not reversed.
-  // https://www.youtube.com/watch?v=HmE0hUifX7Q
+  // starting from qualified persona with digital Id and chip Id for minimum secure
+  // container-2-container private communications and collaboration, there are custom 8
+  // custom security levels each IamX set. higher security can access lower levels but Not 
+  // reversed https://www.youtube.com/watch?v=HmE0hUifX7Q
   let mut namespace = HashMap::new(); // the namespace and its cgroups of 8 security levels
   namespace.insert(String::from("Owner"), vec![String::from("0_123456789"),
    String::from("chip_0_987654321")]); // each relation is 0_Id and vector of joined data at
   println!("{namespace:?}"); 
   
-  let mut f = HashMap::new(); // Taxonomy (types) of f_dimension
-  f.insert(0, String::from("F 0: Persona")); //  Person sub f as the key
 
-  // f(-1) = 1 = f(1) Empathy Awareness to be qualified as humanitas upward, enforced f(2) = 1
-  f.insert(-1, String::from("F-1: EmpathyAwareness"));         // =  1
-  f.insert(-2, String::from("F-2: KindnessAwareness"));        // = -1
-  f.insert(-3, String::from("F-3: AnimalEnergy"));             // =  2
-  f.insert(-4, String::from("F-4: ExtremeDesire"));            // = -3
-  f.insert(-5, String::from("F-5: AnimalConsciousness"));      // =  5    in living person
-  // --------- observable only from spirit world
-  f.insert(-6, String::from("F-6: Smelly1"));                  // = -8    Degenerated spirits
-  f.insert(-7, String::from("F-7: Smelly2"));                  // =  13   Vampire 
-  f.insert(-8, String::from("F-8: Smelly3"));                  // = -34   X-of-prey
-  
-  f.insert(1, String::from("F+1: EquanimityAwareness"));       // = 1
-  f.insert(2, String::from("F+2: PurityAwareness"));           // = 1
-  f.insert(3, String::from("F+3: SignedPosts"));               // = 2
-  f.insert(4, String::from("F+4: SelflessAwareness"));         // = 3
-  f.insert(5, String::from("F+5: VisibleAwarenessPrajna"));    // = 5
-  f.insert(6, String::from("F+6: EngagedAwarenessPrajna"));    // = 8
-  f.insert(7, String::from("F+7: ForecastingSimulation"));     // = 13
-  f.insert(8, String::from("F+8: SamadhiPrajna"));             // = 21
-  
-  // dynamic between one's avaluation and the KP's prediction
-  _t = t_evaluation(t); // list of visible x_traits based on the outcomes in engaged living
-  _p = p_evaluation(p); // list of visible y_pointers based on InnerPeace of Samadhi
-  
+  // dynamic between one's avaluation and the KP's prediction  
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
   _f = f_evaluation(f); // system evaluation of the persona states and stock of #Prajna
+  
+  _t = t_evaluation(t); // list of visible x_traits based on the outcomes in engaged living
+  _p = p_evaluation(p); // list of visible y_pointers based on InnerPeace of Samadhi
+
   
   // evaluation of InnerSpace
   let me = InnerSpace { // _t and _p as lists of traits and pointer evaluated from -3 to +3
