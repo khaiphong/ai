@@ -88,8 +88,7 @@
 
 // Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
 // KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in
-// its explored fields for specialized LLM custom services. Persona Inner world is represented
-// in agent1; the Outer world is represented by agent2
+// its explored fields for specialized LLM custom services.
 
 pub mod persona;
 pub mod agi;
