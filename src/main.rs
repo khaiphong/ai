@@ -53,7 +53,7 @@
  adhered to Caliptra Identity & Management in open-source-root-of-trust (https://
  www.chipsalliance.org/news/chips-alliance-welcomes-the-caliptra-open-source-root-of-trust-
  project/) PLUS custom Redox (https://www.youtube.com/watch?v=StLzsDU2-oo), it enables the
- claim of "IamX" (https://www.youtube.com/watch?v=ozRyMnYFc68)
+ claim of "IamX" (https://www.youtube.com/watch?v=ozRyMnYFc68) where a naturally qualified person - Latin humanitas - can transcend both the Observed and the Observer to see Thing-As-It-Is at a focused event and a harmonious solution - via #Prajna / Wisdom - according to underlying natural laws for the benifits of all involved parties.
  
  
   Starting at a naturally qualified person of #Humanity modeled at #Balanced - having
