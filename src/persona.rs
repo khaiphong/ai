@@ -147,9 +147,9 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   y.insert(-1, String::from("Y-1: Empathy"));      // =  1
   y.insert(-2, String::from("Y-2: Kindness"));     // = -1
   y.insert(-3, String::from("Y-3: Conscience"));   // =  2
-  y.insert(-4, String::from("Y-4: Conscience1"));  // = -3
-  y.insert(-5, String::from("Y-5: Conscience2"));  // =  5 capable for hegemony
-  y.insert(-6, String::from("Y-6: Conscience3"));  // = -8
+  y.insert(-4, String::from("Y-4: NoConscience"));  // = -3
+  y.insert(-5, String::from("Y-5: InflictedFear"));  // =  5 capable for hegemony
+  y.insert(-6, String::from("Y-6: Vampire"));  // = -8
   
   let mut x = HashMap::new(); // Taxonomy of x_dimension for internal evaluation
   x.insert(0, String::from("X 0: Blank"));             // =  0
