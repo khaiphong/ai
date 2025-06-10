@@ -89,8 +89,8 @@
   bottom line of important fact-based focused events.
   
   This ai module is the central hub where user app interacts to access authorized specialized
-  LLM services for its custom services which are divided into specialized InnerWorld and 
-  OuterWorld, built on Kp common base PLUS user's preferences of other paid services in its 
+  LLM services for its custom services which are divided into specialized InnerAgent and 
+  OuterAgent, built on Kp common base PLUS user's preferences of other paid services in its 
   day-to-day operations which include [ KpEducation, KpEngineering, KpHealth, KpGovernance, 
   KpRealm, KpSocial, KpSIS, KpThink ] and [ KpBank, KpCommerce, KpHOC, KpGsLp ].
 */

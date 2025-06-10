@@ -10,7 +10,7 @@
   #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ].
   
   We generalize the persona for big corporation important person to (1) clean up tainted 
-  senses and (2) cultivate required traits for its What-Count culture. The function of 
+  senses and (2) cultivate required #Traits for its What-Count culture. The function of 
   "cleaning" and required "cultivating" are the core of the persona HR strategies. In this 
   sense, the required #Traits are its core Values (e.g. #Truth >< #Honesty >< #Care ><) in
   execution. This part will be standardized and open sources for possible value-added
