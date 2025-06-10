@@ -34,7 +34,7 @@
 
  The release of ChatGPT and its trained models of reasoning based on LLM (Large Language
  Model) via Neural Networks https://www.youtube.com/watch?v=DKbz9pNXVdE have started a new Era
- of positive Intelligence - https://www.youtube.com/watch?v=r9U9NVIeNns - of Deeper Realities
+ of positive Intelligence - https://www.youtube.com/watch?v=r9U9NVIeNns - in Deeper Realities
  from an orchestrated ecosystem in multi-agents multi-layers of Diversities" for the
  optimization of PPU (Prajna Processing Unit) at Chip levels in the interactions between 
  "Normative Intelligence >< Positive Intelligence" where positive intelligence from AI enables

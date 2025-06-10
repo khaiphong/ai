@@ -194,7 +194,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   f.insert(-7, String::from("F-7: Smelly2"));                  // =  13 
   f.insert(-8, String::from("F-8: Smelly3"));                  // = -34 
   
-  // Only from humanity upward, one can have strong enough No-Confliting Consciousness to be
+  // Only from humanity upward, one can have strong enough No-Conflicting Consciousness to be
   // at the based line from duality plane to ascend the no-conflict plane having y_pointers
   // for detoxification of tainted senses at different depths glimpsed by past explorers 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
