@@ -91,8 +91,9 @@
   This ai module is the central hub where user app interacts to access authorized specialized
   LLM services for its custom services which are divided into specialized InnerAgent and 
   OuterAgent, built on Kp common base PLUS user's preferences of other paid services in its 
-  day-to-day operations which include [ KpEducation, KpEngineering, KpHealth, KpGovernance, 
-  KpRealm, KpSocial, KpSIS, KpThink ] and [ KpBank, KpCommerce, KpHOC, KpGsLp ].
+  day-to-day operations which include [ DeepSeek, Granite, LLama, OpenAI, Phi, Grok, 
+  SkyThought ], [ KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, 
+  KpSIS, KpThink ] and [ KpBank, KpCommerce, KpHOC, KpGsLp ].
 */
 
 // Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
