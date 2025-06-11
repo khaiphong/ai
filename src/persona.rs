@@ -36,7 +36,7 @@ pub struct InnerSpace {
   pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   
   // each persona has lists of cultivable traits, pointers, depths of x_, y_, and f_ dimension
-  // for both internal cultivations and external enforcements in acquired ability to handle
+  // for both Inner cultivations and Outer suggestions in acquired ability to handle
   // required tasks in complex Fibonacci sequences of f_dimension from the balanced persona 
   // vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8]
   
@@ -52,7 +52,7 @@ pub mod x_traits;   // observable visible traits of one's #Awareness in engaged 
 pub mod y_pointers; // cultivations to make the description closed to the described
 
 /*
-  Dynamic interactions between normative and positive AGI of custom modeling the
+  Dynamic interactions between normative and positive AI of custom modeling the
   objective function #Prajna = f(x, y) in "complex-valued data" to foster innovations /
   breakthroughs in the Persona's war room and strategies for various types: a Latin humanitas,
   next qualified realm, an organization, foreign affairs, national development, etc.
@@ -88,9 +88,10 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
   (7): validated after minimum of 8 years, (8): worthy capable of reasoning
-  https://www.youtube.com/watch?v=cyGZPF_RMNE for "subjective experience"
-  https://www.youtube.com/watch?v=Es6yuMlyfPw PLUS scientifically cultivable #Prajna for
-  a breakthrough in any conflicting issue.
+  https://www.youtube.com/watch?v=LOF6fvV5XUc (LLM + KnowledgeGraph)
+  https://www.youtube.com/watch?v=cyGZPF_RMNE (reasoning LLM for "subjective experience")
+  https://www.youtube.com/watch?v=Es6yuMlyfPw (causal reasoning PLUS scientifically 
+  cultivable #Prajna for a breakthrough in any conflicting issue.
   
   The db Map belongs the owner having its unique relationships KP Ids and the firmware code
   standardization of #EmptyTheContent toward Non-Thingness / Nothingness in the owner
