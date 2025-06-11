@@ -195,7 +195,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   f.insert(-7, String::from("F-7: Smelly2"));                  // =  13 
   f.insert(-8, String::from("F-8: Smelly3"));                  // = -34 
   
-  // Only from humanity upward, one can have strong enough No-Conflicting Consciousness to be
+  // Only from humanity upward, one can have strong enough No-Conflict Consciousness to be
   // at the based line from duality plane to ascend the no-conflict plane having y_pointers
   // for detoxification of tainted senses at different depths glimpsed by past explorers 
   let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
@@ -227,7 +227,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   
   // starting from qualified persona with digital Id and chip Id for minimum secure
   // container-2-container private communications and collaboration, there are custom 8
-  // custom security levels each IamX set. higher security can access lower levels but Not 
+  // custom security levels. In each IamX, higher security can access lower levels but Not 
   // reversed https://www.youtube.com/watch?v=HmE0hUifX7Q
   let mut namespace = HashMap::new(); // the namespace and its cgroups of 8 security levels
   namespace.insert(String::from("Owner"), vec![String::from("0_123456789"),
