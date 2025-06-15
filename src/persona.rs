@@ -33,14 +33,14 @@ pub struct InnerSpace {
   // HashMap<i32, String> visible traits observable in x_dimension
   pub x_traits: Vec<i32>, // vec![0, 1, 2, 3, 4, -1, -2, -3, -4]
   // HashMap<i32, String> rated pointer levels from outcomes of y_dimension
-  pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  pub p1_empty_the_content: Vec<i32>, // vec![0, 1, 2, 3, 4]
   
   // each persona has lists of cultivable traits, pointers, depths of x_, y_, and f_ dimension
   // for both Inner cultivations and Outer suggestions in acquired ability to handle
   // required tasks in complex Fibonacci sequences of f_dimension from the balanced persona 
   // vec![-1, -2, -3, -4, -5, -6, -7, -8, 0, 1, 2, 3, 4, 5, 6, 7, 8]
-  
 }
+
 // Implementations branched to different mod
 pub mod ydimension; // states of consciousness driving observable Activities and Relationships
 
@@ -49,7 +49,18 @@ pub mod xdimension; // states of consciousness varying from attachment to detach
 pub mod fdimension; // other relevant factors making up the states and stock of the persona
 
 pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
-pub mod y_pointers; // cultivations to make the description closed to the described
+//pub mod y_pointers; // cultivations to make the description closed to the described
+
+pub mod p1_empty_the_content;
+
+//pub mod p2_DhyanaSamadhi;
+//pub mod p3_Samadhi;
+//pub mod p3_Awareness;
+//pub mod p5_Prajna;
+//pub mod p6_AwarenessPrajna;
+//pub mod p7_SamadhiPrajna;
+//pub mod p8_PrajnaTIP1;
+//pub mod p8_PrajnaTIP2;
 
 /*
   Dynamic interactions between normative and positive AI of custom modeling the
@@ -122,7 +133,9 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   
   let x_traits: Vec<i32> = Vec::new(); 
   // qualified persona at Awareness, make it as observable list
-  let y_pointers: Vec<i32> = Vec::new();
+  
+//  let y_pointers: Vec<i32> = Vec::new();
+  let p1_empty_the_content: Vec<i32> = Vec::new();
   // new evaluation  of InnerSpace
   
   let mut _y = y_dimension;
@@ -130,7 +143,8 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   let mut _f = f_dimension;
   
   let mut _t = x_traits;
-  let mut _p = y_pointers;
+//  let mut _p = y_pointers;
+  let mut _p1 = p1_empty_the_content;
 
  // rebuild the relevant dimensions according to open standarded proven researches
  
@@ -198,17 +212,27 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   // Only from humanity upward, one can have strong enough No-Conflict Consciousness to be
   // at the based line from duality plane to ascend the no-conflict plane having y_pointers
   // for detoxification of tainted senses at different depths glimpsed by past explorers 
-  let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
-  p.insert(0, String::from("P0: Qualified")); 
-  p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
-  p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
-  p.insert(3, String::from("P3: Samadhi"));           // = 3 Meditation from different angles
-  p.insert(4, String::from("P4: Awareness"));         // = 4 Transcendental #Awareness
-  p.insert(5, String::from("P5: Prajna"));            // = 5 #Prajna
-  p.insert(6, String::from("P6: AwarenessPrajna"));   // = 6 #AwarenessPrajna
-  p.insert(7, String::from("P7: SanadhiPrajna"));     // = 7 #SamadhiPrajna
-  p.insert(8, String::from("P8: PrajnaTIP1"));        // = 8 #PrajnaTIP1
-  p.insert(9, String::from("P9: PrajnaTIP2"));        // = 9 #PrajnaTIP2
+  
+//  let mut p = HashMap::new(); // pointers (p) toward #SamadhiPrajna
+//  p.insert(0, String::from("P0: Qualified")); 
+//  p.insert(1, String::from("P1: EmptyTheContent"));   // = 1 Bodhidharma
+//  p.insert(2, String::from("P2: DhyanaSamadhi"));     // = 2 HuiNeng
+//  p.insert(3, String::from("P3: Samadhi"));           // = 3 Meditation from different angles
+//  p.insert(4, String::from("P4: Awareness"));         // = 4 Transcendental #Awareness
+//  p.insert(5, String::from("P5: Prajna"));            // = 5 #Prajna
+//  p.insert(6, String::from("P6: AwarenessPrajna"));   // = 6 #AwarenessPrajna
+//  p.insert(7, String::from("P7: SanadhiPrajna"));     // = 7 #SamadhiPrajna
+//  p.insert(8, String::from("P8: PrajnaTIP1"));        // = 8 #PrajnaTIP1
+//  p.insert(9, String::from("P9: PrajnaTIP2"));        // = 9 #PrajnaTIP2
+  
+  let mut p1 = HashMap::new(); // EmptyTheContent toward #Non-Thingness
+  p1.insert(0, String::from("R0: Qualified")); 
+  p1.insert(1, String::from("R1: Tranquility"));    // = 1 Swiss
+  p1.insert(2, String::from("R2: Equanimity"));     // = 2 HOC
+  p1.insert(3, String::from("R3: Purity"));         // = 3 Resort
+  p1.insert(4, String::from("R4: NonThingness"));   // = 4 Selfless
+
+
 
   // x_traits driven by #Intuition (t) 
   let mut t = HashMap::new(); // observable traits from x-dimension
@@ -241,13 +265,16 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   _f = f_evaluation(f); // system evaluation of the persona states and stock of #Prajna
   
   _t = t_evaluation(t); // list of visible x_traits based on the outcomes in engaged living
-  _p = p_evaluation(p); // list of visible y_pointers based on InnerPeace of Samadhi
+//  _p = p_evaluation(p); // list of visible y_pointers based on InnerPeace of Samadhi
+  
+  _p1 = p1_evaluation(p1); // EmptyTheContent qualified at level 0 to 4 of NonThingness
 
   
   // evaluation of InnerSpace
   let me = InnerSpace { // _t and _p as lists of traits and pointer evaluated from -3 to +3
     x_traits: _t,  
-    y_pointers: _p,
+//    y_pointers: _p,
+    p1_empty_the_content: _p1,
     
     y_dimension: _y,
     x_dimension: _x,
@@ -267,13 +294,13 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   pointers may be general. But when combined with rated traits revealed in Activities and
   Relationships, we can statistically evaluate the persona rated Fibonacci level.
 */
-fn p_evaluation(p: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
+fn p1_evaluation(p1: HashMap<i32, String>) -> Vec<i32> { // return evaluated value to the blockchain
 
-   println!("Valid Samadhi pointers"); // all claimed meditations must meet #DhyanaSamadhi
-   for (key, value) in &p {
+   println!("Valid EmptyTheContent pointer"); // all claims must be evaluated
+   for (key, value) in &p1 {
         println!("{key}: {value}");
     }
-    // evaluate the transient value of p in circular processes of 8 hashtag and record
+    // evaluate the transient value of p1 in circular processes at 5 levels and record
     // it somewhere for tracking records in different cases of claimed #
     
     return vec![0]; // qualified person starting the cultivation in #EmptyTheContent
@@ -501,9 +528,9 @@ pub enum Ylevels { // type behavior based on its traits and its rated major boun
   Empathy(String),			// #Influenced
   Kindness(String),			// #Influenced
   Conscience(String),		// #Veiled of Right and Wromg
-  Conscience1(String),		// #Indoctrinated
-  Conscience2(String),		// #Indoctrinated
-  Conscience3(String),		// #Indoctrinated
+  NoConscience(String),	// #Indoctrinated
+  InflictedFear(String),   // #Indoctrinated
+  Vampire(String),		    // #Indoctrinated
 }
 
 #[derive(Debug)]

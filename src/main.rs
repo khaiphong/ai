@@ -93,7 +93,7 @@
   OuterAgent, built on Kp common base PLUS user's preferences of other paid services in its 
   day-to-day operations which include [ DeepSeek, Granite, LLama, OpenAI, Phi, Grok, 
   SkyThought ], [ KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, 
-  KpSIS, KpThink ] and [ KpBank, KpCommerce, KpHOC, KpGsLp ].
+  KpSIS, KpThink ] and [ KpCommerce, KpHOC, KpGsLp ].
 */
 
 // Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
@@ -109,7 +109,7 @@ pub mod relationship;
 // pub mod place;
 
 use crate::persona::{OneToDependent, Xlevels, Ylevels, Flevels, Xtraits, Ypointers, 
-x_traits::{KpT}, y_pointers::{KpP},
+x_traits::{KpT}, p1_empty_the_content::{KpP1},
 ydimension::{KpY, TranscendentalMeditation, Vipassana},
 xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
 
@@ -301,12 +301,12 @@ fn main() {
   println!("I'm connecting to node {:?}!", _kindness);
   let _conscience =  Ylevels::Conscience(String::from("Conscience"));
   println!("I'm connecting to node {:?}!", _conscience);
-  let _conscience1 =  Ylevels::Conscience1(String::from("Conscience1"));
-  println!("I'm connecting to node {:?}!", _conscience1);  
-  let _conscience2 =  Ylevels::Conscience2(String::from("Conscience2"));
-  println!("I'm connecting to node {:?}!", _conscience2);
-  let _conscience3 =  Ylevels::Conscience3(String::from("Conscience3"));
-  println!("I'm connecting to node {:?}!", _conscience3);
+  let _no_conscience =  Ylevels::NoConscience(String::from("NoConscience"));
+  println!("I'm connecting to node {:?}!", _no_conscience);  
+  let _inflicted_fear =  Ylevels::InflictedFear(String::from("InflictedFear"));
+  println!("I'm connecting to node {:?}!", _inflicted_fear);
+  let _vampire =  Ylevels::Vampire(String::from("Vampire"));
+  println!("I'm connecting to node {:?}!", _vampire);
 
   // Diversities via X-dimension
   let _honnhien =  Xlevels::HonNhien(String::from("HonNhien"));
@@ -386,8 +386,8 @@ fn main() {
   let _kpt = KpT::new(0);	// traits on X-dimension
   println!("I'm using {:?}!", _kpt);
   
-  let _kpp = KpP::new(1);	// pointers on Y-dimension
-  println!("I'm using {:?}!", _kpp);
+  let _kpp1 = KpP1::new(1);	// pointer EmptyTheContent on Y-dimension
+  println!("I'm using {:?}!", _kpp1);
   
   let _tm = TranscendentalMeditation {}; // TM contribution
   println!("I'm using {:?}!", _tm);
