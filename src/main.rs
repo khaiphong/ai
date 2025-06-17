@@ -110,7 +110,8 @@ pub mod relationship;
 
 use crate::persona::{OneToDependent, Xlevels, Ylevels, Flevels, Xtraits, Ypointers, 
 x_traits::{KpT}, p1_empty_the_content::{KpP1}, p2_dhyana_samadhi::{KpP2},
-p3_samadhi::{KpP3},
+p3_samadhi::{KpP3}, p4_awareness::{KpP4}, p5_prajna::{KpP5}, p6_awareness_prajna::{KpP6}, 
+
 ydimension::{KpY, TranscendentalMeditation, Vipassana},
 xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
 
@@ -396,6 +397,14 @@ fn main() {
   let _kpp3 = KpP3::new(3);	// pointer Samadhi on Y-dimension
   println!("I'm using {:?}!", _kpp3);
   
+  let _kpp4 = KpP4::new(4);	// pointer Awareness on Y-dimension
+  println!("I'm using {:?}!", _kpp4);
+  
+  let _kpp5 = KpP5::new(5);	// pointer Prajna on Y-dimension
+  println!("I'm using {:?}!", _kpp5);
+
+  let _kpp6 = KpP6::new(6);	// pointer AwarenessPrajna on Y-dimension
+  println!("I'm using {:?}!", _kpp6);
   
   
       
