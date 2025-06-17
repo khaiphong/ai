@@ -109,8 +109,9 @@ pub mod relationship;
 // pub mod place;
 
 use crate::persona::{OneToDependent, Xlevels, Ylevels, Flevels, Xtraits, Ypointers, 
-x_traits::{KpT}, p1_empty_the_content::{KpP1}, p2_dhyana_samadhi::{KpP2},
+x_traits::{KpT}, y_pointers::{KpP}, p1_empty_the_content::{KpP1}, p2_dhyana_samadhi::{KpP2},
 p3_samadhi::{KpP3}, p4_awareness::{KpP4}, p5_prajna::{KpP5}, p6_awareness_prajna::{KpP6}, 
+p7_samadhi_prajna::{KpP7}, p8_prajna_tip1::{KpP8}, p9_prajna_tip2::{KpP9},
 
 ydimension::{KpY, TranscendentalMeditation, Vipassana},
 xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
@@ -388,25 +389,35 @@ fn main() {
   let _kpt = KpT::new(0);	// traits on X-dimension
   println!("I'm using {:?}!", _kpt);
   
-  let _kpp1 = KpP1::new(1);	// pointer EmptyTheContent on Y-dimension
+  let _kpp = KpP::new(0);	// pointers on Y-dimension
+  println!("I'm using {:?}!", _kpp);
+  
+  let _kpp1 = KpP1::new(0);	// pointer EmptyTheContent on Y-dimension
   println!("I'm using {:?}!", _kpp1);
   
-  let _kpp2 = KpP2::new(2);	// pointer DhyanaSamadhi on Y-dimension
+  let _kpp2 = KpP2::new(0);	// pointer DhyanaSamadhi on Y-dimension
   println!("I'm using {:?}!", _kpp2);
 
-  let _kpp3 = KpP3::new(3);	// pointer Samadhi on Y-dimension
+  let _kpp3 = KpP3::new(0);	// pointer Samadhi on Y-dimension
   println!("I'm using {:?}!", _kpp3);
   
-  let _kpp4 = KpP4::new(4);	// pointer Awareness on Y-dimension
+  let _kpp4 = KpP4::new(0);	// pointer Awareness on Y-dimension
   println!("I'm using {:?}!", _kpp4);
   
   let _kpp5 = KpP5::new(5);	// pointer Prajna on Y-dimension
   println!("I'm using {:?}!", _kpp5);
 
-  let _kpp6 = KpP6::new(6);	// pointer AwarenessPrajna on Y-dimension
+  let _kpp6 = KpP6::new(5);	// pointer AwarenessPrajna on Y-dimension
   println!("I'm using {:?}!", _kpp6);
   
+  let _kpp7 = KpP7::new(5);	// pointer SamadhiPrajna on Y-dimension
+  println!("I'm using {:?}!", _kpp7);
   
+  let _kpp8 = KpP8::new(5);	// pointer PrajnaTIP1 on Y-dimension
+  println!("I'm using {:?}!", _kpp8);
+
+  let _kpp9 = KpP9::new(5);	// pointer PrajnaTIP2 on Y-dimension
+  println!("I'm using {:?}!", _kpp9);
       
   let _tm = TranscendentalMeditation {}; // TM contribution
   println!("I'm using {:?}!", _tm);

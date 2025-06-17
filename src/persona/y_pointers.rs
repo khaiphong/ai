@@ -6,8 +6,8 @@ pub struct KpP {
 }
 impl KpP {
   pub fn new(value: i32) -> KpP {
-    if value < 1 || value > 8 {
-            panic!("KpP value must be between 1 to 8, got {}.", value);
+    if value < 0 || value > 9 {
+            panic!("KpP value must be between 0 to 9, got {}.", value);
     }
 
     KpP { value }
