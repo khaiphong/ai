@@ -1,14 +1,17 @@
 /*
-  Persona innerSpace is modeled with InnerAgent and its interactions with OuterAgent via 
-  [ Activities, Relationships, and Places ]. We first use Fibonacci real numbers to be later 
-  replaced with a complex variable according to Binet formula to model its right evolution or 
-  wrong degeneration according to underlying natural laws to be DISCOVERED and SHARED. The 
-  InnerSpace is cultivable via reversed engineering observable #Traits [ #Truth, #Honesty, 
-  #Care, #Intuition - #Balanced in qualified persona - #KindnessEmpathy, #Influenced, #Veiled,
-  #Indoctrinated ] and their managements via suggested custom functions from reversed
-  engineering in cultivating desired #SmartPointers [ #EmptyTheContent, #DhyanaSamadhi,
-  #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ].
-  
+  Persona innerSpace is modeled with InnerAgent (Agnt2) interactions with OuterAgent (Agent1)
+  via [ Activities, Relationships, and Places ]. We first use Fibonacci real numbers to be 
+  later replaced with a complex variable according to Binet formula to model its right 
+  evolution or wrong degeneration according to underlying natural laws to be DISCOVERED and 
+  SHARED. The InnerSpace is cultivable via reversed engineering observable #Traits [ #Truth, 
+  #Honesty,  #Care, #Intuition - #Balanced in qualified persona - #KindnessEmpathy, 
+  #Influenced, #Veiled, #Indoctrinated ] and their managements via suggested custom 
+  functions from reversed engineering in cultivating desired #SmartPointers 
+  [ #EmptyTheContent, #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, 
+  #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ]. OuterAgent and InnerAgent are the gateways to 
+  specialized agentic Services in current specialized domains such as Health, Law, Finance, 
+  Governance, Social, Commerce, Education, Inter-Realms, etc.
+
   We generalize the persona for big corporation important person to (1) clean up tainted 
   senses and (2) cultivate required #Traits for its What-Count culture. The function of 
   "cleaning" and required "cultivating" are the core of the persona HR strategies. In this 
