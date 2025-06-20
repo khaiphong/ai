@@ -10,7 +10,10 @@
   [ #EmptyTheContent, #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, 
   #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ]. OuterAgent and InnerAgent are the gateways to 
   specialized agentic Services in current specialized domains such as Health, Law, Finance, 
-  Governance, Social, Commerce, Education, Inter-Realms, etc.
+  Governance, Social, Commerce, Education, Inter-Realms, etc. Acamedia approach to the 
+  ratings and qualifications of observable #Traits and #SmartPointers will be openly agreed 
+  upon and statistically tested in LLM (Large Language Model) of private data available for 
+  scientific researches.
 
   We generalize the persona for big corporation important person to (1) clean up tainted 
   senses and (2) cultivate required #Traits for its What-Count culture. The function of 
