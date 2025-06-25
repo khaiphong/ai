@@ -117,24 +117,24 @@ ydimension::{KpY, TranscendentalMeditation, Vipassana},
 xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
 
 // LLM augmented with self-rating of traits x-dimension pointing to by SmartPointers
-truth::{truth_agent1, truth_agent2}, honesty::{honesty_agent1, honesty_agent2}, 
-care::{care_agent1, care_agent2}, intuition::{intuition_agent1, intuition_agent2},
-balanced::{balanced_agent1, balanced_agent2},
-kindnessempathy::{kindnessempathy_agent1, kindnessempathy_agent2},
-influenced::{influenced_agent1, influenced_agent2},
-veiled::{veiled_agent1, veiled_agent2},
-indoctrinated::{indoctrinated_agent1, indoctrinated_agent2},
+truth::{truth_outer_agent, truth_inner_agent}, honesty::{honesty_outer_agent, honesty_inner_agent}, 
+care::{care_outer_agent, care_inner_agent}, intuition::{intuition_outer_agent, intuition_inner_agent},
+balanced::{balanced_outer_agent, balanced_inner_agent},
+kindnessempathy::{kindnessempathy_outer_agent, kindnessempathy_inner_agent},
+influenced::{influenced_outer_agent, influenced_inner_agent},
+veiled::{veiled_outer_agent, veiled_inner_agent},
+indoctrinated::{indoctrinated_outer_agent, indoctrinated_inner_agent},
 
 // LLM augmented with self-rating of Meditation / Samadhi y-dimension of SmartPointer
-empty_the_content::{empty_the_content_agent1, empty_the_content_agent2},
-dhyanasamadhi::{dhyanasamadhi_agent1, dhyanasamadhi_agent2},
-samadhi::{samadhi_agent1, samadhi_agent2},
-awareness::{awareness_agent1, awareness_agent2},
-prajna::{prajna_agent1, prajna_agent2},
-awarenessprajna::{awarenessprajna_agent1, awarenessprajna_agent2},
-samadhiprajna::{samadhiprajna_agent1, samadhiprajna_agent2},
-prajnatip1::{prajnatip1_agent1, prajnatip1_agent2},
-prajnatip2::{prajnatip2_agent1, prajnatip2_agent2},
+empty_the_content::{empty_the_content_outer_agent, empty_the_content_inner_agent},
+dhyanasamadhi::{dhyanasamadhi_outer_agent, dhyanasamadhi_inner_agent},
+samadhi::{samadhi_outer_agent, samadhi_inner_agent},
+awareness::{awareness_outer_agent, awareness_inner_agent},
+prajna::{prajna_outer_agent, prajna_inner_agent},
+awarenessprajna::{awarenessprajna_outer_agent, awarenessprajna_inner_agent},
+samadhiprajna::{samadhiprajna_outer_agent, samadhiprajna_inner_agent},
+prajnatip1::{prajnatip1_outer_agent, prajnatip1_inner_agent},
+prajnatip2::{prajnatip2_outer_agent, prajnatip2_inner_agent},
 };
 
 /*
@@ -154,19 +154,26 @@ use crate::front::{ mu::{platform_message, service_message}, chat::{prompt, resp
 video::{in_stream, out_stream},
 };
 
+/*
+each service has OuterAgent and InnerAgent from AI similar to the persona, relationship, back
+and front services
+
 // back-end persona agent services
-use crate::back::{ mu::{mu_agent1, mu_agent2}, chat::{chat_agent1, chat_agent2},
-video::{video_agent1, video_agent2}, graph::{graph_agent1, graph_agent2},
-db::{db_agent1, db_agent2}, hub::{hub_agent1, hub_agent2}, plan::{plan_agent1, plan_agent2},
+use crate::back::{ mu::{mu_outer_agent, mu_inner_agent}, chat::{chat_outer_agent, chat_inner_agent},
+video::{video_outer_agent, video_inner_agent}, graph::{graph_outer_agent, graph_inner_agent},
+db::{db_outer_agent, db_inner_agent}, hub::{hub_outer_agent, hub_inner_agent}, plan::{plan_outer_agent, plan_inner_agent},
 };
 
+
 // personal agent services
-use crate::relationship::{ family::{family_agent1, family_agent2}, 
-profession::{profession_agent1, profession_agent2}, 
-this_life::{this_life_agent1, this_life_agent2},
-next_realm::{next_realm_agent1, next_realm_agent2},
-worthy::{worthy_agent1, worthy_agent2},
+use crate::relationship::{ family::{family_outer_agent, family_inner_agent}, 
+profession::{profession_outer_agent, profession_inner_agent}, 
+this_life::{this_life_outer_agent, this_life_inner_agent},
+next_realm::{next_realm_outer_agent, next_realm_inner_agent},
+worthy::{worthy_outer_agent, worthy_inner_agent},
 };
+
+*/
  
 fn main() {
   // 9 smart pointer # to be connected in learning and sharing
@@ -441,84 +448,84 @@ fn main() {
   // Reasoning for every AI AGENT https://www.youtube.com/watch?v=cyGZPF_RMNE and reversed
   // engineering from causal reasoning to custom LLM agent in specialized fields as a Service
   // y_pointers of meditation where Kien_tanh is the target for average
-  let _empty_the_content_agent1 = empty_the_content_agent1();
-  println!("I'm augmenting {:?}!", _empty_the_content_agent1);
-  let _empty_the_content_agent2 = empty_the_content_agent2();
-  println!("I'm augmenting {:?}!", _empty_the_content_agent2);    
-  let _dhyanasamadhi_agent1 = dhyanasamadhi_agent1();
-  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent1);
-  let _dhyanasamadhi_agent2 = dhyanasamadhi_agent2();
-  println!("I'm augmenting {:?}!", _dhyanasamadhi_agent2);  
-  let _samadhi_agent1 = samadhi_agent1();
-  println!("I'm augmenting {:?}!", _samadhi_agent1);
-  let _samadhi_agent2 = samadhi_agent2();
-  println!("I'm augmenting {:?}!", _samadhi_agent2);
-  let _awareness_agent1 = awareness_agent1();
-  println!("I'm augmenting {:?}!", _awareness_agent1);
-  let _awareness_agent2 = awareness_agent2();
+  let _empty_the_content_outer_agent = empty_the_content_outer_agent();
+  println!("I'm augmenting {:?}!", _empty_the_content_outer_agent);
+  let _empty_the_content_inner_agent = empty_the_content_inner_agent();
+  println!("I'm augmenting {:?}!", _empty_the_content_inner_agent);    
+  let _dhyanasamadhi_outer_agent = dhyanasamadhi_outer_agent();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_outer_agent);
+  let _dhyanasamadhi_inner_agent = dhyanasamadhi_inner_agent();
+  println!("I'm augmenting {:?}!", _dhyanasamadhi_inner_agent);  
+  let _samadhi_outer_agent = samadhi_outer_agent();
+  println!("I'm augmenting {:?}!", _samadhi_outer_agent);
+  let _samadhi_inner_agent = samadhi_inner_agent();
+  println!("I'm augmenting {:?}!", _samadhi_inner_agent);
+  let _awareness_outer_agent = awareness_outer_agent();
+  println!("I'm augmenting {:?}!", _awareness_outer_agent);
+  let _awareness_inner_agent = awareness_inner_agent();
   
-  let _prajna_agent1 = prajna_agent1();
-  println!("I'm augmenting {:?}!", _prajna_agent1);
-  let _prajna_agent2 = prajna_agent2();
+  let _prajna_outer_agent = prajna_outer_agent();
+  println!("I'm augmenting {:?}!", _prajna_outer_agent);
+  let _prajna_inner_agent = prajna_inner_agent();
   
-  println!("I'm augmenting {:?}!", _awareness_agent2); 
-  let _awarenessprajna_agent1 = awarenessprajna_agent1();
-  println!("I'm augmenting {:?}!", _awarenessprajna_agent1);
-  let _awarenessprajna_agent2 = awarenessprajna_agent2();
-  println!("I'm augmenting {:?}!", _awarenessprajna_agent2); 
-  let _samadhiprajna_agent1 = samadhiprajna_agent1();
-  println!("I'm augmenting {:?}!", _samadhiprajna_agent1);
-  let _samadhiprajna_agent2 = samadhiprajna_agent2();
-  println!("I'm augmenting {:?}!", _samadhiprajna_agent2); 
-  let _prajnatip1_agent1 = prajnatip1_agent1();
-  println!("I'm augmenting {:?}!", _prajnatip1_agent1);
-  let _prajnatip1_agent2 = prajnatip1_agent2();
-  println!("I'm augmenting {:?}!", _prajnatip1_agent2); 
-  let _prajnatip2_agent1 = prajnatip2_agent1();
-  println!("I'm augmenting {:?}!", _prajnatip2_agent1);
-  let _prajnatip2_agent2 = prajnatip2_agent2();
-  println!("I'm augmenting {:?}!", _prajnatip2_agent2); 
+  println!("I'm augmenting {:?}!", _awareness_inner_agent); 
+  let _awarenessprajna_outer_agent = awarenessprajna_outer_agent();
+  println!("I'm augmenting {:?}!", _awarenessprajna_outer_agent);
+  let _awarenessprajna_inner_agent = awarenessprajna_inner_agent();
+  println!("I'm augmenting {:?}!", _awarenessprajna_inner_agent); 
+  let _samadhiprajna_outer_agent = samadhiprajna_outer_agent();
+  println!("I'm augmenting {:?}!", _samadhiprajna_outer_agent);
+  let _samadhiprajna_inner_agent = samadhiprajna_inner_agent();
+  println!("I'm augmenting {:?}!", _samadhiprajna_inner_agent); 
+  let _prajnatip1_outer_agent = prajnatip1_outer_agent();
+  println!("I'm augmenting {:?}!", _prajnatip1_outer_agent);
+  let _prajnatip1_inner_agent = prajnatip1_inner_agent();
+  println!("I'm augmenting {:?}!", _prajnatip1_inner_agent); 
+  let _prajnatip2_outer_agent = prajnatip2_outer_agent();
+  println!("I'm augmenting {:?}!", _prajnatip2_outer_agent);
+  let _prajnatip2_inner_agent = prajnatip2_inner_agent();
+  println!("I'm augmenting {:?}!", _prajnatip2_inner_agent); 
   
   
   // x_traits of intuition level from high to low
-  let _truth_agent1 = truth_agent1();
-  println!("I'm augmenting {:?}!", _truth_agent1);
-  let _truth_agent2 = truth_agent2();
-  println!("I'm augmenting {:?}!", _truth_agent2);    
-  let _care_agent1 = care_agent1();
-  println!("I'm augmenting {:?}!", _care_agent1);
-  let _care_agent2 = care_agent2();
-  println!("I'm augmenting {:?}!", _care_agent2);  
-  let _honesty_agent1 = honesty_agent1();
-  println!("I'm augmenting {:?}!", _honesty_agent1);
-  let _honesty_agent2 = honesty_agent2();
-  println!("I'm augmenting {:?}!", _honesty_agent2); 
-  let _intuition_agent1 = intuition_agent1();
-  println!("I'm augmenting {:?}!", _intuition_agent1);
-  let _intuition_agent2 = intuition_agent2();
-  println!("I'm augmenting {:?}!", _intuition_agent2); 
+  let _truth_outer_agent = truth_outer_agent();
+  println!("I'm augmenting {:?}!", _truth_outer_agent);
+  let _truth_inner_agent = truth_inner_agent();
+  println!("I'm augmenting {:?}!", _truth_inner_agent);    
+  let _care_outer_agent = care_outer_agent();
+  println!("I'm augmenting {:?}!", _care_outer_agent);
+  let _care_inner_agent = care_inner_agent();
+  println!("I'm augmenting {:?}!", _care_inner_agent);  
+  let _honesty_outer_agent = honesty_outer_agent();
+  println!("I'm augmenting {:?}!", _honesty_outer_agent);
+  let _honesty_inner_agent = honesty_inner_agent();
+  println!("I'm augmenting {:?}!", _honesty_inner_agent); 
+  let _intuition_outer_agent = intuition_outer_agent();
+  println!("I'm augmenting {:?}!", _intuition_outer_agent);
+  let _intuition_inner_agent = intuition_inner_agent();
+  println!("I'm augmenting {:?}!", _intuition_inner_agent); 
 
-  let _balanced_agent1 = balanced_agent1();
-  println!("I'm augmenting {:?}!", _balanced_agent1);
-  let _balanced_agent2 = balanced_agent2();
-  println!("I'm augmenting {:?}!", _balanced_agent2);  
+  let _balanced_outer_agent = balanced_outer_agent();
+  println!("I'm augmenting {:?}!", _balanced_outer_agent);
+  let _balanced_inner_agent = balanced_inner_agent();
+  println!("I'm augmenting {:?}!", _balanced_inner_agent);  
 
-  let _kindnessempathy_agent1 = kindnessempathy_agent1();
-  println!("I'm augmenting {:?}!", _kindnessempathy_agent1);
-  let _kindnessempathy_agent2 = kindnessempathy_agent2();
-  println!("I'm augmenting {:?}!", _kindnessempathy_agent2);  
-  let _influenced_agent1 = influenced_agent1();
-  println!("I'm augmenting {:?}!", _influenced_agent1);
-  let _influenced_agent2 = influenced_agent2();
-  println!("I'm augmenting {:?}!", _influenced_agent2); 
-  let _veiled_agent1 = veiled_agent1();
-  println!("I'm augmenting {:?}!", _veiled_agent1);
-  let _veiled_agent2 = veiled_agent2();
-  println!("I'm augmenting {:?}!", _veiled_agent2);  
-  let _indoctrinated_agent1 = indoctrinated_agent1();
-  println!("I'm augmenting {:?}!", _indoctrinated_agent1);
-  let _indoctrinated_agent2 = indoctrinated_agent2();
-  println!("I'm augmenting {:?}!", _indoctrinated_agent2); 
+  let _kindnessempathy_outer_agent = kindnessempathy_outer_agent();
+  println!("I'm augmenting {:?}!", _kindnessempathy_outer_agent);
+  let _kindnessempathy_inner_agent = kindnessempathy_inner_agent();
+  println!("I'm augmenting {:?}!", _kindnessempathy_inner_agent);  
+  let _influenced_outer_agent = influenced_outer_agent();
+  println!("I'm augmenting {:?}!", _influenced_outer_agent);
+  let _influenced_inner_agent = influenced_inner_agent();
+  println!("I'm augmenting {:?}!", _influenced_inner_agent); 
+  let _veiled_outer_agent = veiled_outer_agent();
+  println!("I'm augmenting {:?}!", _veiled_outer_agent);
+  let _veiled_inner_agent = veiled_inner_agent();
+  println!("I'm augmenting {:?}!", _veiled_inner_agent);  
+  let _indoctrinated_outer_agent = indoctrinated_outer_agent();
+  println!("I'm augmenting {:?}!", _indoctrinated_outer_agent);
+  let _indoctrinated_inner_agent = indoctrinated_inner_agent();
+  println!("I'm augmenting {:?}!", _indoctrinated_inner_agent); 
 
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(Vec::new(), Vec::new(), Vec::new());
@@ -559,65 +566,68 @@ fn main() {
   let _out_stream = out_stream();
   println!("I'm augmenting {:?}!", _out_stream); 
   
+ /* 
   // back-end AGI
-  let _mu_agent1 = mu_agent1();
-  println!("I'm augmenting {:?}!", _mu_agent1);
-  let _mu_agent2 = mu_agent2();
-  println!("I'm augmenting {:?}!", _mu_agent2);  
+  let _mu_outer_agent = mu_outer_agent();
+  println!("I'm augmenting {:?}!", _mu_outer_agent);
+  let _mu_inner_agent = mu_inner_agent();
+  println!("I'm augmenting {:?}!", _mu_inner_agent);  
 
-  let _chat_agent1 = chat_agent1();
-  println!("I'm augmenting {:?}!", _chat_agent1);
-  let _chat_agent2 = chat_agent2();
-  println!("I'm augmenting {:?}!", _chat_agent2);  
+  let _chat_outer_agent = chat_outer_agent();
+  println!("I'm augmenting {:?}!", _chat_outer_agent);
+  let _chat_inner_agent = chat_inner_agent();
+  println!("I'm augmenting {:?}!", _chat_inner_agent);  
 
-  let _video_agent1 = video_agent1();
-  println!("I'm augmenting {:?}!", _video_agent1);
-  let _video_agent2 = video_agent2();
-  println!("I'm augmenting {:?}!", _video_agent2);  
+  let _video_outer_agent = video_outer_agent();
+  println!("I'm augmenting {:?}!", _video_outer_agent);
+  let _video_inner_agent = video_inner_agent();
+  println!("I'm augmenting {:?}!", _video_inner_agent);  
 
-  let _graph_agent1 = graph_agent1();
-  println!("I'm augmenting {:?}!", _graph_agent1);
-  let _graph_agent2 = graph_agent2();
-  println!("I'm augmenting {:?}!", _graph_agent2); 
+  let _graph_outer_agent = graph_outer_agent();
+  println!("I'm augmenting {:?}!", _graph_outer_agent);
+  let _graph_inner_agent = graph_inner_agent();
+  println!("I'm augmenting {:?}!", _graph_inner_agent); 
   
-  let _db_agent1 = db_agent1();
-  println!("I'm augmenting {:?}!", _db_agent1);
-  let _db_agent2 = db_agent2();
-  println!("I'm augmenting {:?}!", _db_agent2);  
+  let _db_outer_agent = db_outer_agent();
+  println!("I'm augmenting {:?}!", _db_outer_agent);
+  let _db_inner_agent = db_inner_agent();
+  println!("I'm augmenting {:?}!", _db_inner_agent);  
 
-  let _hub_agent1 = hub_agent1();
-  println!("I'm augmenting {:?}!", _hub_agent1);
-  let _hub_agent2 = hub_agent2();
-  println!("I'm augmenting {:?}!", _hub_agent2);  
+  let _hub_outer_agent = hub_outer_agent();
+  println!("I'm augmenting {:?}!", _hub_outer_agent);
+  let _hub_inner_agent = hub_inner_agent();
+  println!("I'm augmenting {:?}!", _hub_inner_agent);  
 
-  let _plan_agent1 = plan_agent1();
-  println!("I'm augmenting {:?}!", _plan_agent1);
-  let _plan_agent2 = plan_agent2();
-  println!("I'm augmenting {:?}!", _plan_agent2); 
+  let _plan_outer_agent = plan_outer_agent();
+  println!("I'm augmenting {:?}!", _plan_outer_agent);
+  let _plan_inner_agent = plan_inner_agent();
+  println!("I'm augmenting {:?}!", _plan_inner_agent); 
   
   // relationship AI
-  let _family_agent1 = family_agent1();
-  println!("I'm augmenting {:?}!", _family_agent1);
-  let _family_agent2 = family_agent2();
-  println!("I'm augmenting {:?}!", _family_agent2);  
+  let _family_outer_agent = family_outer_agent();
+  println!("I'm augmenting {:?}!", _family_outer_agent);
+  let _family_inner_agent = family_inner_agent();
+  println!("I'm augmenting {:?}!", _family_inner_agent);  
 
-  let _profession_agent1 = profession_agent1();
-  println!("I'm augmenting {:?}!", _profession_agent1);
-  let _profession_agent2 = profession_agent2();
-  println!("I'm augmenting {:?}!", _profession_agent2);  
+  let _profession_outer_agent = profession_outer_agent();
+  println!("I'm augmenting {:?}!", _profession_outer_agent);
+  let _profession_inner_agent = profession_inner_agent();
+  println!("I'm augmenting {:?}!", _profession_inner_agent);  
 
-  let _this_life_agent1 = this_life_agent1();
-  println!("I'm augmenting {:?}!", _this_life_agent1);
-  let _this_life_agent2 = this_life_agent2();
-  println!("I'm augmenting {:?}!", _this_life_agent2); 
+  let _this_life_outer_agent = this_life_outer_agent();
+  println!("I'm augmenting {:?}!", _this_life_outer_agent);
+  let _this_life_inner_agent = this_life_inner_agent();
+  println!("I'm augmenting {:?}!", _this_life_inner_agent); 
   
-  let _next_realm_agent1 = next_realm_agent1();
-  println!("I'm augmenting {:?}!", _next_realm_agent1);
-  let _next_realm_agent2 = next_realm_agent2();
-  println!("I'm augmenting {:?}!", _next_realm_agent2); 
+  let _next_realm_outer_agent = next_realm_outer_agent();
+  println!("I'm augmenting {:?}!", _next_realm_outer_agent);
+  let _next_realm_inner_agent = next_realm_inner_agent();
+  println!("I'm augmenting {:?}!", _next_realm_inner_agent); 
   
-  let _worthy_agent1 = worthy_agent1();
-  println!("I'm augmenting {:?}!", _worthy_agent1);
-  let _worthy_agent2 = worthy_agent2();
-  println!("I'm augmenting {:?}!", _worthy_agent2);  
+  let _worthy_outer_agent = worthy_outer_agent();
+  println!("I'm augmenting {:?}!", _worthy_outer_agent);
+  let _worthy_inner_agent = worthy_inner_agent();
+  println!("I'm augmenting {:?}!", _worthy_inner_agent);  
+*/  
+  
 }

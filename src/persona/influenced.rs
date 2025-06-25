@@ -1,10 +1,10 @@
 // define struct Influenced and its inpl of traits # where people can tweet and tweet-on-tweet
 
-pub fn influenced_agent1() -> String {
-    return "influenced_agent1_platform_message".to_string();
+pub fn influenced_outer_agent() -> String {
+    return "influenced_outer_agent_platform_message".to_string();
 }    
 
-pub fn influenced_agent2() -> String {
-    return "influenced_agent2_service_message".to_string();
+pub fn influenced_inner_agent() -> String {
+    return "influenced_inner_agent_service_message".to_string();
 } 
 

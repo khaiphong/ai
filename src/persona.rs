@@ -1,5 +1,5 @@
 /*
-  Persona innerSpace is modeled with InnerAgent (Agnt2) interactions with OuterAgent (Agent1)
+  Persona innerSpace is modeled with InnerAgent interactions with OuterAgent
   via [ Activities, Relationships, and Places ]. We first use Fibonacci real numbers to be 
   later replaced with a complex variable according to Binet formula to model its right 
   evolution or wrong degeneration according to underlying natural laws to be DISCOVERED and 
@@ -100,7 +100,10 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 
 //  fn f_evaluation<'a>(_x: &'a x_dimension, _y: &'a y_dimension) -> &'a str { // f(_x,_y)
 //    return "EquanimityAwareness".to_string()
-//  }
+//  } // applicable to persona at individial level to be detailed below
+
+// similarly, evaluation to the persona qualified in different realm or application aggregate
+/*
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
@@ -113,6 +116,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
     return "in_operation".to_string()
   }
+*/
 }
 
 /* 
@@ -135,10 +139,11 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
   Additional values are two possible related realms the "owner / स्वामी" may be naturally 
   reincarnated where the distributed records are securely maintained, waiting for its 
-  legitimate activation based on our empirically Know-How to avoid past mistakes hard-learned 
-  from 60,000+ human-years of esoteric degenerated feudal systems. Security features can be 
-  physically custom designed and implemented at chip level. Only containers belong to those 
-  having RoT (Root of Trust) can communicate and collaborate within a certified boundary.
+  legitimate activation based on our empirically Know-How to avoid past mistakes 
+  hard-learned from 60,000+ human-years of esoteric degenerated feudal systems. Security 
+  features can be physically custom designed and implemented at chip level. Only containers 
+  belong to those having RoT (Root of Trust) can communicate and collaborate within a 
+  certified boundary.
 */
 use std::collections::HashMap; // to be replaced by db Map
 
@@ -597,7 +602,6 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
   communications between Oneness >< Diversities"),};
   println!("I'm connecting to node {:?}!", _truth.kind);
   
-*/
 
 /// Explore trait - extension of iterator - in activities and relationships.
 ///
@@ -641,11 +645,11 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
 /// assert_eq!(0, answer);
 /// ```
 
-/*
 pub enum Xtraits {
   Truth, Honesty, Care, Intuition, Balanced,
   KindnessEmpathy, Influenced, Veiled, Indoctrinated,
 }
+
 */
 
 #[derive(Debug)]
@@ -833,7 +837,7 @@ pub enum Flevels { // type behavior based on its traits and its rated major boun
  event and best possible outcomes honestly evaluated by the persona of personal learned 
  lessons relevant to the norm of the mass.
 */
-// x_traits
+// x_traits - make directories for the mods inside the persona
 pub mod truth;    
 pub mod honesty;
 pub mod care;
@@ -851,7 +855,7 @@ pub mod indoctrinated;
  by keeping track of the number of owners and, when no owners remain, cleaning up the data.
  This is a Kp tool for one-on-one consultation with dedicated front-line soldiers.
 */
-// y_pointers
+// y_pointers - make directories for the mods inside the persona
 pub mod empty_the_content;  
 pub mod dhyanasamadhi;  
 pub mod samadhi;  
