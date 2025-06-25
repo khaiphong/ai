@@ -65,26 +65,26 @@ pub mod xdimension; // states of consciousness varying from attachment to detach
 
 pub mod fdimension; // other relevant factors making up the states and stock of the persona
 
-pub mod x_traits;   // observable visible traits of one's #Awareness in engaged living
+pub mod xtraits;   // observable visible traits of one's #Awareness in engaged living
 
-pub mod y_pointers; // cultivations to make the description closed to the described
+pub mod ypointers; // cultivations to make the description closed to the described
 
-pub mod p1_empty_the_content;
+pub mod p1empty_the_content;
 
-pub mod p2_dhyana_samadhi;
+pub mod p2dhyana_samadhi;
 
-pub mod p3_samadhi;
+pub mod p3samadhi;
 
-pub mod p4_awareness;
+pub mod p4awareness;
 
-pub mod p5_prajna;
+pub mod p5prajna;
 
-pub mod p6_awareness_prajna;
+pub mod p6awareness_prajna;
 
-pub mod p7_samadhi_prajna;
+pub mod p7samadhi_prajna;
 
-pub mod p8_prajna_tip1;
-pub mod p9_prajna_tip2;
+pub mod p8prajna_tip1;
+pub mod p9prajna_tip2;
 
 /*
   Dynamic interactions between normative and positive AI of custom modeling the
@@ -95,12 +95,12 @@ pub mod p9_prajna_tip2;
   Modeling the InnerSpace is the systematic building internal power for different stages of
   the persona developments. Academia research + LLM statistical significance. These methods
   will be used as a part of f_evaluation depending on the type of persona and required service
-
+*/
 impl InnerSpace { // different methods for different InnerSpace persona types
 
-  fn f_evaluation<'a>(_x: &'a x_dimension, _y: &'a y_dimension) -> &'a str { // f(_x,_y)
-    return "EmpathyAwareness".to_string()
-  }
+//  fn f_evaluation<'a>(_x: &'a x_dimension, _y: &'a y_dimension) -> &'a str { // f(_x,_y)
+//    return "EquanimityAwareness".to_string()
+//  }
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
@@ -114,8 +114,6 @@ impl InnerSpace { // different methods for different InnerSpace persona types
     return "in_operation".to_string()
   }
 }
-*/
-  
 
 /* 
   HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and

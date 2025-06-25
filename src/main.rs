@@ -109,9 +109,9 @@ pub mod relationship;
 // pub mod place;
 
 use crate::persona::{OneToDependent, Xlevels, Ylevels, Flevels, Xtraits, Ypointers, 
-x_traits::{KpT}, y_pointers::{KpP}, p1_empty_the_content::{KpP1}, p2_dhyana_samadhi::{KpP2},
-p3_samadhi::{KpP3}, p4_awareness::{KpP4}, p5_prajna::{KpP5}, p6_awareness_prajna::{KpP6}, 
-p7_samadhi_prajna::{KpP7}, p8_prajna_tip1::{KpP8}, p9_prajna_tip2::{KpP9},
+xtraits::{KpT}, ypointers::{KpP}, p1empty_the_content::{KpP1}, p2dhyana_samadhi::{KpP2},
+p3samadhi::{KpP3}, p4awareness::{KpP4}, p5prajna::{KpP5}, p6awareness_prajna::{KpP6}, 
+p7samadhi_prajna::{KpP7}, p8prajna_tip1::{KpP8}, p9prajna_tip2::{KpP9},
 
 ydimension::{KpY, TranscendentalMeditation, Vipassana},
 xdimension::{KpX, WuNien}, fdimension::{KpF, HuiNeng, Gotama},
