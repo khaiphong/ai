@@ -1,12 +1,13 @@
 /*
-  Persona innerSpace is modeled with InnerAgent interactions with OuterAgent
-  via [ Activities, Relationships, and Places ]. We first use Fibonacci real numbers to be 
-  later replaced with a complex variable according to Binet formula to model its right 
-  evolution or wrong degeneration according to underlying natural laws to be DISCOVERED and 
-  SHARED. The InnerSpace is cultivable via reversed engineering observable #Traits [ #Truth, 
-  #Honesty,  #Care, #Intuition - #Balanced in qualified persona - #KindnessEmpathy, 
-  #Influenced, #Veiled, #Indoctrinated ] and their managements via suggested custom 
-  functions from reversed engineering in cultivating desired #SmartPointers 
+  Persona innerSpace is modeled with InnerAgent interacting with OuterAgent via [ Activities, 
+  Relationships, and Places ] using the user's selected services whic can ride on available 
+  infrastructures of KpPlatform such as standard cloud event services. We first use Fibonacci 
+  real numbers to be later replaced with a complex variable according to Binet formula to 
+  model its right evolution or wrong degeneration according to underlying natural laws to be 
+  DISCOVERED and SHARED. The InnerSpace is cultivable via reversed engineering observable 
+  #Traits [ #Truth, #Honesty,  #Care, #Intuition - #Balanced in qualified persona - 
+  #KindnessEmpathy, #Influenced, #Veiled, #Indoctrinated ] and their managements via 
+  suggested custom functions from reversed engineering in cultivating desired #SmartPointers 
   [ #EmptyTheContent, #DhyanaSamadhi, #Samadhi, #Awareness, #Prajna, #AwarenessPrajna, 
   #SamadhiPrajna, #PrajnaTIP1, PrajnaTIP2 ]. OuterAgent and InnerAgent are the gateways to 
   specialized agentic Services in current specialized domains such as Health, Law, Finance, 
@@ -19,9 +20,10 @@
   senses and (2) cultivate required #Traits for its What-Count culture. The function of 
   "cleaning" and required "cultivating" are the core of the persona HR strategies. In this 
   sense, the required #Traits are its core Values (e.g. #Truth >< #Honesty >< #Care ><) in
-  execution. This part will be standardized and open sources for possible value-added
-  solutions in x_traits, y_pointers, [f x y]-dimension : vectors instead of i32.
+  execution. This part will be standardized and open-sources for possible value-added
+  solutions in x_traits, y_pointers, [f x y]-dimensions : vectors instead of i32.
 */
+
 #[derive(Debug)]
 pub struct InnerSpace {
   /* 
@@ -39,6 +41,9 @@ pub struct InnerSpace {
   // HashMap<i32, String> visible traits observable in x_dimension
   pub x_traits: Vec<i32>, // vec![0, 1, 2, 3, 4, -1, -2, -3, -4]
   
+  // Innate pointers of currently living degenerated elites will be empirically studies at 
+  // the right time to efficiently allocate Governance, Financial and Millitary Powers toward 
+  // What Count
   pub y_pointers: Vec<i32>, // vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   
   // HashMap<i32, String> rated pointer levels from outcomes of y_dimension
@@ -94,7 +99,7 @@ pub mod p9prajna_tip2;
   
   Modeling the InnerSpace is the systematic building internal power for different stages of
   the persona developments. Academia research + LLM statistical significance. These methods
-  will be used as a part of f_evaluation depending on the type of persona and required service
+  will be used as a part of f_evaluation depending on the type of persona and custom services
 */
 impl InnerSpace { // different methods for different InnerSpace persona types
 
@@ -103,7 +108,7 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 //  } // applicable to persona at individial level to be detailed below
 
 // similarly, evaluation to the persona qualified in different realm or application aggregate
-/*
+
   fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
@@ -116,29 +121,27 @@ impl InnerSpace { // different methods for different InnerSpace persona types
   fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
     return "in_operation".to_string()
   }
-*/
 
 }
-
 
 /* 
   HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and
   cgroups rated at 8 security levels for private container-to-container communications and
-  collaborations at 8 levels of security: (1): KP container, (2): KP container-to-container, 
+  collaborations at 8 levels of security: (1): Kp container, (2): Kp container-to-container, 
   (3): certified source, (4): auditted legal requirements, (5): hardware Id, (6): trusted, 
-  (7): validated after minimum of 8 years, (8): worthy capable of reasoning
+  (7): validated after minimum of 5 years, (8): worthy capable of reasoning
   https://www.youtube.com/watch?v=LOF6fvV5XUc (LLM + KnowledgeGraph)
   https://www.youtube.com/watch?v=cyGZPF_RMNE (reasoning LLM for "subjective experience")
   https://www.youtube.com/watch?v=Es6yuMlyfPw (causal reasoning PLUS scientifically 
   cultivable #Prajna for a breakthrough in any conflicting issue.
   
-  The db Map belongs the owner having its unique relationships KP Ids and the firmware code
+  The db Map belongs the owner having its unique relationships Kp Ids and the firmware code
   standardization of #EmptyTheContent toward Non-Thingness / Nothingness in the owner
   scientifically cultivable #Prajna in the No-Conflict Consciousness orthogonal to the 
   duality plane of conflicting consciousness. The value of key "owner / स्वामी" is Vec v of 
-  unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer KP 
+  unique Array of bytes: &v[0] = onwer id, &v[1] = onwer hardware id, &v[2] = onwer Kp 
   certified security level. Its relationship key id has &v[0] = the relationship with the 
-  owner, &v[1] = the persona hardware id, &v[2] = persona KP certified security level. 
+  owner, &v[1] = the persona hardware id, &v[2] = persona Kp certified security level. 
   Additional values are two possible related realms the "owner / स्वामी" may be naturally 
   reincarnated where the distributed records are securely maintained, waiting for its 
   legitimate activation based on our empirically Know-How to avoid past mistakes 
@@ -371,7 +374,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   println!("{namespace:?}"); 
   
 
-  // dynamic between one's avaluation and the KP's prediction  
+  // dynamic between one's evaluation and the Kp prediction  
   _y = y_evaluation(y); // transcendental Inner Peace based on the outcomes in engaged living
   _x = x_evaluation(x); // transcendental Awareness based on self evaluations and assessments
   _f = f_evaluation(f); // system evaluation of the persona states and stock of #Prajna
@@ -410,7 +413,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
 
   return me;
 
-} // end of build_InnerSpace from traits t, SignedPosts y, Awareness x, InnerSpace f
+} // end of build_InnerSpace from Traits t, SignedPosts y, Awareness x, InnerSpace f
 
 /*
   p_evaluation return evaluated value of y_pointer #EmptyTheContent toward #SanadhiPrajna
@@ -541,9 +544,8 @@ fn p9_evaluation(p9: HashMap<i32, String>) -> Vec<i32> { // return evaluated to 
     return vec![0]; // qualified person starting the cultivation in #PrajnaTIP2
 }
 
-
 /*
-  t_evaluation return evaluated value of one's trait ranging from attachment to detachment
+  t_evaluation return evaluated value of one's traits ranging from attachment to detachment
   to be explored which are tags for people connected to learn and share in the # (hashtag) 
   community. We can use the generic evaluation type to be implemented for identified trait 
   which can question from LLM models then fine-tuned for KpPlatform community data and the 
@@ -563,48 +565,12 @@ fn t_evaluation(t: HashMap<i32, String>) -> Vec<i32> { // return evaluated value
     return vec![0]; // rated level of Intuition #Balanced
 }
 
-/* 
-  List of traits ranging from #Indoctrinated to #Truth. This part exposes the cheated 
-  Descriptions such as Faith from all religions for testing and discovering the underlying 
-  natural laws of their practices to be statistically evalutated by the world. For example, 
-  we will prove that "Faith" does not need to be on the conflicting plan of duality due to 
-  binding word/image and clinging thought leading to many religious crusades, and can be used 
-  as a mean to ride on one's past binding forces as a form of Aspiration in transcending the 
-  "Known" to reach the Y-dimension recorded by Gotama as Right Meditation. The proof is at 
-  both theoretical level using math and at empirical levels as SHARED by different faith 
-  practitioners of How to use "Faith / Trust" Aspiration in transcending the Known for 
-  detoxifications of the tainted senses, realizing GodKingdom within. The "Hoax of Jesus 
-  Redeemer" will be naturally exposed to scientifically point out the Right way of evolution 
-  versus the Wrong way of degeneration as evidenced in the total collapse of the past
-  esoteric feudal systems ruled by the degenerated King of Gods. This can be done with or 
-  without the revelation of the real Jesus in his Continuity of the consciousness and major 
-  Lesson Learned amongst Intelligent Beings.
-  
-  Similarly, the practices of Falun Dafa and all forms of Buddhist meditations are contrasted
-  with claimed "Transcendental Meditation", Chinese "Qi", KhaiPhong's discovered
-  underlying natural laws of Verifiable Processes from PrajnaTIPs, and other transcendental 
-  technologies via Arts (singing, dancing, playing music, bonsai, merging with nature, etc) 
-  to clean up cheaters "cooking sand and selling / hallucinated as rice". Make X, Y, F 
-  levels as struts having methods to use trait bound to a generic type of certain behavior.
-  
-  To have html note and links in sticky note for explanation in implementations of "Trait" 
-  definitions to group method signatures together to define a set of behaviors necessary to 
-  accomplish some purpose. Tweet is an instance people can expose their views on the rating
-  of X, Y, F or Tweet-on-the-Tweet for reply or retweet:
-  
-  The "traits" will be academically studied of observable attributes in Activities and 
-  Relationships, then exposed as # for people tweet and tweet-on-tweet to be avaluated and
-  rated at community conscientious level. The trait function to be redefined to Rust trait
-  with fn explore which is an implementation of iterator plus additional function to verify
-  if the recorded activities, relationships at all places have identified traits at
-  identified "being" level.
-  
+/*  
   pub enum Xtraits {Truth, Honesty,} struct Traits {kind: Xtraits, note: String, rating: i32}
   let _truth = Traits {kind: Xtraits::#Truth, rightclick: String::from("The trait of two-ways
   communications between Oneness >< Diversities"),};
   println!("I'm connecting to node {:?}!", _truth.kind);
   
-
 /// Explore trait - extension of iterator - in activities and relationships.
 ///
 /// pub trait Truth 
@@ -695,16 +661,16 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
  humanitas, #TamingTheOx; so are following Ypointers.
  
  All manifestations are conditioned and subjected to changes at Planck time. It has been
- proven in Generative AI that an optimal process can be engineered for a desired manifestation
- happened. Based on recorded experiences of LaoTzu, Gotama, Jesus, Bodhidharma, HuiNeng, etc,
- their states of manifestations Ylevels naturally produce smart pointers pointing to
- different observable traits in their qualities. "#Truth" is the identified "trait" in their
- qualities of [ Diversities >< Oneness / Hửu Không Vô Ngại / Self-Selfless Actualization ].
- Observable smart pointers are reported pointers pointing to the required traits in their
- observable evolution or negative traits leading to degeneration. Starting from achievable
- qualities of these front-line soldiers, we identify smart pointers ready for academia 
- researches the structure and attributes of these smart pointers, then expose them in # for
- public tweet and tweet-on-tweet further contribution in LLM models.
+ proven in generative agenic AI that an optimal process can be engineered for a desired 
+ manifestation happened. Based on recorded experiences of LaoTzu, Gotama, Jesus, Bodhidharma, 
+ HuiNeng, etc, their states of manifestations Ylevels naturally produce smart pointers 
+ pointing to different observable traits in their qualities. "#Truth" is the identified 
+ "trait" in their qualities of [ Diversities >< Oneness / Hửu Không Vô Ngại / Self-Selfless 
+ Actualization ]. Observable smart pointers are reported pointers pointing to the required 
+ traits in their observable evolution or negative traits leading to degeneration. Starting 
+ from achievable qualities of these front-line soldiers, we identify smart pointers ready for 
+ academia researches the structure and attributes of these smart pointers, then expose them 
+ in # for public tweet and tweet-on-tweet further contribution in LLM models.
 
 
 //! Enforce QualifiedHumanitas for natural detachment of dhyana, then Samadhi for
@@ -720,11 +686,9 @@ pub enum Xlevels { // type behavior based on its traits and its rated major boun
 /// 		Self: Iterator<Item = std::result::Result<Vec<T>, E>> + Sized;
 /// }
 ///
-/// 
 
 /// assert_eq!(0, answer);
 /// ```
-
 
 struct EmptyTheContent {
 	type item;
@@ -735,7 +699,6 @@ pub enum Ypointers { QualifiedHumanitas,
 	Prajna, AwarenessPrajna, SamadhiPrajna, PrajnaTIP1, PrajnaTIP2,
 }
 */
-
 
 #[derive(Debug)]
 pub enum Ypointers {
@@ -827,7 +790,6 @@ pub enum Flevels { // type behavior based on its traits and its rated major boun
   Smelly2(String),						// esoteric Vampire
   Smelly3(String),						// esoteric X-of-Prey
 }
-
 
 /*
  Traits are a way to group method signatures together to define a set of behaviors
