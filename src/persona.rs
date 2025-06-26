@@ -117,7 +117,9 @@ impl InnerSpace { // different methods for different InnerSpace persona types
     return "in_operation".to_string()
   }
 */
+
 }
+
 
 /* 
   HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and

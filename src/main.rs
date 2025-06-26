@@ -5,8 +5,8 @@
  of later academia contributions. It starts from actual experiences of a Vietnamese student
  since 1970 Gotama's recorded Jhanas, further investigated leading to Bodhidharma's exchange 
  with Emperor Wu (Lương Vũ Đế) on “What is the highest meaning of the noble #Truth" which is a
- fact-based epistemic objective and HuiNeng's specialized contributions about (1) the 
- Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
+ fact-based "epistemic verifiable #Truth" and HuiNeng's specialized contributions about (1) 
+ the Three-Not (Wu-Nien, No-Mark, Detachment / Vô Niệm, Vô Vết, Vô Trụ), (2) #DhyanaSamadhi / 
  Thiền Định, (3) #SamadhiPrajna / Định-Tuệ" leading to KhaiPhong (1) Three-Haves ("#Awareness,
  Dependent, #Prajna / Kiến Tánh, Duyên Khởi, Bát Nhã"), via 
  https://blog.khaiphong.io/2023/09/list-of-figures-and-tables.html#Figure_11.1
@@ -76,7 +76,7 @@
   the outcome of _y, _x and then _f round cycle from Self to Selfless at deeper Detachment.
       
   Proven qualities of [ indoctrinated (binding_clinging forces T-4 ], [ Veiled Right and 
-  Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], balanced [ 0 ], [ Intuition (
+  Wrong T-3 ], [ Influenced T-2 ], [ KindnessEmpathy T-1 ], Balanced [ 0 ], [ Intuition (
   Trust, Qi, Art) T+1 ], [ Care T+2 ], [ Honesty T+3 ], [ #Truth T+4 ] from heavily attached
   to totally detached, capable to enable wider angle of a focused event are from [ -4 to +4 
   where 0 is the base of a qualified humanitas to be correlated with one's Fibonacci levels.
@@ -96,7 +96,7 @@
   KpSIS, KpThink ] and [ KpCommerce, KpHOC, KpGsLp ].
 */
 
-// Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agi of
+// Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agentic AI of
 // KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in
 // its explored fields for specialized LLM custom services.
 
@@ -155,27 +155,38 @@ video::{in_stream, out_stream},
 };
 
 /*
-each service has OuterAgent and InnerAgent from AI similar to the persona, relationship, back
-and front services
+each service (mu) has _platform_agent (_agent1) and _service_agent(_agent2) from AI whose
+funationalities ride on the platform cloud_events for both user and the service provider
+dynamically updating the user while using the service in mu, chat, video templates
+*/
 
 // back-end persona agent services
-use crate::back::{ mu::{mu_outer_agent, mu_inner_agent}, chat::{chat_outer_agent, chat_inner_agent},
-video::{video_outer_agent, video_inner_agent}, graph::{graph_outer_agent, graph_inner_agent},
-db::{db_outer_agent, db_inner_agent}, hub::{hub_outer_agent, hub_inner_agent}, plan::{plan_outer_agent, plan_inner_agent},
+use crate::back::{ mu::{mu_agent1, mu_agent2}, chat::{chat_agent1, chat_agent2},
+video::{video_agent1, video_agent2}, graph::{graph_agent1, graph_agent2},
+db::{db_agent1, db_agent2}, hub::{hub_agent1, hub_agent2}, plan::{plan_agent1, plan_agent2},
 };
-
 
 // personal agent services
-use crate::relationship::{ family::{family_outer_agent, family_inner_agent}, 
-profession::{profession_outer_agent, profession_inner_agent}, 
-this_life::{this_life_outer_agent, this_life_inner_agent},
-next_realm::{next_realm_outer_agent, next_realm_inner_agent},
-worthy::{worthy_outer_agent, worthy_inner_agent},
+use crate::relationship::{ family::{family_agent1, family_agent2}, 
+profession::{profession_agent1, profession_agent2}, 
+this_life::{this_life_agent1, this_life_agent2},
+next_realm::{next_realm_agent1, next_realm_agent2},
+worthy::{worthy_agent1, worthy_agent2},
 };
-
-*/
  
 fn main() {
+
+// roughin the implementations when persona whose InnerSpace is applicable to different types
+//  let inner_space1 = InnerSpace {  
+//    build_inner_space(_x: 0, _y: 0, _f: 0)
+//  };
+//    println!(
+//        "The return of qualified_realm is {}",
+//        inner_space1()
+//    );
+
+
+
   // 9 smart pointer # to be connected in learning and sharing
   let _qualified_humanitas = 
    Ypointers::QualifiedHumanitas(String::from("#QualifiedHumanitas"));
@@ -566,8 +577,70 @@ fn main() {
   let _out_stream = out_stream();
   println!("I'm augmenting {:?}!", _out_stream); 
   
- /* 
+ 
   // back-end AGI
+  let _mu_agent1 = mu_agent1();
+  println!("I'm augmenting {:?}!", _mu_agent1);
+  let _mu_agent2 = mu_agent2();
+  println!("I'm augmenting {:?}!", _mu_agent2);  
+
+  let _chat_agent1 = chat_agent1();
+  println!("I'm augmenting {:?}!", _chat_agent1);
+  let _chat_agent2 = chat_agent2();
+  println!("I'm augmenting {:?}!", _chat_agent2);  
+
+  let _video_agent1 = video_agent1();
+  println!("I'm augmenting {:?}!", _video_agent1);
+  let _video_agent2 = video_agent2();
+  println!("I'm augmenting {:?}!", _video_agent2);  
+
+  let _graph_agent1 = graph_agent1();
+  println!("I'm augmenting {:?}!", _graph_agent1);
+  let _graph_agent2 = graph_agent2();
+  println!("I'm augmenting {:?}!", _graph_agent2); 
+  
+  let _db_agent1 = db_agent1();
+  println!("I'm augmenting {:?}!", _db_agent1);
+  let _db_agent2 = db_agent2();
+  println!("I'm augmenting {:?}!", _db_agent2);  
+
+  let _hub_agent1 = hub_agent1();
+  println!("I'm augmenting {:?}!", _hub_agent1);
+  let _hub_agent2 = hub_agent2();
+  println!("I'm augmenting {:?}!", _hub_agent2);  
+
+  let _plan_agent1 = plan_agent1();
+  println!("I'm augmenting {:?}!", _plan_agent1);
+  let _plan_agent2 = plan_agent2();
+  println!("I'm augmenting {:?}!", _plan_agent2); 
+  
+  // relationship AI
+  let _family_agent1 = family_agent1();
+  println!("I'm augmenting {:?}!", _family_agent1);
+  let _family_agent2 = family_agent2();
+  println!("I'm augmenting {:?}!", _family_agent2);  
+
+  let _profession_agent1 = profession_agent1();
+  println!("I'm augmenting {:?}!", _profession_agent1);
+  let _profession_agent2 = profession_agent2();
+  println!("I'm augmenting {:?}!", _profession_agent2);  
+
+  let _this_life_agent1 = this_life_agent1();
+  println!("I'm augmenting {:?}!", _this_life_agent1);
+  let _this_life_agent2 = this_life_agent2();
+  println!("I'm augmenting {:?}!", _this_life_agent2); 
+  
+  let _next_realm_agent1 = next_realm_agent1();
+  println!("I'm augmenting {:?}!", _next_realm_agent1);
+  let _next_realm_agent2 = next_realm_agent2();
+  println!("I'm augmenting {:?}!", _next_realm_agent2); 
+  
+  let _worthy_agent1 = worthy_agent1();
+  println!("I'm augmenting {:?}!", _worthy_agent1);
+  let _worthy_agent2 = worthy_agent2();
+  println!("I'm augmenting {:?}!", _worthy_agent2);  
+  
+ /*  
   let _mu_outer_agent = mu_outer_agent();
   println!("I'm augmenting {:?}!", _mu_outer_agent);
   let _mu_inner_agent = mu_inner_agent();
