@@ -161,17 +161,15 @@ dynamically updating the user while using the service in mu, chat, video templat
 */
 
 // back-end persona agent services
-use crate::back::{ mu::{mu_agent1, mu_agent2}, chat::{chat_agent1, chat_agent2},
-video::{video_agent1, video_agent2}, graph::{graph_agent1, graph_agent2},
-db::{db_agent1, db_agent2}, hub::{hub_agent1, hub_agent2}, plan::{plan_agent1, plan_agent2},
+use crate::back::{ mu::{mu_platform_agent, mu_service_agent}, chat::{chat_platform_agent, chat_service_agent}, video::{video_platform_agent, video_service_agent}, graph::{graph_platform_agent, graph_service_agent}, db::{db_platform_agent, db_service_agent}, hub::{hub_platform_agent, hub_service_agent}, plan::{plan_platform_agent, plan_service_agent},
 };
 
 // personal agent services
-use crate::relationship::{ family::{family_agent1, family_agent2}, 
-profession::{profession_agent1, profession_agent2}, 
-this_life::{this_life_agent1, this_life_agent2},
-next_realm::{next_realm_agent1, next_realm_agent2},
-worthy::{worthy_agent1, worthy_agent2},
+use crate::relationship::{ family::{family_platform_agent, family_service_agent}, 
+profession::{profession_platform_agent, profession_service_agent}, 
+this_life::{this_life_platform_agent, this_life_service_agent},
+next_realm::{next_realm_platform_agent, next_realm_service_agent},
+worthy::{worthy_platform_agent, worthy_service_agent},
 };
  
 fn main() {
@@ -185,7 +183,7 @@ fn main() {
 //        inner_space1()
 //    );
 
-
+  println!("We layout possible ranges of #Prajna cultivation based on [y,x,f]-dimensions plus #SmartPointers and #Traits dimensions, together with the persona's self evaluations based on its custom training and dedicated resources for What Count to gradually approaching fact-based 'IamX' for normative and positive interactions via InnerAgent and OuterAgent assistances");
 
   // 9 smart pointer # to be connected in learning and sharing
   let _qualified_humanitas = 
@@ -497,7 +495,6 @@ fn main() {
   let _prajnatip2_inner_agent = prajnatip2_inner_agent();
   println!("I'm augmenting {:?}!", _prajnatip2_inner_agent); 
   
-  
   // x_traits of intuition level from high to low
   let _truth_outer_agent = truth_outer_agent();
   println!("I'm augmenting {:?}!", _truth_outer_agent);
@@ -538,10 +535,14 @@ fn main() {
   let _indoctrinated_inner_agent = indoctrinated_inner_agent();
   println!("I'm augmenting {:?}!", _indoctrinated_inner_agent); 
 
+  println!("--------");
+  println!("I am buiding the persona InnerSpace of IamX");
   // evaluation of InnerSpace
   let _me = crate::persona::build_inner_space(Vec::new(), Vec::new(), Vec::new());
   println!("I'm evaluating the persona {:?}!", _me);
   
+  println!("--------");
+  println!("We use following open-source LLMs:");  
   // agi mod
   let _i = Granite {};
   println!("I'm using {:?}!", _i);
@@ -558,149 +559,89 @@ fn main() {
   let _k = Kp {};
   println!("I'm using {:?}!", _k);
   
+  println!("--------");
+  println!("Each available service is dynamically augmented with the agentic AI from the Platform and the specialized service:");  
   // front-end AGI
   let _pmessage = platform_message();
-  println!("I'm augmenting {:?}!", _pmessage);
+  println!("I'm augmenting mu {:?}!", _pmessage);
   
   let _smessage = service_message();
-  println!("I'm augmenting {:?}!", _smessage);  
+  println!("I'm augmenting mu {:?}!", _smessage);  
   
   let _prompt = prompt();
-  println!("I'm augmenting {:?}!", _prompt);
+  println!("I'm augmenting chat {:?}!", _prompt);
   
   let _response = response();
-  println!("I'm augmenting {:?}!", _response);  
+  println!("I'm augmenting chat {:?}!", _response);  
 
   let _in_stream = in_stream();
-  println!("I'm augmenting {:?}!", _in_stream);
+  println!("I'm augmenting video {:?}!", _in_stream);
   
   let _out_stream = out_stream();
-  println!("I'm augmenting {:?}!", _out_stream); 
+  println!("I'm augmenting vido {:?}!", _out_stream); 
   
- 
-  // back-end AGI
-  let _mu_agent1 = mu_agent1();
-  println!("I'm augmenting {:?}!", _mu_agent1);
-  let _mu_agent2 = mu_agent2();
-  println!("I'm augmenting {:?}!", _mu_agent2);  
+  println!("--------");
+  println!("Each available service riding on mu is dynamically augmented with the agentic AI from the Platform and the specialized service:"); 
+  // back-end LLM agentic AI
+  let _mu_platform_agent = mu_platform_agent();
+  println!("I'm augmenting {:?}!", _mu_platform_agent);
+  let _mu_service_agent = mu_service_agent();
+  println!("I'm augmenting {:?}!", _mu_service_agent);  
 
-  let _chat_agent1 = chat_agent1();
-  println!("I'm augmenting {:?}!", _chat_agent1);
-  let _chat_agent2 = chat_agent2();
-  println!("I'm augmenting {:?}!", _chat_agent2);  
+  let _chat_platform_agent = chat_platform_agent();
+  println!("I'm augmenting {:?}!", _chat_platform_agent);
+  let _chat_service_agent = chat_service_agent();
+  println!("I'm augmenting {:?}!", _chat_service_agent);  
 
-  let _video_agent1 = video_agent1();
-  println!("I'm augmenting {:?}!", _video_agent1);
-  let _video_agent2 = video_agent2();
-  println!("I'm augmenting {:?}!", _video_agent2);  
+  let _video_platform_agent = video_platform_agent();
+  println!("I'm augmenting {:?}!", _video_platform_agent);
+  let _video_service_agent = video_service_agent();
+  println!("I'm augmenting {:?}!", _video_service_agent);  
 
-  let _graph_agent1 = graph_agent1();
-  println!("I'm augmenting {:?}!", _graph_agent1);
-  let _graph_agent2 = graph_agent2();
-  println!("I'm augmenting {:?}!", _graph_agent2); 
+  let _graph_platform_agent = graph_platform_agent();
+  println!("I'm augmenting {:?}!", _graph_platform_agent);
+  let _graph_service_agent = graph_service_agent();
+  println!("I'm augmenting {:?}!", _graph_service_agent); 
   
-  let _db_agent1 = db_agent1();
-  println!("I'm augmenting {:?}!", _db_agent1);
-  let _db_agent2 = db_agent2();
-  println!("I'm augmenting {:?}!", _db_agent2);  
+  let _db_platform_agent = db_platform_agent();
+  println!("I'm augmenting {:?}!", _db_platform_agent);
+  let _db_service_agent = db_service_agent();
+  println!("I'm augmenting {:?}!", _db_service_agent);  
 
-  let _hub_agent1 = hub_agent1();
-  println!("I'm augmenting {:?}!", _hub_agent1);
-  let _hub_agent2 = hub_agent2();
-  println!("I'm augmenting {:?}!", _hub_agent2);  
+  let _hub_platform_agent = hub_platform_agent();
+  println!("I'm augmenting {:?}!", _hub_platform_agent);
+  let _hub_service_agent = hub_service_agent();
+  println!("I'm augmenting {:?}!", _hub_service_agent);  
 
-  let _plan_agent1 = plan_agent1();
-  println!("I'm augmenting {:?}!", _plan_agent1);
-  let _plan_agent2 = plan_agent2();
-  println!("I'm augmenting {:?}!", _plan_agent2); 
-  
-  // relationship AI
-  let _family_agent1 = family_agent1();
-  println!("I'm augmenting {:?}!", _family_agent1);
-  let _family_agent2 = family_agent2();
-  println!("I'm augmenting {:?}!", _family_agent2);  
-
-  let _profession_agent1 = profession_agent1();
-  println!("I'm augmenting {:?}!", _profession_agent1);
-  let _profession_agent2 = profession_agent2();
-  println!("I'm augmenting {:?}!", _profession_agent2);  
-
-  let _this_life_agent1 = this_life_agent1();
-  println!("I'm augmenting {:?}!", _this_life_agent1);
-  let _this_life_agent2 = this_life_agent2();
-  println!("I'm augmenting {:?}!", _this_life_agent2); 
-  
-  let _next_realm_agent1 = next_realm_agent1();
-  println!("I'm augmenting {:?}!", _next_realm_agent1);
-  let _next_realm_agent2 = next_realm_agent2();
-  println!("I'm augmenting {:?}!", _next_realm_agent2); 
-  
-  let _worthy_agent1 = worthy_agent1();
-  println!("I'm augmenting {:?}!", _worthy_agent1);
-  let _worthy_agent2 = worthy_agent2();
-  println!("I'm augmenting {:?}!", _worthy_agent2);  
-  
- /*  
-  let _mu_outer_agent = mu_outer_agent();
-  println!("I'm augmenting {:?}!", _mu_outer_agent);
-  let _mu_inner_agent = mu_inner_agent();
-  println!("I'm augmenting {:?}!", _mu_inner_agent);  
-
-  let _chat_outer_agent = chat_outer_agent();
-  println!("I'm augmenting {:?}!", _chat_outer_agent);
-  let _chat_inner_agent = chat_inner_agent();
-  println!("I'm augmenting {:?}!", _chat_inner_agent);  
-
-  let _video_outer_agent = video_outer_agent();
-  println!("I'm augmenting {:?}!", _video_outer_agent);
-  let _video_inner_agent = video_inner_agent();
-  println!("I'm augmenting {:?}!", _video_inner_agent);  
-
-  let _graph_outer_agent = graph_outer_agent();
-  println!("I'm augmenting {:?}!", _graph_outer_agent);
-  let _graph_inner_agent = graph_inner_agent();
-  println!("I'm augmenting {:?}!", _graph_inner_agent); 
-  
-  let _db_outer_agent = db_outer_agent();
-  println!("I'm augmenting {:?}!", _db_outer_agent);
-  let _db_inner_agent = db_inner_agent();
-  println!("I'm augmenting {:?}!", _db_inner_agent);  
-
-  let _hub_outer_agent = hub_outer_agent();
-  println!("I'm augmenting {:?}!", _hub_outer_agent);
-  let _hub_inner_agent = hub_inner_agent();
-  println!("I'm augmenting {:?}!", _hub_inner_agent);  
-
-  let _plan_outer_agent = plan_outer_agent();
-  println!("I'm augmenting {:?}!", _plan_outer_agent);
-  let _plan_inner_agent = plan_inner_agent();
-  println!("I'm augmenting {:?}!", _plan_inner_agent); 
+  let _plan_platform_agent = plan_platform_agent();
+  println!("I'm augmenting {:?}!", _plan_platform_agent);
+  let _plan_service_agent = plan_service_agent();
+  println!("I'm augmenting {:?}!", _plan_service_agent); 
   
   // relationship AI
-  let _family_outer_agent = family_outer_agent();
-  println!("I'm augmenting {:?}!", _family_outer_agent);
-  let _family_inner_agent = family_inner_agent();
-  println!("I'm augmenting {:?}!", _family_inner_agent);  
+  let _family_platform_agent = family_platform_agent();
+  println!("I'm augmenting {:?}!", _family_platform_agent);
+  let _family_service_agent = family_service_agent();
+  println!("I'm augmenting {:?}!", _family_service_agent);  
 
-  let _profession_outer_agent = profession_outer_agent();
-  println!("I'm augmenting {:?}!", _profession_outer_agent);
-  let _profession_inner_agent = profession_inner_agent();
-  println!("I'm augmenting {:?}!", _profession_inner_agent);  
+  let _profession_platform_agent = profession_platform_agent();
+  println!("I'm augmenting {:?}!", _profession_platform_agent);
+  let _profession_service_agent = profession_service_agent();
+  println!("I'm augmenting {:?}!", _profession_service_agent);  
 
-  let _this_life_outer_agent = this_life_outer_agent();
-  println!("I'm augmenting {:?}!", _this_life_outer_agent);
-  let _this_life_inner_agent = this_life_inner_agent();
-  println!("I'm augmenting {:?}!", _this_life_inner_agent); 
+  let _this_life_platform_agent = this_life_platform_agent();
+  println!("I'm augmenting {:?}!", _this_life_platform_agent);
+  let _this_life_service_agent = this_life_service_agent();
+  println!("I'm augmenting {:?}!", _this_life_service_agent); 
   
-  let _next_realm_outer_agent = next_realm_outer_agent();
-  println!("I'm augmenting {:?}!", _next_realm_outer_agent);
-  let _next_realm_inner_agent = next_realm_inner_agent();
-  println!("I'm augmenting {:?}!", _next_realm_inner_agent); 
+  let _next_realm_platform_agent = next_realm_platform_agent();
+  println!("I'm augmenting {:?}!", _next_realm_platform_agent);
+  let _next_realm_service_agent = next_realm_service_agent();
+  println!("I'm augmenting {:?}!", _next_realm_service_agent); 
   
-  let _worthy_outer_agent = worthy_outer_agent();
-  println!("I'm augmenting {:?}!", _worthy_outer_agent);
-  let _worthy_inner_agent = worthy_inner_agent();
-  println!("I'm augmenting {:?}!", _worthy_inner_agent);  
-*/  
+  let _worthy_platform_agent = worthy_platform_agent();
+  println!("I'm augmenting {:?}!", _worthy_platform_agent);
+  let _worthy_service_agent = worthy_service_agent();
+  println!("I'm augmenting {:?}!", _worthy_service_agent);  
   
 }

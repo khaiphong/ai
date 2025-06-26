@@ -1,9 +1,9 @@
 
-pub fn hub_agent1() -> String {
-    return "hub_agent1_platform_message".to_string();
+pub fn hub_platform_agent() -> String {
+    return "hub_platform_agent_message".to_string();
 }    
 
-pub fn hub_agent2() -> String {
-    return "hub_agent2_service_message".to_string();
+pub fn hub_service_agent() -> String {
+    return "hub_service_agent_message".to_string();
 } 
 

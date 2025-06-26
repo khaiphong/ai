@@ -1,9 +1,9 @@
 
-pub fn db_agent1() -> String {
-    return "db_agent1_platform_message".to_string();
+pub fn db_platform_agent() -> String {
+    return "db_platform_agent_message".to_string();
 }    
 
-pub fn db_agent2() -> String {
-    return "db_agent2_service_message".to_string();
+pub fn db_service_agent() -> String {
+    return "db_service_agent_message".to_string();
 } 
 

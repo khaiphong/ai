@@ -1,9 +1,9 @@
 
-pub fn mu_agent1() -> String {
-    return "mu_agent1_platform_message".to_string();
+pub fn mu_platform_agent() -> String {
+    return "mu_platform_agent_message".to_string();
 }    
 
-pub fn mu_agent2() -> String {
-    return "mu_agent2_service_message".to_string();
+pub fn mu_service_agent() -> String {
+    return "mu_service_agent_message".to_string();
 } 
 
