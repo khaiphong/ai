@@ -109,16 +109,19 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 
 // similarly, evaluation to the persona qualified in different realm or application aggregate
 
-  fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
+  pub fn qualified_realm(&self) -> String { // f(_x,_y) for Inter-Realm
     return "human".to_string()
   }
-  fn maturity_level(&self) -> String { // f(_x,_y) for organization
+  
+  pub fn maturity_level(&self) -> String { // f(_x,_y) for organization
     return "self sustainable".to_string()
   }
-  fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
+  
+  pub fn change_management(&self) -> String { // f(_x,_y) for foreign affairs
     return "decisive_battle".to_string()
   }
-  fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
+  
+  pub fn nation_happiness(&self) -> String { // f(_x,_y) for a national development
     return "in_operation".to_string()
   }
 

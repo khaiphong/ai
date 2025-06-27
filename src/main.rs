@@ -171,17 +171,10 @@ this_life::{this_life_platform_agent, this_life_service_agent},
 next_realm::{next_realm_platform_agent, next_realm_service_agent},
 worthy::{worthy_platform_agent, worthy_service_agent},
 };
+
+use crate::persona::InnerSpace;
  
 fn main() {
-
-// roughin the implementations when persona whose InnerSpace is applicable to different types
-//  let inner_space1 = InnerSpace {  
-//    build_inner_space(_x: 0, _y: 0, _f: 0)
-//  };
-//    println!(
-//        "The return of qualified_realm is {}",
-//        inner_space1()
-//    );
 
   println!("We layout possible ranges of #Prajna cultivation based on [y,x,f]-dimensions plus #SmartPointers and #Traits dimensions, together with the persona's self evaluations based on its custom training and dedicated resources for What Count to gradually approaching fact-based 'IamX' for normative and positive interactions via InnerAgent and OuterAgent assistances");
 
@@ -643,5 +636,37 @@ fn main() {
   println!("I'm augmenting {:?}!", _worthy_platform_agent);
   let _worthy_service_agent = worthy_service_agent();
   println!("I'm augmenting {:?}!", _worthy_service_agent);  
+  
+  println!("--------");
+  // roughin the implementations when the persona is applicable to different types
+  let persona1 = InnerSpace {  
+    y_dimension: vec![0], x_dimension: vec![0], f_dimension: vec![0], x_traits: vec![0], 
+    y_pointers: vec![0], p1_empty_the_content: vec![0], p2_dhyana_samadhi: vec![0], 
+    p3_samadhi: vec![0], p4_awareness: vec![0], p5_prajna: vec![0], 
+    p6_awareness_prajna: vec![0], p7_samadhi_prajna: vec![0], p8_prajna_tip1: vec![0], 
+    p9_prajna_tip2: vec![0]
+  };
+  println!(
+    "The return of qualified_realm is {}",
+    persona1.qualified_realm()
+  );
+
+  let persona2 = InnerSpace { ..persona1 };
+  println!(
+    "The organization maturity level is rated at {}",
+    persona2.maturity_level()
+  );
+  
+  let persona3 = InnerSpace { ..persona2 };
+  println!(
+    "The team can face this {}",
+    persona3.change_management()
+  ); 
+  
+  let persona4 = InnerSpace { ..persona3 };
+  println!(
+    "The national happiness is {}",
+    persona4.nation_happiness()
+  );
   
 }
