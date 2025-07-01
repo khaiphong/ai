@@ -127,6 +127,107 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 
 }
 
+#[derive(Debug)]
+pub struct Traits; // a unit-like node
+impl Traits { // methods to identify Traits
+  
+  pub fn kp_traits(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "a formal professional team to study and model Traits".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Truth; // a unit-like node
+impl Truth { // methods to identify Truth
+  
+  pub fn kp_truth(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Truth".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Honesty; // a unit-like node
+impl Honesty { // methods to identify Honesty
+  
+  pub fn kp_honesty(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Honesty".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Care; // a unit-like node
+impl Care { // methods to identify Care
+  
+  pub fn kp_care(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Care".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Intuition; // a unit-like node
+impl Intuition { // methods to identify Intuition
+  
+  pub fn kp_intuition(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Intuition".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Balanced; // a unit-like node
+impl Balanced { // methods to identify Balanced
+  
+  pub fn kp_balanced(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Balanced".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct KindnessEmpathy; // a unit-like node
+impl KindnessEmpathy { // methods to identify KindnessEmpathy
+  
+  pub fn kp_kindness_empathy(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of KindnessEmpathy".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Influenced; // a unit-like node
+impl Influenced { // methods to identify Influenced
+  
+  pub fn kp_influenced(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Influenced".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Veiled; // a unit-like node
+impl Veiled { // methods to identify Veiled
+  
+  pub fn kp_veiled(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Veiled".to_string()
+  }
+    
+}
+
+#[derive(Debug)]
+pub struct Indoctrinated; // a unit-like node
+impl Indoctrinated { // methods to identify Truth
+  
+  pub fn kp_indoctrinated(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Indoctrinated".to_string()
+  }
+    
+}
+
+
 /* 
   HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and
   cgroups rated at 8 security levels for private container-to-container communications and
@@ -167,8 +268,7 @@ pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace
   let f_dimension = _f; // move to f_dimension
   
   let x_traits: Vec<i32> = Vec::new(); 
-  // qualified persona at Awareness, make it as observable list
-  
+      
   let y_pointers: Vec<i32> = Vec::new();
   
   let p1_empty_the_content: Vec<i32> = Vec::new();

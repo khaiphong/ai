@@ -173,6 +173,16 @@ worthy::{worthy_platform_agent, worthy_service_agent},
 };
 
 use crate::persona::InnerSpace;
+use crate::persona::Traits;
+use crate::persona::Truth;
+use crate::persona::Honesty;
+use crate::persona::Care;
+use crate::persona::Intuition;
+use crate::persona::Balanced;
+use crate::persona::KindnessEmpathy;
+use crate::persona::Influenced;
+use crate::persona::Veiled;
+use crate::persona::Indoctrinated;
  
 fn main() {
 
@@ -668,5 +678,52 @@ fn main() {
     "The national happiness is {}",
     persona4.nation_happiness()
   );
+  
+  println!("--------"); 
+  // roughin the implementations of KpTraits
+  println!(
+    "We are assembling {}",
+    Traits.kp_traits()
+  );
+  
+  println!(
+    "Here is {}",
+    Truth.kp_truth()
+  );
+  println!(
+    "Here is {}",
+    Honesty.kp_honesty()
+  );
+  println!(
+    "Here is {}",
+    Care.kp_care()
+  );
+  println!(
+    "Here is {}",
+    Intuition.kp_intuition()
+  );
+  println!(
+    "Here is {}",
+    Balanced.kp_balanced()
+  );
+  println!(
+    "Here is {}",
+    KindnessEmpathy.kp_kindness_empathy()
+  );
+  println!(
+    "Here is {}",
+    Influenced.kp_influenced()
+  );
+  println!(
+    "Here is {}",
+    Veiled.kp_veiled()
+  );
+  println!(
+    "Here is {}",
+    Indoctrinated.kp_indoctrinated()
+  );
+  
+  println!("--------"); 
+  // roughin the implementations of SmartPointers  
   
 }
