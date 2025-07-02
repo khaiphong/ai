@@ -231,7 +231,8 @@ fn main() {
   let _indoctrinated = Xtraits::Indoctrinated(String::from("#Indoctrinated"));
   
   println!("--------"); 
-  println!("Billion-dollar exploration of past civilizations");
+  println!("Billion-dollar explorations of past civilizations");
+  println!("and their epistemic objectives toward #Truth to be DISCOVERED & SHARED");
 
   println!("I'm connecting to node {:?}!", _truth);
   println!("I'm connecting to node {:?}!", _honesty);
@@ -251,7 +252,8 @@ fn main() {
   let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
 
-  println!("[ Diversities ] via TamingTheOx");
+  println!("--------"); 
+  println!("[ Diversities ] via Zen TamingTheOx");
   let _at_home = OneToDependent::AtHome(String::from("AtHome"));
   println!("I'm connecting to node {:?}!", _at_home);
   let _right_effort = OneToDependent::RightEffort(String::from("RightEffort"));
@@ -267,10 +269,15 @@ fn main() {
   let _awakening_budh = OneToDependent::AwakeningBudh(String::from("AwakeningBudh"));
   println!("I'm connecting to node {:?}!", _awakening_budh);
   
-  println!("--------");   
+  println!("--------"); 
   println!("[ Diversities ] via Epistemic Objectives");
+  println!("---");  
+  println!("The FourFoldTruth to fill the cracks of Gotama's hallucination");
   let _four_fold_truth = OneToDependent::FourFoldTruth(String::from("FourFoldTruth"));
   println!("I'm connecting to node {:?}!", _four_fold_truth);
+  
+  println!("---");   
+  println!("Exploring the glimpse of Jesus and the Hoax of Redeemer from degenerated Father God");
   let _god_kingdom = OneToDependent::GodKingdom(String::from("GodKingdom"));
   println!("I'm connecting to node {:?}!", _god_kingdom);  
   
@@ -284,7 +291,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _people);
     
   println!("--------");   
-  println!("[ Diversities ] via KungTzu to prove his cheating strategy"); 
+  println!("[ Diversities ] via KungTzu to prove his cheating in Chinese civilization"); 
   let _nhan = OneToDependent::Nhan(String::from("Nhan"));
   println!("I'm connecting to node {:?}!", _nhan);
   let _nghia = OneToDependent::Nghia(String::from("Nghia"));
@@ -297,8 +304,8 @@ fn main() {
   println!("I'm connecting to node {:?}!", _tin);
 
   println!("--------");   
-  println!("[ Diversities ] via Falun: Honesty (identified trait), Morality, Patience to prove its epistemic #Truth"); 
-  // Diversities via 
+  println!("[ Diversities ] via Falun Gong: Honesty, Morality, Patience"); 
+  println!("to prove its imaginations versus HuiNeng's Thing-As-It-Is Detachment"); 
   let _morality = OneToDependent::Morality(String::from("Morality"));
   println!("I'm connecting to node {:?}!", _morality);
   let _patience = OneToDependent::Patience(String::from("Patience"));
@@ -322,7 +329,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _crown_chakra);
 
   println!("--------");   
-  println!("[ Diversities ] via Y-dimension");
+  println!("[ Diversities ] via Y-dimension proven by Gotama and deliverable by KhaiPhong");
   let _tranquility =  Ylevels::Tranquility(String::from("Tranquility"));
   println!("I'm connecting to node {:?}!", _tranquility);
   let _equanimity =  Ylevels::Equanimity(String::from("Equanimity"));
@@ -336,6 +343,7 @@ fn main() {
   let _unmoving =  Ylevels::Unmoving(String::from("Unmoving"));  
   println!("I'm connecting to node {:?}!", _unmoving);
  
+  println!("and its signs of degeneration in the collapse of the esoteric feudal systems");
   let _empathy =  Ylevels::Empathy(String::from("Empathy"));
   println!("I'm connecting to node {:?}!", _empathy);
   let _kindness =  Ylevels::Kindness(String::from("Kindness"));
@@ -350,7 +358,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _vampire);
 
   println!("--------");   
-  println!("[ Diversities ] via X-dimension");
+  println!("[ Diversities ] via X-dimension seen by HuiNeng and deliverable by KhaiPhong");
   let _honnhien =  Xlevels::HonNhien(String::from("HonNhien"));
   println!("I'm connecting to node {:?}!", _honnhien);
   let _managing_freshness =  Xlevels::ManagingFreshness(String::from("ManagingFreshness"));
@@ -368,6 +376,7 @@ fn main() {
       Xlevels::HelpViaCosmicEnergy(String::from("HelpViaCosmicEnergy"));
   println!("I'm connecting to node {:?}!", _help_via_cosmic_energy);
   
+  println!("and its signs of influenced, Not Thing-As-It-Is of Actualities");  
   let _cultural_influenced =  Xlevels::CulturalInfluenced(String::from("CulturalInfluenced"));
   println!("I'm connecting to node {:?}!", _cultural_influenced);
   let _regional_influenced =  Xlevels::RegionalInfluenced(String::from("RegionalInfluenced"));
@@ -384,7 +393,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _clinging_thought);  
     
   println!("--------");   
-  println!("[ Diversities ] via F-dimension");
+println!("[ Diversities ] via F-dimension cultivable from HuiNeng Three-Nots to Three-Haves");
   let _equanimity_awareness =  
       Flevels::EquanimityAwareness(String::from("EquanimityAwareness"));
   println!("I'm connecting to node {:?}!", _equanimity_awareness);
@@ -407,6 +416,7 @@ fn main() {
       Flevels::VisibleSamadhiPrajna(String::from("VisibleSamadhiPrajna"));
   println!("I'm connecting to node {:?}!", _visible_samadhi_prajna);
     
+  println!("and its signs of degenerations in the X-dimension");
   let _empathy_awareness = Flevels::EmpathyAwareness(String::from("EmpathyAwareness"));
   println!("I'm connecting to node {:?}!", _empathy_awareness);
   let _kindness_awareness = Flevels::KindnessAwareness(String::from("KindnessAwareness"));
@@ -461,6 +471,7 @@ fn main() {
   let _kpp9 = KpP9::new(5);	// pointer PrajnaTIP2 on Y-dimension
   println!("I'm using {:?}!", _kpp9);
       
+  println!("Claimed solutions to InnerPeace, exposing cheating Buddhist Sanghas");      
   let _tm = TranscendentalMeditation {}; // TM contribution
   println!("I'm using {:?}!", _tm);
   let _vp = Vipassana {};                // Vipassana contribution
@@ -469,18 +480,20 @@ fn main() {
   println!("I'm using {:?}!", _kpy);
   
   println!("--------");
-  println!("we are now woking on possible and verifiable HuiNeng and kp_awareness");  
+  println!("we are woking on possible and verifiable HuiNeng and kp_awareness");  
   let _transcendental_awareness = WuNien {};                      // HuiNeng zen
   println!("I'm evaluating my {:?}!", _transcendental_awareness); 
   let _kpx = KpX::new(0);                                         // KP Awareness  
   println!("I'm evaluating my {:?}!", _kpx);
   
   println!("--------");
-  println!("we are now woking on verifying HuiNeng and Gotama");  
+  println!("we are scientifically exposing HuiNeng and Gotama");  
   let _hn = HuiNeng {};
   println!("I'm evaluating {:?}!", _hn);
   let _go = Gotama {};
   println!("I'm evaluating {:?}!", _go);
+  
+  println!("--------"); 
   let _kpf = KpF::new(0);
   println!("I'm evaluating my {:?}!", _kpf);
   
@@ -611,8 +624,8 @@ fn main() {
   println!("I'm augmenting vido {:?}!", _out_stream); 
   
   println!("--------");
-  println!("Each available service riding on mu is dynamically augmented with the agentic AI from the Platform and the specialized service:"); 
-  // back-end LLM agentic AI
+  println!("Each available service on mu is dynamically augmented with the agentic AI:"); 
+  println!("from the Platform and the specialized service at both backend & frontend AI");
   let _mu_platform_agent = mu_platform_agent();
   println!("I'm augmenting {:?}!", _mu_platform_agent);
   let _mu_service_agent = mu_service_agent();
@@ -675,7 +688,7 @@ fn main() {
   println!("I'm augmenting {:?}!", _worthy_service_agent);  
   
   println!("--------");
-  // roughin the implementations when the persona is applicable to different types
+  println!("Roughin implementations when the persona is applicable to different types");
   let persona1 = InnerSpace {  
     y_dimension: vec![0], x_dimension: vec![0], f_dimension: vec![0], x_traits: vec![0], 
     y_pointers: vec![0], p1_empty_the_content: vec![0], p2_dhyana_samadhi: vec![0], 
@@ -707,7 +720,7 @@ fn main() {
   );
   
   println!("--------"); 
-  // roughin the implementations of KpTraits
+  println!("Roughin implementations of KpTraits");
   println!(
     "We are assembling {}",
     Traits.kp_traits()
@@ -751,7 +764,7 @@ fn main() {
   );
   
   println!("--------"); 
-  // roughin the implementations of SmartPointers  
+  println!("Roughin implementations of SmartPointers");  
   println!(
     "We are assembling {}",
     SmartPointers.kp_smart_pointers()
