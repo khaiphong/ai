@@ -202,33 +202,36 @@ fn main() {
   let _meditation = Ypointers::DhyanaSamadhi(String::from("#DhyanaSamadhi")); 
   let _transcendental_inner_peace = Ypointers::Samadhi(String::from("#Samadhi"));
   let _transcendental_awareness = Ypointers::Awareness(String::from("#Awareness"));
-  let _wisdom = Ypointers::Prajna(String::from("#Prajna")); 
-  let _awarenessprajna = Ypointers::AwarenessPrajna(String::from("#AwarenessPrajna")); 
-  let _samadhiprajna = Ypointers::SamadhiPrajna(String::from("#SamadhiPrajna"));
-  let _prajnatip1 = Ypointers::PrajnaTIP1(String::from("#PrajnaTIP1"));
-  let _prajnatip2 = Ypointers::PrajnaTIP2(String::from("#PrajnaTIP2"));
+  let _prajna = Ypointers::Prajna(String::from("#Prajna")); 
+  let _awareness_prajna = Ypointers::AwarenessPrajna(String::from("#AwarenessPrajna")); 
+  let _samadhi_prajna = Ypointers::SamadhiPrajna(String::from("#SamadhiPrajna"));
+  let _prajna_tip1 = Ypointers::PrajnaTIP1(String::from("#PrajnaTIP1"));
+  let _prajna_tip2 = Ypointers::PrajnaTIP2(String::from("#PrajnaTIP2"));
   
   println!("I'm connecting to node {:?}!", _qualified_humanitas);
   println!("I'm connecting to node {:?}!", _empty_the_content);
   println!("I'm connecting to node {:?}!", _meditation);
   println!("I'm connecting to node {:?}!", _transcendental_inner_peace);
   println!("I'm connecting to node {:?}!", _transcendental_awareness);
-  println!("I'm connecting to node {:?}!", _wisdom);
-  println!("I'm connecting to node {:?}!", _awarenessprajna);
-  println!("I'm connecting to node {:?}!", _samadhiprajna);
-  println!("I'm connecting to node {:?}!", _prajnatip1);
-  println!("I'm connecting to node {:?}!", _prajnatip2);
+  println!("I'm connecting to node {:?}!", _prajna);
+  println!("I'm connecting to node {:?}!", _awareness_prajna);
+  println!("I'm connecting to node {:?}!", _samadhi_prajna);
+  println!("I'm connecting to node {:?}!", _prajna_tip1);
+  println!("I'm connecting to node {:?}!", _prajna_tip2);
   
   // 9 # (traits) to be connected in learning and sharing
   let _truth = Xtraits::Truth(String::from("#Truth"));
   let _honesty = Xtraits::Honesty(String::from("#Honesty"));  
-  let _care = Xtraits::Care(String::from("#TCare"));
+  let _care = Xtraits::Care(String::from("#Care"));
   let _intuition = Xtraits::Intuition(String::from("#Intuition"));
   let _balanced = Xtraits::Balanced(String::from("#Balanced"));
   let _kindnessempathy = Xtraits::KindnessEmpathy(String::from("#KindnessEmpathy"));  
   let _influenced = Xtraits::Influenced(String::from("#Influenced"));
   let _veiled = Xtraits::Veiled(String::from("#Veiled"));
   let _indoctrinated = Xtraits::Indoctrinated(String::from("#Indoctrinated"));
+  
+  println!("--------"); 
+  println!("Billion-dollar exploration of past civilizations");
 
   println!("I'm connecting to node {:?}!", _truth);
   println!("I'm connecting to node {:?}!", _honesty);
@@ -239,14 +242,16 @@ fn main() {
   println!("I'm connecting to node {:?}!", _influenced);
   println!("I'm connecting to node {:?}!", _veiled);
   println!("I'm connecting to node {:?}!", _indoctrinated);
+  
+  println!("--------"); 
+  println!("Solutions must prove the way / knowhow from [ Oneness >< Diversities ] ");
 
-  // macroscopic levels of [ Oneness >< Diversities ]
   let _oneness = OneToDependent::Oneness(String::from("Oneness"));
   println!("I'm connecting to node {:?}!", _oneness);
   let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
 
-  // Diversities via TamingTheOx
+  println!("[ Diversities ] via TamingTheOx");
   let _at_home = OneToDependent::AtHome(String::from("AtHome"));
   println!("I'm connecting to node {:?}!", _at_home);
   let _right_effort = OneToDependent::RightEffort(String::from("RightEffort"));
@@ -262,13 +267,15 @@ fn main() {
   let _awakening_budh = OneToDependent::AwakeningBudh(String::from("AwakeningBudh"));
   println!("I'm connecting to node {:?}!", _awakening_budh);
   
-  // Epistemic Objectives
+  println!("--------");   
+  println!("[ Diversities ] via Epistemic Objectives");
   let _four_fold_truth = OneToDependent::FourFoldTruth(String::from("FourFoldTruth"));
   println!("I'm connecting to node {:?}!", _four_fold_truth);
   let _god_kingdom = OneToDependent::GodKingdom(String::from("GodKingdom"));
   println!("I'm connecting to node {:?}!", _god_kingdom);  
   
-  // Diversities via I-Ching and LaoTzu
+  println!("--------");   
+  println!("[ Diversities ] via I-Ching and LaoTzu");  
   let _heaven = OneToDependent::Heaven(String::from("Heaven"));
   println!("I'm connecting to node {:?}!", _heaven);
   let _earth = OneToDependent::Earth(String::from("Earth"));
@@ -276,7 +283,8 @@ fn main() {
   let _people = OneToDependent::People(String::from("People"));
   println!("I'm connecting to node {:?}!", _people);
     
-  // Diversities via KungTzu
+  println!("--------");   
+  println!("[ Diversities ] via KungTzu to prove his cheating strategy"); 
   let _nhan = OneToDependent::Nhan(String::from("Nhan"));
   println!("I'm connecting to node {:?}!", _nhan);
   let _nghia = OneToDependent::Nghia(String::from("Nghia"));
@@ -288,13 +296,16 @@ fn main() {
   let _tin = OneToDependent::Tin(String::from("Tin"));
   println!("I'm connecting to node {:?}!", _tin);
 
-  // Diversities via Falun: Honesty (identified trait), Morality, Patience
+  println!("--------");   
+  println!("[ Diversities ] via Falun: Honesty (identified trait), Morality, Patience to prove its epistemic #Truth"); 
+  // Diversities via 
   let _morality = OneToDependent::Morality(String::from("Morality"));
   println!("I'm connecting to node {:?}!", _morality);
   let _patience = OneToDependent::Patience(String::from("Patience"));
   println!("I'm connecting to node {:?}!", _patience);
 
-  // Diversities via Vedic system
+  println!("--------");   
+  println!("[ Diversities ] via Vedic system"); 
   let _root_chakra = OneToDependent::RootChakra(String::from("RootChakra"));
   println!("I'm connecting to node {:?}!", _root_chakra);
   let _sacral_chakra = OneToDependent::SacralChakra(String::from("SacralChakra"));
@@ -310,7 +321,8 @@ fn main() {
   let _crown_chakra = OneToDependent::CrownChakra(String::from("CrownChakra"));
   println!("I'm connecting to node {:?}!", _crown_chakra);
 
-  // Diversities via Y-dimension
+  println!("--------");   
+  println!("[ Diversities ] via Y-dimension");
   let _tranquility =  Ylevels::Tranquility(String::from("Tranquility"));
   println!("I'm connecting to node {:?}!", _tranquility);
   let _equanimity =  Ylevels::Equanimity(String::from("Equanimity"));
@@ -337,7 +349,8 @@ fn main() {
   let _vampire =  Ylevels::Vampire(String::from("Vampire"));
   println!("I'm connecting to node {:?}!", _vampire);
 
-  // Diversities via X-dimension
+  println!("--------");   
+  println!("[ Diversities ] via X-dimension");
   let _honnhien =  Xlevels::HonNhien(String::from("HonNhien"));
   println!("I'm connecting to node {:?}!", _honnhien);
   let _managing_freshness =  Xlevels::ManagingFreshness(String::from("ManagingFreshness"));
@@ -370,7 +383,8 @@ fn main() {
   let _clinging_thought =  Xlevels::ClingingThought(String::from("ClingingThought"));
   println!("I'm connecting to node {:?}!", _clinging_thought);  
     
-  // Diversities via F-dimension
+  println!("--------");   
+  println!("[ Diversities ] via F-dimension");
   let _equanimity_awareness =  
       Flevels::EquanimityAwareness(String::from("EquanimityAwareness"));
   println!("I'm connecting to node {:?}!", _equanimity_awareness);
@@ -411,10 +425,12 @@ fn main() {
   let _smelly3 = Flevels::Smelly3(String::from("Smelly3"));
   println!("I'm connecting to node {:?}!", _smelly3); 
 
-
-  let _kpt = KpT::new(0);	// traits on X-dimension
+  println!("--------");   
+  println!("we are now woking on possible and verifiable Traits on X-dimension");
+  let _kpt = KpT::new(0);
   println!("I'm using {:?}!", _kpt);
   
+  println!("we are now woking on possible and verifiable SmartPointers on Y-dimension");  
   let _kpp = KpP::new(0);	// pointers on Y-dimension
   println!("I'm using {:?}!", _kpp);
   
@@ -452,11 +468,15 @@ fn main() {
   let _kpy = KpY::new(0);                // Signed Posts
   println!("I'm using {:?}!", _kpy);
   
+  println!("--------");
+  println!("we are now woking on possible and verifiable HuiNeng and kp_awareness");  
   let _transcendental_awareness = WuNien {};                      // HuiNeng zen
   println!("I'm evaluating my {:?}!", _transcendental_awareness); 
   let _kpx = KpX::new(0);                                         // KP Awareness  
   println!("I'm evaluating my {:?}!", _kpx);
   
+  println!("--------");
+  println!("we are now woking on verifying HuiNeng and Gotama");  
   let _hn = HuiNeng {};
   println!("I'm evaluating {:?}!", _hn);
   let _go = Gotama {};
