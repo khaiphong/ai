@@ -92,13 +92,9 @@
   LLM services for its custom services which are divided into specialized InnerAgent and 
   OuterAgent, built on Kp common base PLUS user's preferences of other paid services in its 
   day-to-day operations which include [ DeepSeek, Granite, LLama, OpenAI, Phi, Grok, 
-  SkyThought ], [ KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, 
-  KpSIS, KpThink ] and [ KpCommerce, KpHOC, KpGsLp ].
+  SkyThought ], [ KpEducation, KpEngineering, KpGovernance, KpRealm, KpSocial ], 
+  [ KpSIS, KpGsLp, KpIoT, KpThink, KpHoC, KpCapital, KpDental, KpHealth, KpLaw, KpCA ].
 */
-
-// Similar to InnerSpace of persona.rs for the persona, KhaiPhong builds LLM agentic AI of
-// KpEducation, KpEngineering, KpHealth, KpGovernance, KpRealm, KpSocial, KpSIS, KpThink in
-// its explored fields for specialized LLM custom services.
 
 pub mod persona;
 pub mod agi;
@@ -155,9 +151,9 @@ video::{in_stream, out_stream},
 };
 
 /*
-each service (mu) has _platform_agent (_agent1) and _service_agent(_agent2) from AI whose
-funationalities ride on the platform cloud_events for both user and the service provider
-dynamically updating the user while using the service in mu, chat, video templates
+each service (mu) has _platform_agent and _service_agent from AI whose funationalities ride on
+the platform cloud_events for both user and the service provider dynamically updating the user
+while using the service in mu, chat, video templates, etc.
 */
 
 // back-end persona agent services
@@ -183,6 +179,17 @@ use crate::persona::KindnessEmpathy;
 use crate::persona::Influenced;
 use crate::persona::Veiled;
 use crate::persona::Indoctrinated;
+
+use crate::persona::SmartPointers;
+use crate::persona::EmptyTheContent;
+use crate::persona::DhyanaSamadhi;
+use crate::persona::Samadhi;
+use crate::persona::Awareness;
+use crate::persona::Prajna;
+use crate::persona::AwarenessPrajna;
+use crate::persona::SamadhiPrajna;
+use crate::persona::PrajnaTIP1;
+use crate::persona::PrajnaTIP2;
  
 fn main() {
 
@@ -725,5 +732,46 @@ fn main() {
   
   println!("--------"); 
   // roughin the implementations of SmartPointers  
+  println!(
+    "We are assembling {}",
+    SmartPointers.kp_smart_pointers()
+  );
   
+  println!(
+    "Here is {}",
+    EmptyTheContent.kp_empty_the_content()
+  );
+  println!(
+    "Here is {}",
+    DhyanaSamadhi.kp_dhyana_samadhi()
+  );
+  println!(
+    "Here is {}",
+    Samadhi.kp_samadhi()
+  );
+  println!(
+    "Here is {}",
+    Awareness.kp_awareness()
+  );
+  println!(
+    "Here is {}",
+    Prajna.kp_prajna()
+  );
+  println!(
+    "Here is {}",
+    AwarenessPrajna.kp_awareness_prajna()
+  );
+  println!(
+    "Here is {}",
+    SamadhiPrajna.kp_samadhi_prajna()
+  );
+  println!(
+    "Here is {}",
+    PrajnaTIP1.kp_prajna_tip1()
+  );  
+  println!(
+    "Here is {}",
+    PrajnaTIP2.kp_prajna_tip2()
+  ); 
+
 }

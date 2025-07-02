@@ -130,103 +130,154 @@ impl InnerSpace { // different methods for different InnerSpace persona types
 #[derive(Debug)]
 pub struct Traits; // a unit-like node
 impl Traits { // methods to identify Traits
-  
   pub fn kp_traits(&self) -> String { // f(_x,_y) for Inter-Realm
     return "a formal professional team to study and model Traits".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Truth; // a unit-like node
 impl Truth { // methods to identify Truth
-  
   pub fn kp_truth(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Truth".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Honesty; // a unit-like node
 impl Honesty { // methods to identify Honesty
-  
   pub fn kp_honesty(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Honesty".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Care; // a unit-like node
 impl Care { // methods to identify Care
-  
   pub fn kp_care(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Care".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Intuition; // a unit-like node
 impl Intuition { // methods to identify Intuition
-  
   pub fn kp_intuition(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Intuition".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Balanced; // a unit-like node
 impl Balanced { // methods to identify Balanced
-  
   pub fn kp_balanced(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Balanced".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct KindnessEmpathy; // a unit-like node
 impl KindnessEmpathy { // methods to identify KindnessEmpathy
-  
   pub fn kp_kindness_empathy(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of KindnessEmpathy".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Influenced; // a unit-like node
 impl Influenced { // methods to identify Influenced
-  
   pub fn kp_influenced(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Influenced".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Veiled; // a unit-like node
 impl Veiled { // methods to identify Veiled
-  
   pub fn kp_veiled(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Veiled".to_string()
   }
-    
 }
 
 #[derive(Debug)]
 pub struct Indoctrinated; // a unit-like node
 impl Indoctrinated { // methods to identify Truth
-  
   pub fn kp_indoctrinated(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of Indoctrinated".to_string()
   }
-    
 }
 
+#[derive(Debug)]
+pub struct SmartPointers; // a unit-like node
+impl SmartPointers { // methods to identify SmartPointers
+  pub fn kp_smart_pointers(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "a formal professional team to study and model SmartPointers".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct EmptyTheContent; // a unit-like node
+impl EmptyTheContent { // methods to identify EmptyTheContent
+  pub fn kp_empty_the_content(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of EmptyTheContent".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct DhyanaSamadhi; // a unit-like node
+impl DhyanaSamadhi { // methods to identify DhyanaSamadhi
+  pub fn kp_dhyana_samadhi(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of DhyanaSamadhi".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Samadhi; // a unit-like node
+impl Samadhi { // methods to identify Samadhi
+  pub fn kp_samadhi(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Samadhi".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Awareness; // a unit-like node
+impl Awareness { // methods to identify Awareness
+  pub fn kp_awareness(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Awareness".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Prajna; // a unit-like node
+impl Prajna { // methods to identify Prajna
+  pub fn kp_prajna(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Prajna".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct AwarenessPrajna; // a unit-like node
+impl AwarenessPrajna { // methods to identify Prajna
+  pub fn kp_awareness_prajna(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of AwarenessPrajna".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct SamadhiPrajna; // a unit-like node
+impl SamadhiPrajna { // methods to identify SamadhiPrajna
+  pub fn kp_samadhi_prajna(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of SamadhiPrajna".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct PrajnaTIP1; // a unit-like node
+impl PrajnaTIP1 { // methods to identify PrajnaTIP1
+  pub fn kp_prajna_tip1(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of PrajnaTIP1".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct PrajnaTIP2; // a unit-like node
+impl PrajnaTIP2 { // methods to identify PrajnaTIP2
+  pub fn kp_prajna_tip2(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of PrajnaTIP2".to_string()
+  }
+}
 
 /* 
   HashMap will be replaced with db Map, a bare bone K-V store with namespace of unique Id and
