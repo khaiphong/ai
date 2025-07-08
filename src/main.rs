@@ -245,13 +245,25 @@ fn main() {
   println!("I'm connecting to node {:?}!", _indoctrinated);
   
   println!("--------"); 
-  println!("Solutions must prove the way / knowhow from [ Oneness >< Diversities ] ");
-
+  println!("Solutions must prove the knowhow from [ Oneness >< Diversities ] & Then What?");
+  println!("Enum of all claimed solutions for proving its #Truth or hallucination");
   let _oneness = OneToDependent::Oneness(String::from("Oneness"));
   println!("I'm connecting to node {:?}!", _oneness);
   let _diversities = OneToDependent::Diversities(String::from("Diversities"));
   println!("I'm connecting to node {:?}!", _diversities);
 
+  println!("--------"); 
+  println!("[ Diversities ] via Epistemic Objectives");
+  println!("---");  
+  println!("The FourFoldTruth to fill the cracks of Gotama's hallucination");
+  let _four_fold_truth = OneToDependent::FourFoldTruth(String::from("FourFoldTruth"));
+  println!("I'm connecting to node {:?}!", _four_fold_truth);
+  
+  println!("---");   
+  println!("Exploring the glimpse of Jesus and the Hoax of Jesus Redeemer from degenerated Father God");
+  let _god_kingdom = OneToDependent::GodKingdom(String::from("GodKingdom"));
+  println!("I'm connecting to node {:?}!", _god_kingdom);  
+  
   println!("--------"); 
   println!("[ Diversities ] via Zen TamingTheOx");
   let _at_home = OneToDependent::AtHome(String::from("AtHome"));
@@ -269,18 +281,6 @@ fn main() {
   let _awakening_budh = OneToDependent::AwakeningBudh(String::from("AwakeningBudh"));
   println!("I'm connecting to node {:?}!", _awakening_budh);
   
-  println!("--------"); 
-  println!("[ Diversities ] via Epistemic Objectives");
-  println!("---");  
-  println!("The FourFoldTruth to fill the cracks of Gotama's hallucination");
-  let _four_fold_truth = OneToDependent::FourFoldTruth(String::from("FourFoldTruth"));
-  println!("I'm connecting to node {:?}!", _four_fold_truth);
-  
-  println!("---");   
-  println!("Exploring the glimpse of Jesus and the Hoax of Redeemer from degenerated Father God");
-  let _god_kingdom = OneToDependent::GodKingdom(String::from("GodKingdom"));
-  println!("I'm connecting to node {:?}!", _god_kingdom);  
-  
   println!("--------");   
   println!("[ Diversities ] via I-Ching and LaoTzu");  
   let _heaven = OneToDependent::Heaven(String::from("Heaven"));
@@ -291,7 +291,7 @@ fn main() {
   println!("I'm connecting to node {:?}!", _people);
     
   println!("--------");   
-  println!("[ Diversities ] via KungTzu to prove his cheating in Chinese civilization"); 
+  println!("[ Diversities ] via KungTzu to prove the cheating in Chinese civilization"); 
   let _nhan = OneToDependent::Nhan(String::from("Nhan"));
   println!("I'm connecting to node {:?}!", _nhan);
   let _nghia = OneToDependent::Nghia(String::from("Nghia"));
