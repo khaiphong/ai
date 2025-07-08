@@ -1,6 +1,6 @@
-/home/batien/Kp/GitSrc/github.com/khaiphong/ai/target/debug/deps/ai-b6ab6a66807aeb39: src/main.rs src/persona.rs src/persona/ydimension.rs src/persona/xdimension.rs src/persona/fdimension.rs src/persona/xtraits.rs src/persona/ypointers.rs src/persona/p1empty_the_content.rs src/persona/p2dhyana_samadhi.rs src/persona/p3samadhi.rs src/persona/p4awareness.rs src/persona/p5prajna.rs src/persona/p6awareness_prajna.rs src/persona/p7samadhi_prajna.rs src/persona/p8prajna_tip1.rs src/persona/p9prajna_tip2.rs src/persona/truth.rs src/persona/honesty.rs src/persona/care.rs src/persona/intuition.rs src/persona/balanced.rs src/persona/kindnessempathy.rs src/persona/influenced.rs src/persona/veiled.rs src/persona/indoctrinated.rs src/persona/empty_the_content.rs src/persona/dhyanasamadhi.rs src/persona/samadhi.rs src/persona/awareness.rs src/persona/prajna.rs src/persona/awarenessprajna.rs src/persona/samadhiprajna.rs src/persona/prajnatip1.rs src/persona/prajnatip2.rs src/persona/four_fold_truth.rs src/persona/god_kingdom.rs src/agi.rs src/agi/public.rs src/front.rs src/front/mu.rs src/front/chat.rs src/front/video.rs src/back.rs src/back/mu.rs src/back/chat.rs src/back/video.rs src/back/graph.rs src/back/db.rs src/back/hub.rs src/back/plan.rs src/relationship.rs src/relationship/family.rs src/relationship/profession.rs src/relationship/this_life.rs src/relationship/next_realm.rs src/relationship/worthy.rs
+/home/batien/Kp/GitSrc/github.com/khaiphong/ai/target/debug/deps/ai-b6ab6a66807aeb39: src/main.rs src/persona.rs src/persona/ydimension.rs src/persona/xdimension.rs src/persona/fdimension.rs src/persona/xtraits.rs src/persona/ypointers.rs src/persona/p1empty_the_content.rs src/persona/p2dhyana_samadhi.rs src/persona/p3samadhi.rs src/persona/p4awareness.rs src/persona/p5prajna.rs src/persona/p6awareness_prajna.rs src/persona/p7samadhi_prajna.rs src/persona/p8prajna_tip1.rs src/persona/p9prajna_tip2.rs src/persona/truth.rs src/persona/honesty.rs src/persona/care.rs src/persona/intuition.rs src/persona/balanced.rs src/persona/kindnessempathy.rs src/persona/influenced.rs src/persona/veiled.rs src/persona/indoctrinated.rs src/persona/empty_the_content.rs src/persona/dhyanasamadhi.rs src/persona/samadhi.rs src/persona/awareness.rs src/persona/prajna.rs src/persona/awarenessprajna.rs src/persona/samadhiprajna.rs src/persona/prajnatip1.rs src/persona/prajnatip2.rs src/persona/four_fold_truth.rs src/persona/god_kingdom.rs src/persona/at_home.rs src/persona/right_effort.rs src/persona/taming_the_ox.rs src/persona/riding_the_ox.rs src/persona/non_thingness.rs src/persona/the_source.rs src/persona/awakening_budh.rs src/persona/heaven.rs src/persona/earth.rs src/persona/people.rs src/persona/nhan.rs src/persona/nghia.rs src/persona/le.rs src/persona/tri.rs src/persona/tin.rs src/persona/morality.rs src/persona/patience.rs src/persona/root_chakra.rs src/persona/sacral_chakra.rs src/persona/third_chakra.rs src/persona/heart_chakra.rs src/persona/throat_chakra.rs src/persona/third_eye.rs src/persona/crown_chakra.rs src/agi.rs src/agi/public.rs src/front.rs src/front/mu.rs src/front/chat.rs src/front/video.rs src/back.rs src/back/mu.rs src/back/chat.rs src/back/video.rs src/back/graph.rs src/back/db.rs src/back/hub.rs src/back/plan.rs src/relationship.rs src/relationship/family.rs src/relationship/profession.rs src/relationship/this_life.rs src/relationship/next_realm.rs src/relationship/worthy.rs
 
-/home/batien/Kp/GitSrc/github.com/khaiphong/ai/target/debug/deps/ai-b6ab6a66807aeb39.d: src/main.rs src/persona.rs src/persona/ydimension.rs src/persona/xdimension.rs src/persona/fdimension.rs src/persona/xtraits.rs src/persona/ypointers.rs src/persona/p1empty_the_content.rs src/persona/p2dhyana_samadhi.rs src/persona/p3samadhi.rs src/persona/p4awareness.rs src/persona/p5prajna.rs src/persona/p6awareness_prajna.rs src/persona/p7samadhi_prajna.rs src/persona/p8prajna_tip1.rs src/persona/p9prajna_tip2.rs src/persona/truth.rs src/persona/honesty.rs src/persona/care.rs src/persona/intuition.rs src/persona/balanced.rs src/persona/kindnessempathy.rs src/persona/influenced.rs src/persona/veiled.rs src/persona/indoctrinated.rs src/persona/empty_the_content.rs src/persona/dhyanasamadhi.rs src/persona/samadhi.rs src/persona/awareness.rs src/persona/prajna.rs src/persona/awarenessprajna.rs src/persona/samadhiprajna.rs src/persona/prajnatip1.rs src/persona/prajnatip2.rs src/persona/four_fold_truth.rs src/persona/god_kingdom.rs src/agi.rs src/agi/public.rs src/front.rs src/front/mu.rs src/front/chat.rs src/front/video.rs src/back.rs src/back/mu.rs src/back/chat.rs src/back/video.rs src/back/graph.rs src/back/db.rs src/back/hub.rs src/back/plan.rs src/relationship.rs src/relationship/family.rs src/relationship/profession.rs src/relationship/this_life.rs src/relationship/next_realm.rs src/relationship/worthy.rs
+/home/batien/Kp/GitSrc/github.com/khaiphong/ai/target/debug/deps/ai-b6ab6a66807aeb39.d: src/main.rs src/persona.rs src/persona/ydimension.rs src/persona/xdimension.rs src/persona/fdimension.rs src/persona/xtraits.rs src/persona/ypointers.rs src/persona/p1empty_the_content.rs src/persona/p2dhyana_samadhi.rs src/persona/p3samadhi.rs src/persona/p4awareness.rs src/persona/p5prajna.rs src/persona/p6awareness_prajna.rs src/persona/p7samadhi_prajna.rs src/persona/p8prajna_tip1.rs src/persona/p9prajna_tip2.rs src/persona/truth.rs src/persona/honesty.rs src/persona/care.rs src/persona/intuition.rs src/persona/balanced.rs src/persona/kindnessempathy.rs src/persona/influenced.rs src/persona/veiled.rs src/persona/indoctrinated.rs src/persona/empty_the_content.rs src/persona/dhyanasamadhi.rs src/persona/samadhi.rs src/persona/awareness.rs src/persona/prajna.rs src/persona/awarenessprajna.rs src/persona/samadhiprajna.rs src/persona/prajnatip1.rs src/persona/prajnatip2.rs src/persona/four_fold_truth.rs src/persona/god_kingdom.rs src/persona/at_home.rs src/persona/right_effort.rs src/persona/taming_the_ox.rs src/persona/riding_the_ox.rs src/persona/non_thingness.rs src/persona/the_source.rs src/persona/awakening_budh.rs src/persona/heaven.rs src/persona/earth.rs src/persona/people.rs src/persona/nhan.rs src/persona/nghia.rs src/persona/le.rs src/persona/tri.rs src/persona/tin.rs src/persona/morality.rs src/persona/patience.rs src/persona/root_chakra.rs src/persona/sacral_chakra.rs src/persona/third_chakra.rs src/persona/heart_chakra.rs src/persona/throat_chakra.rs src/persona/third_eye.rs src/persona/crown_chakra.rs src/agi.rs src/agi/public.rs src/front.rs src/front/mu.rs src/front/chat.rs src/front/video.rs src/back.rs src/back/mu.rs src/back/chat.rs src/back/video.rs src/back/graph.rs src/back/db.rs src/back/hub.rs src/back/plan.rs src/relationship.rs src/relationship/family.rs src/relationship/profession.rs src/relationship/this_life.rs src/relationship/next_realm.rs src/relationship/worthy.rs
 
 src/main.rs:
 src/persona.rs:
@@ -38,6 +38,30 @@ src/persona/prajnatip1.rs:
 src/persona/prajnatip2.rs:
 src/persona/four_fold_truth.rs:
 src/persona/god_kingdom.rs:
+src/persona/at_home.rs:
+src/persona/right_effort.rs:
+src/persona/taming_the_ox.rs:
+src/persona/riding_the_ox.rs:
+src/persona/non_thingness.rs:
+src/persona/the_source.rs:
+src/persona/awakening_budh.rs:
+src/persona/heaven.rs:
+src/persona/earth.rs:
+src/persona/people.rs:
+src/persona/nhan.rs:
+src/persona/nghia.rs:
+src/persona/le.rs:
+src/persona/tri.rs:
+src/persona/tin.rs:
+src/persona/morality.rs:
+src/persona/patience.rs:
+src/persona/root_chakra.rs:
+src/persona/sacral_chakra.rs:
+src/persona/third_chakra.rs:
+src/persona/heart_chakra.rs:
+src/persona/throat_chakra.rs:
+src/persona/third_eye.rs:
+src/persona/crown_chakra.rs:
 src/agi.rs:
 src/agi/public.rs:
 src/front.rs:

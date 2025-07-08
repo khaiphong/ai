@@ -1040,13 +1040,36 @@ pub enum OneToDependent {
 // Claimed solutions to be tested for either #Truth or hallucination / imagination
 pub mod four_fold_truth;    
 pub mod god_kingdom;
-//pub mod care;
-//pub mod intuition; 
-//pub mod balanced;
-//pub mod kindnessempathy;
-//pub mod influenced;
-//pub mod veiled;  
-//pub mod indoctrinated;  
+
+pub mod at_home;
+pub mod right_effort; 
+pub mod taming_the_ox;
+pub mod riding_the_ox;
+pub mod non_thingness;
+pub mod the_source;  
+pub mod awakening_budh; 
+
+pub mod heaven;    
+pub mod earth;
+pub mod people;
+
+pub mod nhan; 
+pub mod nghia;
+pub mod le;
+pub mod tri;
+pub mod tin; 
+ 
+pub mod morality;  
+pub mod patience;
+    
+pub mod root_chakra;
+pub mod sacral_chakra;
+pub mod third_chakra; 
+pub mod heart_chakra;
+pub mod throat_chakra;
+pub mod third_eye;
+pub mod crown_chakra;  
+
 
 #[derive(Debug)]
 pub struct FourFoldTruth; // a unit-like node
@@ -1055,12 +1078,184 @@ impl FourFoldTruth { // methods to identify FourFoldTruth
     return "an accepted formal evaluation of FourFoldTruth".to_string()
   }
 }
-
 #[derive(Debug)]
 pub struct GodKingdom; // a unit-like node
 impl GodKingdom { // methods to identify GodKingdom
   pub fn kp_god_kingdom(&self) -> String { // f(_x,_y) for Inter-Realm
     return "an accepted formal evaluation of GodKingdom".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct AtHome; // a unit-like node
+impl AtHome { // methods to identify AtHome
+  pub fn kp_at_home(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of AtHome".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct RightEffort; // a unit-like node
+impl RightEffort { // methods to identify RightEffort
+  pub fn kp_right_effort(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of RightEffort".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct TamingTheOx; // a unit-like node
+impl TamingTheOx { // methods to identify TamingTheOx
+  pub fn kp_taming_the_ox(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of TamingTheOx".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct RidingTheOx; // a unit-like node
+impl RidingTheOx { // methods to identify RidingTheOx
+  pub fn kp_riding_the_ox(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of RidingTheOx".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct NonThingness; // a unit-like node
+impl NonThingness { // methods to identify NonThingness
+  pub fn kp_non_thingness(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of NonThingness".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct TheSource; // a unit-like node
+impl TheSource { // methods to identify TheSource
+  pub fn kp_the_source(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of TheSource".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct AwakeningBudh; // a unit-like node
+impl AwakeningBudh { // methods to identify AwakeningBudh
+  pub fn kp_awakening_budh(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of AwakeningBudh".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct Heaven; // a unit-like node
+impl Heaven { // methods to identify Heaven
+  pub fn kp_heaven(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Heaven".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Earth; // a unit-like node
+impl Earth { // methods to identify Earth
+  pub fn kp_earth(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Earth".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct People; // a unit-like node
+impl People { // methods to identify People
+  pub fn kp_people(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of People".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct Nhan; // a unit-like node
+impl Nhan { // methods to identify Nhan
+  pub fn kp_nhan(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Nhan".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Nghia; // a unit-like node
+impl Nghia { // methods to identify Ngnia
+  pub fn kp_nghia(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Nghia".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Le; // a unit-like node
+impl Le { // methods to identify Le
+  pub fn kp_le(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Le".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Tri; // a unit-like node
+impl Tri { // methods to identify Tri
+  pub fn kp_tri(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Tri".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Tin; // a unit-like node
+impl Tin { // methods to identify Le
+  pub fn kp_tin(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Tin".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct Morality; // a unit-like node
+impl Morality { // methods to identify Morality
+  pub fn kp_morality(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Morality".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct Patience; // a unit-like node
+impl Patience { // methods to identify Patience
+  pub fn kp_patience(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of Patience".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct RootChakra; // a unit-like node
+impl RootChakra { // methods to identify RootChakra
+  pub fn kp_root_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of RootChakra".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct SacralChakra; // a unit-like node
+impl SacralChakra { // methods to identify SacralChakra
+  pub fn kp_sacral_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of SacralChakra".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct ThirdChakra; // a unit-like node
+impl ThirdChakra { // methods to identify ThirdChakra
+  pub fn kp_third_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of ThirdChakra".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct HeartChakra; // a unit-like node
+impl HeartChakra { // methods to identify HeartChakra
+  pub fn kp_heart_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of HeartChakra".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct ThroatChakra; // a unit-like node
+impl ThroatChakra { // methods to identify ThroatChakra
+  pub fn kp_throat_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of ThroatChakra".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct ThirdEye; // a unit-like node
+impl ThirdEye { // methods to identify ThirdEye
+  pub fn kp_third_eye(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of ThirdEye".to_string()
+  }
+}
+#[derive(Debug)]
+pub struct CrownChakra; // a unit-like node
+impl CrownChakra { // methods to identify CrownChakra
+  pub fn kp_crown_chakra(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of CrownChakra".to_string()
   }
 }
 

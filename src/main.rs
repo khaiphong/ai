@@ -193,6 +193,36 @@ use crate::persona::PrajnaTIP2;
 
 use crate::persona::FourFoldTruth;
 use crate::persona::GodKingdom;
+
+use crate::persona::AtHome;
+use crate::persona::RightEffort;
+use crate::persona::TamingTheOx;
+use crate::persona::RidingTheOx;
+use crate::persona::NonThingness;
+use crate::persona::TheSource;
+use crate::persona::AwakeningBudh;
+
+use crate::persona::Heaven;
+use crate::persona::Earth;
+use crate::persona::People;
+
+use crate::persona::Nhan;
+use crate::persona::Nghia;
+use crate::persona::Le;
+use crate::persona::Tri;
+use crate::persona::Tin;
+
+use crate::persona::Morality;
+use crate::persona::Patience;
+
+use crate::persona::RootChakra;
+use crate::persona::SacralChakra;
+use crate::persona::ThirdChakra;
+use crate::persona::HeartChakra;
+use crate::persona::ThroatChakra;
+use crate::persona::ThirdEye;
+use crate::persona::CrownChakra;
+
  
 fn main() {
 
@@ -822,7 +852,105 @@ println!("[ Diversities ] via F-dimension cultivable from HuiNeng Three-Nots to 
     GodKingdom.kp_god_kingdom()
   );
   
+  println!(
+    "Here is {}",
+    AtHome.kp_at_home()
+  );
+  println!(
+    "Here is {}",
+    RightEffort.kp_right_effort()
+  );
+  println!(
+    "Here is {}",
+    TamingTheOx.kp_taming_the_ox()
+  );
+  println!(
+    "Here is {}",
+    RidingTheOx.kp_riding_the_ox()
+  );
+  println!(
+    "Here is {}",
+    NonThingness.kp_non_thingness()
+  );
+  println!(
+    "Here is {}",
+    TheSource.kp_the_source()
+  );
+  println!(
+    "Here is {}",
+    AwakeningBudh.kp_awakening_budh()
+  );
   
+  println!(
+    "Here is {}",
+    Heaven.kp_heaven()
+  );
+  println!(
+    "Here is {}",
+    Earth.kp_earth()
+  );
+  println!(
+    "Here is {}",
+    People.kp_people()
+  );
   
-
+  println!(
+    "Here is {}",
+    Nhan.kp_nhan()
+  );
+  println!(
+    "Here is {}",
+    Nghia.kp_nghia()
+  );
+  println!(
+    "Here is {}",
+    Le.kp_le()
+  );
+  println!(
+    "Here is {}",
+    Tri.kp_tri()
+  );
+  println!(
+    "Here is {}",
+    Tin.kp_tin()
+  );
+  
+  println!(
+    "Here is {}",
+    Morality.kp_morality()
+  );
+  println!(
+    "Here is {}",
+    Patience.kp_patience()
+  );
+  
+  println!(
+    "Here is {}",
+    RootChakra.kp_root_chakra()
+  );
+  println!(
+    "Here is {}",
+    SacralChakra.kp_sacral_chakra()
+  );
+  println!(
+    "Here is {}",
+    ThirdChakra.kp_third_chakra()
+  );
+  println!(
+    "Here is {}",
+    HeartChakra.kp_heart_chakra()
+  );
+  println!(
+    "Here is {}",
+    ThroatChakra.kp_throat_chakra()
+  );
+  println!(
+    "Here is {}",
+    ThirdEye.kp_third_eye()
+  );
+  println!(
+    "Here is {}",
+    CrownChakra.kp_crown_chakra()
+  );
+  
 }
