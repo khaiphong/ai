@@ -190,6 +190,9 @@ use crate::persona::AwarenessPrajna;
 use crate::persona::SamadhiPrajna;
 use crate::persona::PrajnaTIP1;
 use crate::persona::PrajnaTIP2;
+
+use crate::persona::FourFoldTruth;
+use crate::persona::GodKingdom;
  
 fn main() {
 
@@ -806,5 +809,20 @@ println!("[ Diversities ] via F-dimension cultivable from HuiNeng Three-Nots to 
     "Here is {}",
     PrajnaTIP2.kp_prajna_tip2()
   ); 
+  
+  println!("--------"); 
+  println!("Roughin implementations of OneToDependent from claimed solutions");
+  
+  println!(
+    "Here is {}",
+    FourFoldTruth.kp_four_fold_truth()
+  );
+  println!(
+    "Here is {}",
+    GodKingdom.kp_god_kingdom()
+  );
+  
+  
+  
 
 }

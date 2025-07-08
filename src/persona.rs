@@ -885,45 +885,6 @@ pub enum Ylevels { // type behavior based on its traits and its rated major boun
   Vampire(String),		    // #Indoctrinated
 }
 
-#[derive(Debug)]
-pub enum OneToDependent { 
-  Oneness(String),          // Oneness >< Diversities
-  Diversities(String),
-  
-  AtHome(String),			
-  RightEffort(String),
-  TamingTheOx(String),		// TamingTheOx - Epistemic Objective
-  RidingTheOx(String),
-  NonThingness(String),
-  TheSource(String),
-  AwakeningBudh(String),
-  
-  FourFoldTruth(String),	// of Dukkha - Epistemic Objective
-  GodKingdom(String),		// within - Epistemic Objective
-  
-  Heaven(String),           // I-Ching, LaoTzu
-  Earth(String),  
-  People(String), 
-  
-  Nhan(String),             // KungTzu
-  Nghia(String),  
-  Le(String),     
-  Tri(String),
-  Tin(String),  
-  
-  Morality(String),         // Falun  
-  Patience(String), 
-  
-  // Vedic system "the hubs to receive, assimilate, and distribute life energies”
-  RootChakra(String),		// Muladhara - 		red
-  SacralChakra(String),		// Svadhishthana - 	orange
-  ThirdChakra(String),		// Mapipura -		yellow
-  HeartChakra(String),		// Anahata -		green
-  ThroatChakra(String),		// Vishuddha - 		blue
-  ThirdEye(String),			// Ajna - 			purple
-  CrownChakra(String),		// Sahasrata - 		white
-}
-
 // for outside contributions
 #[derive(Debug)]
 pub enum Flevels { // type behavior based on its traits and its rated major bounded one
@@ -1036,4 +997,71 @@ fn f_evaluation(f: HashMap<i32, String>) -> Vec<i32> {
     
     return vec![0]; // rated complex Fibinacci level
 }
+
+#[derive(Debug)]
+pub enum OneToDependent { 
+  Oneness(String),          // Oneness >< Diversities
+  Diversities(String),
+  
+  FourFoldTruth(String),	// of Dukkha - Epistemic Objective
+  GodKingdom(String),		// within - Epistemic Objective  
+  
+  AtHome(String),			
+  RightEffort(String),
+  TamingTheOx(String),		// TamingTheOx - Epistemic Objective
+  RidingTheOx(String),
+  NonThingness(String),
+  TheSource(String),
+  AwakeningBudh(String),
+    
+  Heaven(String),           // I-Ching, LaoTzu
+  Earth(String),  
+  People(String), 
+  
+  Nhan(String),             // KungTzu
+  Nghia(String),  
+  Le(String),     
+  Tri(String),
+  Tin(String),  
+  
+  Morality(String),         // Falun  
+  Patience(String), 
+  
+  // Vedic system "the hubs to receive, assimilate, and distribute life energies”
+  RootChakra(String),		// Muladhara - 		red
+  SacralChakra(String),		// Svadhishthana - 	orange
+  ThirdChakra(String),		// Mapipura -		yellow
+  HeartChakra(String),		// Anahata -		green
+  ThroatChakra(String),		// Vishuddha - 		blue
+  ThirdEye(String),			// Ajna - 			purple
+  CrownChakra(String),		// Sahasrata - 		white
+}
+
+// Claimed solutions to be tested for either #Truth or hallucination / imagination
+pub mod four_fold_truth;    
+pub mod god_kingdom;
+//pub mod care;
+//pub mod intuition; 
+//pub mod balanced;
+//pub mod kindnessempathy;
+//pub mod influenced;
+//pub mod veiled;  
+//pub mod indoctrinated;  
+
+#[derive(Debug)]
+pub struct FourFoldTruth; // a unit-like node
+impl FourFoldTruth { // methods to identify FourFoldTruth
+  pub fn kp_four_fold_truth(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of FourFoldTruth".to_string()
+  }
+}
+
+#[derive(Debug)]
+pub struct GodKingdom; // a unit-like node
+impl GodKingdom { // methods to identify GodKingdom
+  pub fn kp_god_kingdom(&self) -> String { // f(_x,_y) for Inter-Realm
+    return "an accepted formal evaluation of GodKingdom".to_string()
+  }
+}
+
 
