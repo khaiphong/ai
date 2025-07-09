@@ -1037,7 +1037,13 @@ pub enum OneToDependent {
   CrownChakra(String),		// Sahasrata - 		white
 }
 
-// Claimed solutions to be tested for either #Truth or hallucination / imagination
+// Claimed solutions to be verified for either #Truth or hallucination / imagination
+impl OneToDependent {
+//    fn verified(&self) {
+       // method body would be defined here
+//    }
+}
+
 pub mod four_fold_truth;    
 pub mod god_kingdom;
 

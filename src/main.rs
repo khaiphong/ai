@@ -264,7 +264,7 @@ fn main() {
   let _indoctrinated = Xtraits::Indoctrinated(String::from("#Indoctrinated"));
   
   println!("--------"); 
-  println!("Billion-dollar explorations of past civilizations");
+  println!("Trillion-dollar exploration of past civilizations");
   println!("and their epistemic objectives toward #Truth to be DISCOVERED & SHARED");
 
   println!("I'm connecting to node {:?}!", _truth);
@@ -841,7 +841,7 @@ println!("[ Diversities ] via F-dimension cultivable from HuiNeng Three-Nots to 
   ); 
   
   println!("--------"); 
-  println!("Roughin implementations of OneToDependent from claimed solutions");
+  println!("Implementations of OneToDependent & Verification from claimed solutions");
   
   println!(
     "Here is {}",
