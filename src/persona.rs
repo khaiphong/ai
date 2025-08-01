@@ -22,6 +22,10 @@
   sense, the required #Traits are its core Values (e.g. #Truth >< #Honesty >< #Care ><) in
   execution. This part will be standardized and open-sources for possible value-added
   solutions in x_traits, y_pointers, [f x y]-dimensions : vectors instead of i32.
+  
+  We can further drill down in src/persona/mod.rs rather than just src/persona.rs
+  or even drilled down src/persona/awareness/mod.rs for modules at different awareness levels
+  and use crate::persona::Awareness::Freshness_x(1)=1
 */
 
 #[derive(Debug)]
@@ -305,7 +309,7 @@ impl PrajnaTIP2 { // methods to identify PrajnaTIP2
   belong to those having RoT (Root of Trust) can communicate and collaborate within a 
   certified boundary.
 */
-use std::collections::HashMap; // to be replaced by db Map
+use std::collections::HashMap; // to be replaced by db_map_container
 
 // given the past [ x-y-f ] dimensions, we re-evaluate pointers and traits for suggestions
 pub fn build_inner_space(_x: Vec<i32>, _y: Vec<i32>, _f: Vec<i32>) -> InnerSpace  {

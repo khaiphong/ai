@@ -1,3 +1,5 @@
+# A package is a bundle of one or more crates. Put smartcontract in a dependencies crade
+
 [package]
 name = "ai"
 version = "0.1.0"
